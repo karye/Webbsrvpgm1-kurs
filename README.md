@@ -2,7 +2,7 @@
 description: Hur man skapar en dynamisk webbsida med PHP
 ---
 
-# Dynamiska webbsidor
+# Bygga webbapplikationer i PHP
 
 ## **Grundstrukturen för en webbsida**
 

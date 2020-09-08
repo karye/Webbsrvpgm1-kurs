@@ -1,5 +1,5 @@
 ---
-description: Hur man skapar en dynamisk webbsida med PHP
+description: 'Installera alla verktyg, konfigurera alla inställningar, skapar alla mappar'
 ---
 
 # Installera verktygen

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Dynamiska webbsidor](README.md)
+* [Installera verktygen](README.md)
 * [HTML och formulär](html-och-formulaer.md)
 * [Grunder i PHP](att-koda-php.md)
 * [Operatorer, villkorssatser och loopar](operatorer-villkorssatser-och-loopar.md)

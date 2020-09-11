@@ -112,25 +112,25 @@ PHP har massor med användbara inbyggda funktioner, som vi ska titta närmare p�
 
 Skriv en funktion som tar en variabel som argument och skriver ut följande på skärmen:
 
-{% hint style="info" %}
-_Du skrev in variabeln: följt av innehållet i variabeln_.
+{% hint style="success" %}
+Du skrev in variabeln: följt av innehållet i variabeln.
 {% endhint %}
 
 Testa sedan funktionen genom att skicka 456 i en variabel till den.
 
-**2.2 Uppgift 4.2**
+**Uppgift 4.2**
 
 Skriv en funktion som automatiskt returnerar argumentet med HTML-koder för fetstil och typsnittet Arial runt. Ex: Om man skickar "Rubrik" så ska funktionen skicka tillbaka **&lt;p style="font-family:Arial;"&gt;Rubrik&lt;/p&gt;**
 
-**2.3 Uppgift 4.3**
+**Uppgift 4.3**
 
 Skapa en funktion som tar två argument och skriver ut deras sammanlagda antal tecken på skärmen. Längden på en sträng fås genom den inbyggda funktionen **strlen\(\)**.
 
-**2.4 Uppgift 4.4**
+**Uppgift 4.4**
 
 Skapa en funktion som räknar ut omkretsen på en cirkel. Funktionen ska ta radien som ett argument. Definiera pi som en konstant i början av programmet, och använd 3,14 som ungefärligt mått på pi. Som en extrauppgift så avrunda värdet till närmaste heltal. Detta görs med den inbyggda funktionen **round\(\)**.
 
-**2.5 Uppgift 4.5**
+**Uppgift 4.5**
 
 Skapa ett program med en funktion **print\_table\_start\(\)** som skriver början på en tabell i html och tar ett argument i form av färgen på tabellen \(**red**, **blue** etc.\). Skapa en annan funktion som heter **print\_table\_row\(\)** och skriver ut en tabellrad och tar två argument, det som ska stå i första tabellcellen och det som ska stå i andra tabellcellen. Till sist skapar du en funktion kallad **print\_table\_end\(\)** som skriver ut slutet på tabellen. Ex på en tabell i html: **&lt;table&gt;** talar om att tabellen börjar. **&lt;tr&gt;** står för tabellrad, och **&lt;td&gt;** för tabellcell.
 

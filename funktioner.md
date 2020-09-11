@@ -74,11 +74,11 @@ echo area_cirkel(10);
 
 I och med att vi använder return skickas variabeln **$omkrets** innehåll tillbaka till det ställe som funktionen anropades från. \(M\_PI är en inbyggd konstant som innehåller ett värde av pi med många decimaler.\)
 
-**1.4 Lokal räckvidd**
+**Lokal räckvidd**
 
 Det är viktigt att notera att variabler skapade inuti funktioner ej existerar utanför funktionens krullparanteser. Detta brukar på engelska kallas "**local scope**" dvs. lokal räckvidd. Se följande exempel:
 
-```text
+```php
 function berakna_summa($a, $b) {
     $summa = $a + $b;
     $c = 10;
@@ -90,7 +90,7 @@ print $c;
 
 Det första vi gör är att skapa funktionen berakna\_summa. Denna funktion tar två argument, **$a** och **$b**. Sedan lägger den ihop dessa två argument och stoppar i variabeln $summa. En ny variabel vid namn **$c** skapas på nästa rad. Men eftersom **$c** skapas inuti funktionen blir det en lokal variabel. Den existerar bara inom funktionens krullparanteser. När vi senare på sista raden försöker skriva ut variabeln **$c** kommer det inte att synas någonting på skärmen eftersom **$c** inte existerar utanför funktionen.
 
-```text
+```php
 function dubbla($a) {
     $a = $a * 2;
     global $c = 10;
@@ -102,17 +102,19 @@ print $c;
 
 I detta nya exempel kommer däremot 10 att skrivas ut. Detta eftersom vi talat om för php att **$c** ska vara en global variabel, som även existerar utanför funktionen den skapats i.
 
-**1.5 Inbyggda funktioner**
+**Inbyggda funktioner**
 
-Php har massor med användbara inbyggda funktioner, som vi ska titta närmare på senare. En utmärkt referens till alla inbyggda funktioner är php-manualen, som finns på adressen [http://php.net/manual](http://php.net/manual) .
+PHP har massor med användbara inbyggda funktioner, som vi ska titta närmare på senare. En utmärkt referens till alla inbyggda funktioner är PHP-manualen, som finns på adressen [http://php.net/manual](http://php.net/manual) .
 
-#### 2 Uppgifter - funktioner
+## Uppgifter - funktioner
 
-**2.1 Uppgift 4.1**
+### **Uppgift 4.1**
 
 Skriv en funktion som tar en variabel som argument och skriver ut följande på skärmen:
 
-Du skrev in variabeln: följt av innehållet i variabeln.
+{% hint style="info" %}
+_Du skrev in variabeln: följt av innehållet i variabeln_.
+{% endhint %}
 
 Testa sedan funktionen genom att skicka 456 i en variabel till den.
 

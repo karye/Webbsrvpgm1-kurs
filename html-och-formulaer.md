@@ -6,25 +6,25 @@ description: Hur man skickar data till en server.
 
 ## **Formulär i HTML**
 
-Ett program eller ett skript är inte särskilt meningsfullt om det inte kan fråga efter information i från användaren. I vanliga program matar användaren oftast in information från en kommandoprompt, eller vanligare nuförtiden, genom att fylla i en dialogruta eller välja ett menyalternativ. För att få in information från användaren till ett PHP-skript används formulär. Formulär ingår som en del i html-standarden
+Ett program eller ett skript är inte särskilt meningsfullt om det inte kan fråga efter information i från användaren. I vanliga program matar användaren oftast in information från en kommandoprompt, eller vanligare nuförtiden, genom att fylla i en dialogruta eller välja ett menyalternativ. För att få in information från användaren till ett php-skript används formulär. Formulär ingår som en del i html-standarden
 
 Processen går alltså till på detta sätt:
 
 1. Användaren fyller i ett formulär på en webbsida \(HTML-dokument\).  
-****2. Formulärinformationen skickas till PHP-skriptet på webbservern.  
+****2. Formulärinformationen skickas till php-skriptet på webbservern.  
 3. PHP-skriptet behandlar informationen.  
 4. PHP-skriptet skriver ut en webbsida som användaren får som respons.
 
 ### **Form-taggen omsluter formuläret**
 
- Först ska vi titta på hur man utformar själva formuläret i html. Detta kan göras dels genom att koda för hand i ett redigeringsprogram som [VS Code](https://code.visualstudio.com/). Vi kommer att skriva koden för hand. Det första man behöver i ett formulär är två stycken **form**-taggar som omsluter själva formuläret:
+ Först ska vi titta på hur man utformar själva formuläret i html. Detta kan göras dels genom att koda för hand i ett redigeringsprogram som Brackets. Vi kommer att skriva koden för hand. Det första man behöver i ett formulär är två stycken **form**-taggar som omsluter själva formuläret:
 
 ```markup
 <form action="phpskript.php" method="post">
 </form>
 ```
 
- **Action** talar här om sökvägen till det PHP-skript som ska ta hand om formulärinnehållet. Med **method** specificerar vi med vilken metod formulärdata ska sändas iväg. Det finns två metoder: **get** och **post**. Används metoden **get** skickas informationen med i adressen till PHP-skriptet. Denna metod används ofta av sökmotorer. Det kan t.ex. se ut så här: Man använder vanligen i stället **post**, eftersom man med **get** inte kan skicka mer än c:a 250 tecken. Med **post**-metoden så paketeras informationen och skickas med m.h.a. http-protokollet. Detta har också den fördelen att användaren inte ser all teknisk information som skickas - ett sätt att "gömma" information som skickas mellan webbsidorna.
+ **Action** talar här om sökvägen till det php-skript som ska ta hand om formulärinnehållet. Med **method** specificerar vi med vilken metod formulärdata ska sändas iväg. Det finns två metoder: **get** och **post**. Används metoden **get** skickas informationen med i adressen till php-skriptet. Denna metod används ofta av sökmotorer. Det kan t.ex. se ut så här: Man använder vanligen i stället **post**, eftersom man med **get** inte kan skicka mer än c:a 250 tecken. Med **post**-metoden så paketeras informationen och skickas med m.h.a. http-protokollet. Detta har också den fördelen att användaren inte ser all teknisk information som skickas - ett sätt att "gömma" information som skickas mellan webbsidorna.
 
 #### **&lt;input type="text"&gt; ger en vanlig textruta**
 

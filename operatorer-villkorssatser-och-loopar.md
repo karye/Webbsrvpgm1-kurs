@@ -1,7 +1,3 @@
----
-description: 'Operatorer, villkorssatser och loopar'
----
-
 # Operatorer, villkorssatser och loopar
 
 ## **Operatorer**

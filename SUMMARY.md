@@ -11,5 +11,5 @@
 * [Skicka epost](skicka-epost.md)
 * [Filhantering](filhantering.md)
 * [Sessioner](sessioner.md)
-* [Databashantering - mysql](databashantering-mysql.md)
+* [Databashantering - mysqli](databashantering-mysqli.md)
 

@@ -1,2 +1,0 @@
-# Databashantering - mysql
-

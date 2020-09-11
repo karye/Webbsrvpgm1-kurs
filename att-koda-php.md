@@ -4,7 +4,7 @@ description: Variabler och kommentarer
 
 # Grunder i PHP
 
-## **Att skriva PHP-kod**
+## **Att skriva koden**
 
 Varje PHP-snutt börjar med **&lt;?php** och avslutas med **?&gt;**. På detta sätt kan man väva in PHP-kod i vanliga HTML-dokument.
 

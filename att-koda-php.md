@@ -350,3 +350,7 @@ Prova sedan att mata in koden och se om du gissade rätt.
 
 * [https://mi.sh.se/labwiki2/index.php/1126ME\_WProg1](https://mi.sh.se/labwiki2/index.php/1126ME_WProg1)
 
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+{% endhint %}
+

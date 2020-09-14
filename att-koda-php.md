@@ -90,6 +90,8 @@ Vilket ger samma resultat.
 
 ## **Variabler**
 
+![Variabler &#xE4;r som kartonger!](.gitbook/assets/image%20%283%29.png)
+
 En variabel är en behållare för ett värde. Tänk dig den som en kökslåda som innehåller någonting. Vi har ett namn på kökslådan dvs. själva variabeln och sedan har variabeln ett innehåll. Det finns två huvudtyper av variabler: strängar och tal. Strängar innehåller text medan tal innehåller siffror. Innan man använder en variabel behöver den tilldelas ett värde. Ett ex: \(jag har här uteslutit html-koden runt skriptet för att vi ska koncentrera oss på det viktiga\).
 
 ```php
@@ -158,8 +160,6 @@ echo "Summan av $tal1 och $tal2 är $summa";
 Man kan använda **+ - \*** och **/** för att räkna med tal. Dessa kallas med ett finare uttryck för aritmetiska operatorer. Det finns också något som kallas logiska operatorer men de kommer vi att gå igenom senare.
 
 ### **Datatyper**
-
-![](.gitbook/assets/image%20%282%29.png)
 
 PHP är ett löst typat språk. Detta innebär att man inte behöver deklarera vad för typ av variabel man vill ha innan man skapar den.
 
@@ -230,7 +230,7 @@ if ( is_string($variabel) ) {
 
 ### **Fördefinierade variabler**
 
-PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsområdet för dessa är för att se vilken information som skickats från ett formulär. När ett formulär skickats iväg till ett php-skript så lagras automatiskt formulärelementens innehåll i matrisen **$\_REQUEST**. Mer information om matriser kommer senare i kursen.
+PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsområdet för dessa är för att se vilken information som skickats från ett formulär. När ett formulär skickats iväg till ett PHP-skript så lagras automatiskt formulärelementens innehåll i arrayen **$\_REQUEST\[\], $\_POST\[\]** eller **$\_GET\[\]**. Mer information om matriser kommer senare i kursen.
 
 Har vi t.ex. skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast echo enligt följande modell:
 
@@ -240,7 +240,7 @@ echo $_REQUEST['telefon'];
 
 Vilket kommer att resultera i att 012-345678 skrivs ut på skärmen förutsatt att användaren matade in just det numret i formuläret.
 
-I det fall en inställning ändrats i php-systemkonfigurationen så kommer även fristående variabler skapas. I exemplen ovan skulle i så fall variablerna **$adress** och **$telefon** skapas. Denna inställning är avstängd från början, eftersom det kan medföra säkerhetsrisker om den används på ett slarvigt sätt.
+I det fall en inställning ändrats i PHP-systemkonfigurationen så kommer även fristående variabler skapas. I exemplen ovan skulle i så fall variablerna **$adress** och **$telefon** skapas. Denna inställning är avstängd från början, eftersom det kan medföra säkerhetsrisker om den används på ett slarvigt sätt.
 
 **$\_SERVER\['HTTP\_REFERER'\]** innehåller den sida som besökaren kom ifrån till skriptet. \(Notera att refererer skrivs med ett r, vilket beror på en pinsam felstavning i http-protokollet.\) **$\_SERVER\['REMOTE\_ADDR'\]** innehåller IP-adressen som besökaren har. **$\_SERVER\['PHP\_SELF'\]** innehåller den kompletta adressen till skriptet som körs. För mer information om alla fördefinierade variabler, se PHP-manualen på adressen [http://www.php.net/manual](http://www.php.net/manual) .
 
@@ -292,7 +292,7 @@ Man börjar alltså kommentaren med **/\*** och avslutar med **\*/**.
 
 ### **Uppgift 2.1**
 
-Använd formuläret från uppgift 1.1. Skapa ett php-skript som tar emot de två talen, multiplicerar dem och presenterar resultatet så här: **"Produkten av tal1 och tal2 är ..."**.
+Använd formuläret från uppgift 1.1. Skapa ett PHP-skript som tar emot de två talen, multiplicerar dem och presenterar resultatet så här: **"Produkten av tal1 och tal2 är ..."**.
 
 ### **Uppgift 2.2**
 

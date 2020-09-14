@@ -159,6 +159,8 @@ Man kan använda **+ - \*** och **/** för att räkna med tal. Dessa kallas med 
 
 ### **Datatyper**
 
+![](.gitbook/assets/image%20%282%29.png)
+
 PHP är ett löst typat språk. Detta innebär att man inte behöver deklarera vad för typ av variabel man vill ha innan man skapar den.
 
 Det finns åtta olika typer av datatyper:

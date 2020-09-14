@@ -72,7 +72,7 @@ echo area_cirkel(10);
 ?>
 ```
 
-I och med att vi använder return skickas variabeln **$omkrets** innehåll tillbaka till det ställe som funktionen anropades från. \(M\_PI är en inbyggd konstant som innehåller ett värde av pi med många decimaler.\)
+I och med att vi använder return skickas variabeln **$omkrets** innehåll tillbaka till det ställe som funktionen anropades från. \(**M\_PI** är en inbyggd konstant som innehåller ett värde av pi med många decimaler.\)
 
 **Lokal räckvidd**
 
@@ -88,7 +88,7 @@ $resultat = berakna_summa($a, $b);
 print $c;
 ```
 
-Det första vi gör är att skapa funktionen berakna\_summa. Denna funktion tar två argument, **$a** och **$b**. Sedan lägger den ihop dessa två argument och stoppar i variabeln $summa. En ny variabel vid namn **$c** skapas på nästa rad. Men eftersom **$c** skapas inuti funktionen blir det en lokal variabel. Den existerar bara inom funktionens krullparanteser. När vi senare på sista raden försöker skriva ut variabeln **$c** kommer det inte att synas någonting på skärmen eftersom **$c** inte existerar utanför funktionen.
+Det första vi gör är att skapa funktionen **berakna\_summa\(\)**. Denna funktion tar två argument, **$a** och **$b**. Sedan lägger den ihop dessa två argument och stoppar i variabeln $summa. En ny variabel vid namn **$c** skapas på nästa rad. Men eftersom **$c** skapas inuti funktionen blir det en lokal variabel. Den existerar bara inom funktionens krullparanteser. När vi senare på sista raden försöker skriva ut variabeln **$c** kommer det inte att synas någonting på skärmen eftersom **$c** inte existerar utanför funktionen.
 
 ```php
 function dubbla($a) {
@@ -104,7 +104,7 @@ I detta nya exempel kommer däremot 10 att skrivas ut. Detta eftersom vi talat o
 
 **Inbyggda funktioner**
 
-PHP har massor med användbara inbyggda funktioner, som vi ska titta närmare på senare. En utmärkt referens till alla inbyggda funktioner är PHP-manualen, som finns på adressen [http://php.net/manual](http://php.net/manual) .
+PHP har massor med användbara inbyggda funktioner, som vi ska titta närmare på senare. En utmärkt referens till alla inbyggda funktioner är [PHP-manualen](http://php.net/manual).
 
 ## Uppgifter - funktioner
 

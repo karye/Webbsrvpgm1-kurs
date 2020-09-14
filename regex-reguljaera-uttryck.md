@@ -8,7 +8,7 @@ description: Söka i text med regex
 
 Med reguljära uttryck kan man göra en sk. mönstermatchning av ett uttryck. Reguljära uttryck tillhör de svåraste områdena av PHP. I kapitlet om strängar i boken finns en utförligare beskrivning av reguljära uttryck. De används ofta för att göra en kontroll av inkommande formulärdata för att säkerställa att dessa håller sig inom vissa givna ramar och därigenom säkra programmet från angrepp och fel.
 
-Det finns två olika typer av reguljära uttryck i PHP, Posix-kompatibla och Perl-kompatibla. I grundsyntaxen är de ganska lika men de Perl-kompatibla reguljära uttrycken har fler avancerade funktioner. I PHP-manualen på adressen [http://php.net/manual/en/pcre.pattern.syntax.php](http://php.net/manual/en/pcre.pattern.syntax.php) finns en detaljerad guide. Vi börjar med ett enkelt exempel:
+Det finns två olika typer av reguljära uttryck i PHP, Posix-kompatibla och Perl-kompatibla. I grundsyntaxen är de ganska lika men de Perl-kompatibla reguljära uttrycken har fler avancerade funktioner. I PHP-manualen på [pcre.pattern.syntax](http://php.net/manual/en/pcre.pattern.syntax.php) finns en detaljerad guide. Vi börjar med ett enkelt exempel:
 
 ```php
 $text = "Test 123";
@@ -19,7 +19,7 @@ if (preg_match("/123/",$text)) {
 }
 ```
 
-Funktionen **preg\_match\(\)** används för mönstermatchning. Sökbegreppet står alltid mellan snedstreck. I exemplet söker vi efter teckenföljden 123 i strängen **$text**. Se [http://php.net/manual/en/function.preg-match.php](http://php.net/manual/en/function.preg-match.php) .
+Funktionen [**preg\_match\(\)**](http://php.net/manual/en/function.preg-match.php) används för mönstermatchning. Sökbegreppet står alltid mellan snedstreck. I exemplet söker vi efter teckenföljden 123 i strängen **$text**.
 
 ### **Matcha vissa tecken**
 
@@ -125,7 +125,7 @@ Mönstret matchar använd, eftersom det är tomt till höger om den sista **\|**
 
 ### **Byta ut text mot en annan text**
 
-Funktionen **preg\_replace\(\)** byter ut en viss text mot en annan. Se [http://php.net/manual/en/function.preg-replace.php](http://php.net/manual/en/function.preg-replace.php) .
+Funktionen [**preg\_replace\(\)**](http://php.net/manual/en/function.preg-replace.php) byter ut en viss text mot en annan.
 
 ```php
 $text = 'Min e-post-adress är thohoj02@student.chalmers.se';
@@ -163,7 +163,7 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 ## **Testa reguljära uttryck**
 
-* Du kan enkelt testa dina regex på [http://regexr.com/](http://regexr.com/)
+* Du kan enkelt testa dina regex på [regexr.com](http://regexr.com/).
 
 ## Uppgifter - reguljära uttryck
 
@@ -182,4 +182,8 @@ Konstruera ett reguljärt uttryck som matchar en sträng som börjar med "Det va
 ### **Uppgift 7.4**
 
 Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av små och stora bokstäver, punkt, siffror och mellanslag.
+
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+{% endhint %}
 

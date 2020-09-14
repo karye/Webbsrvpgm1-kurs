@@ -95,3 +95,7 @@ Gör ett formulär med fält för avsändaradress, adressen e-posten ska skickas
 
 Utveckla programmet i övning 1 så att man kan skriva in flera adresser separerade med kommatecken. Programmet ska sedan skicka epost-meddelandet till alla adresserna. Tips: använd funktionen **split\(\)**.
 
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+{% endhint %}
+

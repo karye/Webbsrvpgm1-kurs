@@ -39,7 +39,7 @@ Funktionen **strtoupper\(\)** fungerar på samma sätt, med skillnaden att alla 
 
 ### **Längden på en sträng - strlen\(\)**
 
-Med **strlen\(\)** \(står för string length \) får vi reda på antalet tecken i en sträng. Se [http://php.net/manual/en/function.strlen.php](http://php.net/manual/en/function.strlen.php) .
+Med **strlen\(\)** \(står för string length\) får vi reda på antalet tecken i en sträng. Se [strlen](http://php.net/manual/en/function.strlen.php) på php.net.
 
 ```php
 $text = "Hej och hopp";
@@ -62,7 +62,7 @@ $text = "Hej och hopp";
 $slut = substr($text, -4);// Plockar ut "hopp";
 ```
 
-Här får vi alltså ut de sista fyra tecknen i strängen. Se [http://php.net/manual/en/function.substr.php](http://php.net/manual/en/function.substr.php) .
+Här får vi alltså ut de sista fyra tecknen i strängen. Se [substr](http://php.net/manual/en/function.substr.php) på php.net.
 
 ### **Söka igenom en sträng - strstr\(\)**
 
@@ -73,7 +73,7 @@ $namn = "Ulrika Eriksson";
 $efternamn = strstr($namn, " ");
 ```
 
-Här söker vi efter strängen **" "** det vill säga ett mellanslag. Eftersom vi hittar ett mellanslag i strängen **$namn**, kommer nu resten av strängen efter mellanslaget returneras. Se [http://php.net/manual/en/function.strstr.php](http://php.net/manual/en/function.strstr.php) .
+Här söker vi efter strängen **" "** det vill säga ett mellanslag. Eftersom vi hittar ett mellanslag i strängen **$namn**, kommer nu resten av strängen efter mellanslaget returneras. Se [strstr](http://php.net/manual/en/function.strstr.php) på php.net.
 
 Det går även att använda **strstr\(\)** i en **if**-sats för att köra olika kod beroende på om strängen hittades eller inte:
 
@@ -93,9 +93,9 @@ If you only want to determine if a particular needle occurs within haystack, use
 
 ### **Söka och ersätta - str\_replace\(\)**
 
-Funktionen **str\_replace\(\)** används för att söka efter en delsträng och ersätta den med något annat. Se [http://php.net/manual/en/function.str-replace.php](http://php.net/manual/en/function.str-replace.php) :
+Funktionen **str\_replace\(\)** används för att söka efter en delsträng och ersätta den med något annat. Se [str-replace](http://php.net/manual/en/function.str-replace.php) på php.net:
 
-```text
+```php
 $ny_variabel = str_replace("vit", "svart", "vit katt på taket");
 echo $ny_variabel;
 ```
@@ -124,5 +124,9 @@ Utveckla skriptet i uppgift 6.2 så att det tar bort mellanslag i **postnumret**
 
 ### **Uppgift 6.4**
 
-Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [http://www.passwordmeter.com/](http://www.passwordmeter.com/) för tips.
+Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordmeter.com](http://www.passwordmeter.com/) för tips.
+
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+{% endhint %}
 

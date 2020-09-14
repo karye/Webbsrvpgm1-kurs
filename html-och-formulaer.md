@@ -136,11 +136,11 @@ För att ta emot formulärinnehållet behöver vi också ett PHP-skript i "andra
 </html>
 ```
 
-Alla formulärdata som skickats lagras i matrisen **$\_REQUEST**. Hade formulärfältet i stället hetat namn skulle innehållet ha funnits i **$\_REQUEST\['namn'\]**.
+Alla formulärdata som skickats lagras i arrayen **$\_REQUEST**. Hade formulärfältet i stället hetat namn skulle innehållet ha funnits i **$\_REQUEST\['namn'\]**.
 
 ## Uppgifter - HTML och formulär
 
-Observera att dessa övningar endast innefattar HTML, i nästa övningsmoment ska du bygga på övningarna med kod i PHP som tar emot formulärinnehållet. Kod för formulär-element hittar du här: [http://www.w3schools.com/html/html\_forms.asp](http://www.w3schools.com/html/html_forms.asp)
+Observera att dessa övningar endast innefattar HTML, i nästa övningsmoment ska du bygga på övningarna med kod i PHP som tar emot formulärinnehållet. Kod för formulär-element hittar du här: [https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic\_native\_form\_controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls)
 
 ### **Uppgift 1.1**
 

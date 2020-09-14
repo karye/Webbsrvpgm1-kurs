@@ -75,3 +75,7 @@ Utveckla programmet i övning 1 med en kryssruta där man kan bocka för att rä
 
 Skapa ett inloggningssystem där användaren kan logga in på en sida via ett formulär och när användarnamn och lösenord är kontrollerade ska användaren kunna gå runt på tre fyra olika sidor. Användaren ska också kunna logga ut, och därefter inte kunna komma åt sidorna.
 
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+{% endhint %}
+

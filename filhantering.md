@@ -81,3 +81,7 @@ Skapa ett loggningsskript som sparar en filrad om varje besök i en fil kallad "
 
 Gör ett PHP-skript som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [http://www.privataaffarer.se/borsguiden/aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
 
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+{% endhint %}
+

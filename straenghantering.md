@@ -10,7 +10,7 @@ Stränghantering används ofta i samband med inmatning för användare. Ibland f
 
 ### **Ta bort mellanrum i början och slutet - trim\(\)**
 
-Ibland kan användare av misstag råkat skriva extra mellanrum efter inmatningar av tex. adress eller telefonnummer. När man sedan sparar data i tex. en databas, vill man inte ha med mellanrummen. Därför använder man funktionen trim för att ta bort dem. Observera att detta enbart gäller mellanrum precis i början eller slutet av en sträng; aldrig mitt i. Funktionen tar förutom mellanslag även bort nyradtecken och tabtecken. Se [http://php.net/manual/en/function.trim.php](http://php.net/manual/en/function.trim.php) . Om vi tex. har en variabel med namnet **$adress** kan vi göra så här:
+Ibland kan användare av misstag råkat skriva extra mellanrum efter inmatningar av tex. adress eller telefonnummer. När man sedan sparar data i tex. en databas, vill man inte ha med mellanrummen. Därför använder man funktionen trim för att ta bort dem. Observera att detta enbart gäller mellanrum precis i början eller slutet av en sträng; aldrig mitt i. Funktionen tar förutom mellanslag även bort nyradtecken och tabtecken. Se [trim](http://php.net/manual/en/function.trim.php) på php.net. Om vi tex. har en variabel med namnet **$adress** kan vi göra så här:
 
 ```php
 $adress = trim($adress);
@@ -18,7 +18,7 @@ $adress = trim($adress);
 
 ### **Omvandla till små eller stora bokstäver - strtolower\(\) respektive strtoupper\(\)**
 
-När man ska jämföra strängar tar php som standard hänsyn till små och stora bokstäver. Om $inmatat har värdet "Test" och **$kontroll** värdet "test" så kommer en jämförelse mellan dem med hjälp av == ej vara sann. Men om man då inte vill ta hänsyn till små och stora bokstäver? Då kan man använda **strtolower\(\)** eller **strtoupper\(\)**. Se [http://php.net/manual/en/function.strtolower.php](http://php.net/manual/en/function.strtolower.php) . Om vi tar exemplet med jämförelsen av **$a** och **$b**:
+När man ska jämföra strängar tar php som standard hänsyn till små och stora bokstäver. Om $inmatat har värdet "Test" och **$kontroll** värdet "test" så kommer en jämförelse mellan dem med hjälp av == ej vara sann. Men om man då inte vill ta hänsyn till små och stora bokstäver? Då kan man använda **strtolower\(\)** eller **strtoupper\(\)**. Se [strtolower](http://php.net/manual/en/function.strtolower.php) på php.net. Om vi tar exemplet med jämförelsen av **$a** och **$b**:
 
 ```php
 $kontroll = "test";

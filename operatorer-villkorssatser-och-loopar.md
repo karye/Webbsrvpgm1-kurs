@@ -55,7 +55,7 @@ if ($losenord == "test123") {
 
 I det här fallet kommer vi alltså att få meddelandet "Fel lösenord" om lösenordet inte stämmer.
 
-Det finns fler jämförelseoperatorer än **==**, även om **==** är den överlägset vanligaste. Vi har bland annat **&lt;** som står för mindre än, **&gt;** som står för större än. Dessa två används endast för tal. **!=** står för inte lika med och kan däremot användas både för tal och strängar. Man kan bygga på **if**-satser med **elseif**. På detta sätt kan programmet ta fler än två olika vägar. Fler jämförelseoperatorer hittar du på [language.operators.comparison](http://php.net/manual/en/language.operators.comparison.php).
+Det finns fler jämförelseoperatorer än **==**, även om **==** är den överlägset vanligaste. Vi har bland annat **&lt;** som står för mindre än, **&gt;** som står för större än. Dessa två används endast för tal. **!=** står för inte lika med och kan däremot användas både för tal och strängar. Man kan bygga på **if**-satser med **elseif**. På detta sätt kan programmet ta fler än två olika vägar. Fler jämförelseoperatorer hittar du på [language.operators.comparison](http://php.net/manual/en/language.operators.comparison.php) på php.net.
 
 ```php
 <?php
@@ -69,7 +69,7 @@ if ($veckodag == "lördag") {
 ?>
 ```
 
-Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [language.operators.logical](http://php.net/manual/en/language.operators.logical.php).
+Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [language.operators.logical](http://php.net/manual/en/language.operators.logical.php) på php.net.
 
 ### **Loopar**
 

@@ -4,9 +4,9 @@ description: Att använda arrayer
 
 # Arrayer och foreach-loop
 
-## Arrayer eller matriser
+## Arrayer
 
-En matris är en samling av variabler, tänk er ett helt skåp med kökslådor. Matrisen är då hela skåpet och innehåller flera kökslådor. I varje kökslåda finns ett innehåll dvs ett värde. I de flesta programmeringsspråk så börjar man av någon outgrundlig anledning alltid att räkna från och med **0** i stället för **1**. Detta innebär att den första "lådan" / indexet är **0**, den andra **1** och så vidare. För att skapa den här matrisen i form av en kökslåda i PHP skulle vi göra så här:
+En array är en samling av variabler, tänk er ett helt skåp med kökslådor. Matrisen är då hela skåpet och innehåller flera kökslådor. I varje kökslåda finns ett innehåll dvs ett värde. I de flesta programmeringsspråk så börjar man av någon outgrundlig anledning alltid att räkna från och med **0** i stället för **1**. Detta innebär att den första "lådan" / indexet är **0**, den andra **1** och så vidare. För att skapa den här matrisen i form av en kökslåda i PHP skulle vi göra så här:
 
 ```php
 <?php
@@ -52,9 +52,9 @@ echo "<p>Understa lådan innehåller $koksskap["botten"] </p>";
 ?>
 ```
 
-När använder man sig då av matriser? Man skulle ju i princip lika gärna kunna använda sig av variabler var och en för sig. Det finns några olika anledningar. Bland annat kan man på ett enkelt sätt sortera i matriser. Man kan också enkelt systematiskt gå igenom en matris och använda alla värdena. När man använder sig av funktioner kommer ofta returvärdet i form av en matris. Läs mer om matriser \(**array**\) på [http://php.net/manual/en/language.types.array.php](http://php.net/manual/en/language.types.array.php) .
+När använder man sig då av matriser? Man skulle ju i princip lika gärna kunna använda sig av variabler var och en för sig. Det finns några olika anledningar. Bland annat kan man på ett enkelt sätt sortera i matriser. Man kan också enkelt systematiskt gå igenom en matris och använda alla värdena. När man använder sig av funktioner kommer ofta returvärdet i form av en matris. Läs mer om matriser \([**array**](http://php.net/manual/en/language.types.array.php)\) på php.net .
 
-Genom **unset** kan man ta bort element ur matriser:
+Genom **unset\(\)** kan man ta bort element ur matriser:
 
 ```php
 $namn[0] = "Gult";
@@ -105,9 +105,9 @@ foreach ($tal as $a) {
 
 Detta exempel sorterar helt enkelt talen i nummerordning och skriver sedan ut dem i tur och ordning. Fler exempel på sorteringsfunktioner finns i boken i kapitlet om matriser.
 
-## **Dela upp en sträng med explode**
+## **Dela upp en sträng med explode\(\)**
 
-Med hjälp av **explode\(\)** kan man dela upp en vanlig sträng i bitar och "stoppa in" bitarna i en matris. Se [http://php.net/manual/en/function.explode.php](http://php.net/manual/en/function.explode.php) . Exempel:
+Med hjälp av **explode\(\)** kan man dela upp en vanlig sträng i bitar och "stoppa in" bitarna i en matris. Se [explode](http://php.net/manual/en/function.explode.php). Exempel:
 
 ```php
 $text = "detta är en testtext.";
@@ -120,7 +120,7 @@ I exemplet delas först upp innehållet i variabeln text i delar med mellanslag 
 
 ## **Slå samman en matris med implode**
 
-Med **implode\(\)** så gör vi tvärtom - slår samman delarna i en matris till en vanlig sträng. Se [http://php.net/manual/en/function.implode.php](http://php.net/manual/en/function.implode.php) .
+Med **implode\(\)** så gör vi tvärtom - slår samman delarna i en matris till en vanlig sträng. Se [implode](http://php.net/manual/en/function.implode.php) på php.net.
 
 ```php
 $ord[0] = "detta";

@@ -3,6 +3,7 @@
 * [Introduktion](README.md)
 * [HTML och formulär](html-och-formulaer.md)
 * [Grunder i PHP](att-koda-php.md)
+* [Tips & tricks](tips-and-tricks.md)
 * [Operatorer, villkorssatser och loopar](operatorer-villkorssatser-och-loopar.md)
 * [Funktioner](funktioner.md)
 * [Arrayer och foreach-loop](arrayer-och-foreach-loop.md)

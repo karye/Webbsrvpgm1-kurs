@@ -40,7 +40,7 @@ Detta är ett helt vanligt HTML-dokument. Om vi tittar på det i en webbläsare 
 </html>
 ```
 
-Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även börja php-kod med endast **&lt;?**, det är en smaksak vilket man väljer. "**echo**" i koden betyder att vi ska skriva ut någonting på skärmen. Sedan använder vi "**date**" för att få dagens datum. **Y** talar om att vi vill ha årtalet \(**Year**\), **m** betyder **månad** och **d** dag imånaden. **H** står för **hour** vilket ger oss timslaget och i ger oss minuterna. Ett litet enklare exempel kan se ut så här:
+Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även börja php-kod med endast **&lt;?**, det är en smaksak vilket man väljer. "**echo**" i koden betyder att vi ska skriva ut någonting på skärmen. Sedan använder vi "**date\(\)**" för att få dagens datum. **Y** talar om att vi vill ha årtalet \(**Year**\), **m** betyder **månad** och **d** dag i månaden. **H** står för **hour** vilket ger oss timslaget och i ger oss minuterna. Ett litet enklare exempel kan se ut så här:
 
 ```php
 <!DOCTYPE html>
@@ -66,7 +66,7 @@ echo "<h1>Hej världen</h1>";
 ?>
 ```
 
-Nu kommer texten som skrivs ut på skärmen att vara en rubrik. Vi skulle kunna skriva in **h1**-taggen som gör texten till fetstil i själva html-koden i stället.
+Nu kommer texten som skrivs ut på skärmen att vara en rubrik. Vi skulle kunna skriva in **h1**-taggen som gör texten till fetstil i själva HTML-koden i stället.
 
 ```php
 <!DOCTYPE html>
@@ -92,7 +92,7 @@ Vilket ger samma resultat.
 
 ![Variabler &#xE4;r som kartonger!](.gitbook/assets/image%20%283%29.png)
 
-En variabel är en behållare för ett värde. Tänk dig den som en kökslåda som innehåller någonting. Vi har ett namn på kökslådan dvs. själva variabeln och sedan har variabeln ett innehåll. Det finns två huvudtyper av variabler: strängar och tal. Strängar innehåller text medan tal innehåller siffror. Innan man använder en variabel behöver den tilldelas ett värde. Ett ex: \(jag har här uteslutit html-koden runt skriptet för att vi ska koncentrera oss på det viktiga\).
+En variabel är en behållare för ett värde. Tänk dig den som en kökslåda som innehåller någonting. Vi har ett namn på kökslådan dvs. själva variabeln och sedan har variabeln ett innehåll. Det finns två huvudtyper av variabler: strängar och tal. Strängar innehåller text medan tal innehåller siffror. Innan man använder en variabel behöver den tilldelas ett värde. Ett ex: \(jag har här uteslutit HTML-koden runt skriptet för att vi ska koncentrera oss på det viktiga\).
 
 ```php
 <?php
@@ -206,7 +206,7 @@ Detta kan bland annat vara användbart för att säkerställa att formulärdata 
 
 #### **Kontrollera variabeltyp**
 
-Genom funktionen gettype kan man kontrollera vilken variabeltyp en viss variabel har.
+Genom funktionen **gettype\(\)** kan man kontrollera vilken variabeltyp en viss variabel har.
 
 ```php
 <?php
@@ -232,7 +232,7 @@ if ( is_string($variabel) ) {
 
 PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsområdet för dessa är för att se vilken information som skickats från ett formulär. När ett formulär skickats iväg till ett PHP-skript så lagras automatiskt formulärelementens innehåll i arrayen **$\_REQUEST\[\], $\_POST\[\]** eller **$\_GET\[\]**. Mer information om matriser kommer senare i kursen.
 
-Har vi t.ex. skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast echo enligt följande modell:
+Har vi t.ex. skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast **echo** enligt följande modell:
 
 ```php
 echo $_REQUEST['telefon'];
@@ -242,7 +242,7 @@ Vilket kommer att resultera i att 012-345678 skrivs ut på skärmen förutsatt a
 
 I det fall en inställning ändrats i PHP-systemkonfigurationen så kommer även fristående variabler skapas. I exemplen ovan skulle i så fall variablerna **$adress** och **$telefon** skapas. Denna inställning är avstängd från början, eftersom det kan medföra säkerhetsrisker om den används på ett slarvigt sätt.
 
-**$\_SERVER\['HTTP\_REFERER'\]** innehåller den sida som besökaren kom ifrån till skriptet. \(Notera att refererer skrivs med ett r, vilket beror på en pinsam felstavning i http-protokollet.\) **$\_SERVER\['REMOTE\_ADDR'\]** innehåller IP-adressen som besökaren har. **$\_SERVER\['PHP\_SELF'\]** innehåller den kompletta adressen till skriptet som körs. För mer information om alla fördefinierade variabler, se PHP-manualen på adressen [http://www.php.net/manual](http://www.php.net/manual) .
+**$\_SERVER\['HTTP\_REFERER'\]** innehåller den sida som besökaren kom ifrån till skriptet. \(Notera att refererer skrivs med ett r, vilket beror på en pinsam felstavning i http-protokollet.\) **$\_SERVER\['REMOTE\_ADDR'\]** innehåller IP-adressen som besökaren har. **$\_SERVER\['PHP\_SELF'\]** innehåller den kompletta adressen till skriptet som körs. För mer information om alla fördefinierade variabler, se [PHP-manualen](http://www.php.net/manual).
 
 ## **Kommentarer**
 

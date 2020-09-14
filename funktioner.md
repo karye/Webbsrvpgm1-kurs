@@ -19,24 +19,24 @@ echo "</body></html>";
 ?>
 ```
 
-Det första vi gör är att deklarera funktionen. Detta gör vi med hjälp av **function** följt av namnet på funktionen och sedan två paranteser. Längre ned i koden anropar vi funktionen. Detta gör vi genom att skriva funktionsnamnet följt av två paranteser.
+Det första vi gör är att deklarera funktionen. Detta gör vi med hjälp av [function\(\)](https://devdocs.io/php/functions.user-defined) följt av namnet på funktionen och sedan två paranteser. Längre ned i koden anropar vi funktionen. Detta gör vi genom att skriva funktionsnamnet följt av två paranteser.
 
 **Skicka med argument**
 
 Vi kan modifiera funktionen så att den tar emot argument. Argument skickas till funktionen och används sedan på något sätt inuti funktionen.
 
-```text
+```php
 <?php
 function starthtml($title) {
     echo "<!DOCTYPE html><html><head><title>$title</title></head><body>";
-}
+}p
 starthtml("Test");
 echo "testdokument";
 echo "</body></html>";
 ?>
 ```
 
-Nu har vi alltså gjort funktionen en aning mer flexibel, genom att vi kan ändra titeln på sidan. Vi skickar med strängen med innehållet "Test", denna läggs sedan i variabeln **$title** efter funktionsanropet. Sedan kan funktionen använda denna variabel, i det här fallet för utskrift.
+Nu har vi alltså gjort funktionen en aning mer flexibel, genom att vi kan ändra titeln på sidan. Vi skickar med strängen med innehållet **Test**, denna läggs sedan i variabeln **$title** efter funktionsanropet. Sedan kan funktionen använda denna variabel, i det här fallet för utskrift.
 
 **Utgå från ett standardvärde**
 
@@ -100,7 +100,7 @@ $resultat = dubbla($a);
 print $c;
 ```
 
-I detta nya exempel kommer däremot 10 att skrivas ut. Detta eftersom vi talat om för php att **$c** ska vara en global variabel, som även existerar utanför funktionen den skapats i.
+I detta nya exempel kommer däremot 10 att skrivas ut. Detta eftersom vi talat om för PHP att **$c** ska vara en global variabel, som även existerar utanför funktionen den skapats i.
 
 **Inbyggda funktioner**
 
@@ -124,11 +124,11 @@ Skriv en funktion som automatiskt returnerar argumentet med HTML-koder för fets
 
 ### **Uppgift 4.3**
 
-Skapa en funktion som tar två argument och skriver ut deras sammanlagda antal tecken på skärmen. Längden på en sträng fås genom den inbyggda funktionen **strlen\(\)**.
+Skapa en funktion som tar två argument och skriver ut deras sammanlagda antal tecken på skärmen. Längden på en sträng fås genom den inbyggda funktionen [strlen\(\)](https://devdocs.io/php/function.strlen).
 
 ### **Uppgift 4.4**
 
-Skapa en funktion som räknar ut omkretsen på en cirkel. Funktionen ska ta radien som ett argument. Definiera pi som en konstant i början av programmet, och använd 3,14 som ungefärligt mått på pi. Som en extrauppgift så avrunda värdet till närmaste heltal. Detta görs med den inbyggda funktionen **round\(\)**.
+Skapa en funktion som räknar ut omkretsen på en cirkel. Funktionen ska ta radien som ett argument. Definiera pi som en konstant i början av programmet, och använd 3,14 som ungefärligt mått på pi. Som en extrauppgift så avrunda värdet till närmaste heltal. Detta görs med den inbyggda funktionen [round\(\)](https://devdocs.io/php/function.round).
 
 ### **Uppgift 4.5**
 

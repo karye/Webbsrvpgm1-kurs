@@ -8,17 +8,17 @@ description: Att bearbeta strängar är mycket användbart
 
 Stränghantering används ofta i samband med inmatning för användare. Ibland för att kontrollera så att en epost-adress är korrekt utformad, och ofta dessutom av säkerhetsskäl.
 
-### **Ta bort mellanrum i början och slutet - trim\(\)**
+### **trim\(\): ta bort mellanrum i början och slutet**
 
-Ibland kan användare av misstag råkat skriva extra mellanrum efter inmatningar av tex. adress eller telefonnummer. När man sedan sparar data i tex. en databas, vill man inte ha med mellanrummen. Därför använder man funktionen trim för att ta bort dem. Observera att detta enbart gäller mellanrum precis i början eller slutet av en sträng; aldrig mitt i. Funktionen tar förutom mellanslag även bort nyradtecken och tabtecken. Se [trim](http://php.net/manual/en/function.trim.php) på php.net. Om vi tex. har en variabel med namnet **$adress** kan vi göra så här:
+Ibland kan användare av misstag råkat skriva extra mellanrum efter inmatningar av tex. adress eller telefonnummer. När man sedan sparar data i tex. en databas, vill man inte ha med mellanrummen. Därför använder man funktionen [trim\(\)](https://devdocs.io/php/function.trim) för att ta bort dem. Observera att detta enbart gäller mellanrum precis i början eller slutet av en sträng; aldrig mitt i. Funktionen tar förutom mellanslag även bort nyradtecken och tabtecken. Om vi tex. har en variabel med namnet **$adress** kan vi göra så här:
 
 ```php
 $adress = trim($adress);
 ```
 
-### **Omvandla till små eller stora bokstäver - strtolower\(\) respektive strtoupper\(\)**
+### **strtolower\(\)/strtoupper\(\): omvandla till små eller stora bokstäver**
 
-När man ska jämföra strängar tar php som standard hänsyn till små och stora bokstäver. Om $inmatat har värdet "Test" och **$kontroll** värdet "test" så kommer en jämförelse mellan dem med hjälp av == ej vara sann. Men om man då inte vill ta hänsyn till små och stora bokstäver? Då kan man använda **strtolower\(\)** eller **strtoupper\(\)**. Se [strtolower](http://php.net/manual/en/function.strtolower.php) på php.net. Om vi tar exemplet med jämförelsen av **$a** och **$b**:
+När man ska jämföra strängar tar PHP som standard hänsyn till små och stora bokstäver. Om $inmatat har värdet "Test" och **$kontroll** värdet "test" så kommer en jämförelse mellan dem med hjälp av == ej vara sann. Men om man då inte vill ta hänsyn till små och stora bokstäver? Då kan man använda [strtolower\(\)](https://devdocs.io/php/function.strtolower) eller [strtoupper\(\)](https://devdocs.io/php/function.strtoupper). Om vi tar exemplet med jämförelsen av **$a** och **$b**:
 
 ```php
 $kontroll = "test";
@@ -35,18 +35,18 @@ Observera att **$inmatat** fortfarande har värdet "Test". Vill vi förändra de
 $inmatat = strtolower($inmatat);
 ```
 
-Funktionen **strtoupper\(\)** fungerar på samma sätt, med skillnaden att alla bokstäver blir versaler.
+Funktionen [strtoupper\(\)](https://devdocs.io/php/function.strtoupper) fungerar på samma sätt, med skillnaden att alla bokstäver blir versaler.
 
-### **Längden på en sträng - strlen\(\)**
+### **strlen\(\): längden på en sträng**
 
-Med **strlen\(\)** \(står för string length\) får vi reda på antalet tecken i en sträng. Se [strlen](http://php.net/manual/en/function.strlen.php) på php.net.
+Med [strlen\(\)](https://devdocs.io/php/function.strlen) \(står för string length\) får vi reda på antalet tecken i en sträng.
 
 ```php
 $text = "Hej och hopp";
 echo strlen($text); // Skriver ut 12
 ```
 
-### **Plocka ut delar av en sträng - substr\(\)**
+### **substr\(\): plocka ut delar av en sträng**
 
 Följande exempel tar ut de tre första tecknen ur strängen **$text**:
 
@@ -62,20 +62,20 @@ $text = "Hej och hopp";
 $slut = substr($text, -4);// Plockar ut "hopp";
 ```
 
-Här får vi alltså ut de sista fyra tecknen i strängen. Se [substr](http://php.net/manual/en/function.substr.php) på php.net.
+Här får vi alltså ut de sista fyra tecknen i strängen. Se [substr\(\)](https://devdocs.io/php/function.substr).
 
-### **Söka igenom en sträng - strstr\(\)**
+### **strstr\(\): söka igenom en sträng**
 
-Ibland vill man ta reda på om en viss text finns inuti en sträng. Detta gör man med **strstr\(\)**:
+Ibland vill man ta reda på om en viss text finns inuti en sträng. Detta gör man med [strstr\(\)](https://devdocs.io/php/function.strstr):
 
 ```php
 $namn = "Ulrika Eriksson";
 $efternamn = strstr($namn, " ");
 ```
 
-Här söker vi efter strängen **" "** det vill säga ett mellanslag. Eftersom vi hittar ett mellanslag i strängen **$namn**, kommer nu resten av strängen efter mellanslaget returneras. Se [strstr](http://php.net/manual/en/function.strstr.php) på php.net.
+Här söker vi efter strängen **" "** det vill säga ett mellanslag. Eftersom vi hittar ett mellanslag i strängen **$namn**, kommer nu resten av strängen efter mellanslaget returneras.
 
-Det går även att använda **strstr\(\)** i en **if**-sats för att köra olika kod beroende på om strängen hittades eller inte:
+Det går även att använda [strstr\(\)](https://devdocs.io/php/function.strstr) i en **if**-sats för att köra olika kod beroende på om strängen hittades eller inte:
 
 ```php
 $namn = "Ulrika Eriksson";
@@ -91,9 +91,9 @@ Note:
 If you only want to determine if a particular needle occurs within haystack, use the faster and less memory intensive function strpos() instead.
 ```
 
-### **Söka och ersätta - str\_replace\(\)**
+### **str\_replace\(\): söka och ersätta**
 
-Funktionen **str\_replace\(\)** används för att söka efter en delsträng och ersätta den med något annat. Se [str-replace](http://php.net/manual/en/function.str-replace.php) på php.net:
+Funktionen [str\_replace\(\)](https://devdocs.io/php/function.str-replace) används för att söka efter en delsträng och ersätta den med något annat.
 
 ```php
 $ny_variabel = str_replace("vit", "svart", "vit katt på taket");
@@ -113,10 +113,10 @@ Gör ett **formulär** där användaren ska fylla i **namn, adress, postnr och p
 
 ### **Uppgift 6.2**
 
-Bygg på formuläret så att användaren också ska fylla i en **e-postadress**.
+Bygg på formuläret så att användaren också ska fylla i en **epostadress**.
 
-* Kontrollera sedan att e-postadressen innehåller ett @, och minst en punkt.
-* Kontrollera också att e-postadressen är minst sex tecken lång.
+* Kontrollera sedan att epostadressen innehåller ett @, och minst en punkt.
+* Kontrollera också att epostadressen är minst sex tecken lång.
 
 ### **Uppgift 6.3**
 

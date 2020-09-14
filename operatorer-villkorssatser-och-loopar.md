@@ -6,7 +6,7 @@ description: 'Operatorer, villkorssatser och loopar'
 
 ## **Operatorer**
 
-Det finns ett antal olika operatortyper i PHP. Från matematiken känner vi igen de aritmetiska operatorerna, t.ex. **+,-,\*** och **/**. Dessa har vi tittat på tidigare. Tilldelningsoperatorn kallas likamed-tecknet. Den har vi också använt oss av för att ge en variabel ett värde. Några exempel:
+Det finns ett antal olika operatortyper i PHP. Från matematiken känner vi igen de [aritmetiska operatorerna](https://devdocs.io/php/language.operators.arithmetic), t.ex. **+,-,\*** och **/**. Dessa har vi tittat på tidigare. Tilldelningsoperatorn kallas likamed-tecknet. Den har vi också använt oss av för att ge en variabel ett värde. Några exempel:
 
 ```php
 <?php
@@ -27,9 +27,11 @@ $a = "Hej " . $namn;
 
 Två andra vanliga operatorer är villkorsoperatorer och logiska operatorer. De används ofta tillsammans, vilket vi kommer att se nu.
 
-### **Villkorssatser**
+## **Villkorssatser**
 
 Hittills har alla program vi skrivit körts igenom rad för rad, utan att vi kunnat styra in programmet på olika vägar beroende på vad användaren har matat in. Det är detta vi har styrstrukturer till. Styrstrukturer har det gemensamt att de kontrollerar om ett uttryck stämmer med ett annat och sedan beroende på resultatet gör ett val. På detta sätt kan man skriva mycket mer flexibla program. Det finns två huvudtyper av styrstrukturer: villkorssatser och loopar. Vi börjar med villkorssatser.
+
+### if-satsen
 
 ```php
 <?php
@@ -71,9 +73,11 @@ if ($veckodag == "lördag") {
 
 Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [language.operators.logical](http://php.net/manual/en/language.operators.logical.php) på php.net.
 
-### **Loopar**
+## **Loopar**
 
-Nu vidare till nästa variant på styrstrukturer, nämligen loopar. Den första varianten vi ska titta på är en **for**-loop:
+### **for-loopen**
+
+Nu vidare till nästa variant på styrstrukturer, nämligen loopar. Den första varianten vi ska titta på är en [for-loop](https://devdocs.io/php/control-structures.for):
 
 ```php
 <?php
@@ -83,9 +87,11 @@ for ($i = 1;$i < 20;$i = $i + 1) {
 ?>
 ```
 
-I detta exempel kommer vi att få 19 rader utskrivna. **for**-loopen har tre delar, det första kallas initiering, där vi sätter loop-variabeln till ett visst värde. I vårt fall har vi valt att ha **$i** som loop-variabel. Den andra delen kallas villkorssats, och den testas varje gång loopen körts. Den tredje satsen kallas uppräkningssats, och innebär att loop-variabeln räknas upp med 1 efter varje varv.
+I detta exempel kommer vi att få 19 rader utskrivna. [for-loopen](https://devdocs.io/php/control-structures.for) har tre delar, det första kallas initiering, där vi sätter loop-variabeln till ett visst värde. I vårt fall har vi valt att ha **$i** som loop-variabel. Den andra delen kallas villkorssats, och den testas varje gång loopen körts. Den tredje satsen kallas uppräkningssats, och innebär att loop-variabeln räknas upp med 1 efter varje varv.
 
-**while**-loopen är en mer generell variant av **for**-loopen. Den används för att upprepa något så länge ett visst villkor är uppfyllt. Motsvarande kod skulle alltså se ut så här:
+### while-loopen
+
+[while-loopen](https://devdocs.io/php/control-structures.while) är en mer generell variant av [for-loopen](https://devdocs.io/php/control-structures.for). Den används för att upprepa något så länge ett visst villkor är uppfyllt. Motsvarande kod skulle alltså se ut så här:
 
 ```php
 <?php
@@ -97,7 +103,7 @@ while ($i < 20) {
 ?>
 ```
 
-Inuti for och **while** loopar kan man använda break för att omedelbart avbryta körningen av loopen och fortsätta direkt med koden som kommer efter loopens slut. Med **continue** kan man fortsätta direkt till nästa varv av loopen.
+Inuti [for-](https://devdocs.io/php/control-structures.for) och [while](https://devdocs.io/php/control-structures.while)-loopar kan man använda break för att omedelbart avbryta körningen av loopen och fortsätta direkt med koden som kommer efter loopens slut. Med [continue](https://devdocs.io/php/control-structures.continue) kan man fortsätta direkt till nästa varv av loopen.
 
 ## Uppgifter - operatorer, villkorssatser och loopar
 

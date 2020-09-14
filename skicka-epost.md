@@ -31,7 +31,7 @@ Förutom dessa rubriker finns ett antal andra meddelanderubriker som brukar för
 
 ### **Funktionen mail**
 
-PHP har en enkel funktion för att skicka epost, som fyndigt nog heter **mail\(\)**. se [http://php.net/manual/en/function.mail.php](http://php.net/manual/en/function.mail.php) . Den används på detta sätt:
+PHP har en enkel funktion för att skicka epost, som fyndigt nog heter [mail\(\)](https://devdocs.io/php/function.mail). Den används på detta sätt:
 
 ```php
 $amne = "Viktigt meddelande";
@@ -51,18 +51,18 @@ require 'libphp-phpmailer/class.phpmailer.php';
 
 $mail = new PHPMailer;
 
-$mail->SMTPDebug = 3;                               // Enable verbose debug output
+$mail->SMTPDebug = 3;                                 // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '...';                     // SMTP username
+$mail->Username = '...';                              // SMTP username
 $mail->Password = '...';                              // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 
-$mail->setFrom('twiggy@cybergymnasiet.se', 'Mailer');
-$mail->addAddress('anders.andersson@cybergymnasiet.se', 'Anders Andersson');     // Add a recipient
+$mail->setFrom('twiggy@gymnasiet.se', 'Mailer');
+$mail->addAddress('anders.andersson@gymnasiet.se', 'Anders Andersson');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -93,7 +93,7 @@ Gör ett formulär med fält för avsändaradress, adressen e-posten ska skickas
 
 ### **Uppgift 8.2**
 
-Utveckla programmet i övning 1 så att man kan skriva in flera adresser separerade med kommatecken. Programmet ska sedan skicka epost-meddelandet till alla adresserna. Tips: använd funktionen **split\(\)**.
+Utveckla programmet i övning 1 så att man kan skriva in flera adresser separerade med kommatecken. Programmet ska sedan skicka epost-meddelandet till alla adresserna. Tips: använd funktionen [str\_plit\(\)](https://devdocs.io/php/function.str-split).
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

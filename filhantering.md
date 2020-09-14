@@ -8,13 +8,13 @@ description: Hur man läser textfiler och skriva i textfiler
 
 Innan vi går in på databashantering, så är det bra att känna till att det finns en enklare metod att spara data; att helt enkelt skriva dem till en fil på servern. Denna metod lämpar sig bäst när behöver en lagra mindre mängd data och inte har något behov av att sortera eller välja ut en delmängd av det sparade.
 
-För att öppna en fil i PHP används **fopen**. Observera att vi måste ha rättighet att öppna filen. På **UNIX** och **Linux**-system finns ett rättighetssystem där man med hjälp av kommandot **chmod** ställer in vilka som har rättigheter att läsa och skriva filer. Just nu räcker det att känna till att ni behöver skriva:
+För att öppna en fil i PHP används [fopen\(](https://devdocs.io/php/function.fopen)\). Observera att vi måste ha rättighet att öppna filen. På **UNIX** och **Linux**-system finns ett rättighetssystem där man med hjälp av kommandot **chmod** ställer in vilka som har rättigheter att läsa och skriva filer. Just nu räcker det att känna till att ni behöver skriva:
 
 ```bash
 chmod ugo+r filnamn
 ```
 
-För att php ska kunna läsa filen. Det finns olika sätt att öppna en fil, vi kommer först att titta på möjligheten att öppna en fil för läsning. En komplett beskrivning av alla valmöjligheter finns i boken i avsnittet om filhantering. Vi ska titta på ett första exempel där vi läser hela filinnehållet i en fil och skriver ut det på skärmen.
+För att PHP ska kunna läsa filen. Det finns olika sätt att öppna en fil, vi kommer först att titta på möjligheten att öppna en fil för läsning. En komplett beskrivning av alla valmöjligheter finns i boken i avsnittet om filhantering. Vi ska titta på ett första exempel där vi läser hela filinnehållet i en fil och skriver ut det på skärmen.
 
 ### **Öppna fil för läsning**
 
@@ -27,9 +27,9 @@ fclose($fil);
 ?>
 ```
 
-Den första raden öppnar filen. Den börjar med att beskriva vilken variabel som ska agera som filhandtaget. Filhandtaget använder vi för att komma åt filen. Det första argumentet till **fopen\(\)** innehåller filnamnet. Eftersom vi inte skrivit in någon sökväg, antar PHP att vi menar en fil i samma katalog som skriptet ligger. Det andra argumentet "**r**" talar om att vi vill öppna filen för läsning \(**read**\). Till sist har vi hängt på en konstruktion som ser lite konstig ut, men vad den gör är att helt enkelt skriva ut raden "Kunde inte öppna fil" om inte filen fanns där vi trodde att den skulle finnas.
+Den första raden öppnar filen. Den börjar med att beskriva vilken variabel som ska agera som filhandtaget. Filhandtaget använder vi för att komma åt filen. Det första argumentet till [fopen\(\)](https://devdocs.io/php/function.fopen) ****innehåller filnamnet. Eftersom vi inte skrivit in någon sökväg, antar PHP att vi menar en fil i samma katalog som skriptet ligger. Det andra argumentet "**r**" talar om att vi vill öppna filen för läsning \(**read**\). Till sist har vi hängt på en konstruktion som ser lite konstig ut, men vad den gör är att helt enkelt skriva ut raden "Kunde inte öppna fil" om inte filen fanns där vi trodde att den skulle finnas.
 
-På rad 2 i skriptet läser vi in allt innehåll från filen i variabeln **$text**. Detta görs med **fread\(\)**, som tar filhandtaget som första argument, och antalet tecken vi vill läsa in som andra argument. I detta fall vill vi läsa in hela filen, och då måste vi veta filstorleken, vilken vi får fram med funktionen **filsize\(\)**. På nästa rad skriver vi ut hela filen på skärmen. Vi använder html-taggen **&lt;pre&gt;** för att radbrytningar i filen också ska synas på webbsidan. Till sist stänger vi filen med hjälp av **fclose\(\)**.
+På rad 2 i skriptet läser vi in allt innehåll från filen i variabeln **$text**. Detta görs med [fread\(\)](https://devdocs.io/php/function.fread), som tar filhandtaget som första argument, och antalet tecken vi vill läsa in som andra argument. I detta fall vill vi läsa in hela filen, och då måste vi veta filstorleken, vilken vi får fram med funktionen [filesize\(\)](https://devdocs.io/php/function.filesize). På nästa rad skriver vi ut hela filen på skärmen. Vi använder HTML-taggen **&lt;pre&gt;** för att radbrytningar i filen också ska synas på webbsidan. Till sist stänger vi filen med hjälp av [fclose\(\)](https://devdocs.io/php/function.fclose).
 
 ### **Öppna fil för skrivning**
 
@@ -49,7 +49,7 @@ echo "Texten $text har skrivits till fil.";
 
 En specialfiness med **fopen\(\)** är att man lika gärna kan använda den för att öppna en webbsida på en annan server:
 
-```text
+```php
 <?php
 $fil = fopen("http://www.dn.se/", "r") or die("Gick ej");
 $text = fread($fil, filesize("filnamn.txt"));
@@ -58,6 +58,29 @@ fclose($fil);
 ```
 
 Sedan kan man söka efter speciell information inuti texten, t.ex. för att ta ut viss information som man har användning för.
+
+## Läsa in hela filen på en gång
+
+### file\(\): läsa i en array
+
+Med [file\(\)](https://devdocs.io/php/function.file) läses hela filen in i en array.
+
+```php
+<?php
+$lines = file('http://www.example.com/');
+?>
+```
+
+### file\_get\_contents: läsa i en sträng
+
+Med [file\_get\_contents\(\)](https://devdocs.io/php/function.file-get-contents) läses hela filen i en sträng.
+
+```php
+<?php
+$homepage = file_get_contents('http://www.example.com/');
+echo $homepage;
+?>
+```
 
 ## Uppgifter filhantering
 

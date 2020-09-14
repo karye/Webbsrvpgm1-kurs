@@ -40,7 +40,7 @@ Detta är ett helt vanligt HTML-dokument. Om vi tittar på det i en webbläsare 
 </html>
 ```
 
-Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även börja php-kod med endast **&lt;?**, det är en smaksak vilket man väljer. "**echo**" i koden betyder att vi ska skriva ut någonting på skärmen. Sedan använder vi "**date\(\)**" för att få dagens datum. **Y** talar om att vi vill ha årtalet \(**Year**\), **m** betyder **månad** och **d** dag i månaden. **H** står för **hour** vilket ger oss timslaget och i ger oss minuterna. Ett litet enklare exempel kan se ut så här:
+Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även börja PHP-kod med endast **&lt;?**, det är en smaksak vilket man väljer. [echo](https://devdocs.io/php/function.echo) i koden betyder att vi ska skriva ut någonting på skärmen. Sedan använder vi [date\(\)](https://devdocs.io/php/function.date) för att få dagens datum. **Y** talar om att vi vill ha årtalet \(**Year**\), **m** betyder **månad** och **d** dag i månaden. **H** står för **hour** vilket ger oss timslaget och i ger oss minuterna. Ett litet enklare exempel kan se ut så här:
 
 ```php
 <!DOCTYPE html>
@@ -58,7 +58,7 @@ Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även b
 </html>
 ```
 
-Detta skriver ut raden "Hej världen!" på skärmen. Så fort man ska skriva ut någonting så måste det inneslutas i citationstecken, också kallade dubbelfnuttar. Observera också att varje rad avslutas med ett semikolon. Man kan välja att skriva ut html-kod inuti **echo**-satsen också:
+Detta skriver ut raden "Hej världen!" på skärmen. Så fort man ska skriva ut någonting så måste det inneslutas i citationstecken, också kallade dubbelfnuttar. Observera också att varje rad avslutas med ett semikolon. Man kan välja att skriva ut HTML-kod inuti [echo](https://devdocs.io/php/function.echo)-satsen också:
 
 ```php
 <?php
@@ -92,7 +92,7 @@ Vilket ger samma resultat.
 
 ![Variabler &#xE4;r som kartonger!](.gitbook/assets/image%20%283%29.png)
 
-En variabel är en behållare för ett värde. Tänk dig den som en kökslåda som innehåller någonting. Vi har ett namn på kökslådan dvs. själva variabeln och sedan har variabeln ett innehåll. Det finns två huvudtyper av variabler: strängar och tal. Strängar innehåller text medan tal innehåller siffror. Innan man använder en variabel behöver den tilldelas ett värde. Ett ex: \(jag har här uteslutit HTML-koden runt skriptet för att vi ska koncentrera oss på det viktiga\).
+En variabel är en behållare för ett värde. Tänk dig den som en kökslåda som innehåller någonting. Vi har ett namn på kökslådan dvs. själva variabeln och sedan har variabeln ett innehåll. Det finns två huvudtyper av variabler: strängar och tal. Strängar innehåller text medan tal innehåller siffror. Innan man använder en variabel behöver den tilldelas ett värde. \(jag har här uteslutit HTML-koden runt skriptet för att vi ska koncentrera oss på det viktiga\).
 
 ```php
 <?php
@@ -108,7 +108,7 @@ $namn = Thomas Höjemo;
 ?>
 ```
 
-**Parse error** betyder att php helt enkelt inte förstod vad vi menade. Man brukar använda variabelnamn som har små bokstäver. Det är också viktigt att använda variabelnamn som gör det enkelt att förstå vad variabeln ska användas till, så det är bättre att kalla en variabel för t.ex. **$efternamn** än **$var45**. Variabelnamnet får innehålla bokstäver, siffror samt understreck \(\_\) men kan ej börja med en siffra. Så hur använder man då variabler? Ofta vill man skriva ut variabelinnehållet på skärmen mixat med färdig text runt, och då gör man på följande sätt:
+**Parse error** betyder att PHP helt enkelt inte förstod vad vi menade. Man brukar använda variabelnamn som har små bokstäver. Det är också viktigt att använda variabelnamn som gör det enkelt att förstå vad variabeln ska användas till, så det är bättre att kalla en variabel för t.ex. **$efternamn** än **$var45**. Variabelnamnet får innehålla bokstäver, siffror samt understreck \(\_\) men kan ej börja med en siffra. Så hur använder man då variabler? Ofta vill man skriva ut variabelinnehållet på skärmen mixat med färdig text runt, och då gör man på följande sätt:
 
 ```php
 <?php
@@ -167,7 +167,7 @@ Det finns åtta olika typer av datatyper:
 
 | Datatyp | Beskrivning | Förklaring |
 | :--- | :--- | :--- |
-| Boolesk | 1 eller o | sant eller falskt |
+| Boolean | 1 eller o | sant eller falskt |
 | Integer | heltal | positiva eller negativa heltal |
 | Float | decimaltal | positiva eller negativa decimaltal |
 | String | sträng | kan innehålla både bokstäver och siffror |
@@ -206,7 +206,7 @@ Detta kan bland annat vara användbart för att säkerställa att formulärdata 
 
 #### **Kontrollera variabeltyp**
 
-Genom funktionen **gettype\(\)** kan man kontrollera vilken variabeltyp en viss variabel har.
+Genom funktionen [gettype**\(\)**](https://devdocs.io/php/function.gettype) kan man kontrollera vilken variabeltyp en viss variabel har.
 
 ```php
 <?php
@@ -215,7 +215,7 @@ echo gettype($variabel); // Ger resultatet string
 ?>
 ```
 
-För att undersöka om en variabel är av en viss typ används serien funktioner som börjar på **is\_**. T.ex. **is\_int\(\)**, **is\_string\(\)**, **is\_double\(\)**.
+För att undersöka om en variabel är av en viss typ används serien funktioner som börjar på is\_. T.ex. [is\_int\(\)](https://devdocs.io/php/function.is-int), [is\_string\(\)](https://devdocs.io/php/function.is-string), [is\_double\(\)](https://devdocs.io/php/function.is-double).
 
 ```php
 <?php
@@ -230,9 +230,9 @@ if ( is_string($variabel) ) {
 
 ### **Fördefinierade variabler**
 
-PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsområdet för dessa är för att se vilken information som skickats från ett formulär. När ett formulär skickats iväg till ett PHP-skript så lagras automatiskt formulärelementens innehåll i arrayen **$\_REQUEST\[\], $\_POST\[\]** eller **$\_GET\[\]**. Mer information om matriser kommer senare i kursen.
+PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsområdet för dessa är för att se vilken information som skickats från ett formulär. När ett formulär skickats iväg till ett PHP-skript så lagras automatiskt formulärelementens innehåll i arrayen [$\_REQUEST](https://devdocs.io/php/reserved.variables.request), [$\_POST](https://devdocs.io/php/reserved.variables.post) eller [$\_GET](https://devdocs.io/php/reserved.variables.get). Mer information om matriser kommer senare i kursen.
 
-Har vi t.ex. skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast **echo** enligt följande modell:
+Har vi t.ex. skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast [echo](https://devdocs.io/php/function.echo) enligt följande modell:
 
 ```php
 echo $_REQUEST['telefon'];
@@ -330,7 +330,7 @@ Utöka föregående formulär så att man kan också välja "**Omvandla C° till
 
 ### **Uppgift 2.7**
 
-Skapa ett formulär som tar emot en text och där man kan välja mellan att konvertera till **versaler** \(stora bokstäver\) eller till **gemener** \(små bokstäver\). Läs om funktioner på [strtoupper](http://php.net/manual/en/function.strtoupper.php) och [strtolower](http://php.net/manual/en/function.strtolower.php).
+Skapa ett formulär som tar emot en text och där man kan välja mellan att konvertera till **versaler** \(stora bokstäver\) eller till **gemener** \(små bokstäver\). Läs om funktioner på [strtoupper\(\)](http://php.net/manual/en/function.strtoupper.php) och [strtolower\(\)](http://php.net/manual/en/function.strtolower.php).
 
 ### **Uppgift 2.8**
 

@@ -4,7 +4,7 @@ description: Söka i text med regex
 
 # Regex - reguljära uttryck
 
-## Reguljära uttryck
+## preg\_match\(\): söka med reguljära uttryck
 
 Med reguljära uttryck kan man göra en sk. mönstermatchning av ett uttryck. Reguljära uttryck tillhör de svåraste områdena av PHP. I kapitlet om strängar i boken finns en utförligare beskrivning av reguljära uttryck. De används ofta för att göra en kontroll av inkommande formulärdata för att säkerställa att dessa håller sig inom vissa givna ramar och därigenom säkra programmet från angrepp och fel.
 
@@ -19,7 +19,7 @@ if (preg_match("/123/",$text)) {
 }
 ```
 
-Funktionen [**preg\_match\(\)**](http://php.net/manual/en/function.preg-match.php) används för mönstermatchning. Sökbegreppet står alltid mellan snedstreck. I exemplet söker vi efter teckenföljden 123 i strängen **$text**.
+Funktionen [preg\_match\(\)](http://php.net/manual/en/function.preg-match.php) används för mönstermatchning. Sökbegreppet står alltid mellan snedstreck. I exemplet söker vi efter teckenföljden 123 i strängen **$text**.
 
 ### **Matcha vissa tecken**
 
@@ -123,9 +123,9 @@ if (preg_match("/använd(armanual|ningsområde|)/", $text)) {
 
 Mönstret matchar använd, eftersom det är tomt till höger om den sista **\|**.
 
-### **Byta ut text mot en annan text**
+## **preg\_replace\(\): byta ut text mot en annan text**
 
-Funktionen [**preg\_replace\(\)**](http://php.net/manual/en/function.preg-replace.php) byter ut en viss text mot en annan.
+Funktionen [preg\_replace\(\)](http://php.net/manual/en/function.preg-replace.php) byter ut en viss text mot en annan.
 
 ```php
 $text = 'Min e-post-adress är thohoj02@student.chalmers.se';
@@ -137,7 +137,7 @@ echo $nytext;
 
 Det första argumentet är mönstret som ska sökas efter, den andra strängen som det ska ersättas med och det tredje variabeln som ska sökas igenom. Som returnerat värde från kommer variabeln med innehållet ersatt enligt önskemålet.
 
-### **Lathund för reguljära uttryck**
+## **Lathund för reguljära uttryck**
 
 ```text
 \ generellt escape-tecken
@@ -163,7 +163,7 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 ## **Testa reguljära uttryck**
 
-* Du kan enkelt testa dina regex på [regexr.com](http://regexr.com/).
+* Du kan enkelt testa dina regex på [phpliveregex](https://www.phpliveregex.com/).
 
 ## Uppgifter - reguljära uttryck
 

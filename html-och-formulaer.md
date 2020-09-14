@@ -17,7 +17,7 @@ Processen går alltså till på detta sätt:
 
 ### **Form-taggen omsluter formuläret**
 
- Först ska vi titta på hur man utformar själva formuläret i html. Detta kan göras dels genom att koda för hand i ett redigeringsprogram som [VS Code](https://code.visualstudio.com/). Vi kommer att skriva koden för hand. Det första man behöver i ett formulär är två stycken **form**-taggar som omsluter själva formuläret:
+ Först ska vi titta på hur man utformar själva formuläret i html. Detta kan göras dels genom att koda för hand i ett redigeringsprogram som [VS Code](https://code.visualstudio.com/). Vi kommer att skriva koden för hand. Det första man behöver i ett formulär är två stycken [form](https://devdocs.io/html/element/form)-taggar som omsluter själva formuläret:
 
 ```markup
 <form action="phpskript.php" method="post">
@@ -28,7 +28,7 @@ Processen går alltså till på detta sätt:
 
 #### **&lt;input type="text"&gt; ger en vanlig textruta**
 
-Om vi matar in form-koden i föregående stycke, kommer ingenting alls att visas i webbläsaren. Vi behöver också ha rutor där användaren kan fylla i information. Ett vanligt textfält skrivs så här:
+Om vi matar in form-koden i föregående stycke, kommer ingenting alls att visas i webbläsaren. Vi behöver också ha rutor där användaren kan fylla i information. Ett vanligt textfält skrivs med [input](https://devdocs.io/html/element/input):
 
 ```markup
 Ditt förnamn: <br>
@@ -71,14 +71,14 @@ Det finns ytterligare en typ av knapp, nämligen radioknappar. Ni känner säker
 ```
 
   
-**input**-taggen i exemplet har vi med för att få ny rad. Observera att det här är viktigt att alla radioknappar i samma grupp \(de man ska välja bland\) har samma **name**-attribut. Hade vi gett dem olika namn hade vi kunnat kryssa i alla rutorna, vilket inte hade varit så bra. I stället särskiljer vi respektive fält med olika värden i **value**. Om vi i exemplet fyllt i vuxen, så kommer PHP-skriptet att ta emot en variabel med namnet **$alder** och innehållet "vuxen".
+****[input](https://devdocs.io/html/element/input)-taggen i exemplet har vi med för att få ny rad. Observera att det här är viktigt att alla radioknappar i samma grupp \(de man ska välja bland\) har samma **name**-attribut. Hade vi gett dem olika namn hade vi kunnat kryssa i alla rutorna, vilket inte hade varit så bra. I stället särskiljer vi respektive fält med olika värden i **value**. Om vi i exemplet fyllt i vuxen, så kommer PHP-skriptet att ta emot en variabel med namnet **$alder** och innehållet "vuxen".
 
 #### **&lt;textarea&gt; - flerradiga textfält**
 
-Flerradiga textfält används bland annat i webbmailtjänster som t.ex. gmail.com för att skriva in meddelandetexten. Då används textarea-fältet i html-koden. Observera att textarea har ett slutmärke \( **&lt;/textarea&gt;** \). **rows** ställer in antalet rader, och **cols** hur många tecken brett fältet ska vara.
+Flerradiga textfält används bland annat i webbmailtjänster som t.ex. gmail.com för att skriva in meddelandetexten. Då används [textarea](https://devdocs.io/html/element/textarea)-fältet i HTML-koden.
 
 ```markup
-<textarea name="meddelande" rows="20" cols="40">
+<textarea name="meddelande">
 </textarea>
 ```
 
@@ -88,10 +88,10 @@ Det finns några till, mer ovanliga formulärfält, bland annat "dropdown"-menye
 
 **&lt;input type="submit"&gt; - skicka iväg formuläret**
 
-Till sist behöver vi en knapp som skickar iväg formulärinnehållet till servern. Detta gör vi med en submit-knapp. Värdet i **value** bestämmer vad som ska stå på knappen, men har ingen funktion i övrigt
+Till sist behöver vi en knapp som skickar iväg formulärinnehållet till servern. Detta gör vi med en submit-knapp.
 
 ```markup
-<input type="submit" value="Skicka">
+<button type="submit">Skicka</button>
 ```
 
 ### **Komplett formulärexempel**
@@ -136,7 +136,7 @@ För att ta emot formulärinnehållet behöver vi också ett PHP-skript i "andra
 </html>
 ```
 
-Alla formulärdata som skickats lagras i arrayen **$\_REQUEST**. Hade formulärfältet i stället hetat namn skulle innehållet ha funnits i **$\_REQUEST\['namn'\]**.
+Alla formulärdata som skickats lagras i arrayen [$\_REQUEST](https://devdocs.io/php/reserved.variables.request). Hade formulärfältet i stället hetat namn skulle innehållet ha funnits i **$\_REQUEST\['namn'\]**.
 
 ## Uppgifter - HTML och formulär
 

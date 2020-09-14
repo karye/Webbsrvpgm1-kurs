@@ -4,15 +4,7 @@ description: Databashantering med MySQL
 
 # Laboration 1
 
-```text
-I denna laboration skall du se till att du kommer åt databasmotorn och att
-det fungerar. Du kommer också att skapa en tabell i din databas och mata in
-några poster i den.
-```
-
-```text
-Kapitel 7 i Björk^1 är en bra hjälp.
-```
+I denna laboration skall du se till att du kommer åt databasmotorn och att det fungerar. Du kommer också att skapa en tabell i din databas och mata in några poster i den.
 
 ## Logga in på servern
 
@@ -48,13 +40,13 @@ För att logga ut från servern ger du kommandot **exit** , men det behöver du 
 > exit
 ```
 
-Det vi har jobbat med nu är inloggningen **till servern**. På servern skall vi nu köra en databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början.
+Det vi har jobbat med nu är inloggningen **till servern**. På servern skall vi nu köra en  databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början.
 
 Nu är det dags att starta databasklienten.
 
 ## Starta databasklienten
 
-För att komma åt databasen måste man använda ett program som kallas för en databasklient. Det finns flera olika sådana och vi kommer längre fram i kursen att ansluta till databasen med PHP men tills vidare skall vi använda den klient som följer med MySQL. Denna databasklient heter ” **mysql** ” och kan startas med en mängd olika argument, till exempel följande
+För att komma åt databasen måste man använda ett program som kallas för en databasklient. Det finns flera olika sådana och vi kommer längre fram i kursen att ansluta till databasen med PHP men tills vidare skall vi använda den klient som följer med MySQL. Denna databasklient heter ”**mysql**” och kan startas med en mängd olika argument, till exempel följande
 
 ```text
 ” - h custor.rejas.se ” betyder att vi skall använda databasservern ”custor.rejas.se”, ( -h står
@@ -69,14 +61,8 @@ Så här kan det se ut:
 ```text
 > mysql -h custor.rejas.se -p rejas
 Enter password:
-```
-
-```text
 Welcome to the MySQL monitor. Commands end with ; or \g.
 Your MySQL connection id is 102 to server version: 4.0.16-log
-```
-
-```text
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
 ```
 
@@ -91,9 +77,6 @@ Vid denna skriver du **kommandon till databasen**. Jämför med prompten innan s
 ```text
 mysql> SHOW TABLES;
 Empty set (0.00 sec)
-```
-
-```text
 mysql>
 ```
 
@@ -104,9 +87,6 @@ mysql> SHOW TABLES
 ->
 -> ;
 Empty set (0.00 sec)
-```
-
-```text
 mysql>
 ```
 
@@ -147,8 +127,8 @@ mysql> SHOW TABLES;
 +-----------------+
 | Tables_in_rejas |
 +-----------------+
-| test |
-| test2 |
+| test            |
+| test2           |
 +-----------------+
 2 rows in set (0.00 sec)
 ```
@@ -158,14 +138,11 @@ Jodå, den verkar ju ha skapats. Vi kan titta närmare på fälten med kommandot
 ```text
 mysql> SHOW FIELDS FROM test;
 +-------+----------+------+-----+---------+-------+
-| Field | Type | Null | Key | Default | Extra |
+| Field | Type     | Null | Key | Default | Extra |
 +-------+----------+------+-----+---------+-------+
-| namn | char(10) | YES | | NULL | |
+| namn  | char(10) | YES  |     | NULL    |       |
 +-------+----------+------+-----+---------+-------+
 1 row in set (0.04 sec)
-```
-
-```text
 mysql>
 ```
 
@@ -196,18 +173,15 @@ Att ställa frågor till en databas innebär att man gör vissa operationer på 
 ```text
 mysql> SELECT * FROM test;
 +--------+
-| namn |
+|  namn  |
 +--------+
-| kalle |
-| kajsa |
+| kalle  |
+| kajsa  |
 | knatte |
 | tjatte |
 | fnatte |
 +--------+
 5 rows in set (0.00 sec)
-```
-
-```text
 mysql>
 ```
 
@@ -220,24 +194,17 @@ Man kan radera poster från en tabell med kommandot ” **DELETE FROM ...** ”,
 ```text
 mysql> DELETE FROM test WHERE namn='fnatte';
 Query OK, 1 row affected (0.80 sec)
-```
-
-```text
 mysql>
 ```
 
-```text
-Märk att 'fnatte' är inom apostrofer i exemplet ovan. Alla textstängar måste
-vara inom apostrofer eller citationstecken för att tolkas rätt. Apostroferna
-hittar du på tangenten ovanför den högra shift-tangenten på tangentbordet.
-```
+Märk att 'fnatte' är inom apostrofer i exemplet ovan. Alla textstängar måste vara inom apostrofer eller citationstecken för att tolkas rätt. Apostroferna hittar du på tangenten ovanför den högra shift-tangenten på tangentbordet.
 
-I exemplet ovan raderades raden där fältet namn innehåller ” **fnatte** ”. En **WHERE** -sats kan man använda tillsammans med de flesta andra satser. Till exempel ” **SELECT** ”. Som du ser så raderas posten utan minsta förvarning ovan. Ofta kan det vara bra att testa med ett oförstörande kommando som till exempel ” **SELECT** ” först.
+I exemplet ovan raderades raden där fältet namn innehåller ”**fnatte** ”. En **WHERE** -sats kan man använda tillsammans med de flesta andra satser. Till exempel ”**SELECT**”. Som du ser så raderas posten utan minsta förvarning ovan. Ofta kan det vara bra att testa med ett oförstörande kommando som till exempel ”**SELECT**” först.
 
 ```text
 mysql> SELECT * FROM test WHERE namn='tjatte';
 +--------+
-| namn |
+|  namn  |
 +--------+
 | tjatte |
 +--------+
@@ -267,9 +234,6 @@ Ibland vill man ta bort en hel tabell. Det kan man göra med ” **DROP TABLE** 
 ```text
 mysql> DROP TABLE test;
 Query OK, 0 rows affected (0.34 sec)
-```
-
-```text
 mysql>
 ```
 
@@ -286,36 +250,30 @@ Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig f�
 ```text
 mysql> EXPLAIN bilar;
 +-----------+----------+------+-----+---------+-------+
-| Field | Type | Null | Key | Default | Extra |
+| Field     | Type     | Null | Key | Default | Extra |
 +-----------+----------+------+-----+---------+-------+
-| reg | char(10) | YES | | NULL | |
-| marke | char(50) | YES | | NULL | |
-| modell | char(50) | YES | | NULL | |
-| arsmodell | int(11) | YES | | NULL | |
+| reg       | char(10) | YES  |     | NULL    |       |
+| marke     | char(50) | YES  |     | NULL    |       |
+| modell    | char(50) | YES  |     | NULL    |       |
+| arsmodell | int(11)  | YES  |     | NULL    |       |
 +-----------+----------+------+-----+---------+-------+
 4 rows in set (0.03 sec)
-```
-
-```text
 mysql> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+
-| reg | marke | modell | arsmodell |
+| reg    | marke      | modell    | arsmodell |
 +--------+------------+-----------+-----------+
-| ABC123 | Saab | 9-5 | 2003 |
-| DEF123 | Volvo | S80 | 2002 |
-| GHI123 | Mazda | 626 | 2001 |
-| JKL123 | Audi | A8 | 2001 |
-| MNO123 | BMW | 323 | 1998 |
-| PQR123 | Ford | Mondeo | 2001 |
-| STU123 | Volvo | 740 | 1987 |
-| VYX123 | Volkswagen | Golf | 1988 |
-| ABC456 | Volkswagen | Polo | 2003 |
-| DEF456 | Toyota | Carina II | 1998 |
+| ABC123 | Saab       | 9-5       |      2003 |
+| DEF123 | Volvo      | S80       |      2002 |
+| GHI123 | Mazda      | 626       |      2001 |
+| JKL123 | Audi       | A8        |      2001 |
+| MNO123 | BMW        | 323       |      1998 |
+| PQR123 | Ford       | Mondeo    |      2001 |
+| STU123 | Volvo      | 740       |      1987 |
+| VYX123 | Volkswagen | Golf      |      1988 |
+| ABC456 | Volkswagen | Polo      |      2003 |
+| DEF456 | Toyota     | Carina II |      1998 |
 +--------+------------+-----------+-----------+
 10 rows in set (0.00 sec)
-```
-
-```text
 mysql>
 ```
 
@@ -324,6 +282,6 @@ När du är klar och fått en tabell som ser ut som ovan kopierar du den och kli
 Lycka till!
 
 {% hint style="info" %}
-Copyright © 2004, 2005 Rejås Datakonsult Var och en äger rätt att kopiera, sprida och/eller förändra detta dokument under villkoren i licensen "GNU Free Documentation License", version 1.2 eller senare publicerad av Free Software Foundation, utan oföränderliga avsnitt, utan framsidestexter och utan baksidestexter. En kopia av denna licens finns på [http://rejas.se/gnu/.](http://rejas.se/gnu/.)
+Copyright © 2004, 2005 Rejås Datakonsult. Var och en äger rätt att kopiera, sprida och/eller förändra detta dokument under villkoren i licensen "GNU Free Documentation License", version 1.2 eller senare publicerad av Free Software Foundation, utan oföränderliga avsnitt, utan framsidestexter och utan baksidestexter. En kopia av denna licens finns på [http://rejas.se/gnu/.](http://rejas.se/gnu/.)
 {% endhint %}
 

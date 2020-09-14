@@ -39,7 +39,7 @@ if ($losenord == "test123") {
 ?>
 ```
 
-I detta lilla skript använder vi en villkorssats, eller **if**-sats som den också heter. **If**-satsen är sig lik från nästan alla programmeringsspråk och är nödvändig för att man ska anpassa vad som händer efter vad användaren gör. Det som står innanför paranteserna är det s.k. jämförelseuttrycket. I detta fall kontrollerar vi om variabeln **$losenord** har innehållet "test123". Observera att vi använder två likamedtecken! Hade vi bara använt ett likamedtecken hade vi i stället tilldelat variabeln **$losenord** värdet test123.
+I detta lilla skript använder vi en villkorssats, eller **if**-sats som den också heter. **if**-satsen är sig lik från nästan alla programmeringsspråk och är nödvändig för att man ska anpassa vad som händer efter vad användaren gör. Det som står innanför paranteserna är det s.k. jämförelseuttrycket. I detta fall kontrollerar vi om variabeln **$losenord** har innehållet "test123". Observera att vi använder två likamedtecken! Hade vi bara använt ett likamedtecken hade vi i stället tilldelat variabeln **$losenord** värdet test123.
 
 Om lösenordet stämmer, körs allting som står innan för krullparanteserna. Om lösenordet inte stämmer, fortsätter programmet efter högerkrullparantesen. Vi kan också välja att ha med ett alternativ som ska inträffa då lösenordet inte stämmer. Då kan det se ut så här:
 
@@ -55,7 +55,7 @@ if ($losenord == "test123") {
 
 I det här fallet kommer vi alltså att få meddelandet "Fel lösenord" om lösenordet inte stämmer.
 
-Det finns fler jämförelseoperatorer än **==**, även om **==** är den överlägset vanligaste. Vi har bland annat **&lt;** som står för mindre än, **&gt;** som står för större än. Dessa två används endast för tal. **!=** står för inte lika med och kan däremot användas både för tal och strängar. Man kan bygga på **if**-satser med elseif. På detta sätt kan programmet ta fler än två olika vägar. Fler jämförelseoperatorer hittar du på [http://php.net/manual/en/language.operators.comparison.php](http://php.net/manual/en/language.operators.comparison.php) .
+Det finns fler jämförelseoperatorer än **==**, även om **==** är den överlägset vanligaste. Vi har bland annat **&lt;** som står för mindre än, **&gt;** som står för större än. Dessa två används endast för tal. **!=** står för inte lika med och kan däremot användas både för tal och strängar. Man kan bygga på **if**-satser med **elseif**. På detta sätt kan programmet ta fler än två olika vägar. Fler jämförelseoperatorer hittar du på [language.operators.comparison](http://php.net/manual/en/language.operators.comparison.php).
 
 ```php
 <?php
@@ -69,7 +69,7 @@ if ($veckodag == "lördag") {
 ?>
 ```
 
-Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [http://php.net/manual/en/language.operators.logical.php](http://php.net/manual/en/language.operators.logical.php) .
+Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [language.operators.logical](http://php.net/manual/en/language.operators.logical.php).
 
 ### **Loopar**
 
@@ -83,9 +83,9 @@ for ($i = 1;$i < 20;$i = $i + 1) {
 ?>
 ```
 
-I detta exempel kommer vi att få 19 rader utskrivna. **For**-loopen har tre delar, det första kallas initiering, där vi sätter loopvariabeln till ett visst värde. I vårt fall har vi valt att ha **$i** som loopvariabel. Den andra delen kallas villkorssats, och den testas varje gång loopen körts. Den tredje satsen kallas uppräkningssats, och innebär att loopvariabeln räknas upp med 1 efter varje varv.
+I detta exempel kommer vi att få 19 rader utskrivna. **for**-loopen har tre delar, det första kallas initiering, där vi sätter loop-variabeln till ett visst värde. I vårt fall har vi valt att ha **$i** som loop-variabel. Den andra delen kallas villkorssats, och den testas varje gång loopen körts. Den tredje satsen kallas uppräkningssats, och innebär att loop-variabeln räknas upp med 1 efter varje varv.
 
-**While**-loopen är en mer generell variant av **for**-loopen. Den används för att upprepa något så länge ett visst villkor är uppfyllt. Motsvarande kod skulle alltså se ut så här:
+**while**-loopen är en mer generell variant av **for**-loopen. Den används för att upprepa något så länge ett visst villkor är uppfyllt. Motsvarande kod skulle alltså se ut så här:
 
 ```php
 <?php
@@ -97,7 +97,7 @@ while ($i < 20) {
 ?>
 ```
 
-Inuti for och while loopar kan man använda break för att omedelbart avbryta körningen av loopen och fortsätta direkt med koden som kommer efter loopens slut. Med continue kan man fortsätta direkt till nästa varv av loopen.
+Inuti for och **while** loopar kan man använda break för att omedelbart avbryta körningen av loopen och fortsätta direkt med koden som kommer efter loopens slut. Med **continue** kan man fortsätta direkt till nästa varv av loopen.
 
 ## Uppgifter - operatorer, villkorssatser och loopar
 

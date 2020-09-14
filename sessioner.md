@@ -1,5 +1,5 @@
 ---
-description: Använda sessioner för att hålla reda på tex om en användare är inloggad
+description: Använda sessioner för att hålla reda på om en användare är inloggad
 ---
 
 # Sessioner
@@ -20,9 +20,9 @@ När en session startas i PHP får den ett unikt id. Denna långa sträng av tec
 
 ## **Använda en session**
 
-För att starta en session använder man sig av funktionen session\_start. Den måste komma allra högst upp i PHP-skriptet, annars får man felmeddelandet **Headers already sent**. Därefter kan man registrera sessionsvariabler genom att använda matrisen **$\_SESSION**:
+För att starta en session använder man sig av funktionen [session\_start\(\)](https://devdocs.io/php/function.session-start). Den måste komma allra högst upp i PHP-skriptet, annars får man felmeddelandet **Headers already sent**. Därefter kan man registrera sessionsvariabler genom att använda matrisen [$\_SESSION](https://devdocs.io/php/reserved.variables.session):
 
-#### **fil1.php**
+#### **Utskrift på fil1.php**
 
 ```php
 <?php
@@ -34,9 +34,9 @@ $_SESSION['namn'] = "test";
 
 ### **Använda sessionsvariabler**
 
-Varje PHP-sida som använder sessioner ska ha ett anrop till session\_start högst upp i skriptet. När session\_start har anropats så hämtas ala sessionsvariabler. Dessa finns sedan i matrisen **$\_SESSION**.
+Varje PHP-sida som använder sessioner ska ha ett anrop till session\_start högst upp i skriptet. När session\_start har anropats så hämtas alla sessionsvariabler. Dessa finns sedan i matrisen [$\_SESSION](https://devdocs.io/php/reserved.variables.session).
 
-#### **fil2.php**
+#### **Utskrift på fil2.php**
 
 ```php
 <?php
@@ -48,9 +48,9 @@ echo $_SESSION['namn']; // Skriver ut test
 
 ### **Avsluta en session**
 
-Genom att tömma matrisen **$\_SESSION** tas alla sessionsvariabler bort. För att helt avsluta sessionen anropas sedan **session\_destroy\(\)**.
+Genom att tömma matrisen [$\_SESSION](https://devdocs.io/php/reserved.variables.session) tas alla sessionsvariabler bort. För att helt avsluta sessionen anropas sedan [session\_destroy\(\)](https://devdocs.io/php/function.session-destroy).
 
-#### **fil3.php**
+#### **Utskrift på fil3.php**
 
 ```php
 <?php
@@ -65,7 +65,7 @@ echo $_SESSION['namn']; // Skriver inte ut någonting.
 
 ### **Uppgift 10.1**
 
-Skapa en enkel räknare som visar hur många gånger man varit inne på sidan. Spara sidan med namnet **raknare.php** och gör sedan en "**submit**"-knapp som går till samma sida \(**raknare.php**\). Kontrollera att räknaren räknar upp 1 steg för varje gång man varit inne på sidan.
+Skapa en enkel räknare som visar hur många gånger man varit inne på sidan. Spara sidan med namnet **raknare.php** och gör sedan en **submit**-knapp som går till samma sida \(**raknare.php**\). Kontrollera att räknaren räknar upp 1 steg för varje gång man varit inne på sidan.
 
 ### **Uppgift 10.2**
 

@@ -45,9 +45,9 @@ echo "Texten $text har skrivits till fil.";
 ?>
 ```
 
-**fopen\(\)** används på nästan samma sätt, den enda förändringen är att vi bytt ut **r** mot **w** \(**write**\). För att skriva till filen använder vi **fputs\(\)** \(vilket står för file put string\). Sedan är allt klart. Det finns fler filfunktioner beskrivna, se [http://php.net/manual/en/function.fopen.php](http://php.net/manual/en/function.fopen.php) .
+[fopen\(\)](https://devdocs.io/php/function.fopen) används på nästan samma sätt, den enda förändringen är att vi bytt ut **r** mot **w** \(**write**\). För att skriva till filen använder vi [fwrite**\(\)**](https://devdocs.io/php/function.fwrite). Sedan är allt klart.
 
-En specialfiness med **fopen\(\)** är att man lika gärna kan använda den för att öppna en webbsida på en annan server:
+En specialfiness med [fopen\(\)](https://devdocs.io/php/function.fopen) är att man lika gärna kan använda den för att öppna en webbsida på en annan server:
 
 ```php
 <?php
@@ -59,7 +59,7 @@ fclose($fil);
 
 Sedan kan man söka efter speciell information inuti texten, t.ex. för att ta ut viss information som man har användning för.
 
-## Läsa in hela filen på en gång
+## Läsa in allt på en gång
 
 ### file\(\): läsa i en array
 
@@ -68,6 +68,10 @@ Med [file\(\)](https://devdocs.io/php/function.file) läses hela filen in i en a
 ```php
 <?php
 $lines = file('http://www.example.com/');
+
+foreach ($lines as $line_num => $line) {
+    echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
+}
 ?>
 ```
 
@@ -94,7 +98,7 @@ Gör ett program som i en textruta frågar efter ett filnamn på servern. Kontro
 
 ### **Uppgift 9.3**
 
-Utveckla programmet i övning 1 till ett enkelt gästboksskript. Skapa en sida kallad "Lägg till till gästbok, där användaren får fylla i namn, e-post-adress och meddelande. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil. Snyggt formaterad innebär att du har mellanrum mellan namnet och e-post-adressen, och ny rad \(&lt;br&gt;\) innan du skriver meddelandet, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd **append\(a\)** som filöppningsmetod, ej write, eftersom du då skriver över tidigare innehåll! Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
+Utveckla programmet i övning 1 till ett enkelt gästboksskript. Skapa en sida kallad "Lägg till till gästbok, där användaren får fylla i namn, e-post-adress och meddelande. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil. Snyggt formaterad innebär att du har mellanrum mellan namnet och e-post-adressen, och ny rad \(&lt;br&gt;\) innan du skriver meddelandet, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd append \(a\) som filöppningsmetod, ej write \(w\), eftersom du då skriver över tidigare innehåll! Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
 
 ### **Uppgift 9.4**
 
@@ -102,7 +106,7 @@ Skapa ett loggningsskript som sparar en filrad om varje besök i en fil kallad "
 
 ### **Uppgift 9.5**
 
-Gör ett PHP-skript som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [http://www.privataaffarer.se/borsguiden/aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
+Gör ett PHP-skript som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

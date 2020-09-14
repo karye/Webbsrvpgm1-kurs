@@ -5,10 +5,6 @@ description: Databashantering med MySQL
 # Laboration 1
 
 ```text
-Av: Marcus Rejås <marcus@rejas.se>
-```
-
-```text
 I denna laboration skall du se till att du kommer åt databasmotorn och att
 det fungerar. Du kommer också att skapa en tabell i din databas och mata in
 några poster i den.
@@ -18,32 +14,28 @@ några poster i den.
 Kapitel 7 i Björk^1 är en bra hjälp.
 ```
 
-## Installera ssh-klienten
+## Logga in på servern
 
-Ifall du inte sedan förr har PuTTY eller någon annan SSH-klient installerat så måste du börja med att installera en ssh-klient och göra dig hemmastadd i den nu. Hur man gör står i ett separat blad som du fick samtidigt som detta.
-
-## Logga in på servern \(custor.rejas.se\)
-
-Hur man gör detta står också i dokumentet om PuTTY, när du loggat in skall du på sista raden se en **kommandoprompt** som ser ut ungefär så här:
+**Kommandoprompt** som ser ut ungefär så här:
 
 ```text
-rejas@custor:~$
+> 
 ```
 
 Det är vid denna prompt som du ger kommandon till **servern**. Du kan prova kommandot ” **ls** ” som betyder ”lista filer”, varje kommando körs när du trycker  \(Du skriver det som är fet-stil nedan, resten skriver systemet\).
 
 ```text
-rejas@custor:~$ ls
+> ls
 bin public_html tmp
-rejas@custor:~$
+>
 ```
 
 Vill du se aktuell tid ger du kommandot ” **date** ”:
 
 ```text
-rejas@custor:~$ date
+> date
 Wed Feb 11 19:03:53 CET 2004
-rejas@custor:~$
+>
 ```
 
 För att skriva ett kommando du nyss skrivit kan du använda historikfunktionen, den fungerar så att du kan bläddra mellan tidigare skrivna kommandon med hjälp av upp- och ner-piltangenterna. Prova att trycka pil upp och tryck  när kommandot ” **ls** ” visas igen.
@@ -53,7 +45,7 @@ Att använda denna historikfunktion är väldigt smidigt. Det finns en historikf
 För att logga ut från servern ger du kommandot **exit** , men det behöver du inte göra ännu ...
 
 ```text
-rejas@custor:~$ exit
+> exit
 ```
 
 Det vi har jobbat med nu är inloggningen **till servern**. På servern skall vi nu köra en databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början.
@@ -75,7 +67,7 @@ använda localhost eller helt strunta i att ange vilken host vi skall använda.
 Så här kan det se ut:
 
 ```text
-rejas@custor:~$ mysql -h custor.rejas.se -p rejas
+> mysql -h custor.rejas.se -p rejas
 Enter password:
 ```
 
@@ -86,50 +78,6 @@ Your MySQL connection id is 102 to server version: 4.0.16-log
 
 ```text
 Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
-```
-
-```text
-mysql>
-```
-
-```text
-Tips!
-```
-
-```text
-Du kan skapa en fil som heter .my.cnf i din hemmakatalag så behöver du
-inte skriva vilken datoradress, använarnamn, lösenord och databas du vill
-andvanda. På custor.rejas.se kan du skapa en .my.cnf genom att de
-kommandot make_my.cnf
-```
-
-```text
-rejas@custor2:~$ make_my.cnf
-Ange ditt lösenord (kolla noga så att det blir rätt): xxxxxx
-rejas@custor2:~$
-```
-
-```text
-Efter detta kan du logga in till databasen genom att bara skriva mysql vid
-prompten
-```
-
-```text
-rejas@custor2:~$ mysql
-Welcome to the MySQL monitor. Commands end with ; or \g.
-```
-
-```text
-Your MySQL connection id is 8675 to server version:
-4.0.24_Debian-10-log
-```
-
-```text
-Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
-```
-
-```text
-mysql>
 ```
 
 Som du ser så står du nu vid en ny kommandoprompt som ser ut så här:

@@ -330,7 +330,7 @@ Utöka föregående formulär så att man kan också välja "**Omvandla C° till
 
 ### **Uppgift 2.7**
 
-Skapa ett formulär som tar emot en text och där man kan välja mellan att konvertera till **versaler** \(stora bokstäver\) eller till **gemener** \(små bokstäver\). Läs om funktioner på [http://php.net/manual/en/function.strtoupper.php](http://php.net/manual/en/function.strtoupper.php) och [http://php.net/manual/en/function.strtolower.php](http://php.net/manual/en/function.strtolower.php).
+Skapa ett formulär som tar emot en text och där man kan välja mellan att konvertera till **versaler** \(stora bokstäver\) eller till **gemener** \(små bokstäver\). Läs om funktioner på [strtoupper](http://php.net/manual/en/function.strtoupper.php) och [strtolower](http://php.net/manual/en/function.strtolower.php).
 
 ### **Uppgift 2.8**
 

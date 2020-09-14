@@ -162,3 +162,7 @@ Utforma ett formulär på en sida där användaren ska mata in en temperatur i C
 
 På din webbsida vill du ha ett formulär där besökaren kan lämna kommentarer. Kommentarerna ska kunna skrivas i ett **flerradstextfält**. Dessutom ska det finnas en vanlig **textruta** för att fylla i namn. På knappen för att skicka iväg formuläret ska det stå "Skicka kommentarer".
 
+{% hint style="info" %}
+© Thomas Höjemo, SNT 2006, www.snt.se info@snt.se
+{% endhint %}
+

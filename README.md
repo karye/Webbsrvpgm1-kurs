@@ -22,6 +22,6 @@ description: 'Installera alla verktyg, konfigurera alla inställningar, skapar a
 ![](.gitbook/assets/image%20%281%29.png)
 
 {% hint style="info" %}
-© Thomas Höjemo, SNT 2006, www.snt.se
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
 {% endhint %}
 

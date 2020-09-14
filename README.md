@@ -2,13 +2,13 @@
 description: 'Installera alla verktyg, konfigurera alla inställningar, skapar alla mappar'
 ---
 
-# Installera verktygen
+# Introduktion
 
 ## Installera webbeditorn VS Code & tillägg
 
-* Installera VS Code
+* Installera [VS Code](https://code.visualstudio.com/)
 * Installera tillägg
-* Installera git-scm
+* Installera [git-scm](https://git-scm.com/)
 
 ![](.gitbook/assets/image.png)
 

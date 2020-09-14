@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Installera verktygen](README.md)
+* [Introduktion](README.md)
 * [HTML och formulär](html-och-formulaer.md)
 * [Grunder i PHP](att-koda-php.md)
 * [Operatorer, villkorssatser och loopar](operatorer-villkorssatser-och-loopar.md)

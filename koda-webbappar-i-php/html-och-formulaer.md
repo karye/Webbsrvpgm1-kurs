@@ -6,6 +6,8 @@ description: Hur man skickar data till en server.
 
 ## **Formulär i HTML**
 
+![](../.gitbook/assets/image%20%287%29.png)
+
 Ett program eller ett skript är inte särskilt meningsfullt om det inte kan fråga efter information i från användaren. I vanliga program matar användaren oftast in information från en kommandoprompt, eller vanligare nuförtiden, genom att fylla i en dialogruta eller välja ett menyalternativ. För att få in information från användaren till ett PHP-skript används formulär. Formulär ingår som en del i html-standarden
 
 Processen går alltså till på detta sätt:

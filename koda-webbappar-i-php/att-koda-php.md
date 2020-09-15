@@ -196,9 +196,9 @@ Det går även att explicit konvertera mellan olika typer. Detta görs genom att
 ```php
 <?php
 $antal = 100.32;
-$antal = (int) $antal; // $antal innehåller heltalet 100
-$antal = (double) $antal; // $antal innehåller decimaltalet 100 (100.0)
-$antal = (string) $antal; // $antal innehåller strängen 100
+$antal = (int) $antal;     // $antal innehåller heltalet 100
+$antal = (double) $antal;  // $antal innehåller decimaltalet 100 (100.0)
+$antal = (string) $antal;  // $antal innehåller strängen 100
 ?>
 ```
 
@@ -211,7 +211,7 @@ Genom funktionen [gettype**\(\)**](https://devdocs.io/php/function.gettype) kan 
 ```php
 <?php
 $variabel = "Hej";
-echo gettype($variabel); // Ger resultatet string
+echo gettype($variabel);   // Ger resultatet string
 ?>
 ```
 
@@ -220,7 +220,7 @@ För att undersöka om en variabel är av en viss typ används serien funktioner
 ```php
 <?php
 $variabel = "Hej";
-if ( is_string($variabel) ) {
+if (is_string($variabel)) {
     echo "Det var en sträng!";
 } else {
     echo "Det var inte en sträng!";
@@ -232,13 +232,13 @@ if ( is_string($variabel) ) {
 
 PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsområdet för dessa är för att se vilken information som skickats från ett formulär. När ett formulär skickats iväg till ett PHP-skript så lagras automatiskt formulärelementens innehåll i arrayen [$\_REQUEST](https://devdocs.io/php/reserved.variables.request), [$\_POST](https://devdocs.io/php/reserved.variables.post) eller [$\_GET](https://devdocs.io/php/reserved.variables.get). Mer information om matriser kommer senare i kursen.
 
-Har vi t.ex. skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast [echo](https://devdocs.io/php/function.echo) enligt följande modell:
+Har vi tex skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast [echo](https://devdocs.io/php/function.echo) enligt följande modell:
 
 ```php
 echo $_REQUEST['telefon'];
 ```
 
-Vilket kommer att resultera i att 012-345678 skrivs ut på skärmen förutsatt att användaren matade in just det numret i formuläret.
+Vilket kommer att resultera i att "012-345678" skrivs ut på skärmen förutsatt att användaren matade in just det numret i formuläret.
 
 I det fall en inställning ändrats i PHP-systemkonfigurationen så kommer även fristående variabler skapas. I exemplen ovan skulle i så fall variablerna **$adress** och **$telefon** skapas. Denna inställning är avstängd från början, eftersom det kan medföra säkerhetsrisker om den används på ett slarvigt sätt.
 
@@ -258,7 +258,7 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
     </head>
     <body>
     <?php 
-    echo "Hej världen!"; // Skriver ut raden Hello World på skärmen
+    echo "Hej världen!";     // Skriver ut raden Hello World på skärmen
     ?>
     </body>
 </html>

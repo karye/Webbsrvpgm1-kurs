@@ -10,10 +10,10 @@
 * [Operatorer, villkorssatser och loopar](koda-webbappar-i-php/operatorer-villkorssatser-och-loopar.md)
 * [Funktioner](koda-webbappar-i-php/funktioner.md)
 * [Arrayer och foreach-loop](koda-webbappar-i-php/arrayer-och-foreach-loop.md)
+* [Filhantering](koda-webbappar-i-php/filhantering.md)
 * [Stränghantering](koda-webbappar-i-php/straenghantering.md)
 * [Regex - reguljära uttryck](koda-webbappar-i-php/regex-reguljaera-uttryck.md)
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
-* [Filhantering](koda-webbappar-i-php/filhantering.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
 
 ## Laborationer

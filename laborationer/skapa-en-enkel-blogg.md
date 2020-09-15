@@ -50,54 +50,108 @@ description: Skapa en webbapp med lagring i textfil
 ### **Skriva inlägget : skriva.html**
 
 ```markup
-
-```
-
-### **Skriva till en textfil - lagra.php**
-
-* Ersätt '...' med rätt PHP-syntax
-* Studera:
-  * [http://php.net/manual/en/function.isset.php](http://php.net/manual/en/function.isset.php)
-  * [http://php.net/manual/en/function.fopen.php](http://php.net/manual/en/function.fopen.php)
-  * [http://php.net/manual/en/function.fwrite.php](http://php.net/manual/en/function.fwrite.php)
-
-```php
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="utf-8">
-    <title>Skriva till en fil</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mina enkla blogg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <?php
-    if (...($_POST['inlagg'])) {
-        $filnamn = "blogg.txt";
+    <div class="kontainer">
+        <header>
+            <h1>Bloggen</h1>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="blogg.html">Hemsida</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="skriva.html">Skriva inlägg</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lasa.php">Läsa inlägg</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form action="spara.php" method="post">
+                <textarea class="form-control" name="inlagg" id="inlagg" cols="30" rows="10"></textarea>
+                <button class="btn btn-primary">Spara inlägg</button>
+            </form>
+        </main>
+        <footer>
+            2020
+        </footer>
+    </div>
+</body>
+</html>
+```
 
-        // Öppna asnslutningen till textfilen
-        $file = ...($filnamn, "a");
+### **Skriva till en textfil - spara.php**
 
-        // Ersätter /n med <br>
-        $texten = ...($_POST['inlagg'], false);
+* Ersätt '...' med rätt PHP-syntax
+* Studera
+  * Funktionen [isset\(\)](https://devdocs.io/php/function.isset)
+  * Funktionen [fopen\(\)](https://devdocs.io/php/function.fopen)
+  * Funktionen [fwrite\(\)](https://devdocs.io/php/function.fwrite)
 
-        // Skriv text i textfilen
-        ...($file, "<div class=\"inlagg\"><h4>" . date('h:i Y/m/d') . "</h4><p>" . $texten . " </p></div>");
-
-        // Stäng anslutningen till textfilen
-        ...($file);
-
-        echo "<p>Inlägget registrerat!</p>";
-    } else {
-        echo "<p>Inlägg saknas!</p>";
-    }
-    ?>
+```php
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skriva inlägg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <header>
+            <h1>Bloggen</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="blogg.html">Hemsida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skriva.html">Skriva inlägg</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="lasa.php">Läsa inlägg</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <?php
+            /* Ta emot text från formuläret och spara ned i en textfil. */
+            if (...($_POST['inlagg'])) {
+                $filnamn = "blogg.txt";
+                $texten = $_POST["inlagg"];
+                $tidpunkt = date('l j F Y h:i:s');
+        
+                // Öppna asnslutningen till textfilen
+                $handtag = ...($filnamn, "a");
+        
+                // Ersätter /n med <br>
+                $texten = ...($_POST['inlagg'], false);
+        
+                // Skriv text i textfilen
+                ...($handtag, "<p>$tidpunkt<br>$texten</p>\n");
+        
+                // Stäng anslutningen till textfilen
+                ...($handtag);
+        
+                echo "<p>Inlägget registrerat!</p>";
+            } else {
+                echo "<p>Inlägg saknas!</p>";
+            }
+            ?>
+        </main>
+        <footer>
+            2019
+        </footer>
+    </div>
 </body>
 </html>
 ```
 
 ### **Kontrollera att filen är skrivbar**
 
-* Studera koden nedan och infoga **if**-satserna i **lagra.php**
+* Studera koden nedan och infoga **if**-satserna
 * Ersätt '...' med rätt text
 
 ```php

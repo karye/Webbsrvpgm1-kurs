@@ -2,7 +2,7 @@
 
 ## **Syfte**
 
-* Slumpa fram sex olika ordspråk från en lista av tio st
+* Slumpa fram sex olika ordspråk från en lista av tio
 * Referens till funktioner på [http://php.net](http://php.net/):
   * [http://php.net/manual/en/function.rand.php](http://php.net/manual/en/function.rand.php)
   * [http://php.net/manual/en/control-structures.for.php](http://php.net/manual/en/control-structures.for.php)

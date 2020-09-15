@@ -19,6 +19,7 @@
 ## Laborationer
 
 * [Skapa en enkel blogg](laborationer/skapa-en-enkel-blogg.md)
+* [Slumpa fram ordspråk](laborationer/slumpa-fram-ordsprak.md)
 
 ## Databas med mysql
 

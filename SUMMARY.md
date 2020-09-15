@@ -6,7 +6,6 @@
 
 * [HTML och formulär](koda-webbappar-i-php/html-och-formulaer.md)
 * [Grunder i PHP](koda-webbappar-i-php/att-koda-php.md)
-* [Tips & tricks](koda-webbappar-i-php/tips-and-tricks.md)
 * [Operatorer, villkorssatser och loopar](koda-webbappar-i-php/operatorer-villkorssatser-och-loopar.md)
 * [Funktioner](koda-webbappar-i-php/funktioner.md)
 * [Arrayer och foreach-loop](koda-webbappar-i-php/arrayer-och-foreach-loop.md)
@@ -15,6 +14,7 @@
 * [Regex - reguljära uttryck](koda-webbappar-i-php/regex-reguljaera-uttryck.md)
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
+* [Tips & tricks](koda-webbappar-i-php/tips-and-tricks.md)
 
 ## Laborationer
 

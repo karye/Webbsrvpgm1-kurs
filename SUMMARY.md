@@ -16,11 +16,15 @@
 * [Filhantering](koda-webbappar-i-php/filhantering.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
 
+## Laborationer
+
+* [Skapa en enkel blogg](laborationer/skapa-en-enkel-blogg.md)
+
 ## Databas med mysql
 
-* [Laboration 1](databas-med-mysql/laboration-1.md)
-* [Laboration 2](databas-med-mysql/laboration-2.md)
-* [Laboration 3](databas-med-mysql/laboration-3.md)
-* [Laboration 4](databas-med-mysql/laboration-4.md)
-* [Laboration 5](databas-med-mysql/laboration-5.md)
+* [Grunder i SQL](databas-med-mysql/laboration-1.md)
+* [Ställa frågor](databas-med-mysql/laboration-2.md)
+* [Relationer mellan tabeller](databas-med-mysql/laboration-3.md)
+* [Inbyggda funktioner](databas-med-mysql/laboration-4.md)
+* [Fritextsökning](databas-med-mysql/laboration-5.md)
 

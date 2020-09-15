@@ -2,7 +2,7 @@
 description: Ställa frågor mot databasen.
 ---
 
-# Laboration 2
+# Ställa frågor
 
 I denna laboration skall vi jobba vidare på bildatabasen som vi började på förra gången. Vi skall ändra fält och lära oss att välja poster med **SELECT**. I denna laboration skriver jag inte ut resultatet på de flesta frågorna utan du kör dem själv i din miljö.
 

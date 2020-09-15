@@ -1,0 +1,170 @@
+---
+description: Skapa en webbapp med lagring i textfil
+---
+
+# Skapa en enkel blogg
+
+## **Syfte**
+
+* Skriva enkla blogginlägg
+* Lagra dessa i en textfil
+* Läsa hela bloggen
+
+## **Skapa formuläret - inlagg.html**
+
+```markup
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Skriva blogginlägg</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dagens blogginlägg</h1>
+    <form action="lagra.php" method="post">
+        <textarea name="inlagg"></textarea><br>
+        <button>Lagra</button>
+    </form>
+</body>
+</html>
+```
+
+## **Skriva till en textfil - lagra.php**
+
+* Ersätt '...' med rätt PHP-syntax
+* Studera:
+  * [http://php.net/manual/en/function.isset.php](http://php.net/manual/en/function.isset.php)
+  * [http://php.net/manual/en/function.fopen.php](http://php.net/manual/en/function.fopen.php)
+  * [http://php.net/manual/en/function.fwrite.php](http://php.net/manual/en/function.fwrite.php)
+
+```php
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Skriva till en fil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <?php
+    if (...($_POST['inlagg'])) {
+        $filnamn = "blogg.txt";
+
+        // Öppna asnslutningen till textfilen
+        $file = ...($filnamn, "a");
+
+        // Ersätter /n med <br>
+        $texten = ...($_POST['inlagg'], false);
+
+        // Skriv text i textfilen
+        ...($file, "<div class=\"inlagg\"><h4>" . date('h:i Y/m/d') . "</h4><p>" . $texten . " </p></div>");
+
+        // Stäng anslutningen till textfilen
+        ...($file);
+
+        echo "<p>Inlägget registrerat!</p>";
+    } else {
+        echo "<p>Inlägg saknas!</p>";
+    }
+    ?>
+</body>
+</html>
+```
+
+### **Kontrollera att filen är skrivbar**
+
+* Studera koden nedan och infoga **if**-satserna i **lagra.php**
+* Ersätt '...' med rätt text
+
+```php
+<?php
+$filnamn = "test.txt";
+$texten = "Add this to the file\n";
+
+// Är filens skrivbar?
+if (is_writable($filnamn )) {
+
+    // Kan vi öppna filen?
+    if (!$handle = fopen($filnamn , 'a')) {
+         echo "... ($filename)";
+         exit;
+    }
+
+    // Skriv något i textfilen
+    if (fwrite($handle, $texten ) === FALSE) {
+        echo "... ($filnamn)";
+        exit;
+    } else {
+        echo ".. ($texten) .. ($filnamn)";
+    }
+    fclose($handle);
+
+} else {
+    echo "..";
+}
+?>
+```
+
+## **5 Läsa från en textfil - hamta.php**
+
+* Ersätt '...' med rätt PHP-syntax
+* Studera:
+  * [http://php.net/manual/en/function.file.php](http://php.net/manual/en/function.file.php)
+  * [http://php.net/manual/en/function.array-reverse.php](http://php.net/manual/en/function.array-reverse.php)
+
+```php
+<!doctype html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <title>Läsa en fil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Min blogg</h1>
+    <?php
+    $filnamn = "blogg.txt";
+
+    // Öppna asnslutningen till textfilen
+    $innehall = ...(...);
+
+    // Läs rad för rad i textfilen
+    ... ($innehall as $rad) {
+        echo "$rad";
+    }
+
+    // Stäng anslutningen till textfilen
+    ...(...);
+    ?>
+</body>
+</html>
+```
+
+### **6 Visa senaste inläggen överst**
+
+* De inlästa inläggen måste visas i omvänd ordning
+* Studera:
+  * [http://php.net/manual/en/function.array-reverse.php](http://php.net/manual/en/function.array-reverse.php)
+
+### **7 Skapa en menysida - index.html**
+
+```markup
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8" />
+    <title>Enkel blogg</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <h1>Blogg admin</h1>
+    <ul>
+        <li>Skapa nytt blogginlägg</li>
+        <li>Läsa bloggen</li>
+        <li>Radera bloggen</li>
+    </ul>
+</body>
+</html>
+```
+

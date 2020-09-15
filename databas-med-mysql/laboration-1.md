@@ -2,7 +2,7 @@
 description: Databashantering med MySQL.
 ---
 
-# Laboration 1
+# Grunder i SQL
 
 I denna laboration skall du se till att du kommer åt databasmotorn och att det fungerar. Du kommer också att skapa en tabell i din databas och mata in några poster i den.
 

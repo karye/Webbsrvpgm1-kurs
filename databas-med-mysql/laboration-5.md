@@ -2,7 +2,7 @@
 description: Använda fritextsökning.
 ---
 
-# Laboration 5
+# Fritextsökning
 
 I denna labb skall vi jobba vidare på att söka efter olika saker. Vi skall använda så kallade wildcards eller jokertecken som det kallas på svenska. Du skall ha gjort Laboration 1, 2, 3 och 4 innan du gör denna.
 

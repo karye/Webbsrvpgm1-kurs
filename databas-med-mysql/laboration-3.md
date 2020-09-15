@@ -2,7 +2,7 @@
 description: Relationer mellan tabeller.
 ---
 
-# Laboration 3
+# Relationer mellan tabeller
 
 I denna laboration skall vi jobba vidare på bildatabasen som vi började på förra gången. Denna gång skall vi skapa ytterligare en tabell och skapa relationer mellan dem. I denna laboration skriver jag inte ut resultatet på de flesta frågorna utan du kör dem själv i din miljö.
 

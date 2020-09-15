@@ -1,5 +1,5 @@
 ---
-description: Att bearbeta strängar är mycket användbart
+description: Att bearbeta strängar är mycket användbart.
 ---
 
 # Stränghantering

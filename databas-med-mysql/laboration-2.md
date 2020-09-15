@@ -1,5 +1,5 @@
 ---
-description: Ställa frågor mot databasen
+description: Ställa frågor mot databasen.
 ---
 
 # Laboration 2

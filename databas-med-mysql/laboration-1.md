@@ -1,5 +1,5 @@
 ---
-description: Databashantering med MySQL
+description: Databashantering med MySQL.
 ---
 
 # Laboration 1

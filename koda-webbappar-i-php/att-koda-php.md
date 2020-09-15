@@ -1,5 +1,5 @@
 ---
-description: Variabler och kommentarer
+description: Variabler och kommentarer.
 ---
 
 # Grunder i PHP

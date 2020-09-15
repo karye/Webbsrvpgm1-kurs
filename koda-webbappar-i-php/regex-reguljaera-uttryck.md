@@ -1,5 +1,5 @@
 ---
-description: Söka i text med regex
+description: Söka i text med regex.
 ---
 
 # Regex - reguljära uttryck

@@ -1,5 +1,5 @@
 ---
-description: Använda inbyggda MySQL-funktioner
+description: Använda inbyggda MySQL-funktioner.
 ---
 
 # Laboration 4

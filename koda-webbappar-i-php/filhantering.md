@@ -1,5 +1,5 @@
 ---
-description: Hur man läser textfiler och skriva i textfiler
+description: Hur man läser textfiler och skriva i textfiler.
 ---
 
 # Filhantering

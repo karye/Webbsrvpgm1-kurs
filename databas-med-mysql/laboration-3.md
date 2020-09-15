@@ -1,5 +1,5 @@
 ---
-description: Relationer mellan tabeller
+description: Relationer mellan tabeller.
 ---
 
 # Laboration 3

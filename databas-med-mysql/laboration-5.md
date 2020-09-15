@@ -1,5 +1,5 @@
 ---
-description: Använda fritextsökning
+description: Använda fritextsökning.
 ---
 
 # Laboration 5

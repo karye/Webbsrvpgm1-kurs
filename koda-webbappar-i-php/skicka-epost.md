@@ -1,5 +1,5 @@
 ---
-description: Det svåra konsten att skicka epost
+description: Det svåra konsten att skicka epost.
 ---
 
 # Skicka epost

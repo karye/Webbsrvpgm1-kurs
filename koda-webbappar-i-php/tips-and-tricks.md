@@ -1,5 +1,5 @@
 ---
-description: Bra och användbart att veta
+description: Bra och användbart att veta.
 ---
 
 # Tips & tricks

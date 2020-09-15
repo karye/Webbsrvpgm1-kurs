@@ -1,5 +1,5 @@
 ---
-description: Hur man återanvänder kod
+description: Hur man återanvänder kod.
 ---
 
 # Funktioner

@@ -1,5 +1,5 @@
 ---
-description: 'Operatorer, villkorssatser och loopar'
+description: 'Operatorer, villkorssatser och loopar.'
 ---
 
 # Operatorer, villkorssatser och loopar

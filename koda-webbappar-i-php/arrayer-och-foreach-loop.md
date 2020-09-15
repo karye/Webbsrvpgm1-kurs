@@ -1,5 +1,5 @@
 ---
-description: Att använda arrayer
+description: Att använda arrayer.
 ---
 
 # Arrayer och foreach-loop

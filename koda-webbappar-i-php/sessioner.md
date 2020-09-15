@@ -1,5 +1,5 @@
 ---
-description: Använda sessioner för att hålla reda på om en användare är inloggad
+description: Använda sessioner för att hålla reda på om en användare är inloggad.
 ---
 
 # Sessioner

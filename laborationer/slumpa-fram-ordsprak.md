@@ -19,12 +19,11 @@
 *
 * PHP version 5
 * @category   Enkel skriptsida
-* @author     Karim Ryde <karye.webb@gmail.com>
+* @author     ...
 * @license    PHP CC
 * @link
 */
 ?>
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>

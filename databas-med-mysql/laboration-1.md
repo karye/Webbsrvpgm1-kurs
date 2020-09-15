@@ -44,30 +44,27 @@ Det vi har jobbat med nu är inloggningen till servern. På servern skall vi nu 
 
 ## Starta databasklienten
 
-För att komma åt databasen måste man använda ett program som kallas för en databasklient. Det finns flera olika sådana och vi kommer längre fram i kursen att ansluta till databasen med PHP men tills vidare skall vi använda den klient som följer med MySQL. Denna databasklient heter **mysql** och kan startas med en mängd olika argument, till exempel följande
-
-```bash
-” - h custor.rejas.se ” betyder att vi skall använda databasservern ”custor.rejas.se”, ( -h står
-för host som betyder värd, eller dator). Eftersom vi är inloggade på custor.rejas.se kan vi även
-använda localhost eller helt strunta i att ange vilken host vi skall använda.
-” -p ” betyder att vi skall ange lösenordet när vi loggar in
-” rejas ” är den databas som vi skall använda, det skall vara ditt inloggningsnamn.
-```
-
+För att komma åt databasen måste man använda ett program som kallas för en databasklient. Det finns flera olika sådana och vi kommer längre fram i kursen att ansluta till databasen med PHP men tills vidare skall vi använda den klient som följer med MySQL. Denna databasklient heter **mysql** och kan startas med en mängd olika argument.  
 Så här kan det se ut:
 
 ```bash
-> mysql -h custor.rejas.se -p rejas
-Enter password:
-Welcome to the MySQL monitor. Commands end with ; or \g.
-Your MySQL connection id is 102 to server version: 4.0.16-log
-Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+root@3084f5616900:/# mysql -u admin -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 2
+Server version: 10.1.44-MariaDB-0ubuntu0.18.04.1 Ubuntu 18.04
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB> 
 ```
 
 Som du ser så står du nu vid en ny kommandoprompt som ser ut så här:
 
 ```sql
-mysql>
+MariaDB>
 ```
 
 Vid denna skriver du **kommandon till databasen**. Jämför med prompten innan som var för att ge kommandon till systemet. Även vid denna prompt har du samma historikfunktion som du hade vid systemprompten, men här bläddrar du mellan kommandona till databasen. Vi testar lite kommandon så att vi ser att det fungerar. Kommandot **SHOW TABLES** visar alla tabeller i databasen. 
@@ -77,19 +74,19 @@ Vid denna skriver du **kommandon till databasen**. Jämför med prompten innan s
 {% endhint %}
 
 ```sql
-mysql> SHOW TABLES;
+MariaDB> SHOW TABLES;
 Empty set (0.00 sec)
-mysql>
+MariaDB>
 ```
 
 I detta fall fanns det inga tabeller att visa eftersom vi inte har skapat några ännu. Men vad hade hänt om vi glömt att skriva ett semikolon på slutet?
 
 ```sql
-mysql> SHOW TABLES
+MariaDB> SHOW TABLES
 ->
 -> ;
 Empty set (0.00 sec)
-mysql>
+MariaDB>
 ```
 
 Nu när jag tryckte Enter-tangenten efter **SHOW TABLES** visades en ny prompt. Denna prompt visar att jag är på en ny rad men fortfarande på samma kommando. Jag tryckte Enter-tangenten två gånger, sedan skrev jag ett semikolon för att avsluta kommandot. Som du såg så gick det bra, det går att dela upp kommandon på flera rader om man vill bara man avslutar dem med semikolon.
@@ -97,9 +94,9 @@ Nu när jag tryckte Enter-tangenten efter **SHOW TABLES** visades en ny prompt. 
 För att lämna databasklienten så ger du kommandot **\q**. De kommandon som börjar med bakstreck ”\” är specialkommandon till databasklienten och dessa skall inte avslutas med semikolon.
 
 ```bash
-mysql> \q
+MariaDB> \q
 Bye
-rejas@custor:~$
+root@3084f5616900:/#
 ```
 
 Starta nu databasklienten igen och upprepa det vi gjort nu **minst en gång**. Detta skall du kunna göra i sömnen. Anteckna gärna och titta i den lilla **lathunden till MySQL** som du har fått.
@@ -109,7 +106,7 @@ Starta nu databasklienten igen och upprepa det vi gjort nu **minst en gång**. D
 Skapar en tabell gör man med kommandot **CREATE TABLE** vi börjar med att skapa en liten testtabell med ett fält som vi kallar för namn och som innehåller text \(max 10 tecken\). Syntaxen för kommandot CR**EATE TABLE** ser i sin enklaste form ut så här:
 
 ```sql
-mysql> CREATE TABLE test ( namn char(10) );
+MariaDB> CREATE TABLE test ( namn char(10) );
 Query OK, 0 rows affected (0.01 sec)
 ```
 
@@ -118,14 +115,14 @@ Vi skapar en tabell som heter _**test**_ och som innehåller ett fält av typen 
 Vill man skapa en tabell med fler fält än ett så kan man naturligtvis göra det. Då anger man fälten inom parentesen efter tabellnamnet åtskilda med kommatecken. Till exempel:
 
 ```sql
-mysql> CREATE TABLE test2 ( namn char(20), enamn char(20) );
+MariaDB> CREATE TABLE test2 ( namn char(20), enamn char(20) );
 Query OK, 0 rows affected (0.18 sec)
 ```
 
 Men nu fortsätter vi med tabellen _**test**_. Vi kollar att tabellen verkligen skapades:
 
 ```sql
-mysql> SHOW TABLES;
+MariaDB> SHOW TABLES;
 +-----------------+
 | Tables_in_rejas |
 +-----------------+
@@ -138,14 +135,14 @@ mysql> SHOW TABLES;
 Jodå, den verkar ju ha skapats. Vi kan titta närmare på fälten med kommandot **SHOW FIELDS FROM** eller **EXPLAIN.**
 
 ```sql
-mysql> SHOW FIELDS FROM test;
+MariaDB> SHOW FIELDS FROM test;
 +-------+----------+------+-----+---------+-------+
 | Field | Type     | Null | Key | Default | Extra |
 +-------+----------+------+-----+---------+-------+
 | namn  | char(10) | YES  |     | NULL    |       |
 +-------+----------+------+-----+---------+-------+
 1 row in set (0.04 sec)
-mysql>
+MariaDB>
 ```
 
 ## Mata in data i tabellen
@@ -153,14 +150,14 @@ mysql>
 Nu när vi har vår lilla tabell, vill vi stoppa in lite värden i den. De gör vi med kommandot **INSERT INTO**. Med **INSER INTO** stoppar man in en post i taget i sin tabell. Om posten har flera fält \(den tabell vi gjort nu har ju bara ett fält\) så se till att fylla alla fält, eller så många som möjligt, med data redan när posten skapas.
 
 ```sql
-mysql> INSERT INTO test (namn) VALUES ('kalle');
+MariaDB> INSERT INTO test (namn) VALUES ('kalle');
 Query OK, 1 row affected (0.00 sec)
 ```
 
 Om man har flera fält i sin tabell och man vill skapa poster är det enklast att fylla alla fält på en gång. Till exempel:
 
 ```sql
-mysql> INSERT INTO test2 (namn, enamn) VALUES ('Kalle', 'Anka');
+MariaDB> INSERT INTO test2 (namn, enamn) VALUES ('Kalle', 'Anka');
 Query OK, 1 row affected (0.01 sec)
 ```
 
@@ -171,7 +168,7 @@ Stoppa nu in några fler namn i tabellen _**test**_.
 Att ställa frågor till en databas innebär att man gör vissa operationer på poster. Det vi gjorde ovan som skapade tallen och posterna kallas också för frågor även om de kanske inte direkt ses som frågor. Den enklaste frågan är att välja poster ur en tabell. När man väljer ut data ur en eller flera tabeller kallas det ibland att man gör en urvalsfråga. Det gör man med kommandot **SELECT FROM**  som i sin enklaste form ser ut enligt nedan.
 
 ```sql
-mysql> SELECT * FROM test;
+MariaDB> SELECT * FROM test;
 +--------+
 |  namn  |
 +--------+
@@ -182,7 +179,7 @@ mysql> SELECT * FROM test;
 | fnatte |
 +--------+
 5 rows in set (0.00 sec)
-mysql>
+MariaDB>
 ```
 
 Tecknet **\*** betyder ungefär **allt**, man kan läsa ut kommandot ovan som **VÄLJ ALLT FRÅN test.**
@@ -192,9 +189,9 @@ Tecknet **\*** betyder ungefär **allt**, man kan läsa ut kommandot ovan som **
 Man kan radera poster från en tabell med kommandot **DELETE FROM ...**, observera att detta är ett destruktivt kommando som raderar saker. Det finns inget **undo**. Gör man en **DELETE FROM tabell** så kommer allt i tabellen att tas bort. Vi måste begränsa vad som skall tas bort med hjälp av **WHERE**. Se nedanstående exempel:
 
 ```sql
-mysql> DELETE FROM test WHERE namn='fnatte';
+MariaDB> DELETE FROM test WHERE namn='fnatte';
 Query OK, 1 row affected (0.80 sec)
-mysql>
+MariaDB>
 ```
 
 Märk att _**fnatte**_ ****är inom apostrofer i exemplet ovan. Alla textsträngar måste vara inom apostrofer eller citationstecken för att tolkas rätt. Apostroferna hittar du på tangenten ovanför den högra shift-tangenten på tangentbordet.
@@ -202,7 +199,7 @@ Märk att _**fnatte**_ ****är inom apostrofer i exemplet ovan. Alla textsträng
 I exemplet ovan raderades raden där fältet namn innehåller _**fnatte**_ . En **WHERE** -sats kan man använda tillsammans med de flesta andra satser. Till exempel **SELECT**. Som du ser så raderas posten utan minsta förvarning ovan. Ofta kan det vara bra att testa med ett oförstörande kommando som till exempel **SELECT** först.
 
 ```sql
-mysql> SELECT * FROM test WHERE namn='tjatte';
+MariaDB> SELECT * FROM test WHERE namn='tjatte';
 +--------+
 |  namn  |
 +--------+
@@ -214,14 +211,14 @@ mysql> SELECT * FROM test WHERE namn='tjatte';
 Som vi ser så verkar en post matcha **WHERE namn='tjatte'** så är det den vi vill radera är det bara att sätta igång:
 
 ```sql
-mysql> DELETE FROM test WHERE namn='tjatte';
+MariaDB> DELETE FROM test WHERE namn='tjatte';
 Query OK, 1 row affected (0.03 sec)
 ```
 
 Nu skall _**tjatte**_ vara borta, vi kollar med **SELECT** igen:
 
 ```sql
-mysql> SELECT * FROM test WHERE namn='tjatte';
+MariaDB> SELECT * FROM test WHERE namn='tjatte';
 Empty set (0.00 sec)
 ```
 
@@ -229,12 +226,12 @@ Nu vet vi att _**tjatte**_ är borta!
 
 ## Radera tabeller
 
-Ibland vill man ta bort en hel tabell. Det kan man göra med **DROP TABLE**. Kommandon som börjar med **DROP** skall man vara extremt försiktiga med, nu snackar vi riktigt destruktiva saker, och som vanligt inget _**undo**_.
+Ibland vill man ta bort en hel tabell. Det kan man göra med **DROP TABLE**. Kommandon som börjar med **DROP** skall man vara extremt försiktiga med, nu snackar vi riktigt destruktiva saker, och som vanligt inget ångra.
 
 ```sql
-mysql> DROP TABLE test;
+MariaDB> DROP TABLE test;
 Query OK, 0 rows affected (0.34 sec)
-mysql>
+MariaDB>
 ```
 
 Så, nu är tabellen _**test**_ ett minne blott.
@@ -248,7 +245,7 @@ Den skall se ut enligt skärmdumpen nedan och du skall fylla den med data som ne
 Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig för att skapa tabellen. Se till att den är rätt innan du börjar mata in bilarna. När du matar in bilarna, se till att du matar in en hel post i taget. Alltså alla data om en bil i en fråga. Det finns exempel även på detta i lathunden. Resultatet skall bli exakt som detta:
 
 ```sql
-mysql> EXPLAIN bilar;
+MariaDB> EXPLAIN bilar;
 +-----------+----------+------+-----+---------+-------+
 | Field     | Type     | Null | Key | Default | Extra |
 +-----------+----------+------+-----+---------+-------+
@@ -258,7 +255,7 @@ mysql> EXPLAIN bilar;
 | arsmodell | int(11)  | YES  |     | NULL    |       |
 +-----------+----------+------+-----+---------+-------+
 4 rows in set (0.03 sec)
-mysql> SELECT * FROM bilar;
+MariaDB> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+
 | reg    | marke      | modell    | arsmodell |
 +--------+------------+-----------+-----------+
@@ -274,7 +271,7 @@ mysql> SELECT * FROM bilar;
 | DEF456 | Toyota     | Carina II |      1998 |
 +--------+------------+-----------+-----------+
 10 rows in set (0.00 sec)
-mysql>
+MariaDB>
 ```
 
 När du är klar och fått en tabell som ser ut som ovan kopierar du den och klistrar in i en texteditor och lämnar in. Du är nu klar med den första laborationen.

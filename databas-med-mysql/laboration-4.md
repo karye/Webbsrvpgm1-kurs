@@ -4,13 +4,13 @@ description: Använda inbyggda MySQL-funktioner
 
 # Laboration 4
 
-Det är i huvudsak två saker som brukar vara svårt när man jobbar med databaser, att skapa rätt struktur \(schema\) i sin databas och att sedan ställa rätt frågor till den. I denna labb jobbar vi vidare med SELECT. Du skall ha gjort Laboration 1, 2 och 3 innan du gör denna.
+Det är i huvudsak två saker som brukar vara svårt när man jobbar med databaser, att skapa rätt struktur \(schema\) i sin databas och att sedan ställa rätt frågor till den. I denna labb jobbar vi vidare med **SELECT**. Du skall ha gjort Laboration 1, 2 och 3 innan du gör denna.
 
 ## Från förra laborationen
 
 Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här:
 
-```text
+```sql
 mysql> DESCRIBE bilar;
 +-----------+----------+------+-----+---------+-------+
 | Field     | Type     | Null | Key | Default | Extra |
@@ -36,7 +36,7 @@ mysql> DESCRIBE personer;
 
 Dessa har ungefär följande innehåll:
 
-```text
+```sql
 mysql> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
@@ -73,31 +73,31 @@ Ser inte era tabeller ut exakt så så gör det inget. Men de bör vara ungefär
 
 ### SELECT ... AS ... FROM ...
 
-När man väljer olika fält från en tabell så blir rubriken det som man väljer1. Så vill man kanske inte ha det. Man vill kanske inte att det skall stå ”fnamn” och ”enamn” som det gör ovan utan ”Förnamn” och ”Efternamn” i stället. Det kan man åstadkomma genom att ställa sin fråga på följande sätt.
+När man väljer olika fält från en tabell så blir rubriken det som man väljer. Så vill man kanske inte ha det. Man vill kanske inte att det skall stå _**fnamn**_ och _**enamn**_ som det gör ovan utan ”Förnamn” och ”Efternamn” i stället. Det kan man åstadkomma genom att ställa sin fråga på följande sätt.
 
-```text
+```sql
 mysql> SELECT fnamn AS Förnamn, enamn AS Efternamn FROM personer;
 ```
 
 ## Funktioner
 
-Man kan i MySQL skriva enklare funktioner direkt i sina frågor. Vi har tidigare sett funktioner som SUM\(\), COUNT\(\) och AVG\(\). Nu skall vi titta på en del andra. Concat är en förkortning för engelskans ”concatenate” som betyder ungefär ”sätt ihop” och det är just vad funktionen gör.
+Man kan i MySQL skriva enklare funktioner direkt i sina frågor. Vi har tidigare sett funktioner som **SUM\(\)**, **COUNT\(\)** och **AVG\(\)**. Nu skall vi titta på en del andra. **CONCAT** är en förkortning för engelskans ”concatenate” som betyder ungefär ”sätt ihop” och det är just vad funktionen gör.
 
 ### Funktionen CONCAT\(\)
 
 Den fungerar så här:
 
 ```text
-mysql> SELECT CONCAT(marke," ",modell) FROM bilar;
+mysql> SELECT CONCAT(marke, " ", modell) FROM bilar;
 ```
 
-I exemplet så att det som kommer inom parenteserna kan vara godtyckliga strängar, inom citationstecken \(”\), och fältnamn. I vårt exempel så slår vi ihop ”marke” och ”modell” Med ett mellanslag emellan. Varje fält eller textsträng åtskiljs med ett kommatecken \(,\). Prova nu lite olika strängar.
+I exemplet så att det som kommer inom parenteserna kan vara godtyckliga strängar, inom citationstecken \(”\), och fältnamn. I vårt exempel så slår vi ihop _**marke**_ och _**modell**_ Med ett mellanslag emellan. Varje fält eller textsträng åtskiljs med ett kommatecken \(,\). Prova nu lite olika strängar.
 
 ### Datumfunktioner
 
 För att kunna laborera med dessa utökar i persontabellen så att den ser ut som nedan. Titta bland dina tidigare laborationer om du inte minns hur man gör.
 
-```text
+```sql
 mysql> DESCRIBE personer;
 +--------------+----------+------+-----+---------+----------------+
 | Field        | Type     | Null | Key | Default | Extra          |
@@ -112,7 +112,7 @@ mysql> DESCRIBE personer;
 
 Fyll \(populera\) sedan detta nya fält i tabellen så att den ser ut så här:
 
-```text
+```sql
 mysql> SELECT * FROM personer;
 +----+-----------+-------+--------------+
 | id | fnamn     | enamn | fodelsedatum |
@@ -132,9 +132,9 @@ Som ni kanske har listat ut skall vi räkna ut hur gamla dessa figurer är. Men 
 
 ### Funktionen CURDATE\(\), CURTIME\(\) och NOW\(\)
 
-Funktionen CURDATE\(\) ger som svar vilken dag det är idag. Man behöver inte alls välja några fält från tabeller utan man kan bara göra så här om man vill:
+Funktionen **CURDATE\(\)** ger som svar vilken dag det är idag. Man behöver inte alls välja några fält från tabeller utan man kan bara göra så här om man vill:
 
-```text
+```sql
 mysql> SELECT CURDATE();
 +------------+
 | CURDATE()  |
@@ -151,15 +151,15 @@ mysql> SELECT CURTIME();
 1 row in set (0.00 sec)
 ```
 
-Samma sak gäller för CURTIME\(\) som naturligtvis ger aktuell tid. Det finns även NOW\(\) som visar både datum och tid. En sak som är väldigt trevligt för oss svenskar är att MySQL presenterar datumet i ett för oss väldigt vanligt format, nämligen det i använder i våra personnummer och tiden presenteras i 24- timmars form som också passar oss. Samma regler gäller vid inmatning av datum och tid.
+Samma sak gäller för **CURTIME\(\)** som naturligtvis ger aktuell tid. Det finns även **NOW\(\)** som visar både datum och tid. En sak som är väldigt trevligt för oss svenskar är att MySQL presenterar datumet i ett för oss väldigt vanligt format, nämligen det i använder i våra personnummer och tiden presenteras i 24- timmars form som också passar oss. Samma regler gäller vid inmatning av datum och tid.
 
 MySQL är bra på att känna igen datum och klockslag i olika former så kommer man ihåg detta som kommer det att gå bra.
 
 ### Funktionen TO\_DAYS\(\)
 
-Ibland vill man räkna hur långt det är mellan två datum. Då är det smidigt att räkna om datumen till dagar. Till detta finns funktionen TO\_DAYS\(\). Vill man veta hur många dagar det är kvar till midsommarafton så kan man göra det med nedanstående sats som också innehåller lite matematik. Jag kommer inte att behandla detta mer i detalj än så här just nu. Laborera och prova dig fram.
+Ibland vill man räkna hur långt det är mellan två datum. Då är det smidigt att räkna om datumen till dagar. Till detta finns funktionen **TO\_DAYS\(\)**. Vill man veta hur många dagar det är kvar till midsommarafton så kan man göra det med nedanstående sats som också innehåller lite matematik. Jag kommer inte att behandla detta mer i detalj än så här just nu. Laborera och prova dig fram.
 
-```text
+```sql
 mysql> SELECT TO_DAYS('2004-06-26') – TO_DAYS(CURDATE());
 +--------------------------------------------+
 | TO_DAYS('2004-06-26') - TO_DAYS(CURDATE()) |
@@ -173,7 +173,7 @@ mysql> SELECT TO_DAYS('2004-06-26') – TO_DAYS(CURDATE());
 
 Ofta vill man bryta upp ett datum i sina beståndsdelar. Det är MySQL väldigt bra på. Vill man till exempel veta hur många år en bil är så är man nog bara intresserad av vilket år det är nu och inte hela datumet. Vill man veta om det är den 15:e i vilken månad som helst måste man kunna välja bara dagen och vill man veta om det är månaden juni så är det smidigt med bara månaden. Några exempel:
 
-```text
+```sql
 mysql> SELECT DAYOFMONTH('2003-12-21');
 +--------------------------+
 | DAYOFMONTH('2003-12-21') |
@@ -218,7 +218,7 @@ Skriv en fråga som talar om hur många dagar du är.
 
 Skriv en fråga som skriver ut följande:
 
-```text
+```sql
 +-----------------+
 | Person          |
 +-----------------+
@@ -241,7 +241,7 @@ Skriv en fråga som skriver ut alla som fyller år i oktober.
 
 Skriv en fråga som skriver ut följande tabell:
 
-```text
+```sql
 +------------------------------------+
 | Biltabell                          |
 +------------------------------------+
@@ -263,7 +263,7 @@ Skriv en fråga som skriver ut följande tabell:
 
 Skriv en fråga som skriver ut följande. Tänk på att rubriker och sortering.
 
-```text
+```sql
 +--------------+------------------+-------+
 | Ägare        | Bilmodell        | Ålder |
 +--------------+------------------+-------+

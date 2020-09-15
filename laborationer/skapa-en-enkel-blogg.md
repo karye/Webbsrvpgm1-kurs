@@ -45,7 +45,7 @@ description: Skapa en webbapp med lagring i textfil
 </html>
 ```
 
-## **Skriva in inlägg**
+## **Skriva inlägg**
 
 ### **Skriva inlägget : skriva.html**
 
@@ -134,7 +134,7 @@ if (is_writable($filnamn )) {
 
 ## **Läsa inläggen**
 
-### **Läsa från en textfil - hamta.php**
+### **Läsa från en textfil - lasa.php**
 
 * Ersätt '...' med rätt PHP-syntax
 * Studera:

@@ -8,7 +8,7 @@ description: Skapa en webbapp med lagring i textfil
 
 * Skriva enkla blogginlägg
 * Lagra dessa i en textfil
-* Läsa hela bloggen
+* Läsa bloggen alla inlägg
 
 ## **Skapa hemsidan: blogg.html**
 
@@ -49,6 +49,9 @@ description: Skapa en webbapp med lagring i textfil
 
 ### **Skriva inlägget : skriva.html**
 
+* Ett formulär behövs för att skriva in ett inlägg
+* Formulär skickar data till **spara.php**
+
 ```markup
 ...
 <main>
@@ -62,6 +65,7 @@ description: Skapa en webbapp med lagring i textfil
 
 ### **Skriva till en textfil - spara.php**
 
+* PHP-skriptet i **spara.php** tar emot data och skall lagra inlägget i en textfil
 * Ersätt '...' med rätt PHP-syntax
 * Studera
   * Funktionen [isset\(\)](https://devdocs.io/php/function.isset) - se om variabeln finns
@@ -99,8 +103,9 @@ if (...($_POST['inlagg'])) {
 
 ### **Kontrollera att filen är skrivbar**
 
+* För att webbappen inte skall krascha behöver vi kontrollera en del saker
 * Studera koden nedan
-* Studera
+* Studera också 
   * Funktionen [is\_writable\(\)](https://devdocs.io/php/function.is-writable) - se om filen är skrivbar
 * Ersätt '...' med rätt text
 * Infoga kontrollerna \(if-satser\) i **spara.php**
@@ -138,6 +143,7 @@ if (is_writable($filnamn )) {
 
 ### **Läsa från en textfil - lasa.php**
 
+* Här läses alla inlägg in från textfilen
 * Ersätt '...' med rätt PHP-syntax
 * Studera:
   * Funktionen [file](https://devdocs.io/php/function.file) - läsa in hela filen

@@ -22,4 +22,5 @@
 * [Laboration 2](databas-med-mysqli/laboration-2.md)
 * [Laboration 3](databas-med-mysqli/laboration-3.md)
 * [Laboration 4](databas-med-mysqli/laboration-4.md)
+* [Laboration 5](databas-med-mysqli/laboration-5.md)
 

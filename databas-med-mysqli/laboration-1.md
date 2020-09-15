@@ -111,7 +111,7 @@ Query OK, 0 rows affected (0.01 sec)
 
 Vi skapar en tabell som heter ” **test** ” och som innehåller ett fält av typen char\(10\), för mer information om typer se **appendix a** i Björk^2.
 
-Vill man skapa en tabell med fler fält än ett så kan man naturligtvis göra det. Då anger man fälten inom parentesen efter tabellnamnet åtsikjda med kommatecken. Till exempel:
+Vill man skapa en tabell med fler fält än ett så kan man naturligtvis göra det. Då anger man fälten inom parentesen efter tabellnamnet åtskilda med kommatecken. Till exempel:
 
 ```text
 mysql> CREATE TABLE test2 ( namn char(20), enamn char(20) );

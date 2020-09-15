@@ -19,5 +19,6 @@
 ## Databas med mysqli
 
 * [Laboration 1](databas-med-mysqli/laboration-1.md)
-* [Laboration 2](databas-med-mysqli/laboration-2-1.md)
+* [Laboration 2](databas-med-mysqli/laboration-2.md)
+* [Laboration 3](databas-med-mysqli/laboration-3.md)
 

@@ -199,7 +199,8 @@ mysql> SELECT YEAR('2003-12-21');
 1 row in set (0.01 sec)
 ```
 
-Jag kommer inte att ta mer om detta nu utan laborera som vanligt vidare med dessa. Vill du lära dig mer om MySQL och datumfunktioner så rekommenderar jag följande webbadresser: MySQL-manualen: [http://www.mysql.com/doc/en/Date\_and\_time\_functions.html](http://www.mysql.com/doc/en/Date_and_time_functions.html) 
+Jag kommer inte att ta mer om detta nu utan laborera som vanligt vidare med dessa. Vill du lära dig mer om MySQL och datumfunktioner så rekommenderar jag följande webbadresser:   
+MySQL-manualen: [http://www.mysql.com/doc/en/Date\_and\_time\_functions.html](http://www.mysql.com/doc/en/Date_and_time_functions.html) 
 
 En artikel om datum- och tidsfunktioner i MySQL i två delar: [http://www.databasejournal.com/features/mysql/article.php/2172731](http://www.databasejournal.com/features/mysql/article.php/2172731) [http://www.databasejournal.com/features/mysql/article.php/2190421](http://www.databasejournal.com/features/mysql/article.php/2190421)
 

@@ -10,27 +10,50 @@ description: Skapa en webbapp med lagring i textfil
 * Lagra dessa i en textfil
 * Läsa hela bloggen
 
-## **Skapa formuläret - inlagg.html**
+## **Skapa hemsidan: blogg.html**
 
 ```markup
-<!doctype html>
+<!DOCTYPE html>
 <html lang="sv">
 <head>
     <meta charset="utf-8">
-    <title>Skriva blogginlägg</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Min enkla blogg</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Dagens blogginlägg</h1>
-    <form action="lagra.php" method="post">
-        <textarea name="inlagg"></textarea><br>
-        <button>Lagra</button>
-    </form>
+    <div class="kontainer">
+        <header>
+            <h1>Bloggen</h1>
+            <nav>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link active" href="blogg.html">Hemsida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skriva.html">Skriva inlägg</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lasa.php">Läsa inlägg</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p class="card text-white bg-warning mb-3">Välkommen till min första webbapp!</p>
+        </main>
+        <footer>
+            2019
+        </footer>
+    </div>
 </body>
 </html>
 ```
 
-## **Skriva till en textfil - lagra.php**
+## **Skriva in inlägg**
+
+### **Skriva inlägget : skriva.html**
+
+```markup
+
+```
+
+### **Skriva till en textfil - lagra.php**
 
 * Ersätt '...' med rätt PHP-syntax
 * Studera:

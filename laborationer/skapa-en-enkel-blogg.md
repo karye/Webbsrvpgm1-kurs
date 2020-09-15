@@ -64,9 +64,9 @@ description: Skapa en webbapp med lagring i textfil
 
 * Ersätt '...' med rätt PHP-syntax
 * Studera
-  * Funktionen [isset\(\)](https://devdocs.io/php/function.isset)
-  * Funktionen [fopen\(\)](https://devdocs.io/php/function.fopen)
-  * Funktionen [fwrite\(\)](https://devdocs.io/php/function.fwrite)
+  * Funktionen [isset\(\)](https://devdocs.io/php/function.isset) - se om variabeln finns
+  * Funktionen [fopen\(\)](https://devdocs.io/php/function.fopen) - öppna en fil
+  * Funktionen [fwrite\(\)](https://devdocs.io/php/function.fwrite) - skriva till en fil
 
 ```php
 ...
@@ -100,6 +100,8 @@ if (...($_POST['inlagg'])) {
 ### **Kontrollera att filen är skrivbar**
 
 * Studera koden nedan
+* Studera
+  * Funktionen [is\_writable\(\)](https://devdocs.io/php/function.is-writable) - se om filen är skrivbar
 * Ersätt '...' med rätt text
 * Infoga kontrollerna \(if-satser\) i **spara.php**
 
@@ -138,7 +140,7 @@ if (is_writable($filnamn )) {
 
 * Ersätt '...' med rätt PHP-syntax
 * Studera:
-  * Funktionen [file](https://devdocs.io/php/function.file)
+  * Funktionen [file](https://devdocs.io/php/function.file) - läsa in hela filen
 
 ```php
     ...

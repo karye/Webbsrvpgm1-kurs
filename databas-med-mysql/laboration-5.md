@@ -152,3 +152,7 @@ Skriv en fråga som visar förnamnet på alla de som har ett \_ understreck i ef
 Skriv en fråga som listar alla bilar med ett ”a” någonstans i namnet. Bokstaven a måste finnas på någon annan plats än första och sista bokstaven. Det gör inget om första eller sista bokstaven är ett ”a” men det måste då även finnas ett ”a” på någon annan plats i namnet.  
 Lite krystat, jag vet, men det är mycket användbart i andra sammanhang.
 
+{% hint style="info" %}
+Copyright © 2004, 2005 Rejås Datakonsult. Var och en äger rätt att kopiera, sprida och/eller förändra detta dokument under villkoren i licensen "GNU Free Documentation License", version 1.2 eller senare publicerad av Free Software Foundation, utan oföränderliga avsnitt, utan framsidestexter och utan baksidestexter. En kopia av denna licens finns på [http://rejas.se/gnu/.](http://rejas.se/gnu/.)
+{% endhint %}
+

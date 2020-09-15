@@ -151,9 +151,7 @@ mysql> SELECT CURTIME();
 1 row in set (0.00 sec)
 ```
 
-Samma sak gäller för CURTIME\(\) som naturligtvis ger aktuell tid. Det finns även NOW\(\) som visar både datum och tid. En sak som är väldigt trevligt för oss svenskar är att MySQL presenterar datumet i ett för oss väldigt vanligt format, nämligen det i använder i våra personnummer och tiden presenteras i 24- timmarsform som också passar oss2. Samma regler gäller vid inmatning av datum och tid.
-
-MySQL är ju trots allt en Svensk produkt
+Samma sak gäller för CURTIME\(\) som naturligtvis ger aktuell tid. Det finns även NOW\(\) som visar både datum och tid. En sak som är väldigt trevligt för oss svenskar är att MySQL presenterar datumet i ett för oss väldigt vanligt format, nämligen det i använder i våra personnummer och tiden presenteras i 24- timmars form som också passar oss. Samma regler gäller vid inmatning av datum och tid.
 
 MySQL är bra på att känna igen datum och klockslag i olika former så kommer man ihåg detta som kommer det att gå bra.
 

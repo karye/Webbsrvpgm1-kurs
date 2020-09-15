@@ -10,7 +10,7 @@ I denna laboration skall vi jobba vidare på bildatabasen som vi började på f�
 
 Om du gjorde den förra laborationen rätt så skall du ha en tabell med följande fält.
 
-```text
+```sql
 mysql> EXPLAIN bilar;
 +-----------+----------+------+-----+---------+-------+
 | Field     | Type     | Null | Key | Default | Extra |
@@ -26,7 +26,7 @@ mysql> EXPLAIN bilar;
 
 Denna tabell skall vi nu bygga vidare på. MySQL har en egenskap som är väldigt bra, nämligen att man kan uppdatera ett schema trots att det finns data i tabellen. Naturligtvis kan man inte ändra det så att det data som finns i tabellen inte passar in.
 
-Fältet ”agare” Nu vill vi att man skall kunna lägga till en ägare på varje bil. En bil skall ha bara en enda ägare men en person skall kunna äga flera bilar. För att följa de normaliseringsregler1 vi lärt oss så vet vi att vi måste skapa en tabell till med ägarna till bilarna. Det gör vi av i huvudsak för att förhindra dubbellagring eller redundans som det kallas. Man kan enkelt se att det behövs eftersom ägaren inte beror helt på bilens nyckel. Vi börjar med att uppdatera biltabellen. Lägg till fältet agare, se förra labben om du inte minns hur man gör. Fältet skall ha typen int. Int är en förkortning för integer som betyder ”heltal”. När du är klar skall resultatet bli så här:
+Fältet _**agare**_ Nu vill vi att man skall kunna lägga till en ägare på varje bil. En bil skall ha bara en enda ägare men en person skall kunna äga flera bilar. För att följa de normaliseringsregler vi lärt oss så vet vi att vi måste skapa en tabell till med ägarna till bilarna. Det gör vi av i huvudsak för att förhindra dubbellagring eller redundans som det kallas. Man kan enkelt se att det behövs eftersom ägaren inte beror helt på bilens nyckel. Vi börjar med att uppdatera biltabellen. Lägg till fältet _**agare**_, se förra labben om du inte minns hur man gör. Fältet skall ha typen **int**. **int** är en förkortning för integer som betyder ”heltal”. När du är klar skall resultatet bli så här:
 
 ```text
 mysql> EXPLAIN bilar;
@@ -45,9 +45,9 @@ mysql> EXPLAIN bilar;
 
 ### Skapa ägare till bilarna
 
-Nu skall dessa bilar få ägare. Det gör vi genom att mata in heltal i fältet agare för bilarna. Titta på din tidigare labb och lathunden om du inte minns hur man gör. Kom ihåg att UPDATE är farligt, glöm inte WHERE. När du är klar skall biltabellen se ut så här:
+Nu skall dessa bilar få ägare. Det gör vi genom att mata in heltal i fältet _**agare**_ för bilarna. Titta på din tidigare labb och lathunden om du inte minns hur man gör. Kom ihåg att **UPDATE** är farligt, glöm inte **WHERE**. När du är klar skall biltabellen se ut så här:
 
-```text
+```sql
 mysql> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
@@ -66,13 +66,13 @@ mysql> SELECT * FROM bilar;
 11 rows in set (0.01 sec)
 ```
 
-Från början har alla poster värdet NULL i fältet ägare \(man kan ange ett annat defaultvärde när man skapar ett fält om man vill\). NULL är ett speciellt värde som betyder ”ingenting”. Lägg nu till en bil av valfritt märke och modell som inte har någon ägare, det vill säga, låt agare vara NULL.
+Från början har alla poster värdet **NULL** i fältet ägare \(man kan ange ett annat defaultvärde när man skapar ett fält om man vill\). **NULL** är ett speciellt värde som betyder ”ingenting”. Lägg nu till en bil av valfritt märke och modell som inte har någon ägare, det vill säga, låt _**agare**_ vara **NULL**.
 
 ### Tabellen personer
 
-Vi skall nu skapa en tabell med personer. Tabellen skall naturligtvis hålla poster med information om de olika personerna. Varje person skall identifieras av ett id-nummer. Om vi vore en förening kanske detta skulle kallas medlemsnummer, vore vi ett företag kanske det skulle kallas anställningsnummer. Vi använder ett löpnummer istället för personernas personnummer eftersom det är bra för personerna att hålla sitt personnummer för sig själv. Den information vi skall spara om varje person är, förutom id-numret, förnamn och efternamn. Vi kallar dessa fält för ”fnamn” och ”enamn”. Fältet med id-numret kallar vi för id. Eftersom detta fält skall unikt identifiera en person så gör vi detta till primärnyckel i tabellen. Vi sätter det också till att räkna upp sig självt \(AUTO\_INCREMENT\) så slipper vi tänka på det. Skapa nu tabellen. Den skall se ut så här när den är klar \(titta i föregående labb om du inte vet hur du skall göra\):
+Vi skall nu skapa en tabell med personer. Tabellen skall naturligtvis hålla poster med information om de olika personerna. Varje person skall identifieras av ett id-nummer. Om vi vore en förening kanske detta skulle kallas medlemsnummer, vore vi ett företag kanske det skulle kallas anställningsnummer. Vi använder ett löpnummer istället för personernas personnummer eftersom det är bra för personerna att hålla sitt personnummer för sig själv. Den information vi skall spara om varje person är, förutom id-numret, förnamn och efternamn. Vi kallar dessa fält för _**fnamn**_ och _**enamn**_. Fältet med id-numret kallar vi för id. Eftersom detta fält skall unikt identifiera en person så gör vi detta till primärnyckel i tabellen. Vi sätter det också till att räkna upp sig självt \(**auto\_increment**\) så slipper vi tänka på det. Skapa nu tabellen. Den skall se ut så här när den är klar \(titta i föregående labb om du inte vet hur du skall göra\):
 
-```text
+```sql
 mysql> DESCRIBE personer;
 +-------+----------+------+-----+---------+----------------+
 | Field | Type     | Null | Key | Default | Extra          |
@@ -97,11 +97,9 @@ mysql> SELECT * FROM personer;
 7 rows in set (0.03 sec)
 ```
 
-Nu har vi lite frågor som vi kan ställa frågor till. Vi skall nu öva oss på att använda SELECT;
+Nu har vi lite frågor som vi kan ställa frågor till. Vi skall nu öva oss på att använda **SELECT.**
 
-```text
-SELECT från flera tabeller
-```
+## SELECT från flera tabeller
 
 Repetera SELECT från förra laborationen om du känner dig osäker på hur det fungerar. I den förra laborationen använde vi SELECT för att välja saker från en tabell. Nu skall vi utveckla detta vidare och välja från flera olika tabeller. Vi börjar med en liten fråga som listar alla bilar och deras ägare. Nu skall vi i SELECT välja inte bara från en tabell utan från flera \(två i detta fall\). Eftersom de fält vi väljer kan ha samma namn olika tabeller måste vi ange både vila fält vi skall välja och i vilka tabeller dessa kan hittas. Vill vi välja fnamn från person så anges detta som ”person.fnamn”. Vill vi välja alla fält från person så kan vi skriva person.\*. Som vanligt åtskiljer vi det vi listar med kommatecken. Även tabellerna måste anges och åtskiljs med kommatecken. Vi börjar med att välja bilmärken och modeller och så förnamn och efternamn ur persontabellen. Vi skriver så här:
 
@@ -110,8 +108,6 @@ mysql> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM per
 ```
 
 Men det där blev ju inte så bra! Varför inte det? Jo vi har ingenstans angivit hur tabellerna skall relatera till varandra. Det kan vi göra med hjälp av kommandot INNER JOIN. Tag dig tid att fundera på nedanstående frågor då dessa till en början kan verka krångliga.
-
-## Relationer mellan tabeller
 
 ### INNER JOIN
 

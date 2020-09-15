@@ -10,7 +10,7 @@ I denna labb skall vi jobba vidare på att söka efter olika saker. Vi skall anv
 
 Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här:
 
-```text
+```sql
 mysql> DESCRIBE bilar;
 +-----------+----------+------+-----+---------+-------+
 | Field     | Type     | Null | Key | Default | Extra |
@@ -37,7 +37,7 @@ mysql> DESCRIBE personer;
 
 Dessa har ungefär följande innehåll:
 
-```text
+```sql
 mysql> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
@@ -87,7 +87,7 @@ Några exempel:
 
 För att använda jokertecken använder man LIKE istället för ”=”. Till exempel kan man gör som i exemplet nedan för att ta fram alla förnamn som börjar på K.
 
-```text
+```sql
 mysql> select * from personer where fnamn LIKE 'K%';
 +----+--------+-------+--------------+
 | id | fnamn  | enamn | fodelsedatum |
@@ -102,7 +102,7 @@ mysql> select * from personer where fnamn LIKE 'K%';
 
 ### Escape-tecken
 
-Antag att man vill söka efter något som innehåller just % eller ,till exempel ”kalle\_anka”. Då blir det genast problem. Skriver man ”kalle\_anka” så kommer ju också ”kalle+anka” att stämma och alla andra strängar som består av ”kalle” och ”anka” med ett tecken mellan. Samma problem uppstår om man vill söka efter en sträng som innehåller ' eller ” eftersom dessa tecken används för att avgränsa själva strängen. Till vår hjälp då finns escape-tecknen. Escape-tecken används då man vill att specialtecken skall förekomma i en sträng. Man säger på svengelska att dessa tecken skall ”escapas”. Escape-tecknet i SQL är  \(bakåtstreck eller backslash\). Tecket efter escape-tecknet är det som escapas. Till exempel så matchar \ just ett \_ \(understreck\).
+Antag att man vill söka efter något som innehåller just **%** eller, tex ”kalle\_anka”. Då blir det genast problem. Skriver man ”kalle\_anka” så kommer ju också ”kalle+anka” att stämma och alla andra strängar som består av ”kalle” och ”anka” med ett tecken mellan. Samma problem uppstår om man vill söka efter en sträng som innehåller ' eller ” eftersom dessa tecken används för att avgränsa själva strängen. Till vår hjälp då finns escape-tecknen. Escape-tecken används då man vill att specialtecken skall förekomma i en sträng. Man säger på svengelska att dessa tecken skall ”escapas”. Escape-tecknet i SQL är  \(bakåtstreck eller backslash\). Tecket efter escape-tecknet är det som escapas. Till exempel så matchar \ just ett \_ \(understreck\).
 
 | \\_ | Matchar \_ |
 | :--- | :--- |
@@ -131,7 +131,7 @@ Polisen har nu fått in lite mer vittnesuppgifter de vill ha tag i namnen på al
 
 Skriv en fråga som talar om hur många bilar som har ett registreringsnummer som börjar på A. Det skall se ut så här:
 
-```text
+```sql
 +---------------------------------------+
 | Antal bilar med reg som startar med A |
 +---------------------------------------+

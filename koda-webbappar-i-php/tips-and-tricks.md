@@ -19,7 +19,7 @@ echo "<p>$datum</p>";
 
 ### Växla språkstöd
 
-För att få svar på svenska måste vi ange svenska **locale** med funktionen [setlocale\(\)](https://devdocs.io/php/function.setlocale). Sen formatera vi datumet mha [strftime\(\)](https://devdocs.io/php/function.strftime):
+För att få svar på svenska måste vi ange svenska **locale** med funktionen [setlocale\(\)](https://devdocs.io/php/function.setlocale). Sen formaterar vi datumet mha [strftime\(\)](https://devdocs.io/php/function.strftime):
 
 ```php
 <?php

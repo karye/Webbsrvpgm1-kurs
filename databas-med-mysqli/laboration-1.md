@@ -40,9 +40,7 @@ För att logga ut från servern ger du kommandot **exit** , men det behöver du 
 > exit
 ```
 
-Det vi har jobbat med nu är inloggningen **till servern**. På servern skall vi nu köra en  databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början.
-
-Nu är det dags att starta databasklienten.
+Det vi har jobbat med nu är inloggningen **till servern**. På servern skall vi nu köra en  databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början. Nu är det dags att starta databasklienten.
 
 ## Starta databasklienten
 

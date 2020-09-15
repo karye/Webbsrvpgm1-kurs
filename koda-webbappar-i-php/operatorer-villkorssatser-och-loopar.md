@@ -6,7 +6,7 @@ description: 'Operatorer, villkorssatser och loopar.'
 
 ## **Operatorer**
 
-Det finns ett antal olika operatortyper i PHP. Från matematiken känner vi igen de [aritmetiska operatorerna](https://devdocs.io/php/language.operators.arithmetic), t.ex. **+,-,\*** och **/**. Dessa har vi tittat på tidigare. Tilldelningsoperatorn kallas likamed-tecknet. Den har vi också använt oss av för att ge en variabel ett värde. Några exempel:
+Det finns ett antal olika operatortyper i PHP. Från matematiken känner vi igen de [aritmetiska operatorerna](https://devdocs.io/php/language.operators.arithmetic), t.ex. **+, -, \*** och **/**. Dessa har vi tittat på tidigare. Tilldelningsoperatorn kallas likamed-tecknet \(=\). Den har vi också använt oss av för att ge en variabel ett värde. Några exempel:
 
 ```php
 <?php

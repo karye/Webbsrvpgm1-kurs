@@ -11,7 +11,7 @@ I denna labb skall vi jobba vidare på att söka efter olika saker. Vi skall anv
 Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här:
 
 ```sql
-mysql> DESCRIBE bilar;
+MariaDB> DESCRIBE bilar;
 +-----------+----------+------+-----+---------+-------+
 | Field     | Type     | Null | Key | Default | Extra |
 +-----------+----------+------+-----+---------+-------+
@@ -23,7 +23,7 @@ mysql> DESCRIBE bilar;
 | agare     | int(11)  | YES  |     | NULL    |       |
 +-----------+----------+------+-----+---------+-------+
 6 rows in set (0.07 sec)
-mysql> DESCRIBE personer;
+MariaDB> DESCRIBE personer;
 +--------------+----------+------+-----+---------+----------------+
 | Field        | Type     | Null | Key | Default | Extra          |
 +--------------+----------+------+-----+---------+----------------+
@@ -38,7 +38,7 @@ mysql> DESCRIBE personer;
 Dessa har ungefär följande innehåll:
 
 ```sql
-mysql> SELECT * FROM bilar;
+MariaDB> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
 +--------+------------+-----------+-----------+--------+-------+
@@ -55,7 +55,7 @@ mysql> SELECT * FROM bilar;
 | XXX333 | Nissan     | Primera   |      2003 | 100000 |  NULL |
 +--------+------------+-----------+-----------+--------+-------+
 11 rows in set (0.00 sec)
-mysql> SELECT * FROM personer;
+MariaDB> SELECT * FROM personer;
 +----+-----------+-------+--------------+
 | id | fnamn     | enamn | fodelsedatum |
 +----+-----------+-------+--------------+
@@ -88,7 +88,7 @@ Några exempel:
 För att använda jokertecken använder man LIKE istället för ”=”. Till exempel kan man gör som i exemplet nedan för att ta fram alla förnamn som börjar på K.
 
 ```sql
-mysql> select * from personer where fnamn LIKE 'K%';
+MariaDB> select * from personer where fnamn LIKE 'K%';
 +----+--------+-------+--------------+
 | id | fnamn  | enamn | fodelsedatum |
 +----+--------+-------+--------------+

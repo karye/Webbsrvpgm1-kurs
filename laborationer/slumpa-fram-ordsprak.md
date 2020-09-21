@@ -32,7 +32,6 @@
 </head>
 <body>
 <?php
-
     // Skapa en array med tio ordspråk
     $ordsprak[] = "Blyga pojkar får aldrig kyssa vackra flickor.";
     $ordsprak[] = "Borta bra men hemma bäst.";
@@ -44,9 +43,6 @@
     $ordsprak[] = "Bättre ensam än i dåligt sällskap.";
     $ordsprak[] = "Bättre fly än illa fäkta.";
     $ordsprak[] = "Bättre föregå än föregås.";
-    
-    // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
-    $kontrol[] = array();
 
     // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
     for ($i = ..; $i < ..; $i++) {
@@ -54,6 +50,20 @@
         // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
         $index = ...;
 
+        // Skriv ut ordspråket 
+        echo "<p>$ordsprak[$index]</p>";
+    }
+?>
+</body>
+</html>
+```
+
+### Kontrollera att ordspråket 
+
+```php
+    // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
+    $plockade = array();
+        
         // Skriv ut om den inte finns i arrayen $kontroll
         // Kontroll mha funktionen in_array()
         if (...) {
@@ -61,17 +71,12 @@
             // Skriv ut ordspråket 
             echo "<p>$ordsprak[$index]</p>";
             
-            // Lagra positionen i arrayen $kontroll
+            // Lagra positionen i arrayen $plockade
             ...;
         } else {
             
             // Minska $i med ett
             ...;
         }
-    }
-
-?>
-</body>
-</html>
 ```
 

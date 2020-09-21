@@ -64,7 +64,7 @@
     // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
     $plockade = array();
         
-        // Skriv ut om den inte finns i arrayen $kontroll
+        // Skriv ut om den inte finns i arrayen $plockade
         // Kontroll mha funktionen in_array()
         if (...) {
             

@@ -217,7 +217,7 @@ $tagna = [];
 if (...) {
     
     // Skriv ut ordspråket 
-    echo "<p>$ordsprak[$index]</p>";
+    echo "...";
     
     // Lagra positionen i arrayen $tagna
     ...;

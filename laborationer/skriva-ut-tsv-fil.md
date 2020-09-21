@@ -1,12 +1,12 @@
 ---
-description: Läsa från textfil och "parsa" data som är csv-formaterat.
+description: Läsa från textfil och "parsa" data som är tsv-formaterat.
 ---
 
-# Skriva ut csv-fil
+# Skriva ut tsv-fil
 
 ## Resultatet
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 ## **Syfte**
 
@@ -216,7 +216,7 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 {% endtab %}
 {% endtabs %}
 
-## Förbättringar 
+## Förbättringar
 
 ### Mer detaljerad tabell
 

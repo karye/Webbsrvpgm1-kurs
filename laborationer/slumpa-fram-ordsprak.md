@@ -140,7 +140,7 @@ h3 {
 }
 
 li {
-    margin-bottom: 5px;;
+    margin-bottom: 5px;
 }
 
 table {

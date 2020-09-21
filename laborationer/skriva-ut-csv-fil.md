@@ -10,7 +10,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ## **Syfte**
 
-* Slumpa fram 6 ordspråk
+* Skriv ut restauranger i en csv-fil i tabellform
 
 ## Startkod
 

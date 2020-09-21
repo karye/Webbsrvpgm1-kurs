@@ -216,7 +216,9 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 {% endtab %}
 {% endtabs %}
 
-## Mer detaljerad tabell
+## Förbättringar 
+
+### Mer detaljerad tabell
 
 * Dela upp raderna i dess beståndsdelar
 * Referens till funktioner som används:

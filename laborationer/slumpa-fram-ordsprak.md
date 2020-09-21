@@ -8,14 +8,14 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 
 ![](../.gitbook/assets/image%20%288%29.png)
 
-## **Syfte**
+## **Användbara funktioner**
 
 * Referens till funktioner som används:
   * Funktionen [rand\(\)](https://devdocs.io/php/function.rand)
   * Funktionen [for-loopar](https://devdocs.io/php/control-structures.for)
   * Funktionen[ array\(\)](https://devdocs.io/php/function.array)
 
-### Filerna
+### Startkoden
 
 * Välj ut 10 ordspråk från [Lista\_över\_svenska\_ordspråk](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
 * Slumpa fram 6 ordspråk

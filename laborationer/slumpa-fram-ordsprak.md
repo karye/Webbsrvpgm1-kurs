@@ -48,13 +48,14 @@
     // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
     $kontrol[] = array();
 
-    // for-loop som går 5 varv för att vi vill skriva ut 6 ordspråk
-    ... ($i = 1; $i < 6; $i++) {
+    // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
+    for ($i = ..; $i < ..; $i++) {
         
         // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
         $index = ...;
 
-        // Skriv ut om den inte finns i arrayen $kontroll, kontroll mha funktionen in_array()
+        // Skriv ut om den inte finns i arrayen $kontroll
+        // Kontroll mha funktionen in_array()
         if (...) {
             
             // Skriv ut ordspråket 

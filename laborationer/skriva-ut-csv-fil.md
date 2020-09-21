@@ -4,7 +4,13 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 # Skriva ut csv-fil
 
-## Koderna
+## Filerna
+
+* Referens till funktioner som används:
+  * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
+  * Funktionen [file\(\)](https://devdocs.io/php/function.file)
+  * Funktionen[ ](https://devdocs.io/php/function.array)[foreach](https://devdocs.io/php/control-structures.foreach)
+  * Funktionen [explode\(\)](https://devdocs.io/php/function.explode)
 
 {% tabs %}
 {% tab title="lista.php" %}
@@ -21,23 +27,22 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
     <div class="kontainer">
         <h1>Alla restauranger</h1>
         <?php
-        $filename = './restauranger.csv';
+        $filename = ...;
 
         /* Är filen läsbar? */
-        if (is_readable($filename)) {
+        if (...) {
 
-            /* Läs in filen */
-            $rader = file($filename);
+            /* Läs in hela filen i en sträng */
+            $rader = ...;
 
             echo "<table>";
-            echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
-            foreach ($rader as $rad) {
+            echo "<tr><th>Restaurang</th></tr>";
 
-                /* Dela upp raden */
-                $delar = explode(', ', $rad);
+            // Loopa igenom alla rader
+            foreach (... as ...) {
 
                 /* Skriv ut tabellrad */
-                echo "<tr><td>$delar[0]</td><td>$delar[1]</td><td>$delar[2]</td><td>$delar[3]</td></tr>";
+                echo "<tr><td>...</td></tr>";
             }
             echo "</table>";
         } else {
@@ -174,7 +179,49 @@ form span {
 }
 ```
 {% endtab %}
+
+{% tab title="restauranger.csv" %}
+```text
+Bagel Street Cafe, Kungsgatan 42, 11156, Stockholm
+Café Cups, Fleminggatan 18, 11226, Stockholm
+Dagobert restaurang, Roslagsgatan 7, 113 55, Stockholm
+Falafel Kungen, Sveavägen 71, 11350, Stockholm
+G&E Pizzeria / Vasa La grande, Dalagatan 32, 11324, Stockholm
+Göran Terrassen, Sankt Göransplan 1, 11219, Stockholm
+Il Piccio Ristorante, Fridhemsgatan 3, 11240, Stockholm
+Kebab Kungen, Odengatan 54, 11322, Stockholm
+Mam Restaurang, Hagagatan 44, 11347, Stockholm
+Nybergs Konditori, Upplandsgatan 26, 11326, Stockholm
+O´Mamma Mia, Kungstensgatan 60, 11329, Stockholm
+Restaurang Aroti, Wallingatan 40, 11124, Stockholm
+Sterix, Polhemsgatan 50, 11230, Stockholm
+Subway Hötorget, Subway Hötorget T-bana, 11156, Stockholm
+Subway Karlbergsvägen, Karlbergsvägen 16, 11327, Stockholm
+Subway Sankt Eriksplan, Sankt Eriksplan 17, 11320, Stockholm
+Subway Sveavägen/Olofsgatan, Sveavägen 33, 11134, Stockholm
+Subway, Odengatan 49, 11351, Stockholm
+Sushirullen Odenplan, Norrtullsgatan 10, 11327, Stockholm
+Taco Bar Sveavägen, Sveavägen 108, 11350, Stockholm
+TacoBar, Sankt Eriksplan 5, 11320, Stockholm
+Valkyria, Crafoordsv 12, 11324, Stockholm
+```
+{% endtab %}
 {% endtabs %}
 
-### style.css
+## Mer detaljerad tabell
+
+* Dela upp raderna i dess beståndsdelar
+* Referens till funktioner som används:
+  * Funktionen [explode\(\)](https://devdocs.io/php/function.explode)
+
+```php
+echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
+..
+    /* Dela upp raden */
+    $delar = ...;
+
+    /* Skriv ut tabellrad */
+    echo "<tr><td>$delar[0]</td><td>$delar[1]</td><td>$delar[2]</td><td>$delar[3]</td></tr>";
+...
+```
 

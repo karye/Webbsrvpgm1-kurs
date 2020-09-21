@@ -10,7 +10,7 @@
 
 ### **ordsprak.php**
 
-* Ersätt '...' med rätt PHP-syntax
+* Slumpa fram 6 ordspråk
 
 ```php
 <?php
@@ -81,7 +81,7 @@
             ...;
         } else {
             
-            // Minska $i med ett
+            // Minska $i med 1
             ...;
         }
 ```

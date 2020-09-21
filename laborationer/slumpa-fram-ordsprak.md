@@ -75,7 +75,7 @@ if (...) {
     ...;
 } else {
     
-    // Minska $i med 1
+    // Backa $i med 1
     ...;
 }
 ```

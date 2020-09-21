@@ -60,10 +60,16 @@
 
 ### Kontrollera att ordspråket 
 
+* Skapa en ny array där man lagrar
+
 ```php
     // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
     $plockade = array();
-        
+```
+
+* Kontrollera att ordspråket inte redan plockats
+
+```php
         // Skriv ut om den inte finns i arrayen $plockade
         // Kontroll mha funktionen in_array()
         if (...) {
@@ -79,4 +85,6 @@
             ...;
         }
 ```
+
+
 

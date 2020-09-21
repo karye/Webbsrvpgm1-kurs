@@ -1,8 +1,11 @@
+---
+description: Slumpa fram sex olika ordspråk från en lista av tio
+---
+
 # Slumpa fram ordspråk
 
 ## **Syfte**
 
-* Slumpa fram sex olika ordspråk från en lista av tio
 * Referens till funktioner:
   * Funktionen [rand\(\)](http://php.net/manual/en/function.rand.php)
   * Funktionen [for-loopar](http://php.net/manual/en/control-structures.for.php)

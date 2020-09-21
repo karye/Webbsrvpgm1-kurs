@@ -61,7 +61,7 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 $tagna = [];
 ```
 
-* Kontrollera att ordspråket inte redan plockats
+* Kontrollera att ordspråket inte redan tagits
 
 ```php
 // Skriv ut om den inte finns i arrayen $tagna

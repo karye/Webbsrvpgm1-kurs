@@ -4,6 +4,10 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 # Skriva ut csv-fil
 
+## Resultatet
+
+![](../.gitbook/assets/image%20%288%29.png)
+
 ## Filerna
 
 * Referens till funktioner som används:

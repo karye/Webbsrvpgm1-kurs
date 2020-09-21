@@ -6,10 +6,10 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 
 ## **Syfte**
 
-* Referens till funktioner:
-  * Funktionen [rand\(\)](http://php.net/manual/en/function.rand.php)
-  * Funktionen [for-loopar](http://php.net/manual/en/control-structures.for.php)
-  * Funktionen [array\(\)](http://php.net/manual/en/function.in-array.php)
+* Referens till funktioner som används:
+  * Funktionen [rand\(\)](https://devdocs.io/php/function.rand)
+  * Funktionen [for-loopar](https://devdocs.io/php/control-structures.for)
+  * Funktionen[ array\(\)](https://devdocs.io/php/function.array)
 
 ### **ordsprak.php**
 
@@ -18,16 +18,6 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 
 ```php
 <?php
-/**
-* Slumpar fram ordspråk
-*
-* PHP version 5
-* @category   Enkel skriptsida
-* @author     ...
-* @license    PHP CC
-* @link
-*/
-?>
 <!DOCTYPE html>
 <html lang="sv">
 <head>

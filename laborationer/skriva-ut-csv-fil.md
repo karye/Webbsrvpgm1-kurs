@@ -4,7 +4,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 # Skriva ut csv-fil
 
-## lista.php
+## Koderna
 
 {% tabs %}
 {% tab title="lista.php" %}

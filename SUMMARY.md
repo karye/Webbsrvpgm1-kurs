@@ -20,6 +20,7 @@
 
 * [Slumpa fram ordspråk](laborationer/slumpa-fram-ordsprak.md)
 * [Skriva ut csv-fil](laborationer/skriva-ut-csv-fil.md)
+* [Skriva ut tsv-fil](laborationer/skriva-ut-tsv-fil.md)
 * [Skapa en enkel blogg](laborationer/skapa-en-enkel-blogg.md)
 
 ## Databas med mysql

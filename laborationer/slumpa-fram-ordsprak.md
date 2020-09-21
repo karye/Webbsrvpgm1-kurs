@@ -3,10 +3,10 @@
 ## **Syfte**
 
 * Slumpa fram sex olika ordspråk från en lista av tio
-* Referens till funktioner på [http://php.net](http://php.net/):
-  * [http://php.net/manual/en/function.rand.php](http://php.net/manual/en/function.rand.php)
-  * [http://php.net/manual/en/control-structures.for.php](http://php.net/manual/en/control-structures.for.php)
-  * [http://php.net/manual/en/function.in-array.php](http://php.net/manual/en/function.in-array.php)
+* Referens till funktioner:
+  * Funktionen [rand\(\)](http://php.net/manual/en/function.rand.php)
+  * Funktionen [for-loopar](http://php.net/manual/en/control-structures.for.php)
+  * Funktionen [array\(\)](http://php.net/manual/en/function.in-array.php)
 
 ### **ordsprak.php**
 
@@ -60,24 +60,24 @@
 
 ### Kontrollera att ordspråket 
 
-* Skapa en ny array där man lagrar
+* Skapa en ny array för att lagra alla tagna  ordspråk
 
 ```php
     // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
-    $plockade = array();
+    $tagna= array();
 ```
 
 * Kontrollera att ordspråket inte redan plockats
 
 ```php
-        // Skriv ut om den inte finns i arrayen $plockade
+        // Skriv ut om den inte finns i arrayen $tagna
         // Kontroll mha funktionen in_array()
         if (...) {
             
             // Skriv ut ordspråket 
             echo "<p>$ordsprak[$index]</p>";
             
-            // Lagra positionen i arrayen $plockade
+            // Lagra positionen i arrayen $tagna
             ...;
         } else {
             

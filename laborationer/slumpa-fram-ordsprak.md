@@ -13,7 +13,7 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 
 ### **ordsprak.php**
 
-* Välj ut 10 ordspråk från [Lista\_%C3%B6ver\_svenska\_ordspr%C3%A5k](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
+* Välj ut 10 ordspråk från [Lista\_över\_svenska\_ordspråk](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
 * Slumpa fram 6 ordspråk
 
 ```php
@@ -62,9 +62,9 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 </html>
 ```
 
-### Kontrollera att ordspråket 
+### Kontrollera att ordspråket inte redan valts ut
 
-* Skapa en ny array för att lagra alla tagna  ordspråk
+* Skapa en ny array för att lagra alla tagna ordspråk
 
 ```php
 // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut

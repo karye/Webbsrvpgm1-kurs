@@ -193,7 +193,7 @@ form span {
 // <ol>
 echo "<ol>";
 ..
-echo "<li>$ordsprak[$index]</li>";
+echo "<li>...</li>";
 ..
 echo "</ol>";
 ```

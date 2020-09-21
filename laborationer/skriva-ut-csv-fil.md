@@ -8,6 +8,10 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
+## **Syfte**
+
+* Slumpa fram 6 ordspråk
+
 ## Startkod
 
 * Referens till funktioner som används:

@@ -180,7 +180,11 @@ form span {
 {% endtab %}
 {% endtabs %}
 
+## Förbättringar
+
 ### Skapa en numrerad lista
+
+* Skriva ut ordspåken som en lista
 
 ```php
 // <ol>
@@ -193,14 +197,16 @@ echo "</ol>";
 
 ### Kontrollera att ordspråket inte redan valts ut
 
-* Skapa en ny array för att lagra alla tagna ordspråk
+* Se till så ordspråket inte upprepas
+
+#### Skapa en ny array för att lagra alla tagna ordspråk
 
 ```php
 // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
 $tagna = [];
 ```
 
-* Kontrollera att ordspråket inte redan tagits
+#### Kontrollera att ordspråket inte redan tagits
 
 ```php
 // Skriv ut om den inte finns i arrayen $tagna

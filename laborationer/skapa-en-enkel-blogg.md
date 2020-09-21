@@ -4,10 +4,6 @@ description: Skapa en webbapp med lagring i textfil
 
 # Skapa en enkel blogg
 
-## **Resultat**
-
-![](../.gitbook/assets/image%20%289%29.png)
-
 ## **Syfte**
 
 * Skriva enkla blogginlägg

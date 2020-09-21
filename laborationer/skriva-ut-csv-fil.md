@@ -8,7 +8,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ![](../.gitbook/assets/image%20%289%29.png)
 
-## Filerna
+## Startkod
 
 * Referens till funktioner som används:
   * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)

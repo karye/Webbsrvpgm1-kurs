@@ -10,8 +10,10 @@ description: Skapa en webbapp med lagring i textfil
 * Lagra dessa i en textfil
 * Läsa bloggen alla inlägg
 
-## **Skapa hemsidan: blogg.html**
+## **Startkod**
 
+{% tabs %}
+{% tab title="blogg.html" %}
 ```markup
 <!DOCTYPE html>
 <html lang="sv">
@@ -20,7 +22,7 @@ description: Skapa en webbapp med lagring i textfil
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Min enkla blogg</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/flatly/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="kontainer">
@@ -44,6 +46,50 @@ description: Skapa en webbapp med lagring i textfil
 </body>
 </html>
 ```
+{% endtab %}
+
+{% tab title="style.css" %}
+```css
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+body {
+    background: rgb(255, 255, 255) url("../bilder/bg.jpg");
+    background-size: cover;
+}
+
+.kontainer {
+    background: #FFF;
+    width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+}
+header {
+    margin-bottom: 40px;
+}
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+nav {
+    margin: 10px 0;
+}
+main p {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}
+main form {
+    margin: 20px;
+}
+main button {
+    margin: 10px 0;
+}
+
+```
+{% endtab %}
+{% endtabs %}
 
 ## **Skriva inlägg**
 

@@ -18,8 +18,9 @@
 
 ## Laborationer
 
-* [Skapa en enkel blogg](laborationer/skapa-en-enkel-blogg.md)
 * [Slumpa fram ordspråk](laborationer/slumpa-fram-ordsprak.md)
+* [Skriva ut csv-fil](laborationer/skriva-ut-csv-fil.md)
+* [Skapa en enkel blogg](laborationer/skapa-en-enkel-blogg.md)
 
 ## Databas med mysql
 

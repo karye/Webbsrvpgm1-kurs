@@ -22,6 +22,7 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 <html lang="sv">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Slumpa fram sex ordspråk</title>
 </head>
 <body>

@@ -183,6 +183,17 @@ form span {
 {% endtab %}
 {% endtabs %}
 
+### Skapa en numrerad lista
+
+```php
+// <ol>
+echo "<ol>";
+..
+echo "<li>$ordsprak[$index]</li>";
+..
+echo "</ol>";
+```
+
 ### Kontrollera att ordspråket inte redan valts ut
 
 * Skapa en ny array för att lagra alla tagna ordspråk

@@ -10,6 +10,7 @@
 
 ### **ordsprak.php**
 
+* Välj ut 10 ordspråk från [Lista\_%C3%B6ver\_svenska\_ordspr%C3%A5k](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
 * Slumpa fram 6 ordspråk
 
 ```php

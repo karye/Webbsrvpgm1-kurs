@@ -40,6 +40,7 @@ description: Läsa från textfil och "parsa" data som är tsv-formaterat.
         if (is_readable($textfil)) {
             
             $rader = file($textfil);
+            
             /* 2. Visa salar i en tabell: nr, namn, bokbar */
             echo "<table>";
             echo "<tr><th>Nr</th><th>Namn</th><th>Typ</th><th>Bokbar</th></tr>";

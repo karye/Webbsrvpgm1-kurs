@@ -63,28 +63,26 @@
 * Skapa en ny array för att lagra alla tagna  ordspråk
 
 ```php
-    // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
-    $tagna= array();
+// En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
+$tagna = [];
 ```
 
 * Kontrollera att ordspråket inte redan plockats
 
 ```php
-        // Skriv ut om den inte finns i arrayen $tagna
-        // Kontroll mha funktionen in_array()
-        if (...) {
-            
-            // Skriv ut ordspråket 
-            echo "<p>$ordsprak[$index]</p>";
-            
-            // Lagra positionen i arrayen $tagna
-            ...;
-        } else {
-            
-            // Minska $i med 1
-            ...;
-        }
+// Skriv ut om den inte finns i arrayen $tagna
+// Kontrollera med funktionen in_array()
+if (...) {
+    
+    // Skriv ut ordspråket 
+    echo "<p>$ordsprak[$index]</p>";
+    
+    // Lagra positionen i arrayen $tagna
+    ...;
+} else {
+    
+    // Minska $i med 1
+    ...;
+}
 ```
-
-
 

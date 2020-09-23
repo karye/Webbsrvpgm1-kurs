@@ -127,6 +127,30 @@ Gör ett skript som skriver ut **tal** och respektive **tals kvadrat** från **0
 
 Gör ett skript som är en **lånekalkylator**. Mha **radioknappar** ska användaren kunna välja mellan **1, 3 och 5 års lånetid**. I en ruta ska användaren skriva i **lånebeloppet** och i nästa **räntan** i hela procent. Programmet ska sedan räkna ut den totala lånekostnaden. Räknas ut genom ränta på ränta-principen, årsvis\). Så för ett tvåårigt lån på 5000 med räntan 4% skulle alltså lånekostnaden bli 5000\*1,04\*1,04 - 5000. Observera att lånet är "amorteringsfritt".
 
+## Extra uppgifter
+
+### Uppgift 3.6
+
+Skapa ett skript som frågar användaren vilket land som vann fotbolls-VM för damer år 2015. Om användaren svarar USA ska programmet skriva ut att svaret var rätt, annars ska programmet skriva ut att svaret var fel. Det ska inte spela någon roll om användaren skriver svaret med stora eller små bokstäver.
+
+### Uppgift 3.7
+
+Skapa ett skript som frågar användaren vad hen heter. Om användaren heter **Stig** ska programmet säga att användaren har namnsdag idag. Om användaren istället heter **Abraham** ska användaren få veta att hen har namnsdag imorgon, men om användaren varken heter Stig eller Abraham ska hen få veta att hen inte har namnsdag vare sig idag eller imorgon.
+
+### Uppgift 3.8
+
+På det nationella provet i Matematik 4 våren 2013 så fanns följande poänggränser för olika provbetyg.
+
+| Provbetyg | Poänggräns |
+| :--- | :--- |
+| A | 55 |
+| B | 46 |
+| C | 35 |
+| D | 27 |
+| E | 18 |
+
+Skapa ett skript som frågar användaren hur många poäng hen fick på detta prov. Skriptet ska säga vilket provbetyg användaren fick.
+
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
 {% endhint %}

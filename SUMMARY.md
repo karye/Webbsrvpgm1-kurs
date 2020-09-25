@@ -5,15 +5,24 @@
 ## Kapitel 1
 
 * [HTML och formulär](kapitel-1/html-och-formulaer.md)
-* [Grunder i PHP](kapitel-1/att-koda-php.md)
 
 ## Kapitel 2
 
-* [Operatorer, villkorssatser och loopar](kapitel-2/operatorer-villkorssatser-och-loopar.md)
+---
+
+* [Grunder i PHP](att-koda-php.md)
 
 ## Kapitel 3
 
-* [Arrayer och foreach-loop](kapitel-3/arrayer-och-foreach-loop.md)
+---
+
+* [Operatorer, villkorssatser och loopar](operatorer-villkorssatser-och-loopar.md)
+
+## Kapitel 4
+
+* [Arrayer och foreach-loop](kapitel-4/arrayer-och-foreach-loop.md)
+
+## Kapitel 5
 
 ## Koda webbappar i PHP
 

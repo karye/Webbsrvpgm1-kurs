@@ -150,19 +150,19 @@ I det här fallet får **$\_REQUEST\['namn'\]\[0\]** innehållet som skrivits i 
 
 ## Uppgifter - matriser och foreach-loopen
 
-### **Uppgift 5.1**
+### **Uppgift 1**
 
 Skapa ett formulär där användaren matar in **10 st namn**. Kalla textrutorna för **namn1, namn2 osv**. **Sortera** sedan namnen och skriv ut dem i bokstavsordning, ett på varje rad.
 
-### **Uppgift 5.2**
+### **Uppgift 2**
 
 Utveckla programmet i övning 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden. Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt etc.\)
 
-### **Uppgift 5.3**
+### **Uppgift 3**
 
 Skriv en **funktion** som tar ett tal mellan 1 och 9 som ett argument och sedan returnerar det svenska namnet för talet \(**ett, två, tre osv**\). Om talet är större än 9 så returnerar du i stället talet som vanligt \(tex. 11\). Testa att funktionen fungerar som tänkt.
 
-### **Uppgift 5.4**
+### **Uppgift 4**
 
 Fortsätt med programmet i uppgift 3 och utöka programmet så att funktionen tar **två siffror**, lägger ihop dem och presenterar resultatet i bokstavsform. \(Ex: **fyra plus tre blir sju**.\)
 

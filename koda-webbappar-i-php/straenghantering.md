@@ -104,25 +104,25 @@ I detta fall kommer texten "svart katt på taket" skrivas ut.
 
 ## Uppgifter - stränghantering
 
-### **Uppgift 6.1**
+### **Uppgift 1**
 
 Gör ett **formulär** där användaren ska fylla i **namn, adress, postnr och postort**.
 
 * Kontrollera att alla fälten är ifyllda, och innehåller minst 3 tecken.
 * Kontrollera att postnumret innehåller 5 tecken och att de tecknen endast är siffror.
 
-### **Uppgift 6.2**
+### **Uppgift 2**
 
 Bygg på formuläret så att användaren också ska fylla i en **epostadress**.
 
 * Kontrollera sedan att epostadressen innehåller ett @, och minst en punkt.
 * Kontrollera också att epostadressen är minst sex tecken lång.
 
-### **Uppgift 6.3**
+### **Uppgift 3**
 
 Utveckla skriptet i uppgift 6.2 så att det tar bort mellanslag i **postnumret** och därmed tillåter postnummer inskrivna enligt formen "415 22".
 
-### **Uppgift 6.4**
+### **Uppgift 4**
 
 Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordmeter.com](http://www.passwordmeter.com/) för tips.
 

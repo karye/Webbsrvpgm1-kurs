@@ -167,19 +167,19 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 ## Uppgifter - reguljära uttryck
 
-### **Uppgift 7.1**
+### **Uppgift 1**
 
 Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera sedan att domännamnet slutar på .com, .net eller .org. Du ska också kontrollera att de övriga tecknen endast består av bokstäver a-z, siffror 0-9 eller bindestreck \(-\). Första tecknet måste vara en bokstav. Domännamnet ska vara minst sex tecken och högst 200 tecken långt.
 
-### **Uppgift 7.2**
+### **Uppgift 2**
 
 Konstruera ett reguljärt uttryck som matchar en sträng som innehåller ett "t" följt av ett eller två "o". Endast små bokstäver ska matchas.
 
-### **Uppgift 7.3**
+### **Uppgift 3**
 
 Konstruera ett reguljärt uttryck som matchar en sträng som börjar med "Det var en gång". Det spelar ingen roll om det första d:et är stort eller litet.
 
-### **Uppgift 7.4**
+### **Uppgift 4**
 
 Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av små och stora bokstäver, punkt, siffror och mellanslag.
 

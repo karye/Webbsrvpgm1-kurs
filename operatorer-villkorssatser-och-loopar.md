@@ -107,37 +107,37 @@ Inuti [for-](https://devdocs.io/php/control-structures.for) och [while](https://
 
 ## Uppgifter - operatorer, villkorssatser och loopar
 
-### **Uppgift 3.1**
+### **Uppgift 1**
 
 Modifiera **temperaturkonverteringsprogrammet** ytterligare en gång, så att användaren matar in en temperatur i ett textfält, och sedan väljer om konverteringen ska ske från F till C eller från C till F med hjälp av radioknappar.
 
-### **Uppgift 3.2**
+### **Uppgift 2**
 
 Gör ett skript som frågar efter **användarnamn** och **lösenord** via ett formulär. Om användarnamnet och lösenordet är korrekt ska en sida visas där det står "Du är inloggad". Annars ska användaren få upp inloggningsrutan igen.
 
-### **Uppgift 3.3**
+### **Uppgift 3**
 
 Skriv ett skript som frågar efter **två heltal** via ett formulär, det första talet ska vara lägre än det andra. Skriv ut **alla heltal** mellan de två som matats in. Separera med mellanslag.
 
-### **Uppgift 3.4**
+### **Uppgift 4**
 
 Gör ett skript som skriver ut **tal** och respektive **tals kvadrat** från **0 till 50**.
 
-### **Uppgift 3.5**
+### **Uppgift 5**
 
 Gör ett skript som är en **lånekalkylator**. Mha **radioknappar** ska användaren kunna välja mellan **1, 3 och 5 års lånetid**. I en ruta ska användaren skriva i **lånebeloppet** och i nästa **räntan** i hela procent. Programmet ska sedan räkna ut den totala lånekostnaden. Räknas ut genom ränta på ränta-principen, årsvis\). Så för ett tvåårigt lån på 5000 med räntan 4% skulle alltså lånekostnaden bli 5000\*1,04\*1,04 - 5000. Observera att lånet är "amorteringsfritt".
 
 ## Extra uppgifter
 
-### Uppgift 3.6
+### Uppgift 6
 
 Skapa ett skript som frågar användaren vilket land som vann fotbolls-VM för damer år 2015. Om användaren svarar USA ska programmet skriva ut att svaret var rätt, annars ska programmet skriva ut att svaret var fel. Det ska inte spela någon roll om användaren skriver svaret med stora eller små bokstäver.
 
-### Uppgift 3.7
+### Uppgift 7
 
 Skapa ett skript som frågar användaren vad hen heter. Om användaren heter **Stig** ska programmet säga att användaren har namnsdag idag. Om användaren istället heter **Abraham** ska användaren få veta att hen har namnsdag imorgon, men om användaren varken heter Stig eller Abraham ska hen få veta att hen inte har namnsdag vare sig idag eller imorgon.
 
-### Uppgift 3.8
+### Uppgift 8
 
 På det nationella provet i Matematik 1 våren 2018 så fanns följande poänggränser för olika provbetyg.
 

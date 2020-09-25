@@ -144,23 +144,23 @@ Alla formulärdata som skickats lagras i arrayen [$\_REQUEST](https://devdocs.io
 
 Observera att dessa övningar endast innefattar HTML, i nästa övningsmoment ska du bygga på övningarna med kod i PHP som tar emot formulärinnehållet. Kod för formulär-element hittar du här: [https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic\_native\_form\_controls](https://developer.mozilla.org/en-US/docs/Learn/Forms/Basic_native_form_controls)
 
-### **Uppgift 1.1**
+### **Uppgift 1**
 
 Gör ett formulär där användaren kan mata in två tal i två stycken **textrutor**.
 
-### **Uppgift 1.2**
+### **Uppgift 2**
 
 Gör ett komplett "kontaktformulär" med textrutor där du frågar efter **namn**, **epostadress** och **telefon**. Du ska även skapa en **kryssruta** där användaren kan bocka i sitt intresse för ett nyhetsbrev. Till sist ska du skapa två stycken **radioknappar**, där användaren kan välja mellan att bli kontaktad per telefon eller e-post.
 
-### **Uppgift 1.3**
+### **Uppgift 3**
 
 Skapa en sida där besökaren ska välja sin favoritfilm av tre olika filmer. Besökaren ska dessutom välja sin favoritbok bland tre olika böcker. Det ska gå att välja högst en bok och en film.
 
-### **Uppgift 1.4**
+### **Uppgift 4**
 
 Utforma ett formulär på en sida där användaren ska mata in en temperatur i Celsius.
 
-### **Uppgift 1.5**
+### **Uppgift 5**
 
 På din webbsida vill du ha ett formulär där besökaren kan lämna kommentarer. Kommentarerna ska kunna skrivas i ett **flerradstextfält**. Dessutom ska det finnas en vanlig **textruta** för att fylla i namn. På knappen för att skicka iväg formuläret ska det stå "Skicka kommentarer".
 

@@ -87,11 +87,11 @@ if(!$mail->send()) {
 
 ## Uppgifter - skicka epost
 
-### **Uppgift 8.1**
+### **Uppgift 1**
 
 Gör ett formulär med fält för avsändaradress, adressen e-posten ska skickas till, själva meddelandet och ärende. Skriv sedan ett PHP-program som tar hand om formuläret och skickar eposten.
 
-### **Uppgift 8.2**
+### **Uppgift 2**
 
 Utveckla programmet i övning 1 så att man kan skriva in flera adresser separerade med kommatecken. Programmet ska sedan skicka epost-meddelandet till alla adresserna. Tips: använd funktionen [str\_plit\(\)](https://devdocs.io/php/function.str-split).
 

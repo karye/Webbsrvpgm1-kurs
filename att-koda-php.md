@@ -290,15 +290,15 @@ Man börjar alltså kommentaren med **/\*** och avslutar med **\*/**.
 
 ## Uppgifter - variabler och kommentarer
 
-### **Uppgift 2.1**
+### **Uppgift 1**
 
 Använd formuläret från uppgift 1.1. Skapa ett PHP-skript som tar emot de två talen, multiplicerar dem och presenterar resultatet så här: **"Produkten av tal1 och tal2 är ..."**.
 
-### **Uppgift 2.2**
+### **Uppgift 2**
 
 Använd formuläret från uppgift 1.2. Skapa ett skript som tar emot data från detta formulär: Skriptet ska skriva ut **"Namn:"** följt av namnet på personen, **"epostadress:"** och personens epostadress och till sist **"Vi kommer att kontakta dig inom snarast per "** följt av antingen **epost** eller **telefon** beroende på vad användaren valt.
 
-### **Uppgift 2.3**
+### **Uppgift 3**
 
 Gör ett formulär där användaren kan välja bland fyra färger att "måla" bakgrunden med för webbsidan som kommer upp när han/hon klickat på knappen **Måla bakgrund**. Skapa sedan ett skript som verkligen gör detta. Färgerna ska vara **röd**, **blå**, **grön** och **gul**.
 
@@ -316,23 +316,23 @@ Tips: färgerna skrivs med sina engelska namn enligt följande exempel \(som vis
 </html>
 ```
 
-### **Uppgift 2.4**
+### **Uppgift 4**
 
 Skriv ett skript som tar en siffra \(från formuläret i uppgift 1.4\) som innehåller dagens temperatur i Celsius. Programmet ska sedan skriva ut hur många grader Fahrenheit det motsvarar enligt följande mall: "**100 grader Celsius motsvarar 212 grader Fahrenheit**". Formeln för omvandlingen är **F = \(9/5\)\*C + 32** där F står för grader Fahrenheit och C för grader Celsius.
 
-### **Uppgift 2.5**
+### **Uppgift 5**
 
 Ändra föregående formulär så att man kan med radioknappar välja mellan "**Omvandla från F° till C°**" eller "**Omvandla C° till F°**". Ändra på skriptet så att uträkningen stämmer.
 
-### **Uppgift 2.6**
+### **Uppgift 6**
 
 Utöka föregående formulär så att man kan också välja "**Omvandla C° till K°**". K står för temperatur i Kelvin enligt formeln K = C - 273. Ändra på skriptet så att uträkningen stämmer.
 
-### **Uppgift 2.7**
+### **Uppgift 7**
 
 Skapa ett formulär som tar emot en text och där man kan välja mellan att konvertera till **versaler** \(stora bokstäver\) eller till **gemener** \(små bokstäver\). Läs om funktioner på [strtoupper\(\)](http://php.net/manual/en/function.strtoupper.php) och [strtolower\(\)](http://php.net/manual/en/function.strtolower.php).
 
-### **Uppgift 2.8**
+### **Uppgift 8**
 
 Försök att lista ut vad följande program kommer att skriva ut.
 

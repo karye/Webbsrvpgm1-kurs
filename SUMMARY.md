@@ -2,12 +2,21 @@
 
 * [Introduktion](README.md)
 
+## Kapitel 1
+
+* [HTML och formulär](kapitel-1/html-och-formulaer.md)
+* [Grunder i PHP](kapitel-1/att-koda-php.md)
+
+## Kapitel 2
+
+* [Operatorer, villkorssatser och loopar](kapitel-2/operatorer-villkorssatser-och-loopar.md)
+
+## Kapitel 3
+
+* [Arrayer och foreach-loop](kapitel-3/arrayer-och-foreach-loop.md)
+
 ## Koda webbappar i PHP
 
-* [HTML och formulär](koda-webbappar-i-php/html-och-formulaer.md)
-* [Grunder i PHP](koda-webbappar-i-php/att-koda-php.md)
-* [Operatorer, villkorssatser och loopar](koda-webbappar-i-php/operatorer-villkorssatser-och-loopar.md)
-* [Arrayer och foreach-loop](koda-webbappar-i-php/arrayer-och-foreach-loop.md)
 * [Filhantering](koda-webbappar-i-php/filhantering.md)
 * [Funktioner](koda-webbappar-i-php/funktioner.md)
 * [Stränghantering](koda-webbappar-i-php/straenghantering.md)

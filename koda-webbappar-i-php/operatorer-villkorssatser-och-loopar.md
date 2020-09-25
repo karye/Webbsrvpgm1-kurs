@@ -139,15 +139,15 @@ Skapa ett skript som frågar användaren vad hen heter. Om användaren heter **S
 
 ### Uppgift 3.8
 
-På det nationella provet i Matematik 4 våren 2013 så fanns följande poänggränser för olika provbetyg.
+På det nationella provet i Matematik 1 våren 2018 så fanns följande poänggränser för olika provbetyg.
 
 | Provbetyg | Poänggräns |
 | :--- | :--- |
 | A | 55 |
-| B | 46 |
+| B | 45 |
 | C | 35 |
-| D | 27 |
-| E | 18 |
+| D | 25 |
+| E | 15 |
 
 Skapa ett skript som frågar användaren hur många poäng hen fick på detta prov. Skriptet ska säga vilket provbetyg användaren fick.
 

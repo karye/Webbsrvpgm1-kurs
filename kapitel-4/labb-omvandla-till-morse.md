@@ -16,11 +16,7 @@ description: Omvandla text till morse
 
 ### Slumpa fram ett ordspråk
 
-* Välj ut 10 ordspråk från [svenska\_ordspråk](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
-* Referens till funktioner som används:
-  * Funktionen[ array\(\)](https://devdocs.io/php/function.array)
-  * Funktionen [rand\(\)](https://devdocs.io/php/function.rand)
-
+* 
 {% tabs %}
 {% tab title="ordsprak.php" %}
 ```php
@@ -42,61 +38,28 @@ description: Omvandla text till morse
         <?php
 
         /* Ta emot data som skickas */
-        $texten = filter_input(INPUT_POST, 'texten', FILTER_SANITIZE_STRING);
-        if ($texten) {
-
+        ...
+        
             /* Morsealfabetet */
             $morse['A'] = '.-';
-            $morse['B'] = '-...';
-            $morse['C'] = '-.-.';
-            $morse['D'] = '-..';
-            $morse['E'] = '.';
-            $morse['F'] = '..-.';
-            $morse['G'] = '--.';
-            $morse['H'] = '....';
-            $morse['I'] = '..';
-            $morse['J'] = '.---';
-            $morse['K'] = '-.-';
-            $morse['L'] = '.-..';
-            $morse['M'] = '--';
-            $morse['N'] = '-.';
-            $morse['O'] = '---';
-            $morse['P'] = '.--.';
-            $morse['Q'] = '--.-';
-            $morse['R'] = '.-.';
-            $morse['S'] = '...';
-            $morse['T'] = '-';
-            $morse['U'] = '.--';
-            $morse['V'] = '...-';
-            $morse['W'] = '.--';
-            $morse['X'] = '-..-';
-            $morse['Y'] = '-.--';
-            $morse['Z'] = '--..';
-            $morse['Å'] = '.--.-';
-            $morse['Ä'] = '.-.-';
-            $morse['Ö'] = '---.';
-            $morse[' '] = ' ';
+            ...
 
+            /* Omvandla texten till versaler (stora bokstäver) */
+            ...
+            
             /* Dela upp texten i dess bokstäver */
-            $texten = mb_strtoupper($texten);
-            //$delar = str_split($texten);
-            $delar = preg_split('/(?<!^)(?!$)/u', $texten);
-            //var_dump($delar);
+            ...
+            
 
-            /* Skriv ut texten i morsekod */
-            echo "<form id=\"demo\"><label>$texten</label><input type=\"text\" pattern=\"[.\- ]+\" name=\"code\" value=\"";
-            foreach ($delar as $bokstav) {
+            /* Loopa igenom texten */
+            ... {
 
                 /* Om tecknet finns i morsealfabetet skriv ut morsekoden */
-                if (array_key_exists($bokstav, $morse)) {
-                    echo "$morse[$bokstav]";
-                }
+                ...
             }
-            echo "\"><button>Spela upp</button></form>";
         }
         ?>
     </div>
-    <script src="./morse.js"></script>
 </body>
 </html>
 ```
@@ -225,81 +188,5 @@ form span {
 {% endtab %}
 {% endtabs %}
 
-### Slumpa fram 6 ordspråk
-
-* Referens till funktioner som används:
-  * Kontrollkommando [for-loop](https://devdocs.io/php/control-structures.for)
-
-{% tabs %}
-{% tab title="ordsprak.php" %}
-```php
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Slumpa fram sex ordspråk</title>
-</head>
-<body>
-<?php
-    // Skapa en array med tio ordspråk
-    $ordsprak[] = "Blyga pojkar får aldrig kyssa vackra flickor.";
-    ...
-
-    // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
-    ... {
-        
-        // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
-        $index = ...;
-
-        // Skriv ut ordspråket 
-        echo ...;
-    }
-?>
-</body>
-</html>
-```
-{% endtab %}
-{% endtabs %}
-
-## Förbättringar
-
-### Skapa en numrerad lista
-
-* Skriva ut ordspåken som en lista
-
-```php
-// <ol>
-echo "<ol>";
-..
-echo "<li>...</li>";
-..
-echo "</ol>";
-```
-
-### Kontrollera att ordspråket inte redan valts ut
-
-* Se till så ordspråket inte upprepas
-
-#### Skapa en ny array för att lagra alla tagna ordspråk
-
-```php
-// En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
-$tagna = [];
-```
-
-#### Kontrollera att ordspråket inte redan tagits
-
-```php
-// Skriv ut om den inte finns i arrayen $tagna
-// Kontrollera med funktionen in_array()
-if (...) {
-    
-    // Skriv ut ordspråket 
-    echo "...";
-    
-    // Lagra positionen i arrayen $tagna
-    ...;
-} else {
-    
-    // Backa $i med 1
-    ...;
-}
-```
+### 
 

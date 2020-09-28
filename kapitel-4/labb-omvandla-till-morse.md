@@ -52,7 +52,6 @@ description: Omvandla text till morse
             /* Dela upp texten i dess bokstäver */
             ...
             
-
             /* Loopa igenom texten */
             ... {
 

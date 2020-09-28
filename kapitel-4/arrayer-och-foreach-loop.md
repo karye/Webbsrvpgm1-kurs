@@ -156,7 +156,7 @@ Skapa ett formulär där användaren matar in **10 st namn**. Kalla textrutorna 
 
 ### **Uppgift 2**
 
-Utveckla programmet i övning 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden. Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt etc.\)
+Utveckla programmet i uppgift 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden. Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt etc.\)
 
 ### **Uppgift 3**
 

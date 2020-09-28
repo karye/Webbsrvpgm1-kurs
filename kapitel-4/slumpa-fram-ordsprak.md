@@ -17,10 +17,7 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 
 ### Slumpa fram ett ordspråk
 
-* Välj ut 10 ordspråk från [Lista\_över\_svenska\_ordspråk](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
-
-  [rg](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
-
+* Välj ut 10 ordspråk från [svenska\_ordspråk](https://sv.wikipedia.org/wiki/Lista_%C3%B6ver_svenska_ordspr%C3%A5k)
 * Referens till funktioner som används:
   * Funktionen[ array\(\)](https://devdocs.io/php/function.array)
   * Funktionen [rand\(\)](https://devdocs.io/php/function.rand)

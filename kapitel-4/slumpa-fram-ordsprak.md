@@ -175,7 +175,7 @@ form span {
 ### Slumpa fram 6 ordspråk
 
 * Referens till funktioner som används:
-  * Funktionen ****[for-loopar](https://devdocs.io/php/control-structures.for)
+  * Funktionen ****[for-loop](https://devdocs.io/php/control-structures.for)
 
 {% tabs %}
 {% tab title="ordsprak.php" %}

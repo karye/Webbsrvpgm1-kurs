@@ -11,6 +11,7 @@ description: Omvandla text till morse
 ## **Syfte**
 
 * Träna på associativ array
+* Träna på foreach-loop
 
 ## **Startkod**
 

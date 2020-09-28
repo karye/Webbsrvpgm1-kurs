@@ -160,7 +160,7 @@ Utveckla programmet i övning 1 så att det skriver ut namnen i en **tabell med 
 
 ### **Uppgift 3**
 
-Skriv en skript som tar ett tal mellan 1 och 9 som ett argument och sedan returnerar det svenska namnet för talet \(**ett, två, tre osv**\). Om talet är större än 9 så returnerar du i stället talet som vanligt \(tex. 11\). Testa att funktionen fungerar som tänkt.
+Skriv en webbapp där användaren matar in ett tal **1-9** och sedan returnerar det svenska namnet för talet \(**ett, två, tre osv**\). Om talet är större än 9 så returnerar du i stället talet som vanligt \(tex. 11\). 
 
 ### **Uppgift 4**
 

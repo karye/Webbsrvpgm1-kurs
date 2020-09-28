@@ -55,7 +55,7 @@ description: Omvandla text till morse
             /* Loopa igenom texten */
             ... {
 
-                /* Om tecknet finns i morsealfabetet skriv ut morsekoden */
+                /* Skriv ut bokstavens morsekod */
                 ...
             }
         }

@@ -15,10 +15,11 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 
 ## **Startkod**
 
+### Slumpa fram ett ordspråk
+
 * Referens till funktioner som används:
-  * Funktionen [rand\(\)](https://devdocs.io/php/function.rand)
-  * Funktionen [for-loopar](https://devdocs.io/php/control-structures.for)
   * Funktionen[ array\(\)](https://devdocs.io/php/function.array)
+  * Funktionen [rand\(\)](https://devdocs.io/php/function.rand)
 
 {% tabs %}
 {% tab title="ordsprak.php" %}
@@ -35,25 +36,13 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 <?php
     // Skapa en array med tio ordspråk
     $ordsprak[] = "Blyga pojkar får aldrig kyssa vackra flickor.";
-    $ordsprak[] = "Borta bra men hemma bäst.";
-    $ordsprak[] = "Bra karl reder sig själv.";
-    $ordsprak[] = "Bränt barn skyr elden.";
-    $ordsprak[] = "Bättre att förekomma än förekommas.";
-    $ordsprak[] = "Bättre brödlös än rådlös.";
-    $ordsprak[] = "Bättre en fågel i handen än tio i skogen.";
-    $ordsprak[] = "Bättre ensam än i dåligt sällskap.";
-    $ordsprak[] = "Bättre fly än illa fäkta.";
-    $ordsprak[] = "Bättre föregå än föregås.";
+    ...
 
-    // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
-    for ($i = ..; $i < ..; $i++) {
-        
-        // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
-        $index = ...;
+    // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
+    $index = ...;
 
-        // Skriv ut ordspråket 
-        echo "<p>$ordsprak[$index]</p>";
-    }
+    // Skriv ut ordspråket 
+    echo ...;
 ?>
 </body>
 </html>
@@ -179,6 +168,39 @@ form label {
 form span {
     padding: 10px;
 }
+```
+{% endtab %}
+{% endtabs %}
+
+### Slumpa fram 6 ordspråk
+
+* Referens till funktioner som används:
+  * Funktionen ****[for-loopar](https://devdocs.io/php/control-structures.for)
+
+{% tabs %}
+{% tab title="ordsprak.php" %}
+```php
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slumpa fram sex ordspråk</title>
+</head>
+<body>
+<?php
+    // Skapa en array med tio ordspråk
+    $ordsprak[] = "Blyga pojkar får aldrig kyssa vackra flickor.";
+    ...
+
+    // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
+    ... {
+        
+        // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
+        $index = ...;
+
+        // Skriv ut ordspråket 
+        echo ...;
+    }
+?>
+</body>
+</html>
 ```
 {% endtab %}
 {% endtabs %}

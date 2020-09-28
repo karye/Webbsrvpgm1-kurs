@@ -16,7 +16,8 @@ description: Omvandla text till morse
 
 ### Slumpa fram ett ordspråk
 
-* 
+* Använd [Morsealfabetet](https://sv.wikipedia.org/wiki/Morsealfabetet)
+
 {% tabs %}
 {% tab title="ordsprak.php" %}
 ```php

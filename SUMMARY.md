@@ -23,7 +23,7 @@
 
 * [Arrayer och foreach-loop](kapitel-4/arrayer-och-foreach-loop.md)
 * [Labb: slumpa fram ordspråk](kapitel-4/slumpa-fram-ordsprak.md)
-* [Labb: Omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
+* [Labb: omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
 
 ## Kapitel 5
 

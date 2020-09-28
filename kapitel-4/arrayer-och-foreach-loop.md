@@ -152,7 +152,7 @@ I det här fallet får **$\_REQUEST\['namn'\]\[0\]** innehållet som skrivits i 
 
 ### **Uppgift 1**
 
-Skapa en webbapp med ett formulär där användaren kan mata in **10 st namn**. Kalla textrutorna för **namn\[\]**. **Sortera** sedan namnen och skriv ut dem i bokstavsordning, ett på varje rad.
+Skapa en webbapp med ett formulär där användaren kan mata in **10 st namn**. Kalla textrutorna för **namn\[\]**. [**Sortera** ](https://devdocs.io/php/function.sort)sedan namnen och skriv ut dem i bokstavsordning, ett på varje rad.
 
 ### **Uppgift 2**
 

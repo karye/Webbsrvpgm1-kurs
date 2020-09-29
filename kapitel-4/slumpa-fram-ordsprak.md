@@ -182,27 +182,15 @@ form span {
 {% tabs %}
 {% tab title="ordsprak.php" %}
 ```php
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Slumpa fram sex ordspråk</title>
-</head>
-<body>
-<?php
-    // Skapa en array med tio ordspråk
-    $ordsprak[] = "Blyga pojkar får aldrig kyssa vackra flickor.";
-    ...
+// for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
+... {
+    
+    // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
+    $index = ...;
 
-    // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
-    ... {
-        
-        // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
-        $index = ...;
-
-        // Skriv ut ordspråket 
-        echo ...;
-    }
-?>
-</body>
-</html>
+    // Skriv ut ordspråket 
+    echo ...;
+}
 ```
 {% endtab %}
 {% endtabs %}

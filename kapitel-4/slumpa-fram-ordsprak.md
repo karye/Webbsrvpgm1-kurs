@@ -235,6 +235,9 @@ $tagna = [];
 
 #### Kontrollera att ordspråket inte redan tagits
 
+* Referens till funktioner som används:
+  * Funktionen [in-array](https://devdocs.io/php/function.in-array)
+
 ```php
 // Skriv ut om den inte finns i arrayen $tagna
 // Kontrollera med funktionen in_array()

@@ -174,8 +174,11 @@ form span {
 {% endtab %}
 {% endtabs %}
 
+## Steg 1
+
 ### Slumpa fram 6 ordspråk
 
+* Skriv nu ut 6 ordspråk genom att upprepa koden 6 ggr
 * Referens till funktioner som används:
   * Kontrollkommando [for-loop](https://devdocs.io/php/control-structures.for)
 
@@ -195,11 +198,11 @@ form span {
 {% endtab %}
 {% endtabs %}
 
-## Förbättringar
+## Steg 2
 
 ### Skapa en numrerad lista
 
-* Skriva ut ordspåken som en lista
+* Skriv ut ordspåken som en lista
 
 ```php
 // <ol>
@@ -210,18 +213,20 @@ echo "<li>...</li>";
 echo "</ol>";
 ```
 
-### Kontrollera att ordspråket inte redan valts ut
+## Steg 3
 
-* Se till så ordspråket inte upprepas
+### Se till att ordspråk inte skrivs ut igen
 
-#### Skapa en ny array för att lagra alla tagna ordspråk
+* Kontrollera att ordspråket inte redan skrivits ut
+
+### Skapa en ny array för att lagra alla tagna ordspråk
 
 ```php
 // En kontroll-array där vi lagrar vilka ordspråk vi skrivit ut
 $tagna = [];
 ```
 
-#### Kontrollera att ordspråket inte redan tagits
+### Kontrollera att ordspråket inte redan tagits
 
 * Referens till funktioner som används:
   * Funktionen [in-array](https://devdocs.io/php/function.in-array)

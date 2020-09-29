@@ -164,7 +164,7 @@ Skriv en webbapp där användaren matar in ett tal **1-9** och sedan returnerar 
 
 ### **Uppgift 4**
 
-Fortsätt med programmet i uppgift 3 och utöka programmet så att funktionen tar **två siffror**, lägger ihop dem och presenterar resultatet i bokstavsform. \(Ex: **fyra plus tre blir sju**.\)
+Utöka programmet i uppgift 3 så att användaren matar in **två siffror**, lägger ihop dem och presenterar resultatet i bokstavsform. \(Ex: **fyra plus tre blir sju**.\)
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

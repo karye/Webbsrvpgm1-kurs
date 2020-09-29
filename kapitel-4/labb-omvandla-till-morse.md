@@ -1,5 +1,5 @@
 ---
-description: Omvandla text till morse
+description: Omvandla text till morsekod
 ---
 
 # Labb: omvandla till morse

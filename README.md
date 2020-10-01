@@ -7,7 +7,12 @@ description: 'Installera alla verktyg, konfigurera alla inställningar, skapar a
 ## Installera webbeditorn VS Code & tillägg
 
 * Installera [VS Code](https://code.visualstudio.com/)
-* Installera tillägg
+* Installera tilläggen
+  * Beautify
+  * Live Server
+  * Path Intellisense
+  * Docker
+  * PHP Intellisense
 * Installera [git-scm](https://git-scm.com/)
 
 ![](.gitbook/assets/image.png)
@@ -37,7 +42,8 @@ description: 'Installera alla verktyg, konfigurera alla inställningar, skapar a
 3. I Docker Settings aktivera Shared Folders
 4. I VS Code installera tillägget Docker
 5. Öppna terminalen i VS Code och kör kommandot 
-6. Om du använder powershell: 
+
+* Om du använder powershell: 
 
 ```bash
 docker run -d --restart unless-stopped -p 8080:80 -p 10000:10000 -v "c:\github:/var/www" --name lamp karye/lampw 

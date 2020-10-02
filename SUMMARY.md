@@ -24,7 +24,7 @@
 * [Arrayer och foreach-loop](kapitel-4/arrayer-och-foreach-loop.md)
 * [Labb 1: slumpa fram ordspråk](kapitel-4/slumpa-fram-ordsprak.md)
 * [Labb 2: omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
-* [Projekt: interaktiv berättelse](kapitel-4/projekt-interaktiv-beraettelse.md)
+* [Projekt 1: interaktiv berättelse](kapitel-4/projekt-interaktiv-beraettelse.md)
 
 ## Kapitel 5
 

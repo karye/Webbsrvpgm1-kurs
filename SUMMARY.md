@@ -22,16 +22,17 @@
 ## Kapitel 4
 
 * [Arrayer och foreach-loop](kapitel-4/arrayer-och-foreach-loop.md)
-* [Labb: slumpa fram ordspråk](kapitel-4/slumpa-fram-ordsprak.md)
-* [Labb: omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
+* [Labb 1: slumpa fram ordspråk](kapitel-4/slumpa-fram-ordsprak.md)
+* [Labb 2: omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
+* [Projekt: interaktiv berättelse](kapitel-4/projekt-interaktiv-beraettelse.md)
 
 ## Kapitel 5
 
 ---
 
 * [Filhantering](filhantering.md)
-* [Labb: skriva ut csv-fil](skriva-ut-csv-fil.md)
-* [Labb: skriva ut tsv-fil](skriva-ut-tsv-fil.md)
+* [Labb 3: skriva ut csv-fil](skriva-ut-csv-fil.md)
+* [Labb 4: skriva ut tsv-fil](skriva-ut-tsv-fil.md)
 
 ## Koda webbappar i PHP
 

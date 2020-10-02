@@ -2,7 +2,7 @@
 description: Läsa från textfil och "parsa" data som är csv-formaterat.
 ---
 
-# Labb: skriva ut csv-fil
+# Labb 3: skriva ut csv-fil
 
 ## Resultatet
 

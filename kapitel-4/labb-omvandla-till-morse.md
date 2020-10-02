@@ -41,6 +41,7 @@ description: Omvandla text till morsekod
 
         /* Ta emot data som skickas */
         ...
+        {
         
             /* Morsealfabetet A-Z och mellanslag */
             $morse['A'] = '.-';

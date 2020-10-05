@@ -15,9 +15,8 @@ description: Omvandla text till morsekod
 
 ## **Startkod**
 
-### Slumpa fram ett ordspråk
-
-* Använd [morsealfabetet](https://morsealfabetet.se/)
+* Först grundkoden för formuläretet 
+* .. och ta emot det som formuläret skickar
 
 {% tabs %}
 {% tab title="ordsprak.php" %}
@@ -46,11 +45,6 @@ description: Omvandla text till morsekod
             // Ta emot data som skickas
             ...
 
-            // Omvandla texten till versaler strtoupper()
-            ...
-            
-            // Dela upp texten i dess bokstäver str_split()
-            ...
         }
         ?>
     </div>
@@ -228,6 +222,9 @@ document.getElementById("demo").onsubmit = function() {
 
 ## Steg 1
 
+* Omvandla texten till versaler
+* Plocka isär texten i bokstäver
+
 {% tabs %}
 {% tab title="ordsprak.php" %}
 ```php
@@ -238,6 +235,64 @@ document.getElementById("demo").onsubmit = function() {
 {
     // Ta emot data som skickas
     
+
+    // Omvandla texten till versaler strtoupper()
+    ...
+    
+    // Dela upp texten i dess bokstäver str_split()
+    ...
+    
+}
+?>
+```
+{% endtab %}
+{% endtabs %}
+
+## Steg 2
+
+{% tabs %}
+{% tab title="ordsprak.php" %}
+```php
+<?php
+
+// Skickas data?
+...
+{
+    // Ta emot data som skickas
+    ...
+
+    // Omvandla texten till versaler strtoupper()
+    ...
+    
+    // Dela upp texten i dess bokstäver str_split()
+    ...
+    
+    // Loopa igenom texten bokstav-för-bokstav
+    ... {
+
+        // Skriv ut bokstaven
+        ...
+    }
+}
+?>
+```
+{% endtab %}
+{% endtabs %}
+
+## Steg 3
+
+* Infoga [morsealfabetet](https://morsealfabetet.se/)
+
+{% tabs %}
+{% tab title="ordsprak.php" %}
+```php
+<?php
+
+// Skickas data?
+...
+{
+    // Ta emot data som skickas
+    ...
 
     // Morsealfabetet A-Z och mellanslag
     $morse['A'] = '.-';
@@ -261,3 +316,6 @@ document.getElementById("demo").onsubmit = function() {
 {% endtab %}
 {% endtabs %}
 
+## Steg 4
+
+* 

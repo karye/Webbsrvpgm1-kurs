@@ -17,7 +17,7 @@ description: Omvandla text till morsekod
 
 ### Slumpa fram ett ordspråk
 
-* Använd [Morsealfabetet](https://sv.wikipedia.org/wiki/Morsealfabetet)
+* Använd [morsealfabetet](https://morsealfabetet.se/)
 
 {% tabs %}
 {% tab title="ordsprak.php" %}
@@ -34,29 +34,32 @@ description: Omvandla text till morsekod
 <body>
     <div class="kontainer">
         <h1>Omvandla text till morsekod</h1>
-        <form action="..." method="POST">
-            ...
+        <form action="#" method="POST">
+            <textarea name="texten" cols="30" rows="10"></textarea>
+            <button type="submit" class="btn btn-primary">Skicka</button>
         </form>
         <?php
 
-        /* Ta emot data som skickas */
+        // Skickas data?
         ...
         {
+            // Ta emot data som skickas
+            
         
-            /* Morsealfabetet A-Z och mellanslag */
+            // Morsealfabetet A-Z och mellanslag
             $morse['A'] = '.-';
             ...
 
-            /* Omvandla texten till versaler (stora bokstäver) */
+            // Omvandla texten till versaler strtoupper()
             ...
             
-            /* Dela upp texten i dess bokstäver */
+            // Dela upp texten i dess bokstäver str_split()
             ...
             
-            /* Loopa igenom texten */
+            // Loopa igenom texten
             ... {
 
-                /* Skriv ut bokstavens morsekod */
+                // Skriv ut bokstavens morsekod
                 ...
             }
         }

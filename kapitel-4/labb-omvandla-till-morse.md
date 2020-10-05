@@ -127,12 +127,10 @@ input, textarea {
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 textarea {
-    height: 5em;
+    height: 10em;
     width: 100%;
 }
 button {
-    margin: 1em 0;
-    padding: 0.7em;
     border-radius: 0.3em;
     border: none;
     font-weight: bold;

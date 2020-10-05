@@ -35,12 +35,12 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
     <div class="kontainer">
         <h1>Alla restauranger</h1>
         <?php
-        $filename = # kod...;
+        $filnamn = # kod...;
 
-        /* Är filen läsbar? */
-        if (...) {
+        // Är filen läsbar: is_readable()
+        if (# kod...) {
 
-            /* Läs in hela filen i en sträng */
+            // Läs in hela filen i en sträng: file()
             $rader = # kod...;
 
             echo "<table>";
@@ -49,7 +49,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
             // Loopa igenom alla rader
             foreach (# kod...) {
 
-                /* Skriv ut tabellrad */
+                // Skriv ut tabellrad
                 echo "<tr><td>...</td></tr>";
             }
             echo "</table>";
@@ -227,10 +227,10 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 ```php
 echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
 # kod...
-    /* Dela upp raden */
+    // Dela upp raden: explode()
     $delar = # kod...;
 
-    /* Skriv ut tabellrad */
+    // Skriv ut tabellrad
     echo "<tr><td>$delar[0]</td><td>$delar[1]</td><td>$delar[2]</td><td>$delar[3]</td></tr>";
 # kod...
 ```

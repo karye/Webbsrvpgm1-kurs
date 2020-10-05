@@ -15,10 +15,8 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 ## Startkod
 
 * Referens till funktioner som används:
-  * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
   * Funktionen [file\(\)](https://devdocs.io/php/function.file)
   * Funktionen[ ](https://devdocs.io/php/function.array)[foreach](https://devdocs.io/php/control-structures.foreach)
-  * Funktionen [explode\(\)](https://devdocs.io/php/function.explode)
 
 {% tabs %}
 {% tab title="lista.php" %}
@@ -213,6 +211,8 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 ### Om filen inte finns?
 
 * Skapa ett felmeddande om filen ej går att hitta eller läsa
+* Referens till funktioner som används:
+  * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
 
 {% tabs %}
 {% tab title="lista.php" %}

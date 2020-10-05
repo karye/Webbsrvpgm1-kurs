@@ -44,10 +44,6 @@ description: Omvandla text till morsekod
         ...
         {
             // Ta emot data som skickas
-            
-        
-            // Morsealfabetet A-Z och mellanslag
-            $morse['A'] = '.-';
             ...
 
             // Omvandla texten till versaler strtoupper()
@@ -55,13 +51,6 @@ description: Omvandla text till morsekod
             
             // Dela upp texten i dess bokstäver str_split()
             ...
-            
-            // Loopa igenom texten
-            ... {
-
-                // Skriv ut bokstavens morsekod
-                ...
-            }
         }
         ?>
     </div>
@@ -237,5 +226,38 @@ document.getElementById("demo").onsubmit = function() {
 {% endtab %}
 {% endtabs %}
 
-### 
+## Steg 1
+
+{% tabs %}
+{% tab title="ordsprak.php" %}
+```php
+<?php
+
+// Skickas data?
+...
+{
+    // Ta emot data som skickas
+    
+
+    // Morsealfabetet A-Z och mellanslag
+    $morse['A'] = '.-';
+    ...
+
+    // Omvandla texten till versaler strtoupper()
+    ...
+    
+    // Dela upp texten i dess bokstäver str_split()
+    ...
+    
+    // Loopa igenom texten
+    ... {
+
+        // Skriv ut bokstavens morsekod
+        ...
+    }
+}
+?>
+```
+{% endtab %}
+{% endtabs %}
 

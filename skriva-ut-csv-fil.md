@@ -37,25 +37,19 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
         <?php
         $filnamn = # kod...;
 
-        // Är filen läsbar: is_readable()
-        if (# kod...) {
+        // Läs in hela filen i en sträng: file()
+        $rader = # kod...;
 
-            // Läs in hela filen i en sträng: file()
-            $rader = # kod...;
+        echo "<table>";
+        echo "<tr><th>Restaurang</th></tr>";
 
-            echo "<table>";
-            echo "<tr><th>Restaurang</th></tr>";
+        // Loopa igenom alla rader
+        foreach (# kod...) {
 
-            // Loopa igenom alla rader
-            foreach (# kod...) {
-
-                // Skriv ut tabellrad
-                echo "<tr><td>...</td></tr>";
-            }
-            echo "</table>";
-        } else {
-            echo "<p>Kan ej läsa filen.</p>";
+            // Skriv ut tabellrad
+            echo "<tr><td>...</td></tr>";
         }
+        echo "</table>";
         ?>
     </div>
 </body>
@@ -212,6 +206,28 @@ Sushirullen Odenplan, Norrtullsgatan 10, 11327, Stockholm
 Taco Bar Sveavägen, Sveavägen 108, 11350, Stockholm
 TacoBar, Sankt Eriksplan 5, 11320, Stockholm
 Valkyria, Crafoordsv 12, 11324, Stockholm
+```
+{% endtab %}
+{% endtabs %}
+
+### Om filen inte finns?
+
+* Skapa ett felmeddande om filen ej går att hitta eller läsa
+
+{% tabs %}
+{% tab title="lista.php" %}
+```php
+<?php
+$filnamn = # kod...;
+
+// Är filen läsbar: is_readable()
+if (# kod...) {
+    # kod...
+
+} else {
+    echo "...";
+}
+?>
 ```
 {% endtab %}
 {% endtabs %}

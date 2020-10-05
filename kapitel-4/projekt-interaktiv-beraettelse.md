@@ -57,12 +57,9 @@ Börja med att designa din berättelse. Använd ett enkelt beslutsträd, tex nå
                     if ($input == "lite") {
                         $chatt .= "Bott> Du får dryck och macka. Vill du ha té eller kaffe?\n";
                         $fråga = 2;
-                    } elseif ($input == "mycket") {
+                    } else {
                         $chatt .= "Bott> Vill du ha gröt eller musli?\n";
                         $fråga = 3;
-                    } else {
-                        $chatt .= "Bott> Jag förstod inte vad du skrev. Försök en gång till?\n";
-                        $fråga = 4;
                     }
                     break;
 
@@ -70,8 +67,8 @@ Börja med att designa din berättelse. Använd ett enkelt beslutsträd, tex nå
                 case 2:
                     if ($input == "te") {
                         $chatt .= "Bott> Jag skall strax servera dig. Skall det vara lagom varmt eller hett?\n";
-                        $fråga = 5;
-                    } elseif ($input == "kaffe") {
+                        $fråga = 4;
+                    } else {
                         $chatt .= "Bott> Jag skall strax servera dig. Skall det vara med mjölk?\n";
                         $fråga = 5;
                     }

@@ -185,6 +185,7 @@ Om du har tid, fundera över förbättringar, t.ex:
 
 * Lägg in snygga [Emojis](https://emoji-css.afeld.me/)
 * Välj färger till texten och bakgrunden
+* Prova använda switch
 
 ### Avancerat
 

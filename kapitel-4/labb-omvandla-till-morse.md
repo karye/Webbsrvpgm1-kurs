@@ -315,7 +315,7 @@ document.getElementById("demo").onsubmit = function() {
 
 ## Steg 4
 
-* Koppla in ett js-skript för att spela up morse-tecknet
+* Koppla in ett js-skript för att spela up morse-koden
 
 {% tabs %}
 {% tab title="ordsprak.php" %}

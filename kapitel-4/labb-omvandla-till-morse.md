@@ -314,8 +314,9 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
         <?php
-        # kod...
         {
+            // Ta emot data från formuläret
+            # kod... = $_POST["..."];
             # kod...
             
             

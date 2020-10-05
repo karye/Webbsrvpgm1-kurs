@@ -233,10 +233,10 @@ document.getElementById("demo").onsubmit = function() {
     # kod... = $_POST["..."];
 
     // Omvandla texten till versaler strtoupper()
-    # kod...
+    # $texten = kod...
     
     // Dela upp texten i dess bokstäver str_split()
-    # kod...
+    # $bokstäver = kod...
     
 }
 ?>
@@ -255,10 +255,10 @@ document.getElementById("demo").onsubmit = function() {
     # kod... = $_POST["..."];
 
     // Omvandla texten till versaler strtoupper()
-    # kod...
+    # $texten = kod...
     
     // Dela upp texten i dess bokstäver str_split()
-    # kod...
+    # $bokstäver = kod...
     
     // Loopa igenom texten bokstav-för-bokstav
     # kod... {
@@ -289,10 +289,10 @@ document.getElementById("demo").onsubmit = function() {
     # kod...
 
     // Omvandla texten till versaler strtoupper()
-    # kod...
+    # $texten = kod...
     
     // Dela upp texten i dess bokstäver str_split()
-    # kod...
+    # $bokstäver = kod...
     
     // Loopa igenom texten
     # kod... {
@@ -335,4 +335,25 @@ document.getElementById("demo").onsubmit = function() {
 ```
 {% endtab %}
 {% endtabs %}
+
+## Förbättringar
+
+### Hantera åäö
+
+* Använd följande funktion, dvs **m\_str\_split\($texten\)** istället **str\_split\($texten\)**
+
+```php
+    // För att hantera texten med svenska tecken
+    function mb_str_split($str, $l = 1) {
+        if ($l > 0) {
+            $ret = array();
+            $len = mb_strlen($str, "UTF-8");
+            for ($i = 0; $i < $len; $i += $l) {
+                $ret[] = mb_substr($str, $i, $l, "UTF-8");
+            }
+            return $ret;
+        }
+        return preg_split("//u", $str, -1, PREG_SPLIT_NO_EMPTY);
+    }
+```
 

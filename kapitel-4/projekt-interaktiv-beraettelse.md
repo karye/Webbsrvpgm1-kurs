@@ -50,6 +50,7 @@ Börja med att designa din berättelse. Använd ett enkelt beslutsträd, tex nå
             $... = $_POST["..."];
 
         }
+        ?>
     </div>
 </body>
 </html>

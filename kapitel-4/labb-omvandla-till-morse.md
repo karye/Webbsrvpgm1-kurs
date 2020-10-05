@@ -274,7 +274,7 @@ document.getElementById("demo").onsubmit = function() {
 
 ## Steg 3
 
-* Infoga [morsealfabetet](https://morsealfabetet.se/)
+* Fyll i [morsealfabetet](https://morsealfabetet.se/)
 
 {% tabs %}
 {% tab title="ordsprak.php" %}
@@ -284,36 +284,10 @@ document.getElementById("demo").onsubmit = function() {
     // Ta emot data från formuläret
     # kod... = $_POST["..."];
 
-    // Morsealfabetet A-Z och mellanslag
+    // Morsealfabetet A-ZÅÄÖ och mellanslag
     $morse['A'] = '.-';
     $morse['B'] = '-...';
-    $morse['C'] = '-.-.';
-    $morse['D'] = '-..';
-    $morse['E'] = '.';
-    $morse['F'] = '..-.';
-    $morse['G'] = '--.';
-    $morse['H'] = '....';
-    $morse['I'] = '..';
-    $morse['J'] = '.---';
-    $morse['K'] = '-.-';
-    $morse['L'] = '.-..';
-    $morse['M'] = '--';
-    $morse['N'] = '-.';
-    $morse['O'] = '---';
-    $morse['P'] = '.--.';
-    $morse['Q'] = '--.-';
-    $morse['R'] = '.-.';
-    $morse['S'] = '...';
-    $morse['T'] = '-';
-    $morse['U'] = '..-';
-    $morse['V'] = '...-';
-    $morse['W'] = '.--';
-    $morse['X'] = '-..-';
-    $morse['Y'] = '-.--';
-    $morse['Z'] = '--..';
-    $morse['Z'] = '--..';
-    $morse['Å'] = '.--.-';
-    $morse['Ä'] = '.-.-';
+    # kod...
     $morse['Ö'] = '---.';
     $morse[' '] = ' ';
 

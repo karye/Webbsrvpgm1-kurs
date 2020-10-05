@@ -77,12 +77,9 @@ Börja med att designa din berättelse. Använd ett enkelt beslutsträd, tex nå
                 case 3:
                     # code...
                     break;
-                
-                default:
-                    # code...
-                    break;
             }
         } else {
+            // Första frågan
             $fråga = 1;
             $chatt = "Bott> Du har precis vaknat. Är du lite eller mycket hungrig?\n";
         }
@@ -156,7 +153,7 @@ input, textarea {
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 textarea {
-    height: 5em;
+    height: 15em;
     width: 100%;
 }
 button {

@@ -38,12 +38,11 @@ description: Omvandla text till morsekod
             <button type="submit" class="btn btn-primary">Skicka</button>
         </form>
         <?php
+        // Finns data?
+        if (isset($_POST["..."])) {
 
-        // Skickas data?
-        # kod...
-        {
-            // Ta emot data som skickas
-            # kod...
+            // Ta emot data från formuläret
+            $... = $_POST["..."];
 
         }
         ?>

@@ -41,7 +41,6 @@ Börja med att designa din berättelse. Använd ett enkelt beslutsträd, tex nå
             <input id="..." class="form-control" type="text" name="...">
             <button type="submit" class="btn btn-primary">Skicka</button>
         </form>
-
         <?php
         // Finns data?
         if (isset($_POST["..."])) {

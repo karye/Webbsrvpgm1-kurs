@@ -42,7 +42,7 @@ description: Omvandla text till morsekod
         if (isset($_POST["..."])) {
 
             // Ta emot data från formuläret
-            $... = $_POST["..."];
+            # kod... = $_POST["..."];
 
         }
         ?>
@@ -228,11 +228,9 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
 <?php
-// Skickas data?
-# kod...
 {
-    // Ta emot data som skickas
-    
+    // Ta emot data från formuläret
+    # kod... = $_POST["..."];
 
     // Omvandla texten till versaler strtoupper()
     # kod...
@@ -252,11 +250,9 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
 <?php
-// Skickas data?
-# kod...
 {
-    // Ta emot data som skickas
-    # kod...
+    // Ta emot data från formuläret
+    # kod... = $_POST["..."];
 
     // Omvandla texten till versaler strtoupper()
     # kod...
@@ -284,11 +280,9 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
 <?php
-// Skickas data?
-# kod...
 {
-    // Ta emot data som skickas
-    # kod...
+    // Ta emot data från formuläret
+    # kod... = $_POST["..."];
 
     // Morsealfabetet A-Z och mellanslag
     $morse['A'] = '.-';

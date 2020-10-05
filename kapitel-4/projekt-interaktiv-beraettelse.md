@@ -22,7 +22,7 @@ Börja med att designa din berättelse. Använd ett enkelt beslutsträd, tex nå
 * Minst en klasskamrat ska ha testat din berättelse & ha tittat på koden.
 
 {% tabs %}
-{% tab title="berattelse.html" %}
+{% tab title="berattelse.php" %}
 ```php
 <!DOCTYPE html>
 <html lang="sv">

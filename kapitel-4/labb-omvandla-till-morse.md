@@ -229,7 +229,6 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
 <?php
-
 // Skickas data?
 ...
 {
@@ -254,7 +253,6 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
 <?php
-
 // Skickas data?
 ...
 {
@@ -287,7 +285,6 @@ document.getElementById("demo").onsubmit = function() {
 {% tab title="ordsprak.php" %}
 ```php
 <?php
-
 // Skickas data?
 ...
 {
@@ -318,4 +315,22 @@ document.getElementById("demo").onsubmit = function() {
 
 ## Steg 4
 
-* 
+* Koppla in ett js-skript för att spela up morse-tecknet
+
+{% tabs %}
+{% tab title="ordsprak.php" %}
+```php
+<?php
+{
+    // Loopa igenom texten
+    echo "<form id=\"demo\"><label>$texten</label><input type=\"text\" pattern=\"[.\- ]+\" name=\"code\" value=\"";
+    ...
+    ...
+    ...
+    echo "\"><button>Spela upp</button></form>";
+}
+?>
+```
+{% endtab %}
+{% endtabs %}
+

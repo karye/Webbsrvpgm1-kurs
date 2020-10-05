@@ -286,7 +286,36 @@ document.getElementById("demo").onsubmit = function() {
 
     // Morsealfabetet A-Z och mellanslag
     $morse['A'] = '.-';
-    # kod...
+    $morse['B'] = '-...';
+    $morse['C'] = '-.-.';
+    $morse['D'] = '-..';
+    $morse['E'] = '.';
+    $morse['F'] = '..-.';
+    $morse['G'] = '--.';
+    $morse['H'] = '....';
+    $morse['I'] = '..';
+    $morse['J'] = '.---';
+    $morse['K'] = '-.-';
+    $morse['L'] = '.-..';
+    $morse['M'] = '--';
+    $morse['N'] = '-.';
+    $morse['O'] = '---';
+    $morse['P'] = '.--.';
+    $morse['Q'] = '--.-';
+    $morse['R'] = '.-.';
+    $morse['S'] = '...';
+    $morse['T'] = '-';
+    $morse['U'] = '..-';
+    $morse['V'] = '...-';
+    $morse['W'] = '.--';
+    $morse['X'] = '-..-';
+    $morse['Y'] = '-.--';
+    $morse['Z'] = '--..';
+    $morse['Z'] = '--..';
+    $morse['Å'] = '.--.-';
+    $morse['Ä'] = '.-.-';
+    $morse['Ö'] = '---.';
+    $morse[' '] = ' ';
 
     // Omvandla texten till versaler strtoupper()
     # $texten = kod...

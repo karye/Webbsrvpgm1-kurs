@@ -320,16 +320,24 @@ document.getElementById("demo").onsubmit = function() {
 {% tabs %}
 {% tab title="ordsprak.php" %}
 ```php
-<?php
-{
-    // Loopa igenom texten
-    echo "<form id=\"demo\"><label>$texten</label><input type=\"text\" pattern=\"[.\- ]+\" name=\"code\" value=\"";
-    ...
-    ...
-    ...
-    echo "\"><button>Spela upp</button></form>";
-}
-?>
+        <?php
+        ...
+        {
+            ...
+            
+            
+            // Loopa igenom texten
+            echo "<form id=\"demo\"><label>$texten</label><input type=\"text\" pattern=\"[.\- ]+\" name=\"code\" value=\"";
+            ...
+            ...
+            ...
+            echo "\"><button>Spela upp</button></form>";
+        }
+        ?>
+    </div>
+    <script src="morse.js"></script>
+</body>
+</html>
 ```
 {% endtab %}
 {% endtabs %}

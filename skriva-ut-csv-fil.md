@@ -38,16 +38,12 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
         // Läs in hela filen i en sträng: file()
         $rader = # kod...;
 
-        echo "<table>";
-        echo "<tr><th>Restaurang</th></tr>";
-
         // Loopa igenom alla rader
         foreach (# kod...) {
 
             // Skriv ut tabellrad
-            echo "<tr><td>...</td></tr>";
+            echo "...";
         }
-        echo "</table>";
         ?>
     </div>
 </body>
@@ -208,6 +204,28 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 {% endtab %}
 {% endtabs %}
 
+### Skriv ut i tabellform
+
+{% tabs %}
+{% tab title="lista.php" %}
+```php
+        <?php
+        $filnamn = # kod...;
+
+        // Läs in hela filen i en sträng: file()
+        $rader = # kod...;
+
+        echo "<table>";
+        echo "<tr><th>Restaurang</th></tr>";
+
+        # kod...
+        
+        echo "</table>";
+        ?>
+```
+{% endtab %}
+{% endtabs %}
+
 ### Om filen inte finns?
 
 * Skapa ett felmeddande om filen ej går att hitta eller läsa
@@ -223,10 +241,6 @@ $filnamn = # kod...;
 // Är filen läsbar: is_readable()
 if (# kod...) {
     # kod...
-
-} else {
-    echo "...";
-}
 ?>
 ```
 {% endtab %}

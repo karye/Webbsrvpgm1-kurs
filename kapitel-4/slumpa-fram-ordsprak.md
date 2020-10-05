@@ -38,13 +38,13 @@ description: Slumpa fram sex olika ordspråk från en lista av tio
 <?php
     // Skapa en array med tio ordspråk
     $ordsprak[] = "Blyga pojkar får aldrig kyssa vackra flickor.";
-    ...
+    # kod...
 
     // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
-    $index = ...;
+    $index = # kod...;
 
     // Skriv ut ordspråket 
-    echo ...;
+    echo # kod...;
 ?>
 </body>
 </html>
@@ -186,13 +186,13 @@ form span {
 {% tab title="ordsprak.php" %}
 ```php
 // for-loop som går 6 varv för att vi vill skriva ut 6 ordspråk
-... {
+# kod... {
     
     // Slumpa fram ett tal mellan 0 och 9 med funktionen rand()
-    $index = ...;
+    $index = # kod...;
 
     // Skriv ut ordspråket 
-    echo ...;
+    echo # kod...;
 }
 ```
 {% endtab %}
@@ -207,9 +207,9 @@ form span {
 ```php
 // <ol>
 echo "<ol>";
-..
+# kod...
 echo "<li>...</li>";
-..
+# kod...
 echo "</ol>";
 ```
 
@@ -234,17 +234,17 @@ $tagna = [];
 ```php
 // Skriv ut om den inte finns i arrayen $tagna
 // Kontrollera med funktionen in_array()
-if (...) {
+if (# kod...) {
     
     // Skriv ut ordspråket 
-    echo "...";
+    echo # kod...;
     
     // Lagra positionen i arrayen $tagna
-    ...;
+    # kod...;
 } else {
     
     // Backa $i med 1
-    ...;
+    # kod...;
 }
 ```
 

@@ -2,7 +2,7 @@
 description: Läsa från textfil och "parsa" data som är tsv-formaterat.
 ---
 
-# Labb 4: skriva ut tsv-fil
+# Labb 4: läsa in tsv-fil
 
 ## Resultatet
 

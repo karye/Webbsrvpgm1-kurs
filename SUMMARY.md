@@ -31,8 +31,8 @@
 ---
 
 * [Filhantering](filhantering.md)
-* [Labb 3: skriva ut csv-fil](skriva-ut-csv-fil.md)
-* [Labb 4: skriva ut tsv-fil](skriva-ut-tsv-fil.md)
+* [Labb 3: läsa in csv-fil](skriva-ut-csv-fil.md)
+* [Labb 4: läsa in tsv-fil](skriva-ut-tsv-fil.md)
 
 ## Koda webbappar i PHP
 

@@ -154,6 +154,8 @@ I det här fallet får **$\_REQUEST\['namn'\]\[0\]** innehållet som skrivits i 
 
 Skapa en webbapp med ett formulär där användaren kan mata in **5 st namn**. Kalla textrutorna för **namn\[\]**. [**Sortera** ](https://devdocs.io/php/function.sort)sedan namnen och skriv ut dem i bokstavsordning, ett på varje rad.
 
+![](../.gitbook/assets/image%20%2819%29.png)
+
 ### **Uppgift 2**
 
 Utveckla programmet i uppgift 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden. Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt osv\).
@@ -161,6 +163,8 @@ Utveckla programmet i uppgift 1 så att det skriver ut namnen i en **tabell med 
 ### **Uppgift 3**
 
 Skriv en webbapp där användaren matar in ett tal **1-9** och sedan returnerar det svenska namnet för talet \(**ett, två, tre osv**\). Om talet är större än 9 så returnerar du i stället talet som vanligt \(tex. 11\). 
+
+![](../.gitbook/assets/image%20%2820%29.png)
 
 ### **Uppgift 4**
 

@@ -94,7 +94,8 @@ Gör en webbapp som tar den inmatade texten ur ett formulärs "textarea" och spa
 
 ### **Uppgift 2**
 
-Gör en webbapp  som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen.
+Gör en webbapp  som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen.   
+\(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
 
 ### **Uppgift 3**
 

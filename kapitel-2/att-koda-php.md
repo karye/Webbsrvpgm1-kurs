@@ -294,7 +294,7 @@ Man börjar alltså kommentaren med **/\*** och avslutar med **\*/**.
 
 Använd formuläret från uppgift 1.1. Skapa ett PHP-skript som tar emot de två talen, multiplicerar dem och presenterar resultatet så här: **"Produkten av tal1 och tal2 är ..."**.
 
-
+![](../.gitbook/assets/dump-uppgift-2-1.png)
 
 ### **Uppgift 2**
 
@@ -320,19 +320,25 @@ Tips: färgerna skrivs med sina engelska namn enligt följande exempel \(som vis
 </html>
 ```
 
+![](../.gitbook/assets/dump-uppgift-2-3.png)
+
 ### **Uppgift 4**
 
 Skriv ett skript som tar en siffra \(från formuläret i uppgift 1.4\) som innehåller dagens temperatur i Celsius. Programmet ska sedan skriva ut hur många grader Fahrenheit det motsvarar enligt följande mall: "**100 grader Celsius motsvarar 212 grader Fahrenheit**". Formeln för omvandlingen är **F = \(9/5\)\*C + 32** där F står för grader Fahrenheit och C för grader Celsius.
 
-
+![](../.gitbook/assets/dump-uppgift-2-4.png)
 
 ### **Uppgift 5**
 
 Ändra föregående formulär så att man kan med radioknappar välja mellan "**Omvandla från F° till C°**" eller "**Omvandla C° till F°**". Ändra på skriptet så att uträkningen stämmer.
 
+![](../.gitbook/assets/dump-uppgift-2-5.png)
+
 ### **Uppgift 6**
 
 Utöka föregående formulär så att man kan också välja "**Omvandla C° till K°**". K står för temperatur i Kelvin enligt formeln **K = C - 273**. Ändra på skriptet så att uträkningen stämmer.
+
+![](../.gitbook/assets/dump-uppgift-2-6.png)
 
 ### **Uppgift 7**
 

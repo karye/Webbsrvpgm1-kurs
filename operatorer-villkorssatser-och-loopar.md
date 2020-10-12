@@ -115,25 +115,25 @@ Modifiera **temperaturkonverteringsprogrammet** ytterligare en gång, så att an
 
 Gör ett skript som frågar efter **användarnamn** och **lösenord** via ett formulär. Om användarnamnet och lösenordet är korrekt ska en sida visas där det står "Du är inloggad". Annars ska användaren få upp inloggningsrutan igen.
 
-![](.gitbook/assets/image%20%2824%29.png)
+![](.gitbook/assets/image%20%2832%29.png)
 
 ### **Uppgift 3**
 
 Skriv ett skript som frågar efter **två heltal** via ett formulär, det första talet ska vara lägre än det andra. Skriv ut **alla heltal** mellan de två som matats in. Separera med mellanslag.
 
-![](.gitbook/assets/image%20%2823%29.png)
+![](.gitbook/assets/image%20%2831%29.png)
 
 ### **Uppgift 4**
 
 Gör ett skript som skriver ut **tal** och respektive **tals kvadrat** från **0 till 50**.
 
-![](.gitbook/assets/image%20%2822%29.png)
+![](.gitbook/assets/image%20%2829%29.png)
 
 ### **Uppgift 5**
 
 Gör ett skript som är en **lånekalkylator**. Mha **radioknappar** ska användaren kunna välja mellan **1, 3 och 5 års lånetid**. I en ruta ska användaren skriva i **lånebeloppet** och i nästa **räntan** i hela procent. Programmet ska sedan räkna ut den totala lånekostnaden. Räknas ut genom ränta på ränta-principen, årsvis\). Så för ett tvåårigt lån på 5000 med räntan 4% skulle alltså lånekostnaden bli 5000\*1,04\*1,04 - 5000. Observera att lånet är "amorteringsfritt".
 
-![](.gitbook/assets/image%20%2821%29.png)
+![](.gitbook/assets/image%20%2825%29.png)
 
 ## Extra uppgifter
 

@@ -148,21 +148,31 @@ Observera att dessa övningar endast innefattar HTML, i nästa övningsmoment sk
 
 Gör ett formulär där användaren kan mata in två tal i två stycken **textrutor**.
 
+![](../.gitbook/assets/image%20%2820%29.png)
+
 ### **Uppgift 2**
 
 Gör ett komplett "kontaktformulär" med textrutor där du frågar efter **namn**, **epostadress** och **telefon**. Du ska även skapa en **kryssruta** där användaren kan bocka i sitt intresse för ett nyhetsbrev. Till sist ska du skapa två stycken **radioknappar**, där användaren kan välja mellan att bli kontaktad per telefon eller e-post.
+
+![](../.gitbook/assets/image%20%2819%29.png)
 
 ### **Uppgift 3**
 
 Skapa en sida där besökaren ska välja sin favoritfilm av tre olika filmer. Besökaren ska dessutom välja sin favoritbok bland tre olika böcker. Det ska gå att välja högst en bok och en film.
 
+![](../.gitbook/assets/image%20%2823%29.png)
+
 ### **Uppgift 4**
 
 Utforma ett formulär på en sida där användaren ska mata in en temperatur i Celsius.
 
+![](../.gitbook/assets/image%20%2828%29.png)
+
 ### **Uppgift 5**
 
 På din webbsida vill du ha ett formulär där besökaren kan lämna kommentarer. Kommentarerna ska kunna skrivas i ett **flerradstextfält**. Dessutom ska det finnas en vanlig **textruta** för att fylla i namn. På knappen för att skicka iväg formuläret ska det stå "Skicka kommentarer".
+
+![](../.gitbook/assets/image%20%2827%29.png)
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

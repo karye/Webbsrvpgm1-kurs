@@ -90,7 +90,7 @@ echo $homepage;
 
 ### **Uppgift 1**
 
-Gör en webbapp som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
+Gör en webbapplikation som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
 
 ### **Uppgift 2**
 

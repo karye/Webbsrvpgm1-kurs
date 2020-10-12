@@ -338,11 +338,13 @@ Skriv ett skript som tar en siffra \(från formuläret i uppgift 1.4\) som inneh
 
 Utöka föregående formulär så att man kan också välja "**Omvandla C° till K°**". K står för temperatur i Kelvin enligt formeln **K = C - 273**. Ändra på skriptet så att uträkningen stämmer.
 
-![](../.gitbook/assets/dump-uppgift-2-6.png)
+![](../.gitbook/assets/dump-uppgift-2-7.png)
 
 ### **Uppgift 7**
 
 Skapa ett formulär som tar emot en text och där man kan välja mellan att konvertera till **versaler** \(stora bokstäver\) eller till **gemener** \(små bokstäver\). Läs om funktioner på [strtoupper\(\)](http://php.net/manual/en/function.strtoupper.php) och [strtolower\(\)](http://php.net/manual/en/function.strtolower.php).
+
+![](../.gitbook/assets/dump-uppgift-2-6.png)
 
 ### **Uppgift 8**
 

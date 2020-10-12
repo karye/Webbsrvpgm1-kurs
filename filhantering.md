@@ -90,15 +90,15 @@ echo $homepage;
 
 ### **Uppgift 1**
 
-Gör ett program som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
+Gör en webbapp som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
 
 ### **Uppgift 2**
 
-Gör ett program som i en textruta frågar efter ett filnamn på servern. Kontrollera sedan filnamnet så att det endast innehåller bokstäver, siffror och punkt. Om kontrollen ger OK, så öppna filen och skriv ut filinnehållet på skärmen.
+Gör en webbapp  som i en textruta frågar efter ett filnamn på servern. Kontrollera sedan filnamnet så att det endast innehåller bokstäver, siffror och punkt. Om kontrollen ger OK, så öppna filen och skriv ut filinnehållet på skärmen.
 
 ### **Uppgift 3**
 
-Utveckla programmet i övning 1 till ett enkelt gästboksskript. Skapa en sida kallad "Lägg till till gästbok, där användaren får fylla i namn, e-post-adress och meddelande. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil. Snyggt formaterad innebär att du har mellanrum mellan namnet och e-post-adressen, och ny rad \(&lt;br&gt;\) innan du skriver meddelandet, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd append \(a\) som filöppningsmetod, ej write \(w\), eftersom du då skriver över tidigare innehåll! Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
+Utveckla webbappen i uppgift 1 till ett enkelt gästboksskript. Skapa en sida kallad "Lägg till till gästbok, där användaren får fylla i namn, e-post-adress och meddelande. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil. Snyggt formaterad innebär att du har mellanrum mellan namnet och e-post-adressen, och ny rad \(&lt;br&gt;\) innan du skriver meddelandet, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd append \(a\) som filöppningsmetod, ej write \(w\), eftersom du då skriver över tidigare innehåll! Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
 
 ### **Uppgift 4**
 
@@ -106,7 +106,7 @@ Skapa ett loggningsskript som sparar en filrad om varje besök i en fil kallad "
 
 ### **Uppgift 5**
 
-Gör ett PHP-skript som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
+Gör en webbapp som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

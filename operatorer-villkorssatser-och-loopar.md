@@ -115,17 +115,19 @@ Modifiera **temperaturkonverteringsprogrammet** ytterligare en gång, så att an
 
 Gör ett skript som frågar efter **användarnamn** och **lösenord** via ett formulär. Om användarnamnet och lösenordet är korrekt ska en sida visas där det står "Du är inloggad". Annars ska användaren få upp inloggningsrutan igen.
 
-![](.gitbook/assets/image%20%2823%29.png)
+![](.gitbook/assets/image%20%2824%29.png)
 
 ### **Uppgift 3**
 
 Skriv ett skript som frågar efter **två heltal** via ett formulär, det första talet ska vara lägre än det andra. Skriv ut **alla heltal** mellan de två som matats in. Separera med mellanslag.
 
-![](.gitbook/assets/image%20%2822%29.png)
+![](.gitbook/assets/image%20%2823%29.png)
 
 ### **Uppgift 4**
 
 Gör ett skript som skriver ut **tal** och respektive **tals kvadrat** från **0 till 50**.
+
+![](.gitbook/assets/image%20%2822%29.png)
 
 ### **Uppgift 5**
 

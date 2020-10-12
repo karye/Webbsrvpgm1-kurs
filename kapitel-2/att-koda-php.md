@@ -300,6 +300,8 @@ Använd formuläret från uppgift 1.1. Skapa ett PHP-skript som tar emot de två
 
 Använd formuläret från uppgift 1.2. Skapa ett skript som tar emot data från detta formulär: Skriptet ska skriva ut **"Namn:"** följt av namnet på personen, **"epostadress:"** och personens epostadress och till sist **"Vi kommer att kontakta dig inom snarast per "** följt av antingen **epost** eller **telefon** beroende på vad användaren valt.
 
+![](../.gitbook/assets/image%20%2826%29.png)
+
 ### **Uppgift 3**
 
 Gör ett formulär där användaren kan välja bland fyra färger att "måla" bakgrunden med för webbsidan som kommer upp när han/hon klickat på knappen **Måla bakgrund**. Skapa sedan ett skript som verkligen gör detta. Färgerna ska vara **röd**, **blå**, **grön** och **gul**.
@@ -321,6 +323,8 @@ Tips: färgerna skrivs med sina engelska namn enligt följande exempel \(som vis
 ### **Uppgift 4**
 
 Skriv ett skript som tar en siffra \(från formuläret i uppgift 1.4\) som innehåller dagens temperatur i Celsius. Programmet ska sedan skriva ut hur många grader Fahrenheit det motsvarar enligt följande mall: "**100 grader Celsius motsvarar 212 grader Fahrenheit**". Formeln för omvandlingen är **F = \(9/5\)\*C + 32** där F står för grader Fahrenheit och C för grader Celsius.
+
+
 
 ### **Uppgift 5**
 

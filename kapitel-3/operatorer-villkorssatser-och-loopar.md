@@ -2,7 +2,7 @@
 description: 'Operatorer, villkorssatser och loopar.'
 ---
 
-# Operatorer, villkorssatser och loopar
+# if-satser och loopar
 
 ## **Operatorer**
 

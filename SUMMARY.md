@@ -13,7 +13,7 @@
 
 ## Kapitel 3
 
-* [Operatorer, villkorssatser och loopar](kapitel-3/operatorer-villkorssatser-och-loopar.md)
+* [if-satser och loopar](kapitel-3/operatorer-villkorssatser-och-loopar.md)
 
 ## Kapitel 4
 

@@ -1,5 +1,5 @@
 ---
-description: Hur skickar man data till PHP?
+description: Hur skickar man data till ett PHP-skript?
 ---
 
 # Från formulär till PHP-skript

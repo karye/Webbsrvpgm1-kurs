@@ -316,8 +316,6 @@ Tips: färgerna skrivs med sina engelska namn enligt följande exempel \(som vis
 </html>
 ```
 
-### **Uppgift 4**
-
 Skriv ett skript som tar en siffra \(från formuläret i uppgift 1.4\) som innehåller dagens temperatur i Celsius. Programmet ska sedan skriva ut hur många grader Fahrenheit det motsvarar enligt följande mall: "**100 grader Celsius motsvarar 212 grader Fahrenheit**". Formeln för omvandlingen är **F = \(9/5\)\*C + 32** där F står för grader Fahrenheit och C för grader Celsius.
 
 ### **Uppgift 5**

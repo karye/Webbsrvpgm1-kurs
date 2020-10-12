@@ -103,7 +103,8 @@ Utveckla webbappen i uppgift 1 till ett enkelt gästboksskript. Skapa en sida ka
 
 ### **Uppgift 4**
 
-Skapa ett loggningsskript som sparar en filrad om varje besök i en fil kallad "**log.txt**". Loggningsskriptet ska logga användarens IP-adress, och vilken sida användaren kom ifrån, och vilken webbläsare användaren hade. Variabler skickas till PHP med denna information. Skapa ett nytt PHP-skript, och skriv **&lt;?php phpinfo\(\) ?&gt;** så hittar du denna information längst ned på sidan.
+Skapa ett loggningsskript som sparar en filrad om varje besök i en fil kallad "**log.txt**". Loggningsskriptet ska logga användarens IP-adress, och vilken sida användaren kom ifrån, och vilken webbläsare användaren hade. Variabler skickas till PHP med denna information.   
+Skapa ett nytt PHP-skript, och skriv **&lt;?php phpinfo\(\) ?&gt;** så hittar du denna information längst ned på sidan.
 
 ### **Uppgift 5**
 

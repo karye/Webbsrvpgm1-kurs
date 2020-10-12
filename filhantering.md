@@ -92,10 +92,13 @@ echo $homepage;
 
 Gör en webbapplikation som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
 
+![](.gitbook/assets/image%20%2813%29.png)
+
 ### **Uppgift 2**
 
-Gör en webbapp  som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen.   
-\(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
+Gör en webbapp  som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen. \(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
+
+![](.gitbook/assets/image%20%2814%29.png)
 
 ### **Uppgift 3**
 
@@ -103,6 +106,8 @@ Utveckla webbappen i uppgift 1 till ett enkelt gästboksskript.
 Skapa en sida kallad "Lägg till igästbok", där användaren får fylla i **namn**, **epostadress** och **meddelande**. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil.   
 Snyggt formaterad innebär att du har mellanrum mellan **namnet** och **epostadressen**, och ny rad \(&lt;br&gt;\) innan du skriver **meddelandet**, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd append \(a\) som filöppningsmetod, ej write \(w\), eftersom du då skriver över tidigare innehåll!   
 Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
+
+![](.gitbook/assets/image%20%2815%29.png)
 
 ### **Uppgift 4**
 

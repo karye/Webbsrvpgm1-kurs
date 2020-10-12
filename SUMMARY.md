@@ -9,10 +9,7 @@
 ## Kapitel 2
 
 * [Grunder i PHP](kapitel-2/att-koda-php.md)
-
----
-
-* [Tips & tricks](tips-and-tricks.md)
+* [Tips & tricks](kapitel-2/tips-and-tricks.md)
 
 ## Kapitel 3
 

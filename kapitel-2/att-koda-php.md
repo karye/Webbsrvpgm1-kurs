@@ -90,7 +90,7 @@ Vilket ger samma resultat.
 
 ## **Variabler**
 
-![Variabler &#xE4;r som kartonger!](.gitbook/assets/image%20%283%29.png)
+![Variabler &#xE4;r som kartonger!](../.gitbook/assets/image%20%283%29.png)
 
 En variabel är en behållare för ett värde. Tänk dig den som en kökslåda som innehåller någonting. Vi har ett namn på kökslådan dvs. själva variabeln och sedan har variabeln ett innehåll. Det finns två huvudtyper av variabler: strängar och tal. Strängar innehåller text medan tal innehåller siffror. Innan man använder en variabel behöver den tilldelas ett värde. \(jag har här uteslutit HTML-koden runt skriptet för att vi ska koncentrera oss på det viktiga\).
 

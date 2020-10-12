@@ -6,7 +6,7 @@ description: Läsa från textfil och "parsa" data som är tsv-formaterat.
 
 ## Resultatet
 
-![](.gitbook/assets/image%20%2811%29.png)
+![](../.gitbook/assets/image%20%2811%29.png)
 
 ## **Syfte**
 

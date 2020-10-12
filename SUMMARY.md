@@ -26,11 +26,9 @@
 
 ## Kapitel 5
 
----
-
-* [Filhantering](filhantering.md)
-* [Labb 3: läsa in csv-fil](skriva-ut-csv-fil.md)
-* [Labb 4: läsa in tsv-fil](skriva-ut-tsv-fil.md)
+* [Filhantering](kapitel-5/filhantering.md)
+* [Labb 3: läsa in csv-fil](kapitel-5/skriva-ut-csv-fil.md)
+* [Labb 4: läsa in tsv-fil](kapitel-5/skriva-ut-tsv-fil.md)
 
 ## Koda webbappar i PHP
 

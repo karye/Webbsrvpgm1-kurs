@@ -2,7 +2,7 @@
 description: Bra och användbart att veta.
 ---
 
-# Tips & tricks
+# Svenskt språk
 
 ## Datum på svenska
 

@@ -294,6 +294,8 @@ Man börjar alltså kommentaren med **/\*** och avslutar med **\*/**.
 
 Använd formuläret från uppgift 1.1. Skapa ett PHP-skript som tar emot de två talen, multiplicerar dem och presenterar resultatet så här: **"Produkten av tal1 och tal2 är ..."**.
 
+
+
 ### **Uppgift 2**
 
 Använd formuläret från uppgift 1.2. Skapa ett skript som tar emot data från detta formulär: Skriptet ska skriva ut **"Namn:"** följt av namnet på personen, **"epostadress:"** och personens epostadress och till sist **"Vi kommer att kontakta dig inom snarast per "** följt av antingen **epost** eller **telefon** beroende på vad användaren valt.

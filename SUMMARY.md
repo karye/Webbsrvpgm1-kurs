@@ -13,9 +13,7 @@
 
 ## Kapitel 3
 
----
-
-* [Operatorer, villkorssatser och loopar](operatorer-villkorssatser-och-loopar.md)
+* [Operatorer, villkorssatser och loopar](kapitel-3/operatorer-villkorssatser-och-loopar.md)
 
 ## Kapitel 4
 

@@ -332,7 +332,7 @@ Skriv ett skript som tar en siffra \(från formuläret i uppgift 1.4\) som inneh
 
 ### **Uppgift 6**
 
-Utöka föregående formulär så att man kan också välja "**Omvandla C° till K°**". K står för temperatur i Kelvin enligt formeln K = C - 273. Ändra på skriptet så att uträkningen stämmer.
+Utöka föregående formulär så att man kan också välja "**Omvandla C° till K°**". K står för temperatur i Kelvin enligt formeln **K = C - 273**. Ändra på skriptet så att uträkningen stämmer.
 
 ### **Uppgift 7**
 

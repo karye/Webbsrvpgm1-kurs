@@ -143,7 +143,7 @@ if (...($_POST['inlagg'])) {
 
     echo "<p>Inlägget registrerat!</p>";
 } else {
-    echo "<p>Inlägg saknas!</p>";
+    // Skriv felmeddelande
 }
 ?>
 ...
@@ -160,17 +160,14 @@ if (...($_POST['inlagg'])) {
 
 ```php
 <?php
-$filnamn = "test.txt";
-$texten = "Text som skall sparas ned!\n";
+$filnamn = "...";
+$texten = ...;
 
 // Är filens skrivbar?
-if (is_writable($filnamn )) {
+
 
     // Kan vi öppna filen?
-    if (!$handle = fopen($filnamn , 'a')) {
-         echo "... $filnamn";
-         exit;
-    }
+    
 
     // Skriv något i textfilen
     if (fwrite($handle, $texten ) === FALSE) {
@@ -179,9 +176,12 @@ if (is_writable($filnamn )) {
     } else {
         echo "... ($texten) ... ($filnamn)";
     }
+    
+    // Stäng filen
     fclose($handle);
 
 } else {
+    // Skriv felmeddelande
     echo "...";
 }
 ?>

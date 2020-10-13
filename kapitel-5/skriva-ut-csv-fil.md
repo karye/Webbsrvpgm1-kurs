@@ -211,7 +211,7 @@ $filnamn = # kod...;
 
 * Skapa ett meddelande om filen har lästs in
 
-![](../.gitbook/assets/dump-labb-3-1.png)
+![](../.gitbook/assets/dump-labb-3-4.png)
 
 ## Mer detaljerad tabell
 

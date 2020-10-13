@@ -1,5 +1,5 @@
 ---
-description: Läsa från textfil och "parsa" data som är tsv-formaterat.
+description: Läsa textfil och "parsa" data som är tsv-formaterat.
 ---
 
 # Labb 4: läsa in tsv-fil
@@ -10,7 +10,9 @@ description: Läsa från textfil och "parsa" data som är tsv-formaterat.
 
 ## **Syfte**
 
-* Skriv ut restauranger i en csv-fil i tabellform
+* Träna på att läsa in filer 
+* Träna på att array och loopar
+* Träna på stränghantering
 
 ## Startkod
 

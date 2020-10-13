@@ -58,8 +58,6 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 {% tab title="style.css" %}
 ```css
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -72,6 +70,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/* Sidans utseende */
 body {
     background: #F9F6EB;
 }
@@ -86,6 +85,8 @@ body {
     box-shadow: 0 0 12px #f0e9d1;
     color: #4e4e4e;
 }
+
+/* Textens utseende */
 h1, h2, h3 {
     color: #9c813d;
 }
@@ -95,6 +96,8 @@ h1, h2, h3, p {
 h3 {
     margin-top: 2em;
 }
+
+/* Tabellense utseende */
 table {
     font-size: 0.8em;
 }

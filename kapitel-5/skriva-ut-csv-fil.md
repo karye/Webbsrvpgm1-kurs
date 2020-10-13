@@ -43,11 +43,11 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
         $rader = # kod...;
 
         // Loopa igenom alla rader
-        foreach (# kod...) {
+        # kod..
 
             // Skriv ut raden
             echo "...";
-        }
+        
         ?>
     </div>
 </body>
@@ -241,7 +241,10 @@ echo "</table>";
 <?php
 $filnamn = # kod...;
 
-// Är filen läsbar? is_readable()
+// Om filen läsbar skriv ut alla tabellrader
+# kod...
+
+// Annars skriv ut felmeddelande 
 # kod...
 ?>
 ```

@@ -27,12 +27,15 @@
 
 * [Filhantering](kapitel-5/filhantering.md)
 * [Labb 3: läsa in csv-fil](kapitel-5/skriva-ut-csv-fil.md)
-* [Labb 4: läsa in tsv-fil](kapitel-5/skriva-ut-tsv-fil.md)
+
+## Kapitel 6
+
+* [Stränghantering](kapitel-6/straenghantering.md)
+* [Labb 4: läsa in tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
 
 ## Koda webbappar i PHP
 
 * [Funktioner](koda-webbappar-i-php/funktioner.md)
-* [Stränghantering](koda-webbappar-i-php/straenghantering.md)
 * [Regex - reguljära uttryck](koda-webbappar-i-php/regex-reguljaera-uttryck.md)
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)

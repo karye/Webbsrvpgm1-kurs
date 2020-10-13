@@ -27,11 +27,12 @@
 
 * [Filhantering](kapitel-5/filhantering.md)
 * [Labb 3: läsa in csv-fil](kapitel-5/skriva-ut-csv-fil.md)
+* [Labb 4: blogg](kapitel-5/skapa-en-enkel-blogg.md)
 
 ## Kapitel 6
 
 * [Stränghantering](kapitel-6/straenghantering.md)
-* [Labb 4: läsa in tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
+* [Labb 5: läsa in tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
 
 ## Koda webbappar i PHP
 
@@ -41,8 +42,6 @@
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
 
 ## Laborationer
-
-* [Skapa en enkel blogg](laborationer/skapa-en-enkel-blogg.md)
 
 ## Databas med mysql
 

@@ -47,7 +47,6 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
             // Läs in texten från formuläret
             # kod..
             
-            
         ?>
     </div>
 </body>
@@ -182,8 +181,10 @@ echo "</table>";
 
 ## Kontrollera att filen finns och är läsbar
 
+### Varning om ej läsbar
+
 * Skapa ett felmeddande om filen ej går att hitta eller läsa
-* Använd [Bootstrap alerts](https://getbootstrap.com/docs/4.5/components/alerts/) för att styla felmeddelandet
+* Använd [Bootstrap alerts](https://getbootstrap.com/docs/4.5/components/alerts/) för att styla meddelanden
 * Referens till funktioner som används:
   * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
 
@@ -191,15 +192,26 @@ echo "</table>";
 <?php
 $filnamn = # kod...;
 
-// Om filen läsbar skriv ut alla tabellrader
-# kod...
+// Om filen läsbar..
 
-// Annars skriv ut felmeddelande 
-# kod...
+    // Skriv ut meddelande att filen lästs in
+    # kod...
+
+    // Skriv ut alla rader
+    # kod...
+    
+    // Annars skriv ut felmeddelande 
+    # kod...
 ?>
 ```
 
 ![](../.gitbook/assets/dump-labb-3-3.png)
+
+### Annars bekräftelse
+
+* Skapa ett meddelande om filen har lästs in
+
+![](../.gitbook/assets/dump-labb-3-1.png)
 
 ## Mer detaljerad tabell
 

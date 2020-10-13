@@ -210,22 +210,21 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 
 ### Skriv ut i tabellform
 
+* Skriv nu ut alla rader i tabellform istället
+* Använd [bootstrap](https://getbootstrap.com/docs/4.5/content/tables/) för att göra varannan tabellrad olika bakgrundsfärg
+
 {% tabs %}
 {% tab title="lista.php" %}
 ```php
-        <?php
-        $filnamn = # kod...;
+<?php
+echo "<table>";
+echo "<tr><th>Restaurang</th></tr>";
 
-        // Läs in hela filen i en sträng: file()
-        $rader = # kod...;
+// Loopa igenom alla rader
+# kod...
 
-        echo "<table>";
-        echo "<tr><th>Restaurang</th></tr>";
-
-        # kod...
-        
-        echo "</table>";
-        ?>
+echo "</table>";
+?>
 ```
 {% endtab %}
 {% endtabs %}

@@ -10,7 +10,9 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ## **Syfte**
 
-* Skriv ut restauranger i en csv-fil i tabellform
+* Träna på att läsa filer 
+* Träna på att array och loopar
+* Träna på felhantering
 
 ## Läs in csv-filen
 

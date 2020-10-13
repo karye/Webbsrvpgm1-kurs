@@ -10,20 +10,17 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ## **Syfte**
 
-* Träna på att läsa filer 
+* Träna på att läsa in filer 
 * Träna på att array och loopar
 * Träna på felhantering
 
-## Läs in csv-filen
+## Grundkoden
 
-* Webbapplikationen skall läsa in innehållet i filen **restauranger.csv**
-* Och skriva ut alla rader
-* Referens till funktioner som används:
-  * Funktionen [file\(\)](https://devdocs.io/php/function.file)
-  * Funktionen[ ](https://devdocs.io/php/function.array)[foreach](https://devdocs.io/php/control-structures.foreach)
+* Ladda ned **restauranger.csv**
+* Skapa ett formulär där användaren kan mata in filnamnet
 
 {% tabs %}
-{% tab title="lista.php" %}
+{% tab title="lista-restauranger.php" %}
 ```php
 <!DOCTYPE html>
 <html lang="sv">
@@ -31,24 +28,27 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Skriv ut csv-fil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="kontainer">
-        <h1>Alla restauranger</h1>
+        <h1>NTI lunchrestauranger</h1>
+        <form class="bg-light" action="#" method="POST">
+            <label>Ange filnamn</label>
+            <input class="form-control" type="text" name="filnamn">
+            <button type="submit" class="btn btn-primary">Läs in</button>
+        </form>
         <?php
-        $filnamn = # kod...;
-
-        // Läs in hela filen i en sträng: file()
-        $rader = # kod...;
-
-        // Loopa igenom alla rader
+        // Finns data?
         # kod..
 
-            // Skriv ut raden
-            echo $rad;
-        
+            // Läs in texten från formuläret
+            # kod..
+            
+            
+
         ?>
     </div>
 </body>
@@ -113,7 +113,7 @@ table th {
 {% endtab %}
 
 {% tab title="restauranger.csv" %}
-```text
+```
 Bagel Street Cafe, Kungsgatan 42, 11156, Stockholm
 Café Cups, Fleminggatan 18, 11226, Stockholm
 Dagobert restaurang, Roslagsgatan 7, 113 55, Stockholm
@@ -140,13 +140,35 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 {% endtab %}
 {% endtabs %}
 
+## Läs in csv-filen
+
+* Läs nu in **restauranger.csv**
+* Skriva sedan ut alla rader
+* Referens till funktioner som används:
+  * Funktionen [file\(\)](https://devdocs.io/php/function.file)
+  * Funktionen[ ](https://devdocs.io/php/function.array)[foreach](https://devdocs.io/php/control-structures.foreach)
+
+```php
+<?php
+$filnamn = # kod...;
+
+// Läs in hela filen i en sträng: file()
+$rader = # kod...;
+
+// Loopa igenom alla rader
+# kod..
+
+    // Skriv ut raden
+    echo $rad;
+
+?>
+```
+
 ## Skriv ut i tabellform
 
 * Skriv nu ut alla rader i tabellform istället
 * Använd [Bootstrap](https://getbootstrap.com/docs/4.5/content/tables/) för att göra varannan tabellrad med olika bakgrundsfärg
 
-{% tabs %}
-{% tab title="lista.php" %}
 ```php
 <?php
 echo "<table>";
@@ -158,8 +180,6 @@ echo "<tr><th>Restaurang</th></tr>";
 echo "</table>";
 ?>
 ```
-{% endtab %}
-{% endtabs %}
 
 ## Kontrollera att filen finns och är läsbar
 
@@ -168,8 +188,6 @@ echo "</table>";
 * Referens till funktioner som används:
   * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
 
-{% tabs %}
-{% tab title="lista.php" %}
 ```php
 <?php
 $filnamn = # kod...;
@@ -181,8 +199,6 @@ $filnamn = # kod...;
 # kod...
 ?>
 ```
-{% endtab %}
-{% endtabs %}
 
 ![](../.gitbook/assets/dump-labb-3-3.png)
 

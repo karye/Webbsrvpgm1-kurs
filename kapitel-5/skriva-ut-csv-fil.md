@@ -249,11 +249,9 @@ if (# kod...) {
 {% endtab %}
 {% endtabs %}
 
-## Förbättringar 
-
 ### Mer detaljerad tabell
 
-* Dela upp raderna i dess beståndsdelar
+* Dela upp raderna i dess delar: Namn, Gata, Postnr, Postort
 * Referens till funktioner som används:
   * Funktionen [explode\(\)](https://devdocs.io/php/function.explode)
 

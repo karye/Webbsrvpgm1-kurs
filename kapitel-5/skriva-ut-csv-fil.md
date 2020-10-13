@@ -17,7 +17,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 ## Grundkoden
 
 * Ladda ned **restauranger.csv**
-* Skapa ett formulär där användaren kan mata in filnamnet
+* Skapa ett formulär där användaren kan mata in ett filnamn
 
 {% tabs %}
 {% tab title="lista-restauranger.php" %}
@@ -48,7 +48,6 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
             # kod..
             
             
-
         ?>
     </div>
 </body>
@@ -219,7 +218,7 @@ echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
 # kod...
 ```
 
-## Antalet rader
+## Bekräfta antalet rader
 
 * Avsluta sidan med att ange hur många rader som hittats
 

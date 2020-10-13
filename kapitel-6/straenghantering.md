@@ -111,6 +111,8 @@ Gör ett **formulär** där användaren ska fylla i **namn, adress, postnr och p
 * Kontrollera att alla fälten är ifyllda, och innehåller minst 3 tecken.
 * Kontrollera att postnumret innehåller 5 tecken och att de tecknen endast är siffror.
 
+![](../.gitbook/assets/dump-uppgift-6-1.png)
+
 ### **Uppgift 2**
 
 Bygg på formuläret så att användaren också ska fylla i en **epostadress**.
@@ -118,13 +120,23 @@ Bygg på formuläret så att användaren också ska fylla i en **epostadress**.
 * Kontrollera sedan att epostadressen innehåller ett @, och minst en punkt.
 * Kontrollera också att epostadressen är minst sex tecken lång.
 
+![](../.gitbook/assets/dump-uppgift-6-2.png)
+
 ### **Uppgift 3**
 
 Utveckla skriptet i uppgift 6.2 så att det tar bort mellanslag i **postnumret** och därmed tillåter postnummer inskrivna enligt formen "415 22".
 
 ### **Uppgift 4**
 
+Skapa en webbapp där användaren matar in en epostadress och får ut **namn** och **domänet** som svar.
+
+![](../.gitbook/assets/dump-uppgift-6-4.png)
+
+### **Uppgift 5**
+
 Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordmeter.com](http://www.passwordmeter.com/) för tips.
+
+![](../.gitbook/assets/dump-uppgift-6-5.png)
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

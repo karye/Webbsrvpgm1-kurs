@@ -46,7 +46,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
         # kod..
 
             // Skriv ut raden
-            echo "...";
+            echo $rad;
         
         ?>
     </div>

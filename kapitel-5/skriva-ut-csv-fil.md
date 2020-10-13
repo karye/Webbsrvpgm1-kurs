@@ -150,7 +150,7 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 <?php
 $filnamn = # kod...;
 
-// Läs in hela filen i en sträng: file()
+// Läs in hela filen i en array: file()
 $rader = # kod...;
 
 // Loopa igenom alla rader

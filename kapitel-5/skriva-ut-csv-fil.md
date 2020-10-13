@@ -12,7 +12,9 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 * Skriv ut restauranger i en csv-fil i tabellform
 
-## Startkod
+## Startkoden
+
+### Läs in csv-filen
 
 * Webbapplikationen skall läsa in innehållet i filen **restauranger.csv**
 * Och skriva ut alla rader
@@ -43,7 +45,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
         // Loopa igenom alla rader
         foreach (# kod...) {
 
-            // Skriv ut tabellrad
+            // Skriv ut raden
             echo "...";
         }
         ?>

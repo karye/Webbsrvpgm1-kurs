@@ -209,7 +209,7 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 ## Skriv ut i tabellform
 
 * Skriv nu ut alla rader i tabellform istället
-* Använd [bootstrap](https://getbootstrap.com/docs/4.5/content/tables/) för att göra varannan tabellrad olika bakgrundsfärg
+* Använd [bootstrap](https://getbootstrap.com/docs/4.5/content/tables/) för att göra varannan tabellrad med olika bakgrundsfärg
 
 {% tabs %}
 {% tab title="lista.php" %}

@@ -12,9 +12,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 * Skriv ut restauranger i en csv-fil i tabellform
 
-## Startkoden
-
-### Läs in csv-filen
+## Läs in csv-filen
 
 * Webbapplikationen skall läsa in innehållet i filen **restauranger.csv**
 * Och skriva ut alla rader
@@ -208,7 +206,7 @@ Valkyria, Crafoordsv 12, 11324, Stockholm
 {% endtab %}
 {% endtabs %}
 
-### Skriv ut i tabellform
+## Skriv ut i tabellform
 
 * Skriv nu ut alla rader i tabellform istället
 * Använd [bootstrap](https://getbootstrap.com/docs/4.5/content/tables/) för att göra varannan tabellrad olika bakgrundsfärg
@@ -229,9 +227,10 @@ echo "</table>";
 {% endtab %}
 {% endtabs %}
 
-### Kontrollera att filen finns och är läsbar
+## Kontrollera att filen finns och är läsbar
 
 * Skapa ett felmeddande om filen ej går att hitta eller läsa
+* Använd [Bootstrap alerts](https://getbootstrap.com/docs/4.5/components/alerts/) för att styla felmeddelandet
 * Referens till funktioner som används:
   * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
 
@@ -251,7 +250,7 @@ $filnamn = # kod...;
 {% endtab %}
 {% endtabs %}
 
-### Mer detaljerad tabell
+## Mer detaljerad tabell
 
 * Dela upp raderna i dess delar: Namn, Gata, Postnr, Postort
 * Referens till funktioner som används:

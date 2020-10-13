@@ -155,28 +155,6 @@ tr:nth-child(even) {
 tr:nth-child(odd) {
     background: #FFF;
 }
-table .fa {
-    color: #55a5d2;
-}
-table img {
-    width: 50px;
-}
-table .grön {
-    background: #aeffae;
-}
-table .röd {
-    background: #ffa6a6;
-}
-form img {
-    width: 30px;
-}
-form label {
-    display: flex;
-    align-items:center;
-}
-form span {
-    padding: 10px;
-}
 ```
 {% endtab %}
 

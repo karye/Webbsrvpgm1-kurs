@@ -52,7 +52,7 @@ description: Hur skickar man data till ett PHP-skript?
 ## Allt på en-sida: formulär och PHP-skript
 
 * Formuläret skickar tillbaka till sig själv med **action="\#"**
-* Men då måste vi kontrollera om något kommer in med **if \(isset\(...\)\)**
+* Men då måste man kontrollera om något kommer in med **if \(isset\(...\)\)**
 
 ```php
 <div class="container">

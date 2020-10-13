@@ -14,6 +14,8 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ## Startkod
 
+* Webbapplikationen skall läsa in innehållet i filen **restauranger.csv**
+* Och skriva ut alla rader
 * Referens till funktioner som används:
   * Funktionen [file\(\)](https://devdocs.io/php/function.file)
   * Funktionen[ ](https://devdocs.io/php/function.array)[foreach](https://devdocs.io/php/control-structures.foreach)

@@ -229,7 +229,7 @@ echo "</table>";
 {% endtab %}
 {% endtabs %}
 
-### Om filen inte finns?
+### Kontrollera att filen finns och är läsbar
 
 * Skapa ett felmeddande om filen ej går att hitta eller läsa
 * Referens till funktioner som används:
@@ -260,7 +260,7 @@ $filnamn = # kod...;
 ```php
 echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
 # kod...
-    // Dela upp raden: explode()
+    // Dela upp raden
     $delar = # kod...;
 
     // Skriv ut tabellrad

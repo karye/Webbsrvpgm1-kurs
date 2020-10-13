@@ -241,9 +241,8 @@ echo "</table>";
 <?php
 $filnamn = # kod...;
 
-// Är filen läsbar: is_readable()
-if (# kod...) {
-    # kod...
+// Är filen läsbar? is_readable()
+# kod...
 ?>
 ```
 {% endtab %}

@@ -6,7 +6,7 @@ description: Läsa från textfil och "parsa" data som är csv-formaterat.
 
 ## Resultatet
 
-![](../.gitbook/assets/image%20%2810%29.png)
+![](../.gitbook/assets/dump-labb-3-1.png)
 
 ## **Syfte**
 
@@ -184,6 +184,8 @@ $filnamn = # kod...;
 {% endtab %}
 {% endtabs %}
 
+![](../.gitbook/assets/dump-labb-3-3.png)
+
 ## Mer detaljerad tabell
 
 * Dela upp raderna i dess delar: Namn, Gata, Postnr, Postort
@@ -200,4 +202,10 @@ echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
     echo "<tr><td>$delar[0]</td><td>$delar[1]</td><td>$delar[2]</td><td>$delar[3]</td></tr>";
 # kod...
 ```
+
+## Antalet rader
+
+* Avsluta sidan med att ange hur många rader som hittats
+
+![](../.gitbook/assets/dump-labb-3-2.png)
 

@@ -40,10 +40,10 @@ description: Skapa en webbapp med lagring i textfil
             </nav>
         </header>
         <main>
-            <p class="card text-white bg-warning mb-3">Välkommen till min första webbapp!</p>
+            ...
         </main>
         <footer>
-            2019
+            2020
         </footer>
     </div>
 </body>
@@ -107,7 +107,6 @@ main button {
         <textarea class="form-control" name="inlagg" id="inlagg" cols="30" rows="10"></textarea>
         <button class="btn btn-primary">Spara inlägg</button>
     </form>
-</main>
 ...
 ```
 
@@ -127,6 +126,8 @@ main button {
 if (...($_POST['inlagg'])) {
     $filnamn = "blogg.txt";
     $texten = $_POST["inlagg"];
+    
+    // 
     $tidpunkt = date('l j F Y h:i:s');
 
     // Öppna asnslutningen till textfilen

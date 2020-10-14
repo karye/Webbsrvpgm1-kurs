@@ -165,7 +165,7 @@ $rader = # kod...;
 ## Skriv ut i tabellform
 
 * Skriv nu ut alla rader i tabellform istället
-* Använd [Bootstrap](https://getbootstrap.com/docs/4.5/content/tables/) för att göra varannan tabellrad med olika bakgrundsfärg
+* Använd [Bootstraps striped-rows](https://getbootstrap.com/docs/4.5/content/tables/#striped-rows) för att göra varannan tabellrad med olika bakgrundsfärg
 
 ```php
 <?php

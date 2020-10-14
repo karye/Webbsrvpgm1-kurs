@@ -233,6 +233,8 @@ echo "<tr><th>Namn</th><th>Gata</th><th>Postnr</th><th>Postort</th></tr>";
 ## Bekräfta antalet rader
 
 * Avsluta sidan med att ange hur många rader som hittats
+* Referens till funktioner som används:
+  * Funktionen [count\(\)](https://devdocs.io/php/function.count)
 
 ![](../.gitbook/assets/dump-labb-3-2.png)
 

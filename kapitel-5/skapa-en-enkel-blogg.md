@@ -58,6 +58,7 @@ description: Skapa en webbapp med lagring i textfil
 body {
     background: rgb(255, 255, 255) url("../bilder/bg.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .kontainer {
@@ -127,10 +128,10 @@ if (...($_POST['inlagg'])) {
     $filnamn = "blogg.txt";
     $texten = $_POST["inlagg"];
     
-    // 
+    // Vad är dagens datum?
     $tidpunkt = date('l j F Y h:i:s');
 
-    // Öppna asnslutningen till textfilen
+    // Öppna anslutningen till textfilen
     $handtag = ...($filnamn, "a");
 
     // Ersätter /n med <br>

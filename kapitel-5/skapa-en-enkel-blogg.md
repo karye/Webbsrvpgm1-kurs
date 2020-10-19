@@ -109,7 +109,6 @@ main button {
 * Ett formulär behövs för att skriva in ett inlägg
 
 ```markup
-...
 <main>
     <form action="#" method="post">
         <textarea class="form-control" name="inlagg" id="inlagg" cols="30" rows="10"></textarea>

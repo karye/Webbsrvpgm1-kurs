@@ -128,7 +128,6 @@ main button {
   * Funktionen [fwrite\(\)](https://devdocs.io/php/function.fwrite) - skriva till en fil
 
 ```php
-...
 <?php
 // Ta emot text från formuläret och spara ned i en textfil.
 if (...($_POST['inlagg'])) {
@@ -158,7 +157,6 @@ if (...($_POST['inlagg'])) {
     echo "...";
 }
 ?>
-...
 ```
 
 ### Omvandla radbrytningar

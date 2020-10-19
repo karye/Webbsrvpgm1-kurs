@@ -205,7 +205,9 @@ $datumstämpel = strftime("...");
 ### Skydda mot HTML-taggar
 
 * Översätt alla eventuella HTML-taggar till HTML entities
-* Studera funktionen [htmlentities\(\)](https://devdocs.io/php/function.htmlentities)
+* Studera funktionerna
+  * [htmlentities\(\)](https://devdocs.io/php/function.htmlentities)
+  * [html\_entity\_decode\(\)](https://devdocs.io/php/function.html-entity-decode)
 
 ### **Kontrollera att filen är skrivbar**
 

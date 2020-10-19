@@ -28,7 +28,7 @@
 			"/**",
 			"* PHP version 7",
 			"* @category   $1",
-			"* @author     Karim Ryde <karye.webb@gmail.com>",
+			"* @author     ... ... <...@gmail.com>",
 			"* @license    PHP CC",
 			"*/",
 			"?>"

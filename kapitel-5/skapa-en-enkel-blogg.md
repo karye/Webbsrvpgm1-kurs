@@ -127,16 +127,16 @@ main button {
 if (...($_POST['inlagg'])) {
     
     // Läs in texten
-    $texten = $_POST["inlagg"];
+    ...
     
     // Vad heter textfilen?
-    $filnamn = "blogg.txt";
+    ...
     
     // Vad är dagens datum?
-    $tidpunkt = date("...");
+    ...
 
     // Öppna anslutningen till textfilen
-    $handtag = ...($filnamn, "a");
+    ...
 
     // Skriv datum & text i textfilen
     ...
@@ -165,10 +165,9 @@ if (...($_POST['inlagg'])) {
 * Här läses alla inlägg in från textfilen
 * Ersätt '...' med rätt PHP-syntax
 * Studera:
-  * Funktionen [file](https://devdocs.io/php/function.file) - läsa in hela filen
+  * Funktionen [file\(\)](https://devdocs.io/php/function.file) - läsa in hela filen
 
 ```php
-    ...
     <?php
     $filnamn = "blogg.txt";
 
@@ -183,14 +182,13 @@ if (...($_POST['inlagg'])) {
     // Stäng anslutningen till textfilen
     ...(...);
     ?>
-    ...
 ```
 
 ### **Visa senaste inläggen överst**
 
 * De inlästa inläggen måste visas i omvänd ordning
 * Studera:
-  * Funktionen [array\_reverse](https://devdocs.io/php/function.array-reverse)
+  * Funktionen [array\_reverse\(\)](https://devdocs.io/php/function.array-reverse)
 
 ## Säkerhet
 

@@ -164,8 +164,7 @@ if (...($_POST['inlagg'])) {
 
 * Här läses alla inlägg in från textfilen
 * Ersätt '...' med rätt PHP-syntax
-* Studera:
-  * Funktionen [file\(\)](https://devdocs.io/php/function.file) - läsa in hela filen
+* Studera funktionen [file\(\)](https://devdocs.io/php/function.file) - läsa in hela filen
 
 ```php
     <?php
@@ -201,8 +200,7 @@ if (...($_POST['inlagg'])) {
 
 * För att webbappen inte skall krascha behöver vi kontrollera en del saker
 * Studera koden nedan
-* Studera också 
-  * Funktionen [is\_writable\(\)](https://devdocs.io/php/function.is-writable) - se om filen är skrivbar
+* Studera funktionen [is\_writable\(\)](https://devdocs.io/php/function.is-writable) - se om filen är skrivbar
 * Ersätt '...' med rätt text
 * Infoga kontrollerna \(if-satser\) i **spara.php**
 

@@ -123,19 +123,16 @@ main button {
 ```php
 ...
 <?php
-/* Ta emot text från formuläret och spara ned i en textfil. */
+// Ta emot text från formuläret och spara ned i en textfil.
 if (...($_POST['inlagg'])) {
     $filnamn = "blogg.txt";
     $texten = $_POST["inlagg"];
     
     // Vad är dagens datum?
-    $tidpunkt = date('l j F Y h:i:s');
+    $tidpunkt = date("...");
 
     // Öppna anslutningen till textfilen
     $handtag = ...($filnamn, "a");
-
-    // Ersätter /n med <br>
-    $texten = ...($_POST['inlagg'], false);
 
     // Skriv text i textfilen
     ...($handtag, "<p>$tidpunkt<br>$texten</p>\n");

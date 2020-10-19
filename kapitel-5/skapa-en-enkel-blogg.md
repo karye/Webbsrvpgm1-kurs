@@ -136,9 +136,6 @@ if (...($_POST['inlagg'])) {
     
     // Vad heter textfilen?
     ...
-    
-    // Vad är dagens datum?
-    ...
 
     // Öppna anslutningen till textfilen
     ...
@@ -164,12 +161,14 @@ if (...($_POST['inlagg'])) {
 * För datumen på svenska se [tips-and-tricks](https://app.gitbook.com/@karye/s/webbserverpgm-1/~/drafts/-MK-MeCMHfPiHQEkwqT4/kapitel-2/tips-and-tricks) 
 
 ```php
+// Vad är dagens datum?
 $datumstämpel = strftime("...");
 ```
 
 ### Omvandla radbrytningar
 
-* Alla radbrytningar i texten man matar måste ersättas med &lt;br&gt; 
+* Alla radbrytningar "\n" i texten måste ersättas med &lt;br&gt; 
+* Studera funktionen [str\_replace\(\)](https://devdocs.io/php/function.str-replace)
 
 ## **Läsa inläggen**
 

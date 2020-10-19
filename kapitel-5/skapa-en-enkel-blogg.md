@@ -143,7 +143,7 @@ if (...($_POST['inlagg'])) {
     // Öppna anslutningen till textfilen
     ...
 
-    // Skriv datum & text i textfilen
+    // Skriv texten i textfilen
     ...
 
     // Stäng anslutningen till textfilen
@@ -156,6 +156,15 @@ if (...($_POST['inlagg'])) {
     echo "...";
 }
 ?>
+```
+
+### Infoga datumstämpel
+
+* Studera funktionen [strftime\(\)](https://devdocs.io/php/function.strftime)
+* För datumen på svenska se [tips-and-tricks](https://app.gitbook.com/@karye/s/webbserverpgm-1/~/drafts/-MK-MeCMHfPiHQEkwqT4/kapitel-2/tips-and-tricks) 
+
+```php
+$datumstämpel = strftime("...");
 ```
 
 ### Omvandla radbrytningar

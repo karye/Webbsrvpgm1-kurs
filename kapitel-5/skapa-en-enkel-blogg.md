@@ -125,8 +125,12 @@ main button {
 <?php
 // Ta emot text från formuläret och spara ned i en textfil.
 if (...($_POST['inlagg'])) {
-    $filnamn = "blogg.txt";
+    
+    // Läs in texten
     $texten = $_POST["inlagg"];
+    
+    // Vad heter textfilen?
+    $filnamn = "blogg.txt";
     
     // Vad är dagens datum?
     $tidpunkt = date("...");
@@ -134,16 +138,17 @@ if (...($_POST['inlagg'])) {
     // Öppna anslutningen till textfilen
     $handtag = ...($filnamn, "a");
 
-    // Skriv text i textfilen
-    ...($handtag, "<p>$tidpunkt<br>$texten</p>\n");
+    // Skriv datum & text i textfilen
+    ...
 
     // Stäng anslutningen till textfilen
-    ...($handtag);
+    ...
 
     // Skriv ut bekräftelse
-    echo "<p>Inlägget registrerat!</p>";
+    echo "...";
 } else {
     // Skriv felmeddelande
+    echo "...";
 }
 ?>
 ...

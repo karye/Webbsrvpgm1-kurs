@@ -140,6 +140,7 @@ if (...($_POST['inlagg'])) {
     // Stäng anslutningen till textfilen
     ...($handtag);
 
+    // Skriv ut bekräftelse
     echo "<p>Inlägget registrerat!</p>";
 } else {
     // Skriv felmeddelande

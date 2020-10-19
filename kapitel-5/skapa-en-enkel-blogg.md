@@ -155,6 +155,11 @@ if (...($_POST['inlagg'])) {
 ?>
 ```
 
+### Omvandla radbrytningar
+
+* Alla radbrytningar "\n" i texten måste ersättas med &lt;br&gt; 
+* Studera funktionen [str\_replace\(\)](https://devdocs.io/php/function.str-replace)
+
 ### Infoga datumstämpel
 
 * Studera funktionen [strftime\(\)](https://devdocs.io/php/function.strftime)
@@ -164,11 +169,6 @@ if (...($_POST['inlagg'])) {
 // Vad är dagens datum?
 $datumstämpel = strftime("...");
 ```
-
-### Omvandla radbrytningar
-
-* Alla radbrytningar "\n" i texten måste ersättas med &lt;br&gt; 
-* Studera funktionen [str\_replace\(\)](https://devdocs.io/php/function.str-replace)
 
 ## **Läsa inläggen**
 

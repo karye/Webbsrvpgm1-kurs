@@ -104,7 +104,7 @@ main button {
 
 ## **Skriva inlägg**
 
-### **Skriva inlägget : spara.php**
+### **Infoga formulär i**
 
 * Ett formulär behövs för att skriva in ett inlägg
 
@@ -118,7 +118,7 @@ main button {
 ...
 ```
 
-### **Skriva till en textfil - spara.php**
+### **Skriva till en textfil**
 
 * PHP-skriptet i **spara.php** tar emot data och skall lagra inlägget i en textfil
 * Ersätt '...' med rätt PHP-syntax
@@ -167,7 +167,7 @@ if (...($_POST['inlagg'])) {
 
 ## **Läsa inläggen**
 
-### **Läsa från en textfil - blogg.php**
+### **Läsa från en textfil**
 
 * Här läses alla inlägg in från textfilen
 * Ersätt '...' med rätt PHP-syntax

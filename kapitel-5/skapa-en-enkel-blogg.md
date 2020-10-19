@@ -16,6 +16,13 @@ description: Skapa en webbapp med lagring i textfil
 
 ## **Startkod**
 
+### Skapa hemsida
+
+* Här nedan finns startkoden
+* Använd Bootstrap
+  * Styla meny med [navs](https://getbootstrap.com/docs/4.5/components/navs/)\*\*\*\*
+  * Styla eventuellt med Bootstrap tema som [flatly](https://bootswatch.com/flatly/)
+
 {% tabs %}
 {% tab title="blogg.php" %}
 ```markup

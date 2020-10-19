@@ -192,6 +192,8 @@ $texten = ...;
 ?>
 ```
 
+### 
+
 ## **Läsa inläggen**
 
 ### **Läsa från en textfil - blogg.php**

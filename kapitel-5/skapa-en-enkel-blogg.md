@@ -186,8 +186,7 @@ if (...($_POST['inlagg'])) {
 ### **Visa senaste inläggen överst**
 
 * De inlästa inläggen måste visas i omvänd ordning
-* Studera:
-  * Funktionen [array\_reverse\(\)](https://devdocs.io/php/function.array-reverse)
+* Studera funktionen [array\_reverse\(\)](https://devdocs.io/php/function.array-reverse)
 
 ## Säkerhet
 

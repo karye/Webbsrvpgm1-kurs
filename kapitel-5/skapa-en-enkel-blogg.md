@@ -192,7 +192,9 @@ $texten = ...;
 ?>
 ```
 
-### 
+### Omvandla radbrytningar
+
+* Alla radbrytningar i texten man matar måste ersättas med &lt;br&gt; 
 
 ## **Läsa inläggen**
 

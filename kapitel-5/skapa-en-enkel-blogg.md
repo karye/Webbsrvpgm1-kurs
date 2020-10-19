@@ -154,44 +154,6 @@ if (...($_POST['inlagg'])) {
 ...
 ```
 
-### **Kontrollera att filen är skrivbar**
-
-* För att webbappen inte skall krascha behöver vi kontrollera en del saker
-* Studera koden nedan
-* Studera också 
-  * Funktionen [is\_writable\(\)](https://devdocs.io/php/function.is-writable) - se om filen är skrivbar
-* Ersätt '...' med rätt text
-* Infoga kontrollerna \(if-satser\) i **spara.php**
-
-```php
-<?php
-$filnamn = "...";
-$texten = ...;
-
-// Är filens skrivbar?
-...
-
-    // Kan vi öppna filen?
-    ...
-
-    // Skriv något i textfilen
-    if (fwrite($handle, $texten ) === FALSE) {
-        echo "... $filnamn";
-        exit;
-    } else {
-        echo "... ($texten) ... ($filnamn)";
-    }
-    
-    // Stäng filen
-    ...
-
-} else {
-    // Skriv felmeddelande
-    echo "...";
-}
-?>
-```
-
 ### Omvandla radbrytningar
 
 * Alla radbrytningar i texten man matar måste ersättas med &lt;br&gt; 
@@ -229,4 +191,20 @@ $texten = ...;
 * De inlästa inläggen måste visas i omvänd ordning
 * Studera:
   * Funktionen [array\_reverse](https://devdocs.io/php/function.array-reverse)
+
+## Säkerhet
+
+### Skydda mot HTML-taggar
+
+* Översätt alla eventuella HTML-taggar till HTML entities
+* Studera funktionen [htmlentities\(\)](https://devdocs.io/php/function.htmlentities)
+
+### **Kontrollera att filen är skrivbar**
+
+* För att webbappen inte skall krascha behöver vi kontrollera en del saker
+* Studera koden nedan
+* Studera också 
+  * Funktionen [is\_writable\(\)](https://devdocs.io/php/function.is-writable) - se om filen är skrivbar
+* Ersätt '...' med rätt text
+* Infoga kontrollerna \(if-satser\) i **spara.php**
 

@@ -200,14 +200,18 @@ $datumstämpel = strftime("...");
 * De inlästa inläggen måste visas i omvänd ordning
 * Studera funktionen [array\_reverse\(\)](https://devdocs.io/php/function.array-reverse)
 
-## Säkerhet
+## Säkerhetstänk
 
-### Skydda mot HTML-taggar
+### Skydda mot farlig input
 
-* Översätt alla eventuella HTML-taggar till HTML entities
-* Studera funktionerna
-  * [htmlentities\(\)](https://devdocs.io/php/function.htmlentities)
-  * [html\_entity\_decode\(\)](https://devdocs.io/php/function.html-entity-decode)
+* Studera funktionen [filter\_input\(\)](https://devdocs.io/php/function.filter-input)
+
+```php
+$texten = filter_input(INPUT_POST, "inlägg", FILTER_SANITIZE_STRING);
+if ($texten) {
+...
+}
+```
 
 ### **Kontrollera att filen är skrivbar**
 

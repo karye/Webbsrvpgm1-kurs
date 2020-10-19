@@ -163,10 +163,10 @@ $filnamn = "...";
 $texten = ...;
 
 // Är filens skrivbar?
-
+...
 
     // Kan vi öppna filen?
-    
+    ...
 
     // Skriv något i textfilen
     if (fwrite($handle, $texten ) === FALSE) {
@@ -177,7 +177,7 @@ $texten = ...;
     }
     
     // Stäng filen
-    fclose($handle);
+    ...
 
 } else {
     // Skriv felmeddelande

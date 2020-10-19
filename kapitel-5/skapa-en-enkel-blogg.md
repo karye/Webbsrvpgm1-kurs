@@ -102,9 +102,9 @@ main button {
 {% endtab %}
 {% endtabs %}
 
-## **Skriva inlägg**
+## **Skriva inlägg i spara.php**
 
-### **Infoga formulär i**
+### **Infoga formulär**
 
 * Ett formulär behövs för att skriva in ett inlägg
 

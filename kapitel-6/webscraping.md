@@ -50,7 +50,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 </div>
 ```
 
-## Prova strategin
+## Testa strategin
 
 {% tabs %}
 {% tab title="astro.php" %}

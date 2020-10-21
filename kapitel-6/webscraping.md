@@ -14,7 +14,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 ### Identifiera start
 
-* Nu gäller det att identifiera var börjar HTML-koden
+* Nu gäller det att identifiera var börjar HTML-koden:
 
 ```markup
 <div class="c-post_content__wrapper">
@@ -26,5 +26,19 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 <div class="o-indenter">
 ```
 
+## Strategi för webscrapping
 
+### Strategi
+
+* Man börjar med att söka efter:
+
+```markup
+<div class="c-post_content__wrapper">
+```
+
+* Och söka 12 gånger efter:
+
+```markup
+<div class="o-indenter">...</div>
+```
 

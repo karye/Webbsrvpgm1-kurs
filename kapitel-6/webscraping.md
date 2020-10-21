@@ -76,7 +76,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
         if ($start !== false) {
             echo "<p>Horoskopet började på position $start</p>";
         } else {
-            echo "<p>Hittade horoskopets början!</p>";
+            echo "<p>Hittade inte horoskopets början!</p>";
         }
         ?>
     </div>

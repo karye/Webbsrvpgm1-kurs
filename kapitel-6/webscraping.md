@@ -28,7 +28,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 ## Strategi för webscrapping
 
-### Strategi
+### Sökstrategi
 
 * Man börjar med att söka efter:
 
@@ -36,9 +36,17 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 <div class="c-post_content__wrapper">
 ```
 
-* Och söka 12 gånger efter:
+### Söka 12 gånger
+
+* När varje månad börjar:
 
 ```markup
-<div class="o-indenter">...</div>
+<div class="o-indenter">
+```
+
+* Och den därföljande:
+
+```markup
+</div>
 ```
 

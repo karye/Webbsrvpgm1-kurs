@@ -33,6 +33,7 @@
 ## Kapitel 6
 
 * [Stränghantering](kapitel-6/straenghantering.md)
+* [Webscraping](kapitel-6/webscraping.md)
 * [Labb 5: läsa in tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
 
 ## Koda webbappar i PHP

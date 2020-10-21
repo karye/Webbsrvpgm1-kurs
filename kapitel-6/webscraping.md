@@ -52,6 +52,8 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 ## Prova strategin
 
+{% tabs %}
+{% tab title="astro.php" %}
 ```php
 <!DOCTYPE html>
 <html lang="sv">
@@ -81,4 +83,87 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 </body>
 </html>
 ```
+{% endtab %}
+
+{% tab title="style.css" %}
+```css
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F9F6EB;
+}
+.kontainer {
+    width: 600px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #f0e9d1;
+    color: #4e4e4e;
+}
+.kol2 {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1em;
+}
+.kol3 {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+}
+form {
+    margin: 1em 0;
+    color: #4e4e4e;
+}
+label {
+    text-align: right;
+    align-self: center;
+    font-size: 0.9em;
+}
+input, textarea {
+    padding: 0.7em;
+    border-radius: 0.3em;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+textarea {
+    height: 5em;
+    width: 100%;
+}
+button {
+    margin: 1em 0;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #55a5d2;
+}
+h1, h2, h3 {
+    color: #9c813d;
+}
+h1, h2, h3, p {
+    margin: 0.5em 0;
+}
+h3 {
+    margin-top: 2em;
+}
+```
+{% endtab %}
+{% endtabs %}
 

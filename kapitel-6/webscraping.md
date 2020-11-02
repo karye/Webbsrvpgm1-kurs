@@ -174,16 +174,15 @@ h3 {
 
 ### Plocka ut första div-boxen
 
-* Div-boxen som börjar med
+* Div-boxen som börjar med **&lt;div class="o-indenter"&gt;**
+* och slutar med **&lt;/div&gt;**
 
-```markup
-<div class="o-indenter">
-```
-
-* och slutar med 
-
-```markup
-</div>
+```php
+// första delen före annonsen
+$start = strpos($horoskopText, ...);
+$slut = strpos($horoskopText, ...);
+$del1 = substr($horoskopText, ...);
+echo "$del1</div>\n";
 ```
 
 * Upprepa nu 12 gånger

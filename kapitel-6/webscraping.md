@@ -17,7 +17,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 * Nu gäller det att identifiera var börjar horoskopet i HTML-koden:
 
 ```markup
-c-post_content__wrapper
+<div class="c-post_content__wrapper">
 ```
 
 * För varje månad ligger horoskoptexten i:
@@ -30,19 +30,11 @@ c-post_content__wrapper
 
 ### Sökstrategi
 
-* Man börjar med att söka efter:
-
-```markup
-c-post_content__wrapper
-```
+* Man börjar med att söka efter **c-post\_content\_\_wrapper**
 
 ### Och var den slutar
 
-* Horoskopen när denna klass dyker upp:
-
-```markup
-c-post_tag
-```
+* Horoskopen när denna klass dyker upp **c-post\_tag**
 
 ## Testa strategin
 
@@ -74,12 +66,10 @@ c-post_tag
         }
         
         // Hitta var horoskopet slutar
-        ...
-        
+        $slut = strpos();
         
         // Plocka ut ungefär delen med horoskoptexten
-        $horoskopText = ...
-        
+        $horoskopText = substr();
         
         ?>
     </div>

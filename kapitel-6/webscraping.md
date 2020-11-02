@@ -14,7 +14,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 ### Identifiera start
 
-* Nu gäller det att identifiera var börjar HTML-koden:
+* Nu gäller det att identifiera var börjar horoskopet i HTML-koden:
 
 ```markup
 <div class="c-post_content__wrapper">

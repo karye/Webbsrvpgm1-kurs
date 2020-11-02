@@ -170,13 +170,21 @@ h3 {
 {% endtab %}
 {% endtabs %}
 
-## Horoskoptexten
+## Horoskopet
 
 ### Plocka ut första div-boxen
 
-* Div-boxen börjar med
+* Div-boxen som börjar med
 
 ```markup
-<div class=\"o-indenter\">
+<div class="o-indenter">
 ```
+
+* och slutar med 
+
+```markup
+</div>
+```
+
+* Upprepa nu 12 gånger
 

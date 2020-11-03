@@ -258,7 +258,7 @@ id	name	description	bookable	doublebook
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/image%20%2840%29.png)
+![](../.gitbook/assets/image%20%2841%29.png)
 
 ## Förbättringar
 
@@ -266,13 +266,13 @@ id	name	description	bookable	doublebook
 
 * De flesta raderna innehåller salsnr och salsnamn tex **410/Dali**, dela upp så de visas i var sin kolumn i tabellen
 
-![](../.gitbook/assets/image%20%2839%29.png)
+![](../.gitbook/assets/image%20%2840%29.png)
 
 ### Ange typ av rum
 
 * Rummen kan vara av typ Sal, Grupprum eller Studio, tex **506-grupprum**
 
-![](../.gitbook/assets/image%20%2838%29.png)
+![](../.gitbook/assets/image%20%2839%29.png)
 
 ### Hantera rum i Annexet
 

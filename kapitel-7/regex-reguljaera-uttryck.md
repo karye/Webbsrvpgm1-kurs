@@ -171,7 +171,7 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera sedan att domännamnet slutar på .com, .net eller .org. Du ska också kontrollera att de övriga tecknen endast består av bokstäver a-z, siffror 0-9 eller bindestreck \(-\). Första tecknet måste vara en bokstav. Domännamnet ska vara minst sex tecken och högst 200 tecken långt.
 
-![](../.gitbook/assets/image%20%2841%29.png)
+![](../.gitbook/assets/image%20%2842%29.png)
 
 ### **Uppgift 2**
 
@@ -183,7 +183,7 @@ Konstruera ett reguljärt uttryck som matchar en sträng som innehåller ett "t"
 
 Konstruera ett reguljärt uttryck som matchar en sträng som börjar med "Det var en gång". Det spelar ingen roll om det första d:et är stort eller litet.
 
-![](../.gitbook/assets/image%20%2842%29.png)
+![](../.gitbook/assets/image%20%2843%29.png)
 
 ### **Uppgift 4**
 

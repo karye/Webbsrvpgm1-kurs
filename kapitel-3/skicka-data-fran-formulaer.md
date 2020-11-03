@@ -80,6 +80,8 @@ description: Hur skickar man data till ett PHP-skript?
 
 * Man skyddar mot skadlig kod med [filter-input](https://devdocs.io/php/function.filter-input)
 
+{% tabs %}
+{% tab title="PHP" %}
 ```php
 <div class="container">
     <h1>Spara ditt namn</h1>
@@ -99,4 +101,19 @@ description: Hur skickar man data till ett PHP-skript?
     ?>
 </div>
 ```
+{% endtab %}
+
+{% tab title="CSS" %}
+```
+label {
+    font-size: 0.9em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0;
+}
+```
+{% endtab %}
+{% endtabs %}
 

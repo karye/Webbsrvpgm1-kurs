@@ -51,15 +51,15 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
             ...
             
                 // Skippa första raden om de 2 första tecknen är 'id'
-                // Använd continue;
+                // Använd continue
                 ...
             
                 // Plocka ut det som vi behöver: nr/namn, bokbar
-                
+                ...
                 
                 // Dela upp raden i dess delar
-                $salNrNamn = 
-                $bokbar =
+                $salNrNamn = ...
+                $bokbar = ...
         
                 // Visa salar i en tabell med kolumnrubriker: nr/namn, bokbar
                 ...

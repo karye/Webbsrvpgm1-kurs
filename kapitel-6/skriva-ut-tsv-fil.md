@@ -250,3 +250,7 @@ id	name	description	bookable	doublebook
 
 * Rummen kan vara av typ Sal, Grupprum eller Studio
 
+### Hantera rum i Annexet
+
+* Plocka ut salsnr och salsnamn för Annexet
+

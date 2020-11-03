@@ -49,6 +49,7 @@
 ## Koda webbappar i PHP
 
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
+* [Lösenord & kryptering](koda-webbappar-i-php/loesenord-and-kryptering.md)
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 
 ## Databas med mysql

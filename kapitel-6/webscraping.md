@@ -14,16 +14,20 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 ### Identifiera start
 
-* Nu gäller det att identifiera var börjar horoskopet i HTML-koden:
+* Det gäller att identifiera vart horoskopettexten ligger i HTML-koden:
 
 ```markup
 <div class="c-post_content__wrapper">
+...
+</div>
 ```
 
-* Varje månad ligger sedan inuti:
+* Man ser också att varje månad ligger sedan inuti:
 
 ```markup
 <div class="o-indenter">
+...
+</div>
 ```
 
 ## Strategi för webscrapping

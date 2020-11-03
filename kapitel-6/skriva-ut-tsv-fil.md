@@ -39,7 +39,9 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
         <?php
         // 1. Läs in textfilen
 
-
+        // 2. Visa salar i en tabell: nr, namn, bokbar
+        
+        // 3. Dela upp raden i dess delar
         ?>
     </div>
 </body>

@@ -20,7 +20,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 <div class="c-post_content__wrapper">
 ```
 
-* För varje månad ligger horoskoptexten i:
+* Varje månad ligger sedan inuti:
 
 ```markup
 <div class="o-indenter">
@@ -66,10 +66,10 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
         }
         
         // Hitta var horoskopet slutar
-        $slut = strpos();
+        $slut = strpos(...);
         
         // Plocka ut ungefär delen med horoskoptexten
-        $horoskopText = substr();
+        $horoskopText = substr(...);
         
         ?>
     </div>
@@ -162,10 +162,11 @@ h3 {
 
 ## Horoskopet
 
-### Plocka ut första div-boxen
+### Vädurens horoskop
 
-* Div-boxen som börjar med **&lt;div class="o-indenter"&gt;**
+* Första div-boxen börjar med **&lt;div class="o-indenter"&gt;**
 * och slutar med **&lt;/div&gt;**
+* Så här plockar man ut rubriken **Väduren**
 
 ```php
 // första delen före annonsen
@@ -175,5 +176,6 @@ $del1 = substr($horoskopText, ...);
 echo "$del1</div>\n";
 ```
 
-* Upprepa nu 12 gånger
+* Upprepa en gång till för att plocka ut Vädurens horoskop
+* Upprepa så många gånger det behövs att få ut all horoskop text
 

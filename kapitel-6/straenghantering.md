@@ -134,7 +134,7 @@ Skapa en webbapp där användaren matar in en epostadress och får ut **namn** o
 
 ### **Uppgift 5**
 
-Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordmeter.com](http://www.passwordmeter.com/) för tips.
+Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordmeter.com](http://www.passwordmeter.com/).
 
 ![](../.gitbook/assets/dump-uppgift-6-5.png)
 

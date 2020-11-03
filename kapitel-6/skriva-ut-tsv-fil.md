@@ -43,7 +43,7 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
 
         // Visa salar i en tabell med kolumnrubriker: nr, namn, bokbar
         
-        // Dela upp raden i dess delar
+        // Plocka ut salsnr och salsnamn
         ?>
     </div>
 </body>

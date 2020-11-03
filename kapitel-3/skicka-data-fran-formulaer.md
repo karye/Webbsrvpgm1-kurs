@@ -76,3 +76,27 @@ description: Hur skickar man data till ett PHP-skript?
 </div>
 ```
 
+## En säkrare lösning
+
+* Man skyddar mot skadlig kod med [filter-input](https://devdocs.io/php/function.filter-input)
+
+```php
+<div class="container">
+    <h1>Spara ditt namn</h1>
+    <form action="#" method="POST">
+        <label>Ange namn <input type="text" name="namn"></label>
+        <button>Spara</button>
+    </form>
+    <?php
+    // Ta emot det som skickas
+    $namn = filter_input(INPUT_POST, 'namn', FILTER_SANITIZE_STRING);
+    
+    // Om data finns..
+    if ($namn) {
+        
+        // Programmets kod
+    }
+    ?>
+</div>
+```
+

@@ -50,10 +50,10 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
             // Loopa igenom alla rader
             ...
             
-                // Skippa första raden som innehåller 'id'
+                // Skippa första raden om de 2 första tecknen är 'id'
                 ...
             
-                // Plocka ut det som vi behöver
+                // Plocka ut det som vi behöver: nr/namn, bokbar
                 
                 
                 // Dela upp raden i dess delar

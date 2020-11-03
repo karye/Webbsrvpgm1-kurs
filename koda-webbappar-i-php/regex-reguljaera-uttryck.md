@@ -191,6 +191,12 @@ Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in
 
 ![](../.gitbook/assets/image%20%2836%29.png)
 
+### **Uppgift 5**
+
+Skapa en webbapplikation som testar styrkan på ett **lösenord** mha reguljära uttryck.
+
+![](../.gitbook/assets/dump-uppgift-6-5.png)
+
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
 {% endhint %}

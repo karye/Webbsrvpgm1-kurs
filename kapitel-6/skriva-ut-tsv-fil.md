@@ -37,13 +37,30 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
     <div class="kontainer">
         <h1>Skolans salar</h1>
         <?php
+        // Textfilen som skall läsas in
+        $tsvfil = 
+        
         // Är filens läsbar?
+        ...
         
-        // Läs in filens alla rader
+            // Läs in filens alla rader
+            ...
+            
+            // Loopa igenom alla rader
+            ...
+            
+                // Skippa första raden som innehåller id
+                ...
+            
+                // // Plocka ut det som vi behöver
+                
+                
+                // Dela upp raden i dess delar
+                $salNrNamn = 
+                $bokbar =
         
-            // Dela upp raden i dess delar
-    
-            // Visa salar i en tabell med kolumnrubriker: nr, namn, bokbar
+                // Visa salar i en tabell med kolumnrubriker: nr/namn, bokbar
+                ...
         
         ?>
     </div>
@@ -239,6 +256,8 @@ id	name	description	bookable	doublebook
 ```
 {% endtab %}
 {% endtabs %}
+
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ## Förbättringar
 

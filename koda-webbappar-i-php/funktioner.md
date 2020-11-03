@@ -29,7 +29,7 @@ Vi kan modifiera funktionen så att den tar emot argument. Argument skickas till
 <?php
 function starthtml($title) {
     echo "<!DOCTYPE html><html><head><title>$title</title></head><body>";
-}p
+}
 starthtml("Test");
 echo "testdokument";
 echo "</body></html>";

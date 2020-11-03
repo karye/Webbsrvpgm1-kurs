@@ -17,10 +17,11 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
 ## Startkod
 
 * Referens till funktioner som används:
-  * Funktionen [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
-  * Funktionen [file\(\)](https://devdocs.io/php/function.file)
-  * Funktionen[ ](https://devdocs.io/php/function.array)[foreach](https://devdocs.io/php/control-structures.foreach)
-  * Funktionen [explode\(\)](https://devdocs.io/php/function.explode)
+  * [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
+  * [file\(\)](https://devdocs.io/php/function.file)
+  * [foreach](https://devdocs.io/php/control-structures.foreach)
+  * [substr\(\)](https://devdocs.io/php/function.substr)
+  * [explode\(\)](https://devdocs.io/php/function.explode)
 
 {% tabs %}
 {% tab title="salar.php" %}
@@ -49,10 +50,10 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
             // Loopa igenom alla rader
             ...
             
-                // Skippa första raden som innehåller id
+                // Skippa första raden som innehåller 'id'
                 ...
             
-                // // Plocka ut det som vi behöver
+                // Plocka ut det som vi behöver
                 
                 
                 // Dela upp raden i dess delar

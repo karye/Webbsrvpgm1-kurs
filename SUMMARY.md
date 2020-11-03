@@ -36,10 +36,13 @@
 * [Webscraping](kapitel-6/webscraping.md)
 * [Labb 5: läsa in tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
 
+## Kapitel 7
+
+* [Regex - reguljära uttryck](kapitel-7/regex-reguljaera-uttryck.md)
+* [Funktioner](kapitel-7/funktioner.md)
+
 ## Koda webbappar i PHP
 
-* [Funktioner](koda-webbappar-i-php/funktioner.md)
-* [Regex - reguljära uttryck](koda-webbappar-i-php/regex-reguljaera-uttryck.md)
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
 

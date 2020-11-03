@@ -95,8 +95,8 @@ description: Hur skickar man data till ett PHP-skript?
     
     // Om data finns..
     if ($namn) {
-        
         // Programmets kod
+        ...
     }
     ?>
 </div>

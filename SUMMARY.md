@@ -51,8 +51,6 @@
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
 
-## Laborationer
-
 ## Databas med mysql
 
 * [Grunder i SQL](databas-med-mysql/laboration-1.md)

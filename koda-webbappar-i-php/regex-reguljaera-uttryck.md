@@ -171,17 +171,25 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera sedan att domännamnet slutar på .com, .net eller .org. Du ska också kontrollera att de övriga tecknen endast består av bokstäver a-z, siffror 0-9 eller bindestreck \(-\). Första tecknet måste vara en bokstav. Domännamnet ska vara minst sex tecken och högst 200 tecken långt.
 
+![](../.gitbook/assets/image%20%2841%29.png)
+
 ### **Uppgift 2**
 
 Konstruera ett reguljärt uttryck som matchar en sträng som innehåller ett "t" följt av ett eller två "o". Endast små bokstäver ska matchas.
+
+![](../.gitbook/assets/image%20%2835%29.png)
 
 ### **Uppgift 3**
 
 Konstruera ett reguljärt uttryck som matchar en sträng som börjar med "Det var en gång". Det spelar ingen roll om det första d:et är stort eller litet.
 
+![](../.gitbook/assets/image%20%2842%29.png)
+
 ### **Uppgift 4**
 
 Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av små och stora bokstäver, punkt, siffror och mellanslag.
+
+![](../.gitbook/assets/image%20%2836%29.png)
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

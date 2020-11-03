@@ -258,13 +258,15 @@ id	name	description	bookable	doublebook
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/image%20%2836%29.png)
+![](../.gitbook/assets/image%20%2837%29.png)
 
 ## Förbättringar
 
 ### Plocka ut rumsnr och rumsnamn
 
 * De flesta raderna innehåller salsnr och salsnamn tex **410/Dali**, dela upp så de visas i var sin kolumn i tabellen
+
+![](../.gitbook/assets/image%20%2836%29.png)
 
 ### Ange typ av rum
 

@@ -276,5 +276,5 @@ id	name	description	bookable	doublebook
 
 ### Hantera rum i Annexet
 
-* Plocka ut salsnr och salsnamn för Annexets rum
+* Plocka ut salsnr och salsnamn för Annexets rum som tex **A1 \(Mattesal\)**
 

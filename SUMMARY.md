@@ -48,8 +48,8 @@
 
 ## Koda webbappar i PHP
 
-* [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
+* [Skicka epost](koda-webbappar-i-php/skicka-epost.md)
 
 ## Databas med mysql
 

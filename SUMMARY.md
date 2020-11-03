@@ -41,6 +41,11 @@
 * [Regex - reguljära uttryck](kapitel-7/regex-reguljaera-uttryck.md)
 * [Funktioner](kapitel-7/funktioner.md)
 
+## Kapitel 8
+
+* [Läsa av kataloger](kapitel-8/laesa-av-kataloger.md)
+* [Ladda upp filer](kapitel-8/ladda-upp-filer.md)
+
 ## Koda webbappar i PHP
 
 * [Skicka epost](koda-webbappar-i-php/skicka-epost.md)

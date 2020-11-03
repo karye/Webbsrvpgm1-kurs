@@ -19,7 +19,7 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
 * Referens till funktioner som används:
   * [is\_readable\(\)](https://devdocs.io/php/function.is-readable)
   * [file\(\)](https://devdocs.io/php/function.file)
-  * [foreach](https://devdocs.io/php/control-structures.foreach)
+  * [foreach](https://devdocs.io/php/control-structures.foreach) och [continue](https://devdocs.io/php/control-structures.continue)
   * [substr\(\)](https://devdocs.io/php/function.substr)
   * [explode\(\)](https://devdocs.io/php/function.explode)
 
@@ -51,6 +51,7 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
             ...
             
                 // Skippa första raden om de 2 första tecknen är 'id'
+                // Använd continue;
                 ...
             
                 // Plocka ut det som vi behöver: nr/namn, bokbar

@@ -45,6 +45,8 @@
 
 * [Läsa av kataloger](kapitel-8/laesa-av-kataloger.md)
 * [Ladda upp filer](kapitel-8/ladda-upp-filer.md)
+* [Labb 6: bildgalleri](kapitel-8/labb-6-bildgalleri.md)
+* [Labb 7: webbshop](kapitel-8/labb-7-webbshop.md)
 
 ## Koda webbappar i PHP
 

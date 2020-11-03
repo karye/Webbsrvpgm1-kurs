@@ -32,15 +32,13 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 ## Strategi för webscrapping
 
-### Sökstrategi
+### Plocka ut hela horoskoptexten
 
-* Man börjar med att söka efter **c-post\_content\_\_wrapper**
-
-### Och var den slutar
-
-* Horoskopen när denna klass dyker upp **c-post\_tag**
-
-## Testa strategin
+* Man börjar med att söka efter tex **c-post\_content\_\_wrapper**
+* Sedan söker man efter ett tydligt slut, tex **c-post\_tag**
+* Använd funktionerna
+  * [strpos](https://devdocs.io/php/function.strpos)
+  * [substr](https://devdocs.io/php/function.substr)
 
 {% tabs %}
 {% tab title="astro.php" %}
@@ -69,7 +67,7 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
             echo "<p>Hittade inte horoskopets början!</p>";
         }
         
-        // Hitta var horoskopet slutar
+        // Sök slutet på texten
         $slut = strpos(...);
         
         // Plocka ut ungefär delen med horoskoptexten
@@ -179,6 +177,8 @@ $slut = strpos($horoskopText, ...);
 $del1 = substr($horoskopText, ...);
 echo "$del1</div>\n";
 ```
+
+### Resten av horoskopet
 
 * Upprepa en gång till för att plocka ut Vädurens horoskop
 * Upprepa så många gånger det behövs att få ut all horoskop text

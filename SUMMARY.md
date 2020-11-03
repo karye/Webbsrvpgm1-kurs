@@ -26,7 +26,7 @@
 
 ## Kapitel 5
 
-* [Filhantering](kapitel-5/filhantering.md)
+* [Läsa & skriva filer](kapitel-5/filhantering.md)
 * [Labb 3: läsa in csv-fil](kapitel-5/skriva-ut-csv-fil.md)
 * [Labb 4: blogg](kapitel-5/skapa-en-enkel-blogg.md)
 

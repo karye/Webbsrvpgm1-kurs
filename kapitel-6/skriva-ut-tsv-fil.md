@@ -40,10 +40,12 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
         // Är filens läsbar?
         
         // Läs in filens alla rader
-
-        // Visa salar i en tabell med kolumnrubriker: nr, namn, bokbar
         
-        // Plocka ut salsnr och salsnamn
+            // Dela upp raden i dess delar
+    
+            // Visa salar i en tabell med kolumnrubriker: nr, namn, bokbar
+            
+            // Plocka ut salsnr och salsnamn
         ?>
     </div>
 </body>

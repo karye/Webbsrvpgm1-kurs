@@ -44,8 +44,7 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
             // Dela upp raden i dess delar
     
             // Visa salar i en tabell med kolumnrubriker: nr, namn, bokbar
-            
-            // Plocka ut salsnr och salsnamn
+        
         ?>
     </div>
 </body>
@@ -243,5 +242,11 @@ id	name	description	bookable	doublebook
 
 ## Förbättringar
 
+### Plocka ut rumsnr och rumsnamn
 
+* De flesta raderna innehåller salsnr och salsnamn tex **410/Dali**, dela upp så de visas i var sin kolumn i tabellen
+
+### Ange typ av rum
+
+* Rummen kan vara av typ Sal, Grupprum eller Studio
 

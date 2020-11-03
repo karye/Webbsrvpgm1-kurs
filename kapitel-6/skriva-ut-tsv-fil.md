@@ -37,11 +37,13 @@ description: Läsa textfil och "parsa" data som är tsv-formaterat.
     <div class="kontainer">
         <h1>Skolans salar</h1>
         <?php
-        // 1. Läs in textfilen
-
-        // 2. Visa salar i en tabell: nr, namn, bokbar
+        // Är filens läsbar?
         
-        // 3. Dela upp raden i dess delar
+        // Läs in filens alla rader
+
+        // Visa salar i en tabell med kolumnrubriker: nr, namn, bokbar
+        
+        // Dela upp raden i dess delar
         ?>
     </div>
 </body>

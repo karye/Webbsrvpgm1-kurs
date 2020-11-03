@@ -37,8 +37,8 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 * Man börjar med att söka efter tex **c-post\_content\_\_wrapper**
 * Sedan söker man efter ett tydligt slut, tex **c-post\_tag**
 * Använd funktionerna
-  * [strpos](https://devdocs.io/php/function.strpos)
-  * [substr](https://devdocs.io/php/function.substr)
+  * [strpos\(\)](https://devdocs.io/php/function.strpos)
+  * [substr\(\)](https://devdocs.io/php/function.substr)
 
 {% tabs %}
 {% tab title="astro.php" %}

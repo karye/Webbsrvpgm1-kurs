@@ -14,14 +14,152 @@ Med reguljära uttryck kan man göra en sk. mönstermatchning av ett uttryck. Re
 
 Det finns två olika typer av reguljära uttryck i PHP, Posix-kompatibla och Perl-kompatibla. I grundsyntaxen är de ganska lika men de Perl-kompatibla reguljära uttrycken har fler avancerade funktioner. I PHP-manualen på [pcre.pattern.syntax](http://php.net/manual/en/pcre.pattern.syntax.php) finns en detaljerad guide. Vi börjar med ett enkelt exempel:
 
+{% tabs %}
+{% tab title="PHP" %}
 ```php
-$text = "Test 123";
-if (preg_match("/123/",$text)) {
-    echo 'Variabeln $text innehåller 123';
-} else {
-    echo 'Variabeln $text innehåller inte 123';
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Regex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Hitta match med regex</h1>
+        <form action="#" method="POST">
+            <label>Ange text
+                <input type="text" name="text" required>
+            </label>
+            <button>Skicka</button>
+        </form>
+        <?php
+        /* Ta emot data som skickas */
+        $text = filter_input(INPUT_POST, 'text', FILTER_SANITIZE_STRING);
+
+        if ($text) {
+            echo "<h3>Inmattat</h3>";
+            echo "<p>Text: <em>'$text'</em></p>";
+
+            echo "<h3>Resultat</h3>";
+            // Matcha "123"
+            // Regex = regular expression = reguljära uttryck
+            // På samma sät som strstr()
+            if (preg_match("/123/", $text)) {
+                echo "<p>Text innehåller '2'.</p>";
+            } else {
+                echo "<p>Text innehåller INTE '2'.</p>";
+            }
+        }
+        ?>
+    </div>
+</body>
+</html>
+```
+{% endtab %}
+
+{% tab title="style.css" %}
+```
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F9F6EB;
+}
+.kontainer {
+    width: 600px;
+    padding: 2em;
+    margin: 3em auto;
+    background: #fff;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #f0e9d1;
+    color: #4e4e4e;
+}
+
+h1, h2, h3 {
+    color: #9c813d;
+}
+h1, h2, h3, p {
+    margin: 0.5em 0;
+}
+h3 {
+    margin-top: 2em;
+}
+
+form {
+    margin: 1em 0;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #4e4e4e;
+    background: #E6F2F8;
+    border-radius: 0.3em;
+}
+form label {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0;
+    padding: 0;
+}
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: -0.4em;
+    font-style: italic;
+    border-radius: 0.3em;
+    border: 2px solid #55a5d2;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+form textarea {
+    height: 10em;
+}
+form button {
+    margin: 1em 0;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #55a5d2;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+}
+table th, table td {
+    padding: 0.5em;
+    text-align: left;
+}
+table th {
+    background: #305A85;
+    color: #FFF;
+}
+table tr:nth-child(even) {
+    background: #E6F2F8;
+}
+table tr:nth-child(odd) {
+    background: #FFF;
+}
+table .fa {
+    color: #55a5d2;
 }
 ```
+{% endtab %}
+{% endtabs %}
 
 Funktionen [preg\_match\(\)](http://php.net/manual/en/function.preg-match.php) används för mönstermatchning. Sökbegreppet står alltid mellan snedstreck. I exemplet söker vi efter teckenföljden 123 i strängen **$text**.
 

@@ -170,7 +170,8 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 ### **Uppgift 1**
 
 Gör ett formulär där användaren ska fylla i en text.   
-Kontrollera med ett reguljärt uttryck att texten innehåller ett "**t**" följt av ett eller två "**o**", dvs "**to**" eller "**too**". Endast små bokstäver ska matchas.
+Kontrollera med ett reguljärt uttryck att texten innehåller ett "**t**" följt av ett eller två "**o**", dvs "**to**" eller "**too**". Endast små bokstäver ska matchas.  
+Prova med Unicode tecknet '[✓](https://www.compart.com/en/unicode/U+2714)'.
 
 ![](../.gitbook/assets/image%20%2853%29.png)
 

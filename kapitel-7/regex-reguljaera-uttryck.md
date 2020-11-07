@@ -43,9 +43,9 @@ Det finns två olika typer av reguljära uttryck i PHP, Posix-kompatibla och Per
             // Regex = regular expression = reguljära uttryck
             // På samma sätt som strstr()
             if (preg_match("/123/", $text)) {
-                echo "<p>&#10003; Innehåller ordet '123'.</p>";
+                echo "<p>&#10003; Innehåller '123'.</p>";
             } else {
-                echo "<p>&#10005; Innehåller INTE ordet '123'.</p>";
+                echo "<p>&#10005; Innehåller INTE '123'.</p>";
             }  
         }
         ?>

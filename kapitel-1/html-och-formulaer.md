@@ -175,6 +175,8 @@ På din webbsida vill du ha ett formulär där besökaren kan lämna kommentarer
 ![](../.gitbook/assets/image%20%2827%29.png)
 
 {% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se  
+[http://www.snt.se/phpkompendium.pdf](http://www.snt.se/phpkompendium.pdf)  
+[http://www.snt.se/phpfacit.pdf](http://www.snt.se/phpfacit.pdf)
 {% endhint %}
 

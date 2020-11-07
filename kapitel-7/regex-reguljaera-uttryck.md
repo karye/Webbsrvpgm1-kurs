@@ -4,10 +4,6 @@ description: Söka i text med regex.
 
 # Regex - reguljära uttryck
 
-## **Testa reguljära uttryck**
-
-* Du kan enkelt testa dina regex på [phpliveregex](https://www.phpliveregex.com/).
-
 ## preg\_match\(\): söka med reguljära uttryck
 
 Med reguljära uttryck kan man göra en sk. mönstermatchning av ett uttryck. Reguljära uttryck tillhör de svåraste områdena av PHP. I kapitlet om strängar i boken finns en utförligare beskrivning av reguljära uttryck. De används ofta för att göra en kontroll av inkommande formulärdata för att säkerställa att dessa håller sig inom vissa givna ramar och därigenom säkra programmet från angrepp och fel.
@@ -162,6 +158,10 @@ table .fa {
 {% endtabs %}
 
 Funktionen [preg\_match\(\)](http://php.net/manual/en/function.preg-match.php) används för mönstermatchning. Sökbegreppet står alltid mellan snedstreck. I exemplet söker vi efter teckenföljden 123 i strängen **$text**.
+
+### **Testa regex online**
+
+* Du kan enkelt testa dina regex på [phpliveregex.com](https://www.phpliveregex.com/).
 
 ### **Matcha vissa tecken**
 

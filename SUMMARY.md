@@ -42,15 +42,15 @@
 
 ## Kapitel 8
 
-* [Läsa kataloger](kapitel-8/laesa-av-kataloger.md)
-* [Ladda upp filer](kapitel-8/ladda-upp-filer.md)
+* [Läsa kataloger\(?\)](kapitel-8/laesa-av-kataloger.md)
+* [Ladda upp filer\(?\)](kapitel-8/ladda-upp-filer.md)
 * [Labb 6: bildgalleri](kapitel-8/labb-6-bildgalleri.md)
 * [Labb 7: webbshop](kapitel-8/labb-7-webbshop.md)
 
 ## Koda webbappar i PHP
 
 * [Sessioner](koda-webbappar-i-php/sessioner.md)
-* [Lösenord & kryptering](koda-webbappar-i-php/loesenord-and-kryptering.md)
+* [Lösenord & kryptering\(?\)](koda-webbappar-i-php/loesenord-and-kryptering.md)
 
 ## Databas med mysql
 

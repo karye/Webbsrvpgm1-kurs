@@ -171,23 +171,23 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 Gör ett formulär där användaren ska fylla i en text.   
 Kontrollera med ett reguljärt uttryck att texten innehåller ett "**t**" följt av ett eller två "**o**", dvs "**to**" eller "**too**". Endast små bokstäver ska matchas.  
-Prova med Unicode tecknet '[✓](https://www.compart.com/en/unicode/U+2714)'.
+Prova med Unicode tecknet '[✓](https://www.compart.com/en/unicode/U+2714)' och '[✕](https://www.compart.com/en/unicode/U+2715)'.
 
-![](../.gitbook/assets/image%20%2853%29.png)
+![](../.gitbook/assets/image%20%2858%29.png)
 
 ### **Uppgift 2**
 
 Gör ett formulär där användaren ska fylla i en längre text.   
 Kontrollera med ett reguljärt uttryck att texten matchar en sträng som börjar med "**Det var en gång**". Det spelar ingen roll om det första d:et är **stort** eller **litet**.
 
-![](../.gitbook/assets/image%20%2856%29.png)
+![](../.gitbook/assets/image%20%2859%29.png)
 
 ### **Uppgift 3**
 
 Gör ett formulär där användaren ska fylla i en text.   
 Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av **små** och **stora** bokstäver, **punkt**, **siffror** och **mellanslag**. Använd [preg-match-all\(\)](https://devdocs.io/php/function.preg-match-all).
 
-![](../.gitbook/assets/image%20%2855%29.png)
+![](../.gitbook/assets/image%20%2857%29.png)
 
 ### **Uppgift 4**
 
@@ -199,7 +199,7 @@ Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera seda
 
 Skapa en webbapplikation som testar styrkan på ett **lösenord** mha reguljära uttryck. Se tidigare uppgift i tidigare kapitel.
 
-![](../.gitbook/assets/dump-uppgift-6-5.png)
+![](../.gitbook/assets/image%20%2862%29.png)
 
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se

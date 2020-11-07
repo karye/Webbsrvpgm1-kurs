@@ -58,8 +58,7 @@ description: Hur skickar man data till ett PHP-skript?
 <div class="container">
     <h1>Spara ditt namn</h1>
     <form action="#" method="POST">
-        <label>Ange namn</label>
-        <input type="text" name="namn">
+        <label>Ange namn <input type="text" name="namn"></label>
         <button>Spara</button>
     </form>
     <?php
@@ -152,24 +151,24 @@ form {
     background: #E6F2F8;
     border-radius: 0.3em;
 }
-label {
+form label {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    align-items: center;
     margin: 10px 0;
     padding: 0;
 }
-input, textarea {
-    padding: 0.7em;
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: -0.4em;
     font-style: italic;
     border-radius: 0.3em;
-    border: 2px solid #4e4e4e;
+    border: 2px solid #55a5d2;
     box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
 }
-textarea {
+form textarea {
     height: 10em;
 }
-button {
+form button {
     margin: 1em 0;
     padding: 0.7em;
     border-radius: 0.3em;
@@ -184,18 +183,18 @@ table {
     border-collapse: collapse;
     margin: 2em 0;
 }
-th, td {
+table th, table td {
     padding: 0.5em;
     text-align: left;
 }
-th {
+table th {
     background: #305A85;
     color: #FFF;
 }
-tr:nth-child(even) {
+table tr:nth-child(even) {
     background: #E6F2F8;
 }
-tr:nth-child(odd) {
+table tr:nth-child(odd) {
     background: #FFF;
 }
 table .fa {

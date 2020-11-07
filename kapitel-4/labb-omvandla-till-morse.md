@@ -2,7 +2,7 @@
 description: Omvandla text till morsekod
 ---
 
-# Labb 2: omvandla till morse
+# Labb 2 - omvandla till morse
 
 ## **Resultatet**
 

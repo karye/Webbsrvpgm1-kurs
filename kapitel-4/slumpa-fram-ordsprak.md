@@ -2,7 +2,7 @@
 description: Slumpa fram sex olika ordspråk från en lista av tio
 ---
 
-# Labb 1: slumpa fram ordspråk
+# Labb 1 - slumpa fram ordspråk
 
 ## **Resultatet**
 

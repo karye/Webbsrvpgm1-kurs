@@ -1,4 +1,4 @@
-# Labb 6: bildgalleri
+# Labb 7 - bildgalleri\(?\)
 
 ## Resultat
 

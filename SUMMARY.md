@@ -20,21 +20,21 @@
 ## Kapitel 4
 
 * [Arrayer och foreach-loop](kapitel-4/arrayer-och-foreach-loop.md)
-* [Labb 1: slumpa fram ordspråk](kapitel-4/slumpa-fram-ordsprak.md)
-* [Labb 2: omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
-* [Projekt 1: interaktiv berättelse](kapitel-4/projekt-interaktiv-beraettelse.md)
+* [Labb 1 - slumpa fram ordspråk](kapitel-4/slumpa-fram-ordsprak.md)
+* [Labb 2 - omvandla till morse](kapitel-4/labb-omvandla-till-morse.md)
+* [Projekt 1 - interaktiv berättelse](kapitel-4/projekt-interaktiv-beraettelse.md)
 
 ## Kapitel 5
 
 * [Läsa & skriva filer](kapitel-5/filhantering.md)
-* [Labb 3: läsa in csv-fil](kapitel-5/skriva-ut-csv-fil.md)
-* [Labb 4: blogg](kapitel-5/skapa-en-enkel-blogg.md)
+* [Labb 3 - läsa in csv-fil](kapitel-5/skriva-ut-csv-fil.md)
+* [Labb 4 - blogg](kapitel-5/skapa-en-enkel-blogg.md)
 
 ## Kapitel 6
 
 * [Stränghantering](kapitel-6/straenghantering.md)
-* [Webscraping](kapitel-6/webscraping.md)
-* [Labb 5: läsa in tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
+* [Labb 5 - webscraping](kapitel-6/webscraping.md)
+* [Labb 6 - läsa tsv-fil](kapitel-6/skriva-ut-tsv-fil.md)
 
 ## Kapitel 7
 
@@ -44,8 +44,8 @@
 
 * [Läsa kataloger\(?\)](kapitel-8/laesa-av-kataloger.md)
 * [Ladda upp filer\(?\)](kapitel-8/ladda-upp-filer.md)
-* [Labb 6: bildgalleri](kapitel-8/labb-6-bildgalleri.md)
-* [Labb 7: webbshop](kapitel-8/labb-7-webbshop.md)
+* [Labb 7 - bildgalleri\(?\)](kapitel-8/labb-6-bildgalleri.md)
+* [Labb 8 - webbshop\(?\)](kapitel-8/labb-7-webbshop.md)
 
 ## Koda webbappar i PHP
 

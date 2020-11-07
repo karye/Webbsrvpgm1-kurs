@@ -2,7 +2,7 @@
 description: Skapa en webbapp med lagring i textfil
 ---
 
-# Labb 4: blogg
+# Labb 4 - blogg
 
 ## **Resultat**
 

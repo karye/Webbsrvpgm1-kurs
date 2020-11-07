@@ -2,7 +2,7 @@
 description: Skapa en interaktiv berättelse
 ---
 
-# Projekt 1: interaktiv berättelse
+# Projekt 1 - interaktiv berättelse
 
 ## Interaktiv berättelse
 

@@ -1,2 +1,2 @@
-# Läsa av kataloger
+# Läsa kataloger
 

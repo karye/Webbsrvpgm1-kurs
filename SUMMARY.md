@@ -39,7 +39,6 @@
 ## Kapitel 7
 
 * [Regex - reguljära uttryck](kapitel-7/regex-reguljaera-uttryck.md)
-* [Funktioner](kapitel-7/funktioner.md)
 
 ## Kapitel 8
 
@@ -61,4 +60,8 @@
 * [Relationer mellan tabeller](databas-med-mysql/laboration-3.md)
 * [Inbyggda funktioner](databas-med-mysql/laboration-4.md)
 * [Fritextsökning](databas-med-mysql/laboration-5.md)
+
+## Övrigt
+
+* [Funktioner](oevrigt/funktioner.md)
 

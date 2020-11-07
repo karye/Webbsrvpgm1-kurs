@@ -116,7 +116,7 @@ Specialtecknet **\|** betyder **eller** - matcha ett visst mönster eller ett an
 
 ### **Delmönster**
 
-Genom att använda paranteser kan man gruppera mönstret i delmönster.
+Genom att använda parenteser kan man gruppera mönstret i delmönster.
 
 ```php
 $text = "använd";
@@ -172,25 +172,31 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 Gör ett formulär där användaren ska fylla i en text.   
 Kontrollera med ett reguljärt uttryck att texten innehåller ett "**t**" följt av ett eller två "**o**", dvs "**to**" eller "**too**". Endast små bokstäver ska matchas.
 
-
+![](../.gitbook/assets/image%20%2853%29.png)
 
 ### **Uppgift 2**
 
 Gör ett formulär där användaren ska fylla i en längre text.   
 Kontrollera med ett reguljärt uttryck att texten matchar en sträng som börjar med "**Det var en gång**". Det spelar ingen roll om det första d:et är **stort** eller **litet**.
 
+![](../.gitbook/assets/image%20%2856%29.png)
+
 ### **Uppgift 3**
 
 Gör ett formulär där användaren ska fylla i en text.   
-Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av **små** och **stora** bokstäver, **punkt**, **siffror** och **mellanslag**.
+Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av **små** och **stora** bokstäver, **punkt**, **siffror** och **mellanslag**. Använd [preg-match-all\(\)](https://devdocs.io/php/function.preg-match-all).
+
+![](../.gitbook/assets/image%20%2855%29.png)
 
 ### **Uppgift 4**
 
 Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera sedan att domännamnet slutar på .**com**, **.net** eller **.org**. Du ska också kontrollera att de övriga tecknen endast består av bokstäver **a-z**, siffror **0-9** eller bindestreck \(**-**\). Första tecknet måste vara en bokstav. Domännamnet ska vara minst **6** tecken och högst **200** tecken långt.
 
+![](../.gitbook/assets/image%20%2854%29.png)
+
 ### **Uppgift 5**
 
-Skapa en webbapplikation som testar styrkan på ett **lösenord** mha reguljära uttryck.
+Skapa en webbapplikation som testar styrkan på ett **lösenord** mha reguljära uttryck. Se tidigare uppgift i tidigare kapitel.
 
 ![](../.gitbook/assets/dump-uppgift-6-5.png)
 

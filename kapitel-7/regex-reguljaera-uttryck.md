@@ -166,11 +166,16 @@ Funktionen [preg\_match\(\)](http://php.net/manual/en/function.preg-match.php) a
 ### **Matcha vissa tecken**
 
 ```php
-$text = "Test 123";
-if (preg_match("/[a-zåäö]/",$text)) {
-    echo 'Variabeln $text innehåller minst en bokstav';
+if (preg_match("/[a-zåäö]/", $text)) {
+    echo "<p>&#10003; Texten innehåller gemena.</p>";
 } else {
-    echo 'Variabeln $text innehåller inte några bokstäver';
+    echo "<p>&#10005; Texten innehåller INTE gemena.</p>";
+}
+
+if (preg_match("/[0-9]/", $text)) {
+    echo "<p>&#10003; Texten innehåller siffror.</p>";
+} else {
+    echo "<p>&#10005; Texten innehåller INTE siffror.</p>";
 }
 ```
 
@@ -179,9 +184,10 @@ Genom att använda hakparanteser kan vi specificera en följd av tecken i mönst
 ### **Negativ matchning**
 
 ```php
-$text = "Test 123";
-if (preg_match("/[^0-9]/",$text)) {
-    echo "Variabeln innehåller minst ett tecken som inte är en siffra";
+if (preg_match("/[^_]/", $text)) {
+    echo "<p>&#10003; Texten innehåller inte _.</p>";
+} else {
+    echo "<p>&#10005; Texten innehåller _.</p>";
 }
 ```
 
@@ -190,11 +196,10 @@ Genom att sätta **^** direkt till höger om hakparantesen inverteras mönstret.
 ### **Matcha oberoende av små och stora bokstäver**
 
 ```php
-$text = "Test 123";
-if (preg_match("/[a-zåäö]/i",$text)) {
-    echo 'Variabeln $text innehåller minst en bokstav';
+if (preg_match("/[a-zåäö]/", $text)) {
+    echo "<p>&#10003; Text innehåller gemena.</p>";
 } else {
-    echo 'Variabeln $text innehåller inte några bokstäver';
+    echo "<p>&#10005; Texten innehåller INTE gemena.</p>";
 }
 ```
 
@@ -205,18 +210,21 @@ Genom växeln **/i** som står för case-insensitive så matchar vi både små o
 Genom specialtecknen **?**, **\*** och **+** kan vi matcha 0 eller 1, 0 eller flera respektive 1 eller flera av ett visst mönster.
 
 ```php
-$text = "abbc";
-if (preg_match("/ab+c/", $text)) {
-    echo "Innehåller ett a följt av ett eller flera b följt av ett c";
+if (preg_match("/a+/", $text)) {
+    echo "<p>&#10003; Texten innehåller en eller flera a.</p>";
+} else {
+    echo "<p>&#10005; Texten innehåller inte en eller flera a.</p>";
 }
 ```
 
 Med **+** matchar vi ett eller flera b:n enligt ovan.
 
 ```php
-$text = "abbc";
-if (preg_match("/ab{1,2}c/", $text)) {
-    echo "Innehåller ett a följt av ett eller två b följt av ett c";
+// Matcha loop
+if (preg_match("/lo{1,2}p/", $text)) {
+    echo "<p>&#10003; Texten innehåller en eller två o.</p>";
+} else {
+    echo "<p>&#10005; Texten innehåller inte en eller två o.</p>";
 }
 ```
 
@@ -227,11 +235,10 @@ Det går också att specificera exakt antal av ett visst tecken. Det gör man ge
 Hur gör vi då om vi ska kontrollera att strängen endast innehåller bokstäver och inget annat?
 
 ```php
-$text = "Test 123";
-if (preg_match("/^[a-zåäöA-ZÅÄÖ]+$/",$text)) {
-    echo 'Variabeln $text innehåller bara bokstäver';
+if (preg_match("/^[a-zåäöA-ZÅÄÖ]+$/", $text)) {
+    echo "<p>&#10003; Texten innehåller bara bokstäver.</p>";
 } else {
-    echo 'Variabeln $text innehåller inte bara bokstäver';
+    echo "<p>&#10005; Texten innehåller inte bara bokstäver.</p>";
 }
 ```
 
@@ -242,11 +249,10 @@ Observera att **+** måste vara med annars matchar vi bara strängar med endast 
 ### **Alternativmönster**
 
 ```php
-$text = "gurka";
-if (preg_match("/banan|gurka/", $text)) {
-    echo 'Variabeln $text innehåller banan eller gurka';
+if (preg_match("/väg|gata/", $text)) {
+    echo "<p>&#10003; Texten innehåller ordet väg eller gata.</p>";
 } else {
-    echo 'Variabeln $text innehåller varken banan eller gurka';
+    echo "<p>&#10005; Texten innehåller inte ordet väg eller gata.</p>";
 }
 ```
 
@@ -257,7 +263,6 @@ Specialtecknet **\|** betyder **eller** - matcha ett visst mönster eller ett an
 Genom att använda parenteser kan man gruppera mönstret i delmönster.
 
 ```php
-$text = "använd";
 if (preg_match("/använd(armanual|ningsområde|)/", $text)) {
     echo "Matchar använd, användarmanual, användningsområde";
 }

@@ -33,8 +33,9 @@ Processen går alltså till på detta sätt:
 Om vi matar in form-koden i föregående stycke, kommer ingenting alls att visas i webbläsaren. Vi behöver också ha rutor där användaren kan fylla i information. Ett vanligt textfält skrivs med [input](https://devdocs.io/html/element/input):
 
 ```markup
-Ditt förnamn: <br>
+<label>Ditt förnamn:
 <input type="text" name="fornamn" value="skriv här" size="30">
+</label>
 ```
 
 Nästan alltid har man en beskrivning av formulärfältet till vänster, så att användaren vet vad som ska fyllas i. Sedan kommer själva html-taggen. **name** måste finnas med - detta för att php senare ska kunna särskilja just detta fält och dess innehåll. När formuläret skickas iväg kommer nämligen automatiskt en variabel skapas med namnet **$fornamn** som innehåller det användaren har fyllt i detta fält. Observera att man ej bör ha svenska bokstäver i **name**-attributet. **value** används oftast inte, men ger ett standardvärde i fältet. Till sist bestämmer vi hur många tecken brett formulärfältet ska vara med **size**.
@@ -46,7 +47,9 @@ Det här fältet fungerar precis som textrutan, med den skillnaden att det visas
 Så här ser taggen ut:
 
 ```markup
-Lösenord: <input type="password" name="losenord">
+<label>Lösenord:
+<input type="password" name="losenord">
+</label>
 ```
 
 #### **&lt;input type="checkbox"&gt; - ger en kryssruta**
@@ -54,10 +57,11 @@ Lösenord: <input type="password" name="losenord">
 Det här fältet fungerar precis som kryssrutorna i t.ex. Windows - de kan antingen vara ikryssade eller ej ikryssade. Ett exempel:
 
 ```markup
-<h2>Vilka semesterorter har du besökt</h2>
+<label>Vilka semesterorter har du besökt<br>
 <input name="azorerna" type="checkbox" value="1"> Azorerna<br>
 <input name="mallorca" type="checkbox" value="1"> Mallorca<br>
 <input name="teneriffa" type="checkbox" value="1"> Teneriffa
+</label>
 ```
 
 **name** talar om vilket namn variabeln kommer att få. Har användaren t.ex. kryssat i rutorna för Azorerna och Mallorca, kommer variabeln **$azorerna** få värdet 1, **$mallorca** också värdet 1, medan variabeln **$teneriffa** kommer att vara tom.
@@ -67,9 +71,11 @@ Det här fältet fungerar precis som kryssrutorna i t.ex. Windows - de kan antin
 Det finns ytterligare en typ av knapp, nämligen radioknappar. Ni känner säkert igen denna från Windows också. Den används när man ska välja ett, och endast ett alternativ av flera i en grupp. T.ex. om man behöver skriva in åldern – en person kan ju inte gärna ha två åldrar samtidigt! Vi kan ju tänka oss följande exempel vid beställning av en färdbiljett:
 
 ```markup
+<label>Hur gammal är du?<br>
 <input name="alder" type="radio" value="barn"> Under 16 år<br>
 <input name="alder" type="radio" value="ungdom"> 16 - 25 år<br>
 <input name="alder" type="radio" value="vuxen"> Över 25 år
+</label>
 ```
 
   
@@ -80,8 +86,9 @@ Det finns ytterligare en typ av knapp, nämligen radioknappar. Ni känner säker
 Flerradiga textfält används bland annat i webbmailtjänster som t.ex. gmail.com för att skriva in meddelandetexten. Då används [textarea](https://devdocs.io/html/element/textarea)-fältet i HTML-koden.
 
 ```markup
-<textarea name="meddelande">
-</textarea>
+<label>Ange meddelande
+<textarea name="meddelande"></textarea>
+</label>
 ```
 
 ### **Andra formulärfält**
@@ -110,10 +117,13 @@ Så är det dags att binda ihop allting och skapa ett komplett formulär. Vi bö
 <body>
     <form action="phpskript.php" method="post">
         <h1>Biljettbokning</h1>
-        <h2>Hur gammal är du</h2><input name="alder" type="radio" value="barn">
-        Under 16 år<br>
+        <label>Hur gammal är du
+        <input name="alder" type="radio" value="barn">
+        </label>
+        <label>Under 16 år<br>
         <input name="alder" type="radio" value="ungdom"> 16 - 25 år<br>
         <input name="alder" type="radio" value="vuxen"> Över 25 år<br>
+        </label>
         <button type="submit">Skicka</button>
     </form>
 </body>

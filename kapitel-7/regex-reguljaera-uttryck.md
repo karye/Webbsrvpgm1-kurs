@@ -169,27 +169,24 @@ $ matchar till slutet av sträng (eller slutet av rad med växeln /m )
 
 ### **Uppgift 1**
 
-Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera sedan att domännamnet slutar på .**com**, **.net** eller **.org**. Du ska också kontrollera att de övriga tecknen endast består av bokstäver **a-z**, siffror **0-9** eller bindestreck \(**-**\). Första tecknet måste vara en bokstav. Domännamnet ska vara minst sex tecken och högst 200 tecken långt.
+Gör ett formulär där användaren ska fylla i en text.   
+Kontrollera med ett reguljärt uttryck att texten innehåller ett "**t**" följt av ett eller två "**o**", dvs "**to**" eller "**too**". Endast små bokstäver ska matchas.
 
-![](../.gitbook/assets/image%20%2842%29.png)
+
 
 ### **Uppgift 2**
 
-Konstruera ett reguljärt uttryck som matchar en sträng som innehåller ett "t" följt av ett eller två "o". Endast små bokstäver ska matchas.
-
-![](../.gitbook/assets/image%20%2835%29.png)
+Gör ett formulär där användaren ska fylla i en längre text.   
+Kontrollera med ett reguljärt uttryck att texten matchar en sträng som börjar med "**Det var en gång**". Det spelar ingen roll om det första d:et är **stort** eller **litet**.
 
 ### **Uppgift 3**
 
-Konstruera ett reguljärt uttryck som matchar en sträng som börjar med "Det var en gång". Det spelar ingen roll om det första d:et är stort eller litet.
-
-![](../.gitbook/assets/image%20%2843%29.png)
+Gör ett formulär där användaren ska fylla i en text.   
+Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av **små** och **stora** bokstäver, **punkt**, **siffror** och **mellanslag**.
 
 ### **Uppgift 4**
 
-Konstruera ett reguljärt uttryck som ska kontrollera adresser som ska föras in i en databas. Adresserna får endast bestå av små och stora bokstäver, punkt, siffror och mellanslag.
-
-![](../.gitbook/assets/image%20%2836%29.png)
+Gör ett formulär där användaren ska fylla i ett domännamn. Kontrollera sedan att domännamnet slutar på .**com**, **.net** eller **.org**. Du ska också kontrollera att de övriga tecknen endast består av bokstäver **a-z**, siffror **0-9** eller bindestreck \(**-**\). Första tecknet måste vara en bokstav. Domännamnet ska vara minst **6** tecken och högst **200** tecken långt.
 
 ### **Uppgift 5**
 

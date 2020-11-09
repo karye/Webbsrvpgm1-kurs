@@ -155,9 +155,19 @@ foreach ($resultat as $objekt) {
 ### Osynliga filer och kataloger
 
 * Alla filer kommer med i skanningen. 
-* Det första man inte vill få med är "." och ".."
+* Det första man inte vill få med är "." och "..".
 
-### is\_dir\(\)
+## Info om filer och kataloger
 
+### [is\_dir\(\)](https://devdocs.io/php/function.is-dir)
 
+* Är vad objekt en katalog? True eller false.
+
+### [pathinfo\(\)](https://devdocs.io/php/function.pathinfo)
+
+* Hur får man mer info om objekten?
+  * **`PATHINFO_DIRNAME`**
+  * **`PATHINFO_BASENAME`**
+  * **`PATHINFO_EXTENSION`**
+  * **`PATHINFO_FILENAME`**
 

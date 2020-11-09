@@ -157,11 +157,25 @@ foreach ($resultat as $objekt) {
 * Alla filer kommer med i skanningen. 
 * Det första man inte vill få med är "." och "..".
 
+```php
+// Ta inte med . och ..
+if ($objekt != '.'  && $objekt != '..') {
+
+}
+```
+
 ## Info om filer och kataloger
 
 ### [is\_dir\(\)](https://devdocs.io/php/function.is-dir)
 
 * Är vad objekt en katalog? True eller false.
+
+```php
+// Är det en katalog?
+if (is_dir("$katalog/$objekt")) {
+    echo "<p>Katalog: $objekt</p>";
+}
+```
 
 ### [pathinfo\(\)](https://devdocs.io/php/function.pathinfo)
 
@@ -170,4 +184,10 @@ foreach ($resultat as $objekt) {
   * **`PATHINFO_BASENAME`**
   * **`PATHINFO_EXTENSION`**
   * **`PATHINFO_FILENAME`**
+
+```php
+$filInfo = pathinfo($objekt);
+$filtyp = $filInfo['extension'];
+echo "<p>Filtypen är $filtyp</p>";
+```
 

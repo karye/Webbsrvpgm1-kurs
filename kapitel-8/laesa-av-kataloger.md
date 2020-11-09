@@ -180,10 +180,10 @@ if (is_dir("$katalog/$objekt")) {
 ### [pathinfo\(\)](https://devdocs.io/php/function.pathinfo)
 
 * Hur får man mer info om objekten?
-  * **`PATHINFO_DIRNAME`**
-  * **`PATHINFO_BASENAME`**
-  * **`PATHINFO_EXTENSION`**
-  * **`PATHINFO_FILENAME`**
+  * 'dirname'
+  * 'basename'
+  * 'extension'
+  * 'filename'
 
 ```php
 $filInfo = pathinfo($objekt);

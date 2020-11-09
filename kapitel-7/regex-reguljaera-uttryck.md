@@ -183,18 +183,6 @@ if (preg_match("/[0-9]/", $text)) {
 
 Genom att använda hakparanteser kan vi specificera en följd av tecken i mönstret. Strängen kommer att matchas om det finns minst en av de gemena \(små\) bokstäverna a-z, å, ä eller ö i den.
 
-### **Negativ matchning**
-
-```php
-if (preg_match("/[^_]/", $text)) {
-    echo "<p>&#10003; Texten innehåller inte _.</p>";
-} else {
-    echo "<p>&#10005; Texten innehåller _.</p>";
-}
-```
-
-Genom att sätta **^** direkt till höger om hakparantesen inverteras mönstret.
-
 ### **Matcha oberoende av små och stora bokstäver**
 
 ```php

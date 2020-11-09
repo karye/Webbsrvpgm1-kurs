@@ -2,7 +2,7 @@
 description: Skanna av innehållet av en katalog.
 ---
 
-# Läsa kataloger\(?\)
+# Läsa kataloger
 
 ## Skanna en katalog
 
@@ -156,8 +156,6 @@ foreach ($resultat as $objekt) {
 
 * Alla filer kommer med i skanningen. 
 * Det första man inte vill få med är "." och ".."
-
-
 
 ### is\_dir\(\)
 

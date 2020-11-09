@@ -4,7 +4,7 @@ description: Söka i text med regex.
 
 # Regex - reguljära uttryck
 
-![](../.gitbook/assets/image%20%2863%29.png)
+![https://www.phpliveregex.com](../.gitbook/assets/image%20%2863%29.png)
 
 ## preg\_match\(\): söka med reguljära uttryck
 

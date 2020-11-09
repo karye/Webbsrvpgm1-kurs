@@ -284,9 +284,9 @@ Det första argumentet är mönstret som ska sökas efter, den andra strängen s
 \D inte siffra - samma sak som [^0-9]
 \s matchar mellanrumstecken - mellanslag, ny rad, tabb, formfeed, return
 \S matchar allt utom mellanrumstecken
-^ matchar från början av sträng (eller början av rad med växeln /m )
+^ matchar från början av raden
 \A matchar från början av sträng (oberoende av växeln /m )
-$ matchar till slutet av sträng (eller slutet av rad med växeln /m )
+$ matchar till slutet av raden
 \Z matchar till slutet av sträng (oberoende av växeln /m )
 . matchar vilket tecken som helst för utom ny rad-tecken ( \n )
 [a-z] teckenföljd

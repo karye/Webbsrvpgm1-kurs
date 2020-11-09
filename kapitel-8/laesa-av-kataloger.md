@@ -6,6 +6,8 @@ description: Skanna av innehållet av en katalog.
 
 ## Skanna en katalog
 
+### scandir\(\)
+
 * Med funktionen [scandir\(\)](https://devdocs.io/php/function.scandir) skannar man av innehållet i en katalog.
 * Resultat blir en array.
 
@@ -138,4 +140,26 @@ table .fa {
 ```
 {% endtab %}
 {% endtabs %}
+
+### Skriv ut lista
+
+* Eftersom resultatet är en array använder man foreach-loopen för att skriva ut innehållet.
+
+```php
+// Skriv ut allt vi hittat
+foreach ($resultat as $objekt) {
+    echo "<p>$objekt</p>";
+}
+```
+
+### Osynliga filer och kataloger
+
+* Alla filer kommer med i skanningen. 
+* Det första man inte vill få med är "." och ".."
+
+
+
+### is\_dir\(\)
+
+
 

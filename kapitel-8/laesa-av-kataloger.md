@@ -2,9 +2,9 @@
 description: Skanna av innehållet av en katalog.
 ---
 
-# Läsa kataloger
+# Skanna kataloger
 
-## Skanna en katalog
+## Skanna innehållet av en katalog
 
 ### scandir\(\)
 

@@ -43,8 +43,8 @@
 ## Kapitel 8
 
 * [Skanna katalog](kapitel-8/skanna-kataloger.md)
-* [Ladda upp filer\(?\)](kapitel-8/ladda-upp-filer.md)
 * [Labb 7 - bildgalleri](kapitel-8/labb-6-bildgalleri.md)
+* [Ladda upp filer\(?\)](kapitel-8/ladda-upp-filer.md)
 * [Labb 8 - webbshop\(?\)](kapitel-8/labb-7-webbshop.md)
 
 ## Koda webbappar i PHP

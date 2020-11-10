@@ -172,7 +172,7 @@ if ($objekt != '.'  && $objekt != '..') {
 
 ### [is\_dir\(\)](https://devdocs.io/php/function.is-dir)
 
-* Är vad objekt en katalog? True eller false.
+* Är objektet en katalog? True eller false.
 
 ```php
 // Är det en katalog?

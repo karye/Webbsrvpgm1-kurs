@@ -2,7 +2,7 @@
 description: Skanna av innehållet av en katalog.
 ---
 
-# Skanna kataloger
+# Skanna katalog
 
 ## Skanna innehållet av en katalog
 

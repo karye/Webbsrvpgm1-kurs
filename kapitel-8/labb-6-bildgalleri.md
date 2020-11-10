@@ -1,4 +1,8 @@
-# Labb 7 - bildgalleri\(?\)
+---
+description: Hur man enkelt skapar ett bildgalleri oavsett antal bilder
+---
+
+# Labb 7 - bildgalleri
 
 ## Resultat
 

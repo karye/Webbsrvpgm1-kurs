@@ -39,8 +39,8 @@ description: Hur man enkelt skapar ett bildgalleri oavsett antal bilder
         foreach ($filer as $fil) {
 
             // Visa inte ”." och ”.."
-            if ($fil == '.' && $fil == '..') {
-                continue;
+            if (...) {
+                ...;
             }
 
             // Visa bara bilden om filformat ”jpg”

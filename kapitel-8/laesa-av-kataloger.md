@@ -141,6 +141,10 @@ table .fa {
 {% endtab %}
 {% endtabs %}
 
+## Flödeschema
+
+![](../.gitbook/assets/labb3.png)
+
 ### Skriv ut lista
 
 * Eftersom resultatet är en array använder man foreach-loopen för att skriva ut innehållet.

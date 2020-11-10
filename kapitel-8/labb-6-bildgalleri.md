@@ -118,3 +118,8 @@ img {
 
 ![](../.gitbook/assets/image%20%2867%29.png)
 
+## Förbättringar
+
+* Visa bildens namn under bilden
+* Slumpa fram 9 bilder ur samlingen
+

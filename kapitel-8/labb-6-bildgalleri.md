@@ -112,5 +112,5 @@ img {
 
 * Använd [carousel](https://getbootstrap.com/docs/4.5/components/carousel/) för att kunna bläddra mellan bilderna
 
-
+![](../.gitbook/assets/image%20%2867%29.png)
 

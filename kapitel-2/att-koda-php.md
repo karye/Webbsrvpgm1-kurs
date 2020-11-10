@@ -360,11 +360,31 @@ echo '$ett';
 
 Prova sedan att mata in koden och se om du gissade rätt.
 
-#### **Fler övningar**
+### Uppgift 9
 
-* [https://mi.sh.se/labwiki2/index.php/1126ME\_WProg1](https://mi.sh.se/labwiki2/index.php/1126ME_WProg1)
+Skapa ett program som frågar användaren vilket årtal det är i år. Programmet ska sedan skriva ut vilket årtal det är om 20 år.
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
+### Uppgift 10
+
+Skapa ett program som frågar användaren vilket hur högt hen kan hoppa i höjdhopp mätt i meter. Berätta för användaren hur mycket högre världsrekordet i höjdhopp är \(världsrekordet i höjdhopp är 2,45 meter\).
+
+### Uppgift 11
+
+Skapa ett program som frågar användaren vilket år det är, därefter ska programmet säga hur många år det är kvar till år 2100.
+
+### Uppgift 12
+
+Skapa ett program där användaren får skriva in en mening \(utan punkt\) som består av två ord. Skriv ut orden till användaren i omvänd ordning.
+
+### Uppgift 13
+
+I en längdhoppstävling så hoppade Elin längre än Alma. Skriv ett program som frågar hur långt Elin och Alma hoppade mätt i meter. Skriv därefter ut hur mycket längre som Elin hoppade.
+
+### Uppgift 14
+
+Skapa ett program som ska hjälpa användaren att beräkna kostnaden för att hyra bil hos en biluthyrningsfirma. Startavgiften för att hyra bilen är 300 kr, därefter så kostar det ytterligare 1 krona per kilometer man kör och 500 kronor för varje extra dag man vill hyra den förutom den första. Programmet ska fråga användaren hur många dagar hen vill hyra bilen och hur många kilometer som hen ska köra, därefter ska den totala hyran skrivas ut.
+
+### Uppgift 15
+
+Skapa ett program där användaren ska mata in lönen för 3 anställda på ett företag. Beräkna medellönen för personalen.
 

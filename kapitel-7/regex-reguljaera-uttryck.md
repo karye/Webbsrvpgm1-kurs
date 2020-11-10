@@ -334,7 +334,3 @@ Skapa en webbapplikation som testar styrkan på ett **lösenord** mha reguljära
 
 ![](../.gitbook/assets/image%20%2862%29.png)
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
-

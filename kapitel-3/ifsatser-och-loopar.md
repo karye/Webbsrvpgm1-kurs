@@ -193,7 +193,3 @@ Ett företag vill gynna nyblivna gymnasiestudenter när det ska anställa ny per
 
 Om användaren har gått ut gymnasiet och är under 22 år gammal så ska programmet säga ”Vi vill gärna anställa dig”, annars ska programmet säga ”Vi letar tyvärr efter annan personal just nu”. Du ska kontrollera om användaren uppfyller båda kraven med endast en if-sats.
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
-

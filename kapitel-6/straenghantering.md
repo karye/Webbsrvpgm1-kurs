@@ -138,7 +138,3 @@ Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordm
 
 ![](../.gitbook/assets/dump-uppgift-6-5.png)
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
-

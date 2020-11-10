@@ -118,7 +118,3 @@ Skapa ett nytt PHP-skript, och skriv **&lt;?php phpinfo\(\) ?&gt;** så hittar d
 
 Gör en webbapp som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
-

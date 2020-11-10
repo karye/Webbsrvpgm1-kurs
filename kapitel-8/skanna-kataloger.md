@@ -164,7 +164,7 @@ foreach ($resultat as $objekt) {
 ```php
 // Ta inte med . och ..
 if ($objekt != '.'  && $objekt != '..') {
-
+    continue;
 }
 ```
 

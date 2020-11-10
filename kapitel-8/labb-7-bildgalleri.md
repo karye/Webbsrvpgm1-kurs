@@ -36,7 +36,7 @@ description: Hur man enkelt skapar ett bildgalleri oavsett antal bilder
         $filer = ...;
         
         // Loopa igenom alla funna filer
-        foreach ($filer as $fil) {
+        foreach (...) {
 
             // Visa inte ”." och ”.."
             if (...) {

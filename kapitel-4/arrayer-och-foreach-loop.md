@@ -174,3 +174,21 @@ Utöka programmet i uppgift 3 så att användaren matar in **två siffror**, lä
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
 {% endhint %}
 
+## Extra uppgifter
+
+### Uppgift 5
+
+Skapa ett program som skriver ut talen 50 till 1 med hjälp av en while-loop. Ett tal ska skrivas ut per rad, 50 ska skrivas på första raden och 1 på den sista.
+
+### Uppgift 6
+
+Skapa ett program som skriver ut vart 5:e årtal på 1400-talet med början på 1495 och sedan nedåt, det vill säga 1495, 1490, 1485 och så vidare ända till 1400.
+
+### Uppgift 7
+
+Skapa ett program som skriver ut ett meddelande vertikalt, meddelandet ska dessutom skrivas ut baklänges.
+
+### Uppgift 8
+
+Skapa ett program som ber användaren skriva in ett tal. Berätta för användaren om någon av siffrorna 3 eller 7 fanns i talet.
+

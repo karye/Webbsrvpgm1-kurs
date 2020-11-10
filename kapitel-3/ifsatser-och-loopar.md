@@ -159,6 +159,10 @@ På det nationella provet i Matematik 1 våren 2018 så fanns följande poänggr
 
 Skapa ett skript som frågar användaren hur många poäng hen fick på detta prov. Skriptet ska säga vilket provbetyg användaren fick.
 
+### Uppgift 9
+
+Skriv ett webbapp som ställer en fråga till användaren, t.ex. ”Vilket är världens folkrikaste land?”. Så länge som användaren svarar fel ska hon få en ny chans att svara på frågan.
+
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
 {% endhint %}

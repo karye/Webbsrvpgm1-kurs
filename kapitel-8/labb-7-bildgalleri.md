@@ -120,6 +120,6 @@ img {
 
 ## Förbättringar
 
-* Visa bildens namn under bilden
+* Visa bildens fotografens namn under bilden
 * Slumpa fram 9 bilder ur samlingen
 

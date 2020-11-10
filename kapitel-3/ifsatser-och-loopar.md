@@ -163,6 +163,36 @@ Skapa ett skript som frågar användaren hur många poäng hen fick på detta pr
 
 Skriv ett webbapp som ställer en fråga till användaren, t.ex. ”Vilket är världens folkrikaste land?”. Så länge som användaren svarar fel ska hon få en ny chans att svara på frågan.
 
+### Uppgift 10
+
+För att få åka en viss berg-och-dalbana på en nöjespark så måste man vara mellan 1,3 och 1,8 meter lång. Skapa ett program som frågar användaren hur lång hen är och sedan skriver ut om hen får åka berg-och-dalbanan eller inte.
+
+### Uppgift 11
+
+Ett kafé utlyser en kampanj där personer äldre än 65 år samt personer mellan 10 och 18 erbjuds att köpa kaffe till ett extra billigt pris. Skriv ett program som innehåller endast en if-sats som undersöker om användaren kan få köpa kaffe extra billigt.
+
+### Uppgift 12
+
+Skapa ett program som frågar användaren vilken plats hen kom på i den senaste idrottsturneringen hen var med på. Programmet ska sedan, med hjälp av en switch-sats, säga om användaren fick guld, silver, brons eller ingen medalj.
+
+### Uppgift 13
+
+ Skapa ett program som frågar användaren hur många datorer hen äger. Programmet ska sedan skriva ut hur många datorer hen äger med ett ord som är korrekt i singular eller plural. Det innebär att om användaren har en dator ska programmet skriva ut  
+`Du har 1 dator.`  
+Om användaren har t.ex. 3 datorer ska programmet skriva ut  
+`Du har 3 datorer.`  
+Bestäm om ordet dator/datorer ska användas med hjälp av villkorsoperatorn.
+
+### Uppgift 14
+
+För att få delta i en tävling som anordnas av en gymnasieskola så måste man vara mellan 16 och 19 år gammal. Skapa ett program som frågar användaren hur gammal hen är och sedan skriver ut om hen får delta i tävlingen, om hen är för ung eller om hen är för gammal.
+
+### Uppgift 15
+
+Ett företag vill gynna nyblivna gymnasiestudenter när det ska anställa ny personal. Skapa ett program som frågar användaren om hen har gått ut gymnasiet, användaren ska uppmanas att svara j för ja eller n för nej. Därefter ska programmet fråga användaren hur gammal hen är.
+
+Om användaren har gått ut gymnasiet och är under 22 år gammal så ska programmet säga ”Vi vill gärna anställa dig”, annars ska programmet säga ”Vi letar tyvärr efter annan personal just nu”. Du ska kontrollera om användaren uppfyller båda kraven med endast en if-sats.
+
 {% hint style="info" %}
 Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
 {% endhint %}

@@ -43,7 +43,7 @@ description: Hur man enkelt skapar ett bildgalleri oavsett antal bilder
                 continue;
             }
 
-            // Visa bara bilden om filformat ”.jpg”
+            // Visa bara bilden om filformat ”jpg”
             $info = ...;
             if (...) {
                 echo "...";

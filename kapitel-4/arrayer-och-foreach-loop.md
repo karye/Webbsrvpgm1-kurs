@@ -170,11 +170,7 @@ Skriv en webbapp där användaren matar in ett tal **1-9** och sedan returnerar 
 
 Utöka programmet i uppgift 3 så att användaren matar in **två siffror**, lägger ihop dem och presenterar resultatet i bokstavsform. \(Ex: **fyra plus tre blir sju**.\)
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
-
-## Extra uppgifter
+## Extra uppgifter för loopar
 
 ### Uppgift 5
 
@@ -191,4 +187,10 @@ Skapa ett program som skriver ut ett meddelande vertikalt, meddelandet ska dessu
 ### Uppgift 8
 
 Skapa ett program som ber användaren skriva in ett tal. Berätta för användaren om någon av siffrorna 3 eller 7 fanns i talet.
+
+## Extra uppgifter för arrayer
+
+### Uppgift 9
+
+Skapa ett program som innehåller en array som ska innehålla namnen på tre svenska städer. Skriv in två av namnen i programmets kod men låt användaren få skriva in namnet på den tredje staden. Skriv avslutningsvis ut alla stadsnamnen på samma rad.
 

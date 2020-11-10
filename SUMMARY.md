@@ -42,7 +42,7 @@
 
 ## Kapitel 8
 
-* [Skanna kataloger](kapitel-8/laesa-av-kataloger.md)
+* [Skanna kataloger](kapitel-8/skanna-kataloger.md)
 * [Ladda upp filer\(?\)](kapitel-8/ladda-upp-filer.md)
 * [Labb 7 - bildgalleri\(?\)](kapitel-8/labb-6-bildgalleri.md)
 * [Labb 8 - webbshop\(?\)](kapitel-8/labb-7-webbshop.md)

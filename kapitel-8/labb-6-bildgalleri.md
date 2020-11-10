@@ -2,10 +2,11 @@
 
 ## Resultat
 
-![](../.gitbook/assets/image%20%2864%29.png)
+![Bildgalleri med karusell](../.gitbook/assets/image%20%2865%29.png)
 
 ## Startkod
 
+* Skapa en katalog bilder och spara ned ett antal bilder där
 * Skanna katalogen "bilder"
 
 {% tabs %}
@@ -99,7 +100,7 @@ img {
 {% endtab %}
 {% endtabs %}
 
-![](../.gitbook/assets/image%20%2865%29.png)
+![](../.gitbook/assets/image%20%2866%29.png)
 
 ### Skapa rutnät
 

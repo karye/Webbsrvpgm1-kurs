@@ -134,7 +134,3 @@ Skapa en funktion som räknar ut omkretsen på en cirkel. Funktionen ska ta radi
 
 Skapa ett program med en funktion **print\_table\_start\(\)** som skriver början på en tabell i html och tar ett argument i form av färgen på tabellen \(**red**, **blue** etc.\). Skapa en annan funktion som heter **print\_table\_row\(\)** och skriver ut en tabellrad och tar två argument, det som ska stå i första tabellcellen och det som ska stå i andra tabellcellen. Till sist skapar du en funktion kallad **print\_table\_end\(\)** som skriver ut slutet på tabellen. Ex på en tabell i html: **&lt;table&gt;** talar om att tabellen börjar. **&lt;tr&gt;** står för tabellrad, och **&lt;td&gt;** för tabellcell.
 
-{% hint style="info" %}
-Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se
-{% endhint %}
-

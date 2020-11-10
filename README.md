@@ -59,3 +59,13 @@ docker run -d --restart unless-stopped -p 8080:80 -p 10000:10000 -v /host_mnt/c/
 
 ## Bra webblänkar
 
+* https://devdocs.io
+
+## Material
+
+{% hint style="info" %}
+Från PHP-kompendiet av Thomas Höjemo, © SNT 2006, www.snt.se  
+[http://www.snt.se/phpkompendium.pdf](http://www.snt.se/phpkompendium.pdf)  
+[http://www.snt.se/phpfacit.pdf](http://www.snt.se/phpfacit.pdf)
+{% endhint %}
+

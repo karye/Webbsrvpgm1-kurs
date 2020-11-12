@@ -80,9 +80,9 @@ Det går även att använda [strstr\(\)](https://devdocs.io/php/function.strstr)
 ```php
 $namn = "Ulrika Eriksson";
 if (strstr($namn, " ")) {
-    echo 'Variabeln $namn innehåller mellanslag';
+    echo "Variabeln $namn innehåller mellanslag";
 } else {
-    echo 'Variabeln $namn innehåller inte mellanslag';
+    echo "Variabeln $namn innehåller inte mellanslag";
 }
 ```
 

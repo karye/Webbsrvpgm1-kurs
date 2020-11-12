@@ -30,6 +30,7 @@
 </head>
 <body>
     <?php
+        // Skickas filer?
         if (...($_POST['submit'])) {
             $file = $_FILES['file'];
 

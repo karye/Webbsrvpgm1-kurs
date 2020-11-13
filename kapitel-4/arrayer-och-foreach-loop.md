@@ -211,3 +211,14 @@ Berätta för användaren om någon av siffrorna **3** eller **7** fanns i talet
 Skapa ett skript som innehåller en **array** som ska innehålla namnen på tre svenska städer.   
 Skriv in två av namnen i programmets kod men låt användaren få skriva in namnet på den tredje staden. Skriv avslutningsvis ut alla stadsnamnen på **samma rad**.
 
+### Uppgift 10
+
+Skapa ett skript som innehåller en **array** med **strängar** där varje sträng är en **mening**.   
+Skriv ut varje mening med hjälp av en **loop.**  
+Gör så att varje mening hamnar i ett eget **stycke**.
+
+### Uppgift 11
+
+Skapa ett skript där användaren själv väljer hur många **heltal** hen vill skriva in i en **array**.   
+Efter att användaren har skrivit in alla tal ska skriptet välja ett av talen som skrevs in slumpvis och därefter skriva ut detta tal samt vilket index detta tal hade i arrayen. Se funktionen [rand\(\)](https://devdocs.io/php/function.rand).
+

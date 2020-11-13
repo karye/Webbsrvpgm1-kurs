@@ -209,10 +209,9 @@ Skriptet ska sedan berätta om användaren fick **guld**, **silver**, **brons** 
 ### Uppgift 13
 
 Skapa ett skript som frågar användaren hur många **datorer** hen äger. Skriptet ska sedan skriva ut korrekt i singular eller plural.   
-Det innebär att om användaren har en dator skrivs det ut "**Du har 1 dator**".  
-Om användaren har tex 3 datorer ska programmet skriva ut  
+Det innebär att om användaren har en dator skrivs det ut "**Du har 1 dator**". Om användaren har tex 3 datorer skrivs det ut  
 "**Du har 3 datorer**".  
-Bestäm om ordet dator/datorer ska användas med hjälp av villkorsoperatorn.
+Skriptet får endast ha **en if-sats**.
 
 ### Uppgift 14
 

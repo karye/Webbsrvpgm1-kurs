@@ -364,29 +364,37 @@ Prova sedan att mata in koden och se om du gissade rätt.
 
 ### Uppgift 9
 
-Skapa ett program som frågar användaren vilket årtal det är i år. Programmet ska sedan skriva ut vilket årtal det är om 20 år.
+Skapa ett skript som frågar användaren vilket **årtal** det är.  
+Skriptet ska sedan berätta hur många år det är kvar till år **2100**.
 
 ### Uppgift 10
 
-Skapa ett program som frågar användaren vilket hur högt hen kan hoppa i höjdhopp mätt i meter. Berätta för användaren hur mycket högre världsrekordet i höjdhopp är \(världsrekordet i höjdhopp är 2,45 meter\).
+Skapa ett skript som frågar användaren vilket hur **långt** hen kan hoppa mätt i meter.   
+Skriptet ska sen berätta hur mycket längre världsrekordet är \(8,90 meter\): "**Bob Beamon hopar ... m längre än dig!**".
 
 ### Uppgift 11
 
-Skapa ett program som frågar användaren vilket år det är, därefter ska programmet säga hur många år det är kvar till år 2100.
+Skapa ett skript som frågar användaren vilket **årtal** det är.  
+Skriptet ska sedan berätta hur många år det är kvar till år **2100**.
 
 ### Uppgift 12
 
-Skapa ett program där användaren får skriva in en mening \(utan punkt\) som består av två ord. Skriv ut orden till användaren i omvänd ordning.
+Skapa ett skript som frågar användaren **två ord,** efter varandra.   
+Skriptet ska sedan presentera en mening med orden i **omvänd** ordning.
 
 ### Uppgift 13
 
-I en längdhoppstävling så hoppade Elin längre än Alma. Skriv ett program som frågar hur långt Elin och Alma hoppade mätt i meter. Skriv därefter ut hur mycket längre som Elin hoppade.
+Skriv ett skript som frågar hur långt Max och Jakob hoppade. Skriv därefter ut hur mycket längre som Max hoppade.
 
 ### Uppgift 14
 
-Skapa ett program som ska hjälpa användaren att beräkna kostnaden för att hyra bil hos en biluthyrningsfirma. Startavgiften för att hyra bilen är 300 kr, därefter så kostar det ytterligare 1 krona per kilometer man kör och 500 kronor för varje extra dag man vill hyra den förutom den första. Programmet ska fråga användaren hur många dagar hen vill hyra bilen och hur många kilometer som hen ska köra, därefter ska den totala hyran skrivas ut.
+Skapa ett skript för beräkna **kostnaden** för att hyra bil hos en biluthyrningsfirma.   
+Startavgiften för att hyra bilen är **500:-**, därefter kostar det ytterligare **5:-/km** och **400:-** för varje extra dag förutom den första.   
+Skriptet ska fråga hur **många dagar** man vill hyra bilen och hur **många kilometer** man vill köra.  
+Skriptet ska sedan presentera den totala **hyran**.
 
 ### Uppgift 15
 
-Skapa ett program där användaren ska mata in lönen för 3 anställda på ett företag. Beräkna medellönen för personalen.
+Skapa ett skript som ber användaren mata in lönen för **3** anställda.   
+Skriptet ska sedan presentera **medellönen** för personalen.
 

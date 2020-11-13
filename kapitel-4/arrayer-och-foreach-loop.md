@@ -134,6 +134,15 @@ echo implode(" ", $ord);
 
 I det här fallet så slås alla delarna i matrisen **$ord** ihop, ett mellanslag läggs i varje sammanfogning och resultatet skrivs ut.
 
+## String som en array
+
+Man kan också använda array-notationen för komma bokstäverna i en sträng.
+
+```php
+$meddelande = "hello world";
+echo $meddelande[0]; // -> h
+```
+
 ## **Skapa matriser automatiskt i formulär**
 
 Genom att avsluta namnet på till exempel en textruta med hakparanteser, exempelvis **namn\[\]** skapar automatiskt en motsvarande [array ](https://devdocs.io/php/function.array)i PHP.
@@ -148,7 +157,7 @@ Genom att avsluta namnet på till exempel en textruta med hakparanteser, exempel
 
 I det här fallet får **$\_REQUEST\['namn'\]\[0\]** innehållet som skrivits i den första textrutan och **$\_REQUEST\['namn'\]\[1\]** innehållet i den andra textrutan.
 
-## Uppgifter - matriser och foreach-loopen
+## Uppgifter
 
 ### **Uppgift 1**
 
@@ -191,6 +200,11 @@ Skriptet skriver sedan ut ett meddelande **vertikalt**, en bokstav per rad.
 Meddelandet ska dessutom skrivas ut **baklänges**.
 
 ## Extra uppgifter för arrayer
+
+### Uppgift 8
+
+Skapa ett skript som ber användaren om ett **heltal**.  
+Berätta för användaren om någon av siffrorna **3** eller **7** fanns i talet.
 
 ### Uppgift 9
 

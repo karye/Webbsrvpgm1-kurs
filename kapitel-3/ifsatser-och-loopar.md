@@ -41,7 +41,7 @@ if ($losenord == "test123") {
 ?>
 ```
 
-I detta lilla skript använder vi en villkorssats, eller **if**-sats som den också heter. **if**-satsen är sig lik från nästan alla programmeringsspråk och är nödvändig för att man ska anpassa vad som händer efter vad användaren gör. Det som står innanför paranteserna är det s.k. jämförelseuttrycket. I detta fall kontrollerar vi om variabeln **$losenord** har innehållet "test123". Observera att vi använder två likamedtecken! Hade vi bara använt ett likamedtecken hade vi i stället tilldelat variabeln **$losenord** värdet test123.
+I detta lilla skript använder vi en villkorssats, eller **if**-sats som den också heter. **if**-satsen är sig lik från nästan alla programmeringsspråk och är nödvändig för att man ska anpassa vad som händer efter vad användaren gör. Det som står innanför parenteserna är det s.k. jämförelseuttrycket. I detta fall kontrollerar vi om variabeln **$losenord** har innehållet "test123". Observera att vi använder två likamedtecken! Hade vi bara använt ett likamedtecken hade vi i stället tilldelat variabeln **$losenord** värdet test123.
 
 Om lösenordet stämmer, körs allting som står innan för krullparanteserna. Om lösenordet inte stämmer, fortsätter programmet efter högerkrullparantesen. Vi kan också välja att ha med ett alternativ som ska inträffa då lösenordet inte stämmer. Då kan det se ut så här:
 

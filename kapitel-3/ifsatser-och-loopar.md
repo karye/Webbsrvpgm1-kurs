@@ -139,17 +139,21 @@ Gör ett skript som är en **lånekalkylator**. Mha **radioknappar** ska använd
 
 ### Uppgift 6
 
-Skapa ett skript som frågar användaren vilket land som vann fotbolls-VM för damer år 2015. Om användaren svarar USA ska programmet skriva ut att svaret var rätt, annars ska programmet skriva ut att svaret var fel. Det ska inte spela någon roll om användaren skriver svaret med stora eller små bokstäver.
+Skapa ett skript som frågar vilket land som vann **fotbolls-VM i USA** för herrar år **1994**.   
+Om användaren svarar **Sverige** ska skriptet skriva ut att svaret var **rätt**, annars att svaret var **fel**.   
+Det spelar ingen roll om användaren gissar med stora eller små bokstäver.
 
 ### Uppgift 7
 
-Skapa ett skript som frågar användaren vad hen heter. Om användaren heter **Stig** ska programmet säga att användaren har namnsdag idag. Om användaren istället heter **Abraham** ska användaren få veta att hen har namnsdag imorgon, men om användaren varken heter Stig eller Abraham ska hen få veta att hen inte har namnsdag vare sig idag eller imorgon.
+Skapa ett skript som frågar användaren vad hen heter.   
+Om användaren heter **Tova** ska skriptet säga att användaren har namnsdag idag.   
+Om användaren istället heter **Abbe** ska skriptet svara "**Du har namnsdag imorgon**", men om användaren varken heter **Tova** eller **Abbe** ska skriptet svara "**Du har varken namnsdag vare sig idag eller imorgon**".
 
 ### Uppgift 8
 
-På det nationella provet i Matematik 1 våren 2018 så fanns följande poänggränser för olika provbetyg.
+På det nationella provet i Svenska 1 så fanns följande poänggränser.
 
-| Provbetyg | Poänggräns |
+| Betyg | Poänggräns |
 | :--- | :--- |
 | A | 55 |
 | B | 45 |
@@ -157,7 +161,8 @@ På det nationella provet i Matematik 1 våren 2018 så fanns följande poänggr
 | D | 25 |
 | E | 15 |
 
-Skapa ett skript som frågar användaren hur många poäng hen fick på detta prov. Skriptet ska säga vilket provbetyg användaren fick.
+Skapa ett skript som frågar användaren hur många poäng hen fick på provet.   
+Skriptet ska svara vilket provbetyg användaren fick.
 
 ### Uppgift 9
 

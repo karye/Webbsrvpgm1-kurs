@@ -199,8 +199,8 @@ Så länge som användaren svarar fel ska hen få en ny chans att svara på frå
 ### Uppgift 10
 
 För att få åka berg-och-dalbana på en nöjespark så måste man vara mellan **1,4 och 1,9** meter lång.   
-Skapa ett skript som frågar användarens längd.  
-Skriptet skriver ut om hen får åka berg-och-dalbanan eller inte.
+Skapa ett skript som frågar om användarens längd.  
+Skriptet skriver ut om hen får åka eller inte.
 
 ### Uppgift 11
 
@@ -229,7 +229,10 @@ Skriptet skriver sedan ut om hen får delta i tävlingen och om hen är **för**
 
 ### Uppgift 15
 
-Ett företag vill gynna nyblivna gymnasiestudenter när det ska anställa ny personal. Skapa ett program som frågar användaren om hen har gått ut gymnasiet, användaren ska uppmanas att svara j för ja eller n för nej. Därefter ska programmet fråga användaren hur gammal hen är.
+Ett företag vill gynna nyblivna gymnasiestudenter när det ska anställa ny personal.   
+Skapa ett skript som frågar användaren om hen har gått ut gymnasiet, användaren ska uppmanas att svara **j för ja** eller **n för ne**j.  
+Därefter ska programmet fråga användaren hur gammal hen är.
 
-Om användaren har gått ut gymnasiet och är under 22 år gammal så ska programmet säga ”Vi vill gärna anställa dig”, annars ska programmet säga ”Vi letar tyvärr efter annan personal just nu”. Du ska kontrollera om användaren uppfyller båda kraven med endast en if-sats.
+Om användaren har gått ut gymnasiet och är under 22 år gammal så ska skriptet säga ”**Vi vill gärna anställa dig**”, annars ska skriptet säga ”**Vi letar tyvärr efter annan personal just nu**”.   
+Du ska kontrollera om användaren uppfyller båda kraven med endast en **if-sats**.
 

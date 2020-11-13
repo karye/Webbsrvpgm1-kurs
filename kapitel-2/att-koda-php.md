@@ -384,7 +384,7 @@ Skriptet ska sedan presentera en mening med orden i **omvänd** ordning.
 
 ### Uppgift 13
 
-Skriv ett skript som frågar hur långt Max och Jakob hoppade. Skriv därefter ut hur mycket längre som Max hoppade.
+Skriv ett skript som frågar hur långt **Max** och **Jakob** hoppade. Skriv därefter ut hur mycket längre som **Max** hoppade.
 
 ### Uppgift 14
 

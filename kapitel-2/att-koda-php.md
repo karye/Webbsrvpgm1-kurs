@@ -167,7 +167,7 @@ Det finns åtta olika typer av datatyper:
 
 | Datatyp | Beskrivning | Förklaring |
 | :--- | :--- | :--- |
-| Boolean | 1 eller o | sant eller falskt |
+| Boolean | 1 eller 0 | sant eller falskt |
 | Integer | heltal | positiva eller negativa heltal |
 | Float | decimaltal | positiva eller negativa decimaltal |
 | String | sträng | kan innehålla både bokstäver och siffror |

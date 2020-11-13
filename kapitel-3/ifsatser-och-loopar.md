@@ -129,7 +129,7 @@ Inuti [for-](https://devdocs.io/php/control-structures.for) och [while](https://
 
 ### **Uppgift 1**
 
-Modifiera **temperaturkonverteringsprogrammet** ytterligare en gång, så att användaren matar in en temperatur i ett textfält, och sedan väljer om konverteringen ska ske från F till C eller från C till F med hjälp av radioknappar.
+Modifiera **temperaturkonverteringsprogrammet** ytterligare en gång, så att användaren matar in en temperatur i ett textfält, och sedan väljer om konverteringen ska ske från F till C eller från C till F med hjälp av **radioknappar**.
 
 ### **Uppgift 2**
 

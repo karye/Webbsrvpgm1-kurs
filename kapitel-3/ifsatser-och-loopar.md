@@ -229,10 +229,10 @@ Skriptet skriver sedan ut om hen får delta i tävlingen och om hen är **för**
 
 ### Uppgift 15
 
-Ett företag vill gynna nyblivna gymnasiestudenter när det ska anställa ny personal.   
-Skapa ett skript som frågar användaren om hen har gått ut gymnasiet, användaren ska uppmanas att svara **j för ja** eller **n för ne**j.  
-Därefter ska programmet fråga användaren hur gammal hen är.
+Ett företag vill anställa gymnasiestudenter som personal.   
+Skapa ett skript som frågar användaren om hen har gått ut gymnasiet. Användaren ska uppmanas att svara **j för ja** eller **n för ne**j.  
+Därefter ska skriptet fråga hur gammal hen är.
 
-Om användaren har gått ut gymnasiet och är under 22 år gammal så ska skriptet säga ”**Vi vill gärna anställa dig**”, annars ska skriptet säga ”**Vi letar tyvärr efter annan personal just nu**”.   
-Du ska kontrollera om användaren uppfyller båda kraven med endast en **if-sats**.
+Om hen har gått ut gymnasiet och är under 22 år så ska skriptet säga ”**Vi vill gärna anställa dig**”, annars ska skriptet säga ”**Vi letar tyvärr efter annan personal just nu**”.   
+Skriptet får endast ha **en if-sats**.
 

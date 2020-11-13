@@ -152,45 +152,53 @@ I det här fallet får **$\_REQUEST\['namn'\]\[0\]** innehållet som skrivits i 
 
 ### **Uppgift 1**
 
-Skapa en webbapp med ett formulär där användaren kan mata in **5 st namn**. Kalla textrutorna för **namn\[\]**. [**Sortera** ](https://devdocs.io/php/function.sort)sedan namnen och skriv ut dem i bokstavsordning, ett på varje rad.
+Skapa ett skript med ett formulär där användaren kan mata in **5 st namn**.  
+Kalla textrutorna för **namn\[\]**. [**Sortera** ](https://devdocs.io/php/function.sort)sedan namnen och skriv ut dem i bokstavsordning, ett på varje rad.
 
 ![](../.gitbook/assets/image%20%2821%29.png)
 
 ### **Uppgift 2**
 
-Utveckla programmet i uppgift 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden. Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt osv\).
+Utveckla programmet i uppgift 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden.   
+Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt osv\).
 
 ### **Uppgift 3**
 
-Skriv en webbapp där användaren matar in ett tal **1-9** och sedan returnerar det svenska namnet för talet \(**ett, två, tre osv**\). Om talet är större än 9 så returnerar du i stället talet som vanligt \(tex. 11\). 
+Skapa ett skript där användaren matar in ett tal **1-9** och sedan returnerar det svenska namnet för talet \(**ett, två, tre osv**\).   
+Om talet är större än 9 så returnerar du i stället talet som vanligt \(tex. 11\). 
 
 ![](../.gitbook/assets/image%20%2822%29.png)
 
 ### **Uppgift 4**
 
-Utöka programmet i uppgift 3 så att användaren matar in **två siffror**, lägger ihop dem och presenterar resultatet i bokstavsform. \(Ex: **fyra plus tre blir sju**.\)
+Utöka skriptet i uppgift 3 så att användaren matar in **två siffror**, lägger ihop dem och presenterar resultatet i bokstavsform. \(Ex: **fyra plus tre blir sju**.\)
 
 ## Extra uppgifter för loopar
 
 ### Uppgift 5
 
-Skapa ett program som skriver ut talen 50 till 1 med hjälp av en while-loop. Ett tal ska skrivas ut per rad, 50 ska skrivas på första raden och 1 på den sista.
+Skapa ett skript som skriver ut talen 19 till 1 med hjälp av en **while**-loop.  
+Ett tal ska skrivas ut per rad, 19 ska skrivas på första raden och 1 på den sista.
 
 ### Uppgift 6
 
-Skapa ett program som skriver ut vart 5:e årtal på 1400-talet med början på 1495 och sedan nedåt, det vill säga 1495, 1490, 1485 och så vidare ända till 1400.
+Skapa ett skript som skriver ut vart 5:e årtal på 1500-talet med början på 1595 och sedan nedåt, det vill säga 1595, 1590, 1585 och så vidare ända till 1500.
 
 ### Uppgift 7
 
-Skapa ett program som skriver ut ett meddelande vertikalt, meddelandet ska dessutom skrivas ut baklänges.
+Skapa ett skript som ber användaren om ett **meddelande**.  
+Skriptet skriver sedan ut ett meddelande **vertikalt**, en bokstav per rad.  
+Meddelandet ska dessutom skrivas ut **baklänges**.
 
 ### Uppgift 8
 
-Skapa ett program som ber användaren skriva in ett tal. Berätta för användaren om någon av siffrorna 3 eller 7 fanns i talet.
+Skapa ett skript som ber användaren om ett **tal**.  
+Berätta för användaren om någon av siffrorna 3 eller 7 fanns i talet.
 
 ## Extra uppgifter för arrayer
 
 ### Uppgift 9
 
-Skapa ett program som innehåller en array som ska innehålla namnen på tre svenska städer. Skriv in två av namnen i programmets kod men låt användaren få skriva in namnet på den tredje staden. Skriv avslutningsvis ut alla stadsnamnen på samma rad.
+Skapa ett skript som innehåller en **array** som ska innehålla namnen på tre svenska städer.   
+Skriv in två av namnen i programmets kod men låt användaren få skriva in namnet på den tredje staden. Skriv avslutningsvis ut alla stadsnamnen på **samma rad**.
 

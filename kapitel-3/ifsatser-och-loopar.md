@@ -198,13 +198,13 @@ Skriptet skriver ut om hen får åka berg-och-dalbanan eller inte.
 ### Uppgift 11
 
 Ett fik har en kampanj där personer äldre än **65** år och personer mellan **12 och 18** år erbjuds att köpa kaffe extra billigt.   
-Skriv ett skript som kollar om användaren kan få köpa kaffe extra billigt.   
+Skriv ett skript som kollar om användaren får köpa kaffe extra billigt.   
 Skriptet får endast ha **en if-sats**.
 
 ### Uppgift 12
 
-Skapa ett skript som frågar användaren vilken plats hen kom på i den senaste idrottsturneringen hen var med på.   
-Programmet ska sedan, med hjälp av en switch-sats, säga om användaren fick guld, silver, brons eller ingen medalj.
+Skapa ett skript som frågar användaren vilken **plats** hen kom på i senaste idrottsturneringen.   
+Skriptet ska sedan berätta om användaren fick guld, silver, brons eller ingen medalj.  Skriptet får endast ha en **switch**-sats,
 
 ### Uppgift 13
 

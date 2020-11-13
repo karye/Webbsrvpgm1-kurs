@@ -223,7 +223,9 @@ Skriptet får endast ha **en if-sats**.
 
 ### Uppgift 14
 
-För att få delta i en tävling som anordnas av en gymnasieskola så måste man vara mellan 16 och 19 år gammal. Skapa ett program som frågar användaren hur gammal hen är och sedan skriver ut om hen får delta i tävlingen, om hen är för ung eller om hen är för gammal.
+För att få delta i en tävling måste man vara **mellan 16 och 19** år gammal.   
+Skapa ett skript som frågar användaren hur gammal hen.  
+Skriptet skriver sedan ut om hen får delta i tävlingen och om hen är **för** ung eller om hen är **för gammal**.
 
 ### Uppgift 15
 

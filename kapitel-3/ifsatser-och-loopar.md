@@ -73,6 +73,26 @@ if ($veckodag == "lördag") {
 
 Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [language.operators.logical](http://php.net/manual/en/language.operators.logical.php) på php.net.
 
+### switch-satsen
+
+Istället för att använda flera if-else-satser efter vanrandra kan man använda switch-satsen.
+
+```php
+<?php
+switch ($veckodag) {
+    case "lördag":
+        echo "Det är lördag och jag kan ta det lugnt.";
+        break;
+    case "söndag":
+        echo "Söndag är vilodag.";
+        break;
+    default:
+        echo "Vanlig vardag";
+        break;
+}
+?>
+```
+
 ## **Loopar**
 
 ### **for-loopen**
@@ -151,7 +171,7 @@ Om användaren istället heter **Abbe** ska skriptet svara "**Du har namnsdag im
 
 ### Uppgift 8
 
-På det nationella provet i Svenska 1 så fanns följande poänggränser.
+På det nationella provet i Svenska 1 så fanns följande **poänggränser**.
 
 | Betyg | Poänggräns |
 | :--- | :--- |
@@ -162,23 +182,29 @@ På det nationella provet i Svenska 1 så fanns följande poänggränser.
 | E | 15 |
 
 Skapa ett skript som frågar användaren hur många poäng hen fick på provet.   
-Skriptet ska svara vilket provbetyg användaren fick.
+Skriptet ska svara vilket blev **betyget**.
 
 ### Uppgift 9
 
-Skriv ett webbapp som ställer en fråga till användaren, t.ex. ”Vilket är världens folkrikaste land?”. Så länge som användaren svarar fel ska hon få en ny chans att svara på frågan.
+Skapa ett skript som frågar användaren, ”**Vilket är Europas folkrikaste land?**”.   
+Så länge som användaren svarar fel ska hen få en ny chans att svara på frågan.
 
 ### Uppgift 10
 
-För att få åka en viss berg-och-dalbana på en nöjespark så måste man vara mellan 1,3 och 1,8 meter lång. Skapa ett program som frågar användaren hur lång hen är och sedan skriver ut om hen får åka berg-och-dalbanan eller inte.
+För att få åka berg-och-dalbana på en nöjespark så måste man vara mellan **1,4 och 1,9** meter lång.   
+Skapa ett skript som frågar användarens längd.  
+Skriptet skriver ut om hen får åka berg-och-dalbanan eller inte.
 
 ### Uppgift 11
 
-Ett kafé utlyser en kampanj där personer äldre än 65 år samt personer mellan 10 och 18 erbjuds att köpa kaffe till ett extra billigt pris. Skriv ett program som innehåller endast en if-sats som undersöker om användaren kan få köpa kaffe extra billigt.
+Ett fik har en kampanj där personer äldre än **65** år och personer mellan **12 och 18** år erbjuds att köpa kaffe extra billigt.   
+Skriv ett skript som kollar om användaren kan få köpa kaffe extra billigt.   
+Skriptet får endast ha **en if-sats**.
 
 ### Uppgift 12
 
-Skapa ett program som frågar användaren vilken plats hen kom på i den senaste idrottsturneringen hen var med på. Programmet ska sedan, med hjälp av en switch-sats, säga om användaren fick guld, silver, brons eller ingen medalj.
+Skapa ett skript som frågar användaren vilken plats hen kom på i den senaste idrottsturneringen hen var med på.   
+Programmet ska sedan, med hjälp av en switch-sats, säga om användaren fick guld, silver, brons eller ingen medalj.
 
 ### Uppgift 13
 

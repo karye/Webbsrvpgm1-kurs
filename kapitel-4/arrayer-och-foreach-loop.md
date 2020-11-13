@@ -209,7 +209,7 @@ Berätta för användaren om någon av siffrorna **3** eller **7** fanns i talet
 ### Uppgift 9
 
 Skapa ett skript som innehåller en **array** som ska innehålla namnen på tre svenska städer.   
-Skriv in två av namnen i programmets kod men låt användaren få skriva in namnet på den tredje staden. Skriv avslutningsvis ut alla stadsnamnen på **samma rad**.
+Skriv in två av namnen i koden \(hårdkoda\) men låt användaren få skriva in namnet på den tredje staden. Skriv avslutningsvis ut alla stadsnamnen på **samma rad**.
 
 ### Uppgift 10
 
@@ -219,6 +219,28 @@ Gör så att varje mening hamnar i ett eget **stycke**.
 
 ### Uppgift 11
 
+Skapa ett skript som innehåller en **array** med 10 heltal.   
+Gå igenom arrayen med hjälp av en **loop** och hitta det största talet i arrayen.
+
+### Uppgift 12
+
+Skapa ett skript som innehåller en array med minst **5** årtal, minst ett av årtalen ska finnas med **två gånger**. Användaren ska få skriva in ett **årtal** när programmet körs.   
+Skriptet ska skriva ut **alla index** som detta årtal finns på i arrayen.   
+Om årtalet inte fanns på någon plats så ska programmet skriva "**Årtalet kunde inte hittas**".
+
+### Uppgift 13
+
+Skapa ett skript som innehåller en array med minst **5** heltal.   
+Beräkna summan av alla heltal i arrayen med hjälp av en **foreach**-loop.
+
+### Uppgift 14
+
 Skapa ett skript där användaren själv väljer hur många **heltal** hen vill skriva in i en **array**.   
 Efter att användaren har skrivit in alla tal ska skriptet välja ett av talen som skrevs in slumpvis och därefter skriva ut detta tal samt vilket index detta tal hade i arrayen. Se funktionen [rand\(\)](https://devdocs.io/php/function.rand).
+
+### Uppgift 15
+
+Skapa ett skript där användaren får skriva in en **mening**.   
+Skapa en **array** där varje ord i meningen blir ett element i arrayen.   
+Skriv därefter ut varje ord i meningen på en egen rad med radnummer.
 

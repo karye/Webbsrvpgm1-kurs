@@ -217,8 +217,7 @@ Skriptet får endast ha en **switch**-sats,
 ### Uppgift 13
 
 Skapa ett skript som frågar användaren hur många **datorer** hen äger. Skriptet ska sedan skriva ut korrekt i singular eller plural.   
-Det innebär att om användaren har en dator skrivs det ut "**Du har 1 dator**". Om användaren har tex 3 datorer skrivs det ut  
-"**Du har 3 datorer**".  
+Det innebär att om användaren har en dator skrivs det ut "**Du har 1 dator**". Om användaren har tex 3 datorer skrivs det ut "**Du har 3 datorer**".  
 Skriptet får endast ha **en if-sats**.
 
 ### Uppgift 14

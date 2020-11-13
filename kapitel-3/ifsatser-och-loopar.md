@@ -204,14 +204,14 @@ Skriptet får endast ha **en if-sats**.
 ### Uppgift 12
 
 Skapa ett skript som frågar användaren vilken **plats** hen kom på i senaste idrottsturneringen.   
-Skriptet ska sedan berätta om användaren fick guld, silver, brons eller ingen medalj.  Skriptet får endast ha en **switch**-sats,
+Skriptet ska sedan berätta om användaren fick **guld**, **silver**, **brons** eller **ingen** medalj.  Skriptet får endast ha en **switch**-sats,
 
 ### Uppgift 13
 
- Skapa ett program som frågar användaren hur många datorer hen äger. Programmet ska sedan skriva ut hur många datorer hen äger med ett ord som är korrekt i singular eller plural. Det innebär att om användaren har en dator ska programmet skriva ut  
-`Du har 1 dator.`  
-Om användaren har t.ex. 3 datorer ska programmet skriva ut  
-`Du har 3 datorer.`  
+Skapa ett skript som frågar användaren hur många **datorer** hen äger. Skriptet ska sedan skriva ut korrekt i singular eller plural.   
+Det innebär att om användaren har en dator skrivs det ut "**Du har 1 dator**".  
+Om användaren har tex 3 datorer ska programmet skriva ut  
+"**Du har 3 datorer**".  
 Bestäm om ordet dator/datorer ska användas med hjälp av villkorsoperatorn.
 
 ### Uppgift 14

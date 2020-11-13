@@ -182,18 +182,13 @@ Ett tal ska skrivas ut per rad, 19 ska skrivas på första raden och 1 på den s
 
 ### Uppgift 6
 
-Skapa ett skript som skriver ut vart 5:e årtal på 1500-talet med början på 1595 och sedan nedåt, det vill säga 1595, 1590, 1585 och så vidare ända till 1500.
+Skapa ett skript som skriver ut vart **5:e årtal** på 1500-talet med början på 1595 och sedan nedåt, det vill säga 1595, 1590, 1585 och så vidare ända till 1500.
 
 ### Uppgift 7
 
 Skapa ett skript som ber användaren om ett **meddelande**.  
 Skriptet skriver sedan ut ett meddelande **vertikalt**, en bokstav per rad.  
 Meddelandet ska dessutom skrivas ut **baklänges**.
-
-### Uppgift 8
-
-Skapa ett skript som ber användaren om ett **tal**.  
-Berätta för användaren om någon av siffrorna 3 eller 7 fanns i talet.
 
 ## Extra uppgifter för arrayer
 

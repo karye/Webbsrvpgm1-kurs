@@ -138,3 +138,7 @@ Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordm
 
 ![](../.gitbook/assets/dump-uppgift-6-5.png)
 
+## Extra uppgifter
+
+### 
+

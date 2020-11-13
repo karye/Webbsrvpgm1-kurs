@@ -108,7 +108,7 @@ img {
 
 ### Skapa rutnät
 
-* Använd CSS grid för att snygga till bildgalleriet
+* Använd CSS [grid ](https://devdocs.io/css/css_grid_layout/line-based_placement_with_css_grid)för att snygga till bildgalleriet
 
 ![](../.gitbook/assets/image%20%2864%29.png)
 

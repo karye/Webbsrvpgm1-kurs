@@ -224,7 +224,9 @@ Gå igenom arrayen med hjälp av en **loop** och hitta det största talet i arra
 
 ### Uppgift 12
 
-Skapa ett skript som innehåller en array med minst **5** årtal, minst ett av årtalen ska finnas med **två gånger**. Användaren ska få skriva in ett **årtal** när programmet körs.   
+Skapa ett skript som innehåller en array med minst **5** årtal, minst ett av årtalen ska finnas med **två gånger**. 
+
+Användaren ska få skriva in ett **årtal** när programmet körs.   
 Skriptet ska skriva ut **alla index** som detta årtal finns på i arrayen.   
 Om årtalet inte fanns på någon plats så ska programmet skriva "**Årtalet kunde inte hittas**".
 

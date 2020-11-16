@@ -14,7 +14,6 @@ Varje PHP-snutt börjar med **&lt;?php** och avslutas med **?&gt;**. På detta s
     <head>
         <meta charset="utf-8">
         <title>Dagens datum</title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
         
@@ -30,7 +29,6 @@ Detta är ett helt vanligt HTML-dokument. Om vi tittar på det i en webbläsare 
     <head>
         <meta charset="utf-8">
         <title>Dagens datum</title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
     <?php
@@ -48,7 +46,6 @@ Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även b
     <head>
         <meta charset="utf-8">
         <title>Dagens datum</title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
     <?php
@@ -74,7 +71,6 @@ Nu kommer texten som skrivs ut på skärmen att vara en rubrik. Vi skulle kunna 
     <head>
         <meta charset="utf-8">
         <title>Dagens datum</title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
         <h1>

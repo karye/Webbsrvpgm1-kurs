@@ -366,27 +366,22 @@ Skriptet ska sen berätta hur mycket längre världsrekordet är \(8,90 meter\):
 
 ### Uppgift 11
 
-Skapa ett skript som frågar användaren vilket **årtal** det är.  
-Skriptet ska sedan berätta hur många år det är kvar till år **2100**.
-
-### Uppgift 12
-
 Skapa ett skript som frågar användaren **två ord,** efter varandra.   
 Skriptet ska sedan presentera en mening med orden i **omvänd** ordning.
 
-### Uppgift 13
+### Uppgift 12
 
 Skriv ett skript som frågar hur långt **Max** och **Jakob** hoppade.   
 Skriv därefter ut hur mycket längre som **Max** hoppade.
 
-### Uppgift 14
+### Uppgift 13
 
 Skapa ett skript för beräkna **kostnaden** för att hyra bil hos en biluthyrningsfirma.   
 Startavgiften för att hyra bilen är **500:-**, därefter kostar det ytterligare **5:-/km** och **400:-** för varje extra dag förutom den första.   
 Skriptet ska fråga hur **många dagar** man vill hyra bilen och hur **många kilometer** man vill köra.  
 Skriptet ska sedan presentera den totala **hyran**.
 
-### Uppgift 15
+### Uppgift 14
 
 Skapa ett skript som ber användaren mata in lönen för **3** anställda.   
 Skriptet ska sedan presentera **medellönen** för personalen.

@@ -198,7 +198,7 @@ Det vill säga 1595, 1590, 1585 och så vidare ända till 1500.
 
 ### Uppgift 7
 
-Skapa ett skript som ber användaren om ett **meddelande**.  
+Skapa ett skript som ber användaren mata in ett **meddelande**.  
 Skriptet skriver sedan ut ett meddelande **vertikalt**, en bokstav per rad.  
 Meddelandet ska dessutom skrivas ut **baklänges**.
 

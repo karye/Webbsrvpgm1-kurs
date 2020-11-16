@@ -157,7 +157,7 @@ Genom att avsluta namnet på till exempel en textruta med hakparanteser, exempel
 </form>
 ```
 
-I det här fallet får **$\_REQUEST\['namn'\]\[0\]** innehållet som skrivits i den första textrutan och **$\_REQUEST\['namn'\]\[1\]** innehållet i den andra textrutan.
+I det här fallet får **$\_POST\['namn'\]\[0\]** innehållet som skrivits i den första textrutan och **$\_POST\['namn'\]\[1\]** innehållet i den andra textrutan.
 
 ## Uppgifter
 

@@ -140,5 +140,18 @@ Skapa en webbapplikation som testar styrkan på ett **lösenord**. Se [passwordm
 
 ## Extra uppgifter
 
-### 
+### Uppgift 6
+
+Skapa ett skript där användaren får skriva in en mening \(utan punkt\) som består av två ord.   
+Skriv ut orden till användaren i omvänd ordning.
+
+### Uppgift 7
+
+Skapa ett skript där användaren på endast en rad ska skriva in en addition av två heltal som ska utföras . Användaren ska inte skriva några mellanslag, tex. kan man skriva 4+3 eller 10+27.   
+Beräkna svaret och skriv ut det.
+
+### Uppgift 8
+
+Skapa ett skript där användaren ska skriva in en mening med tre ord, meningen ska avslutas med en punkt.   
+Skriv ut orden till användaren i omvänd ordning, det ska vara en punkt i slutet.
 

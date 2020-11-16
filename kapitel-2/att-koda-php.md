@@ -235,7 +235,7 @@ PHP har en stor mängd fördefinierade variabler. Det vanligaste användningsomr
 Har vi tex skapat en textruta med namnet "adress" och användaren fyller i värdet "Karlsgatan 12" så kommer **$\_REQUEST\['adress'\]** få innehållet "Karlsgatan 12". Fyller användaren i stället i textrutan "telefon" med numret "012-345678" får **$\_REQUEST\['telefon'\]** innehållet "012-345678". För att skriva ut telefonnumret behövs endast [echo](https://devdocs.io/php/function.echo) enligt följande modell:
 
 ```php
-echo $_REQUEST['telefon'];
+echo $_POST['telefon'];
 ```
 
 Vilket kommer att resultera i att "012-345678" skrivs ut på skärmen förutsatt att användaren matade in just det numret i formuläret.
@@ -254,11 +254,10 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
     <head>
         <meta charset="utf-8">
         <title>Dagens datum</title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
     <?php 
-    echo "Hej världen!";     // Skriver ut raden Hello World på skärmen
+    echo "Hej världen!";   // Skriver ut raden Hello World på skärmen
     ?>
     </body>
 </html>
@@ -272,14 +271,11 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
     <head>
         <meta charset="utf-8">
         <title>Dagens datum</title>
-        <link rel="stylesheet" href="">
     </head>
     <body>
     <?php 
-    /* Skript skrivet av
-    Thomas Höjemo
-    år 2006.
-    */
+    /*  Flera rader kommentarer..
+        En rad till.. */
     echo "Hej världen!";
     ?>
     </body>

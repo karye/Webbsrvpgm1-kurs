@@ -206,7 +206,7 @@ Meddelandet ska dessutom skrivas ut **baklänges**.
 
 ### Uppgift 8
 
-Skapa ett skript som ber användaren om ett **heltal**.  
+Skapa ett skript som ber användaren mata in ett **heltal**.  
 Berätta för användaren om någon av siffrorna **3** eller **7** fanns i talet.
 
 ### Uppgift 9

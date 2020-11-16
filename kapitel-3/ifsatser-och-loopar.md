@@ -10,9 +10,9 @@ Det finns ett antal olika operatortyper i PHP. Från matematiken känner vi igen
 
 ```php
 <?php
-$a = 324; // Ger $a värdet 324
-$a = a + 1; // Ökar $a med 1 till 325
-$a = berakna(12); // $a får returvärdet av funktionen berakna
+$a = 324;           // Ger $a värdet 324
+$a = a + 1;         // Ökar $a med 1 till 325
+$a = berakna(12);   // $a får returvärdet av funktionen berakna
 ?>
 ```
 
@@ -37,7 +37,7 @@ Hittills har alla program vi skrivit körts igenom rad för rad, utan att vi kun
 ```php
 <?php
 if ($losenord == "test123") {
-   echo "Du är inloggad";
+   echo "<p>Du är inloggad</p>";
 }
 ?>
 ```
@@ -49,9 +49,9 @@ Om lösenordet stämmer, körs allting som står innan för krullparanteserna. O
 ```php
 <?php
 if ($losenord == "test123") {
-   echo "Du är inloggad";
+   echo "<p>Du är inloggad</p>";
 } else {
-   echo "Fel lösenord";
+   echo "<p>Fel lösenord</p>";
 }
 ?>
 ```
@@ -63,11 +63,11 @@ Det finns fler jämförelseoperatorer än **==**, även om **==** är den överl
 ```php
 <?php
 if ($veckodag == "lördag") {
-   echo "Det är lördag och jag kan ta det lugnt.";
+   echo "<p>Det är lördag och jag kan ta det lugnt.</p>";
 } elseif ($veckodag == "söndag") {
-   echo "Söndag är vilodag.";
+   echo "<p>Söndag är vilodag.</p>";
 } else {
-   echo "Vanlig vardag";
+   echo "<p>Vanlig vardag</p>";
 }
 ?>
 ```

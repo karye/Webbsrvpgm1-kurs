@@ -27,11 +27,12 @@ $a = "Hej " . $namn;
 
 Två andra vanliga operatorer är villkorsoperatorer och logiska operatorer. De används ofta tillsammans, vilket vi kommer att se nu.
 
-## **Villkorssatser**
+## **Styrstrukturer**
 
-Hittills har alla program vi skrivit körts igenom rad för rad, utan att vi kunnat styra in programmet på olika vägar beroende på vad användaren har matat in. Det är detta vi har styrstrukturer till. Styrstrukturer har det gemensamt att de kontrollerar om ett uttryck stämmer med ett annat och sedan beroende på resultatet gör ett val. På detta sätt kan man skriva mycket mer flexibla program. Det finns två huvudtyper av styrstrukturer: villkorssatser och loopar. Vi börjar med villkorssatser.
+Hittills har alla program vi skrivit körts igenom rad för rad, utan att vi kunnat styra in programmet på olika vägar beroende på vad användaren har matat in. Det är detta vi har styrstrukturer till.   
+**Styrstrukturer** har det gemensamt att de kontrollerar om ett uttryck stämmer med ett annat och sedan beroende på resultatet gör ett val. På detta sätt kan man skriva mycket mer flexibla program. Det finns två huvudtyper av styrstrukturer: **villkorssatser** och **loopar**. Vi börjar med villkorssatser.
 
-### if-satsen
+### Villkorssatser: if-satsen
 
 ```php
 <?php
@@ -73,9 +74,9 @@ if ($veckodag == "lördag") {
 
 Man kan även testa att två olika villkor i samma **if**-sats. Detta kan göras med **and** eller med **or**. Använder man **and** måste båda villkoren stämma. Med **or** räcker det att minst ett av dem stämmer. En tredje variant är **xor** eller exklusivt eller, då måste antingen det ena eller det andra villkoret stämma. En lista på alla logiska operatorer, som dessa kallas, finns på [language.operators.logical](http://php.net/manual/en/language.operators.logical.php) på php.net.
 
-### switch-satsen
+### Villkorssatser: switch
 
-Istället för att använda flera if-else-satser efter vanrandra kan man använda switch-satsen.
+Istället för att använda flera if-else-satser efter varandra kan man använda switch-satsen.
 
 ```php
 <?php
@@ -125,7 +126,7 @@ while ($i < 20) {
 
 Inuti [for-](https://devdocs.io/php/control-structures.for) och [while](https://devdocs.io/php/control-structures.while)-loopar kan man använda break för att omedelbart avbryta körningen av loopen och fortsätta direkt med koden som kommer efter loopens slut. Med [continue](https://devdocs.io/php/control-structures.continue) kan man fortsätta direkt till nästa varv av loopen.
 
-## Uppgifter - operatorer, villkorssatser och loopar
+## Uppgifter
 
 ### **Uppgift 1**
 

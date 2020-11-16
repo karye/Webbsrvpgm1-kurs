@@ -63,14 +63,16 @@ Sedan kan man söka efter speciell information inuti texten, t.ex. för att ta u
 
 ### Läsa i alla rader in i en array
 
-Med [file\(\)](https://devdocs.io/php/function.file) läses hela filen in i en array.
+Med [file\(\)](https://devdocs.io/php/function.file) läses hela filen in i en array. Här läser vi in en lista elever och skriver ut en elev per rad.
 
 ```php
 <?php
-$lines = file('elever.txt');
+// Läser in alla rader i en array
+$elever = file("elever.txt");
 
-foreach ($lines as $line_num => $line) {
-    echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
+// Loopar igenom raderna och skriver ut en elev i taget
+foreach ($elever as $radNr => $elev) {
+    echo "<p>Elev #<b>{$radNr}<b>: $elev</p>\n";
 }
 ?>
 ```
@@ -81,7 +83,8 @@ Med [file\_get\_contents\(\)](https://devdocs.io/php/function.file-get-contents)
 
 ```php
 <?php
-$homepage = file_get_contents('http://www.example.com/');
+// Man kan också läsa in allt på hemsidan, HTML, CSS och JavaScript
+$homepage = file_get_contents("http://www.example.com/");
 echo $homepage;
 ?>
 ```
@@ -96,14 +99,16 @@ Gör en skript som tar den inmatade texten ur ett formulärs "textarea" och spar
 
 ### **Uppgift 2**
 
-Gör ett skript som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen. \(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
+Gör ett skript som i en textruta frågar efter ett filnamn på servern.   
+Öppna filen och skriv ut filinnehållet på skärmen.   
+\(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
 ### **Uppgift 3**
 
 Utveckla skriptet i uppgift 1 till ett enkelt gästboksskript.   
-Skapa en sida kallad "Lägg till igästbok", där användaren får fylla i **namn**, **epostadress** och **meddelande**. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil.   
+Skapa en sida kallad "Spara i gästbok", där användaren får fylla i **namn**, **epostadress** och **meddelande**. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil.   
 Snyggt formaterad innebär att du har mellanrum mellan **namnet** och **epostadressen**, och ny rad \(&lt;br&gt;\) innan du skriver **meddelandet**, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd append \(a\) som filöppningsmetod, ej write \(w\), eftersom du då skriver över tidigare innehåll!   
 Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
 

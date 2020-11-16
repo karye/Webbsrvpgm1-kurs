@@ -37,7 +37,7 @@ Hittills har alla program vi skrivit körts igenom rad för rad, utan att vi kun
 ```php
 <?php
 if ($losenord == "test123") {
-   echo "<p>Du är inloggad</p>";
+   echo "<p>Du är inloggad </p>";
 }
 ?>
 ```
@@ -49,9 +49,9 @@ Om lösenordet stämmer, körs allting som står innan för krullparanteserna. O
 ```php
 <?php
 if ($losenord == "test123") {
-   echo "<p>Du är inloggad</p>";
+   echo "<p>Du är inloggad </p>";
 } else {
-   echo "<p>Fel lösenord</p>";
+   echo "<p>Fel lösenord </p>";
 }
 ?>
 ```
@@ -63,11 +63,11 @@ Det finns fler jämförelseoperatorer än **==**, även om **==** är den överl
 ```php
 <?php
 if ($veckodag == "lördag") {
-   echo "<p>Det är lördag och jag kan ta det lugnt.</p>";
+   echo "<p>Det är lördag och jag kan ta det lugnt </p>";
 } elseif ($veckodag == "söndag") {
-   echo "<p>Söndag är vilodag.</p>";
+   echo "<p>Söndag är vilodag </p>";
 } else {
-   echo "<p>Vanlig vardag</p>";
+   echo "<p>Vanlig vardag </p>";
 }
 ?>
 ```
@@ -82,13 +82,13 @@ Istället för att använda flera if-else-satser efter varandra kan man använda
 <?php
 switch ($veckodag) {
     case "lördag":
-        echo "Det är lördag och jag kan ta det lugnt.";
+        echo "<p>Det är lördag och jag kan ta det lugnt </p>";
         break;
     case "söndag":
-        echo "Söndag är vilodag.";
+        echo "<p>Söndag är vilodag </p>";
         break;
     default:
-        echo "Vanlig vardag";
+        echo "<p>Vanlig vardag </p>";
         break;
 }
 ?>
@@ -103,7 +103,7 @@ Nu vidare till nästa variant på styrstrukturer, nämligen loopar. Den första 
 ```php
 <?php
 for ($i = 1;$i < 20;$i = $i + 1) {
-   echo "Detta är rad $i <br>";
+   echo "<p>Detta är rad $i </p>";
 }
 ?>
 ```
@@ -118,7 +118,7 @@ I detta exempel kommer vi att få 19 rader utskrivna. [for-loopen](https://devdo
 <?php
 $i = 1;
 while ($i < 20) {
-   echo "Detta är rad $i <br>";
+   echo "<p>Detta är rad $i </p>";
    $i++;
 }
 ?>

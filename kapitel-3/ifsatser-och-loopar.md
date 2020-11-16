@@ -173,7 +173,7 @@ Så för ett tvåårigt lån på 5000 med räntan 4% skulle alltså lånekostnad
 
 Skapa ett skript som frågar vilket land som vann **fotbolls-VM i USA** för herrar år **1994**.   
 Om användaren svarar **Sverige** ska skriptet skriva ut att svaret var **rätt**, annars att svaret var **fel**.   
-Det spelar ingen roll om användaren gissar med stora eller små bokstäver.
+Det spelar ingen roll om användaren gissar med stora eller små bokstäver. \(Använd [strtolower](https://devdocs.io/php/function.strtolower)\).
 
 ### Uppgift 7
 

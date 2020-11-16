@@ -193,7 +193,8 @@ Ett tal ska skrivas ut per rad, **19** ska skrivas på första raden och **1** p
 
 ### Uppgift 6
 
-Skapa ett skript som skriver ut vart **5:e årtal** på 1500-talet med början på 1595 och sedan nedåt, det vill säga 1595, 1590, 1585 och så vidare ända till 1500.
+Skapa ett skript som skriver ut vart **5:e årtal** på 1500-talet med början på 1595 och sedan nedåt.  
+Det vill säga 1595, 1590, 1585 och så vidare ända till 1500.
 
 ### Uppgift 7
 

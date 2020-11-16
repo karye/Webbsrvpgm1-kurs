@@ -59,15 +59,15 @@ fclose($fil);
 
 Sedan kan man söka efter speciell information inuti texten, t.ex. för att ta ut viss information som man har användning för.
 
-## Läsa in allt på en gång
+## Läsa in hela texten på en gång
 
-### file\(\): läsa i en array
+### Läsa i alla rader in i en array
 
 Med [file\(\)](https://devdocs.io/php/function.file) läses hela filen in i en array.
 
 ```php
 <?php
-$lines = file('http://www.example.com/');
+$lines = file('elever.txt');
 
 foreach ($lines as $line_num => $line) {
     echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br />\n";
@@ -75,7 +75,7 @@ foreach ($lines as $line_num => $line) {
 ?>
 ```
 
-### file\_get\_contents: läsa i en sträng
+### Läsa allt in i en sträng
 
 Med [file\_get\_contents\(\)](https://devdocs.io/php/function.file-get-contents) läses hela filen i en sträng.
 
@@ -90,19 +90,19 @@ echo $homepage;
 
 ### **Uppgift 1**
 
-Gör en webbapplikation som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
+Gör en skript som tar den inmatade texten ur ett formulärs "textarea" och sparar den i en fil.
 
 ![](../.gitbook/assets/image%20%2813%29.png)
 
 ### **Uppgift 2**
 
-Gör en webbapp  som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen. \(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
+Gör ett skript som i en textruta frågar efter ett filnamn på servern. Öppna filen och skriv ut filinnehållet på skärmen. \(Om du kan, kontrollera före filnamnet så att det endast innehåller bokstäver, siffror och punkt.\)
 
 ![](../.gitbook/assets/image%20%2818%29.png)
 
 ### **Uppgift 3**
 
-Utveckla webbappen i uppgift 1 till ett enkelt gästboksskript.   
+Utveckla skriptet i uppgift 1 till ett enkelt gästboksskript.   
 Skapa en sida kallad "Lägg till igästbok", där användaren får fylla i **namn**, **epostadress** och **meddelande**. När användaren skickar i väg formuläret ska informationen sparas snyggt formaterad i en fil.   
 Snyggt formaterad innebär att du har mellanrum mellan **namnet** och **epostadressen**, och ny rad \(&lt;br&gt;\) innan du skriver **meddelandet**, och dessutom ny rad \(&lt;br&gt;\) efter själva meddelandet. Obs! Använd append \(a\) som filöppningsmetod, ej write \(w\), eftersom du då skriver över tidigare innehåll!   
 Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt filinnehållet visas.
@@ -111,10 +111,10 @@ Längst ned på varje sida ska en rubrik med texten "Skrivet i gästboken" samt 
 
 ### **Uppgift 4**
 
-Skapa ett loggningsskript som sparar en filrad om varje besök i en fil kallad "**log.txt**". Loggningsskriptet ska logga användarens IP-adress, och vilken sida användaren kom ifrån, och vilken webbläsare användaren hade. Variabler skickas till PHP med denna information.   
+Skapa ett loggningsskript som sparar en filrad för varje besök i en fil kallad "**log.txt**". Loggningsskriptet ska logga användarens IP-adress, och vilken sida användaren kom ifrån, och vilken webbläsare användaren hade. Variabler skickas till PHP med denna information.   
 Skapa ett nytt PHP-skript, och skriv **&lt;?php phpinfo\(\) ?&gt;** så hittar du denna information längst ned på sidan.
 
 ### **Uppgift 5**
 
-Gör en webbapp som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
+Gör en skript som kort presenterar den nuvarande kursen på Ericsson-aktien. Ta kontakt med tex. [aktiekurser](http://www.privataaffarer.se/borsguiden/aktiekurser) för att ta reda på kursen.
 

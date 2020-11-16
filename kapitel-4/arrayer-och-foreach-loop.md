@@ -216,14 +216,14 @@ Skriv in två av namnen i koden \(hårdkoda\) men låt användaren få skriva in
 
 ### Uppgift 10
 
-Skapa ett skript som innehåller en **array** med **strängar** där varje sträng är en **mening**.   
+Skapa ett skript som innehåller en **array** med **3 strängar** där varje sträng är en **mening**.   
 Skriv ut varje mening med hjälp av en **loop.**  
 Gör så att varje mening hamnar i ett eget **stycke**.
 
 ### Uppgift 11
 
-Skapa ett skript som innehåller en **array** med 10 heltal.   
-Gå igenom arrayen med hjälp av en **loop** och hitta det största talet i arrayen.
+Skapa ett skript som innehåller en **array** med **10 heltal**.   
+Gå igenom arrayen med hjälp av en **loop** och hitta det **största** talet i arrayen.
 
 ### Uppgift 12
 

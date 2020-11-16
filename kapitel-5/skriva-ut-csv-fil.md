@@ -2,7 +2,7 @@
 description: Läsa från textfil och "parsa" data som är csv-formaterat.
 ---
 
-# Labb 3 - läsa in csv-fil
+# Labb 3 - läsa csv-fil
 
 ## Resultatet
 

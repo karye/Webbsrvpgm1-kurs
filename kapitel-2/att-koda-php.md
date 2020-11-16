@@ -345,8 +345,8 @@ Försök att lista ut vad följande program kommer att skriva ut.
 ```php
 <?php
 $ett = '$noll';
-echo "$ett";
-echo '$ett';
+echo "<p>$ett</p>";
+echo '<p>$ett</p>';
 ?>
 ```
 

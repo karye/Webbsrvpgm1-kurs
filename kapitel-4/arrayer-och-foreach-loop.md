@@ -170,7 +170,7 @@ Kalla textrutorna för **namn\[\]**. [**Sortera** ](https://devdocs.io/php/funct
 
 ### **Uppgift 2**
 
-Utveckla programmet i uppgift 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden.   
+Utveckla skriptet i uppgift 1 så att det skriver ut namnen i en **tabell med ett radnummer** först i tabellraden.   
 Tabellraderna ska ha **alternerande** färger, \(den första raden i grått den andra i vitt osv\).
 
 ### **Uppgift 3**
@@ -188,8 +188,8 @@ Utöka skriptet i uppgift 3 så att användaren matar in **två siffror**, lägg
 
 ### Uppgift 5
 
-Skapa ett skript som skriver ut talen 19 till 1 med hjälp av en loop.  
-Ett tal ska skrivas ut per rad, 19 ska skrivas på första raden och 1 på den sista.
+Skapa ett skript som skriver ut talen **19** till **1** med hjälp av en loop.  
+Ett tal ska skrivas ut per rad, **19** ska skrivas på första raden och **1** på den sista.
 
 ### Uppgift 6
 

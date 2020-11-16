@@ -208,7 +208,7 @@ table .fa {
 {% endtab %}
 
 {% tab title="CSS" %}
-```
+```css
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 /* Enkel CSS-reset */

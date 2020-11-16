@@ -107,7 +107,9 @@ foreach ($tal as $a) {
 
 Detta exempel sorterar helt enkelt talen i nummerordning och skriver sedan ut dem i tur och ordning. Fler exempel på sorteringsfunktioner finns i boken i kapitlet om matriser.
 
-## **Dela upp en sträng med explode\(\)**
+## **Strängar och arrayer**
+
+### **Dela upp en sträng med explode\(\)**
 
 Med hjälp av [explode\(\)](https://devdocs.io/php/function.explode) kan man dela upp en vanlig sträng i bitar och "stoppa in" bitarna i en array.
 
@@ -120,7 +122,7 @@ echo "$ord[2] $ord[3] $ord[1] $ord[0]";
 
 I exemplet delas först upp innehållet i variabeln text i delar med mellanslag som skiljetecken. Inuti ord kommer först på position **0** att finnas "detta", därefter "är" på position **1** osv.
 
-## **Slå samman en array med implode\(\)**
+### **Slå samman en array med implode\(\)**
 
 Med [implode\(\)](https://devdocs.io/php/function.implode) så gör vi tvärtom - slår samman delarna i en [array ](https://devdocs.io/php/function.array)till en vanlig sträng. 
 
@@ -134,7 +136,7 @@ echo implode(" ", $ord);
 
 I det här fallet så slås alla delarna i matrisen **$ord** ihop, ett mellanslag läggs i varje sammanfogning och resultatet skrivs ut.
 
-## String som en array
+### String som en array
 
 Man kan också använda array-notationen för komma bokstäverna i en sträng.
 

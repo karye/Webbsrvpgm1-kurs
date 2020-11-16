@@ -129,7 +129,7 @@ Inuti [for-](https://devdocs.io/php/control-structures.for) och [while](https://
 
 ### **Uppgift 1**
 
-Modifiera **temperaturkonverteringsprogrammet** ytterligare en gång, så att användaren matar in en temperatur i ett textfält, och sedan väljer om konverteringen ska ske från F till C eller från C till F med hjälp av **radioknappar**.
+Modifiera **temperaturkonverteringsskriptet** ytterligare en gång, så att användaren matar in en temperatur i ett textfält, och sedan väljer om konverteringen ska ske från F till C eller från C till F med hjälp av **radioknappar**.
 
 ### **Uppgift 2**
 
@@ -206,7 +206,7 @@ Skriptet skriver ut om hen får åka eller inte.
 
 Ett fik har en kampanj där personer äldre än **65** år och personer mellan **12 och 18** år erbjuds att köpa kaffe extra billigt.   
 Skriv ett skript som kollar om användaren får köpa kaffe extra billigt.   
-Skriptet får endast ha **en if-sats**.
+Skriptet får endast ha en **if-sats**.
 
 ### Uppgift 12
 
@@ -218,7 +218,7 @@ Skriptet får endast ha en **switch**-sats,
 
 Skapa ett skript som frågar användaren hur många **datorer** hen äger. Skriptet ska sedan skriva ut korrekt i singular eller plural.   
 Det innebär att om användaren har en dator skrivs det ut "**Du har 1 dator**". Om användaren har tex 3 datorer skrivs det ut "**Du har 3 datorer**".  
-Skriptet får endast ha **en if-sats**.
+Skriptet får endast ha en **if-sats**.
 
 ### Uppgift 14
 
@@ -233,5 +233,5 @@ Skapa ett skript som frågar användaren om hen har gått ut gymnasiet. Använda
 Därefter ska skriptet fråga hur gammal hen är.
 
 Om hen har gått ut gymnasiet och är under 22 år så ska skriptet säga ”**Vi vill gärna anställa dig**”, annars ska skriptet säga ”**Vi letar tyvärr efter annan personal just nu**”.   
-Skriptet får endast ha **en if-sats**.
+Skriptet får endast ha en **if-sats**.
 

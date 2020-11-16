@@ -49,7 +49,7 @@ Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även b
     </head>
     <body>
     <?php
-    echo "Hej världen!";
+    echo "<p>Hej världen!</p>";
     ?>
     </body>
 </html>
@@ -75,7 +75,7 @@ Nu kommer texten som skrivs ut på skärmen att vara en rubrik. Vi skulle kunna 
     <body>
         <h1>
         <?php
-        echo "Hej världen!";
+        echo "<p>Hej världen!</p>";
         ?>
         </h1>
     </body>
@@ -127,7 +127,7 @@ Som ni ser skrivs **$namn** ordagrannt ut. Det är alltså viktigt att alltid an
 ```php
 <?php
 $namn = "Thomas Höjemo";
-echo "Mitt namn är " . $namn . " och jag bor i Göteborg.";
+echo "<p>Mitt namn är " . $namn . " och jag bor i Göteborg </p>";
 ?>
 ```
 
@@ -136,7 +136,7 @@ Vi kan även baka in variabeln mellan citationstecknen, men observera att detta 
 ```php
 <?php
 $namn = "Thomas Höjemo";
-echo "Mitt namn är $namn och jag bor i Göteborg.";
+echo "<p>Mitt namn är $namn och jag bor i Göteborg </p>";
 ?>
 ```
 
@@ -149,7 +149,7 @@ Ett exempel:
 $tal1 = 37.76;
 $tal2 = 45.23;
 $summa = $tal1 + $tal2;
-echo "Summan av $tal1 och $tal2 är $summa";
+echo "<p>Summan av $tal1 och $tal2 är $summa </p>";
 ?>
 ```
 
@@ -181,7 +181,7 @@ PHP omvandlar tyst mellan olika variabeltyper:
 $tal1 = "7 kr";
 $tal2 = "3 kr";
 $summa = $tal1 + $tal2;
-echo "Summan är $summa";
+echo "<p>Summan är $summa </p>";
 ?>
 ```
 
@@ -217,9 +217,9 @@ För att undersöka om en variabel är av en viss typ används serien funktioner
 <?php
 $variabel = "Hej";
 if (is_string($variabel)) {
-    echo "Det var en sträng!";
+    echo "<p>Det var en sträng! </p>";
 } else {
-    echo "Det var inte en sträng!";
+    echo "<p>Det var inte en sträng! </p>";
 }
 ?>
 ```
@@ -253,7 +253,7 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
     </head>
     <body>
     <?php 
-    echo "Hej världen!";   // Skriver ut raden Hello World på skärmen
+    echo "<p>Hej världen! </p>";   // Skriver ut raden Hello World på skärmen
     ?>
     </body>
 </html>
@@ -272,7 +272,7 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
     <?php 
     /*  Flera rader kommentarer..
         En rad till.. */
-    echo "Hej världen!";
+    echo "<p>Hej världen! </p>";
     ?>
     </body>
 </html>

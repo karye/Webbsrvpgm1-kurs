@@ -370,7 +370,7 @@ Skriptet ska sedan berätta hur många år det är kvar till år **2100**.
 ### Uppgift 10
 
 Skapa ett skript som frågar användaren vilket hur **långt** hen kan hoppa mätt i meter.   
-Skriptet ska sen berätta hur mycket längre världsrekordet är \(8,90 meter\): "**Bob Beamon hopar ... m längre än dig!**".
+Skriptet ska sen berätta hur mycket längre världsrekordet är \(8,90 meter\): "[**Bob Beamon**](https://sv.wikipedia.org/wiki/Bob_Beamon) **hopar ... m längre än dig!**".
 
 ### Uppgift 11
 

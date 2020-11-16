@@ -42,7 +42,7 @@ if ($losenord == "test123") {
 ?>
 ```
 
-I detta lilla skript använder vi en villkorssats, eller **if**-sats som den också heter. **if**-satsen är sig lik från nästan alla programmeringsspråk och är nödvändig för att man ska anpassa vad som händer efter vad användaren gör. Det som står innanför parenteserna är det s.k. jämförelseuttrycket. I detta fall kontrollerar vi om variabeln **$losenord** har innehållet "test123". Observera att vi använder två likamedtecken! Hade vi bara använt ett likamedtecken hade vi i stället tilldelat variabeln **$losenord** värdet test123.
+I detta lilla skript använder vi en villkorssats, eller **if**-sats som den också heter. **if**-satsen är sig lik från nästan alla programmeringsspråk och är nödvändig för att man ska anpassa vad som händer efter vad användaren gör. Det som står innanför parenteserna är det sk jämförelseuttrycket. I detta fall kontrollerar vi om variabeln **$losenord** har innehållet "test123". Observera att vi använder två likamedtecken! Hade vi bara använt ett likamedtecken hade vi i stället tilldelat variabeln **$losenord** värdet test123.
 
 Om lösenordet stämmer, körs allting som står innan för krullparanteserna. Om lösenordet inte stämmer, fortsätter programmet efter högerkrullparantesen. Vi kan också välja att ha med ett alternativ som ska inträffa då lösenordet inte stämmer. Då kan det se ut så här:
 
@@ -58,7 +58,11 @@ if ($losenord == "test123") {
 
 I det här fallet kommer vi alltså att få meddelandet "Fel lösenord" om lösenordet inte stämmer.
 
-Det finns fler jämförelseoperatorer än **==**, även om **==** är den överlägset vanligaste. Vi har bland annat **&lt;** som står för mindre än, **&gt;** som står för större än. Dessa två används endast för tal. **!=** står för inte lika med och kan däremot användas både för tal och strängar. Man kan bygga på **if**-satser med **elseif**. På detta sätt kan programmet ta fler än två olika vägar. Fler jämförelseoperatorer hittar du på [language.operators.comparison](http://php.net/manual/en/language.operators.comparison.php) på php.net.
+Det finns fler jämförelseoperatorer än **==**, även om **==** är den överlägset vanligaste. Vi har bland annat **&lt;** som står för mindre än, **&gt;** som står för större än. Dessa två används endast för tal. **!=** står för inte lika med och kan däremot användas både för tal och strängar. 
+
+![](../.gitbook/assets/image%20%2870%29.png)
+
+Man kan bygga på **if**-satser med **elseif**. På detta sätt kan programmet ta fler än två olika vägar. 
 
 ```php
 <?php

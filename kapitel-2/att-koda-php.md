@@ -366,7 +366,7 @@ Skriptet ska sen berätta hur mycket längre världsrekordet är \(8,90 meter\):
 
 ### Uppgift 11
 
-Skapa ett skript som frågar användaren **två ord,** efter varandra.   
+Skapa ett skript som frågar användaren **två ord**.   
 Skriptet ska sedan presentera en mening med orden i **omvänd** ordning.
 
 ### Uppgift 12

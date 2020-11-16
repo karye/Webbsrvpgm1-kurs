@@ -8,7 +8,11 @@ description: Att använda arrayer.
 
 ![Sk&#xE5;p med 3 l&#xE5;dor](../.gitbook/assets/image%20%286%29.png)
 
-En [array ](https://devdocs.io/php/function.array)är en samling av variabler, tänk er ett helt skåp med kökslådor. Matrisen är då hela skåpet och innehåller flera kökslådor. I varje kökslåda finns ett innehåll dvs ett värde. I de flesta programmeringsspråk så börjar man av någon outgrundlig anledning alltid att räkna från och med **0** i stället för **1**. Detta innebär att den första "lådan" / indexet är **0**, den andra **1** och så vidare. För att skapa den här matrisen i form av en kökslåda i PHP skulle vi göra så här:
+En [array ](https://devdocs.io/php/function.array)är en samling av variabler, tänk er ett helt skåp med kökslådor. Arrayen är då hela skåpet och innehåller flera kökslådor. I varje kökslåda finns ett innehåll dvs ett värde. I de flesta programmeringsspråk så börjar man av någon outgrundlig anledning alltid att räkna från och med **0** i stället för **1**. Detta innebär att den första "lådan" / indexet är **0**, den andra **1** och så vidare. 
+
+![Tex en array &#xF6;ver l&#xE4;nder](../.gitbook/assets/image%20%2868%29.png)
+
+För att skapa den här arrayen i form av en kökslåda i PHP skulle vi göra så här:
 
 ```php
 <?php

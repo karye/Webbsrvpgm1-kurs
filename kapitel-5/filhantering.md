@@ -14,7 +14,7 @@ För att öppna en fil i PHP används [fopen\(](https://devdocs.io/php/function.
 chmod ugo+r filnamn
 ```
 
-För att PHP ska kunna läsa filen. Det finns olika sätt att öppna en fil, vi kommer först att titta på möjligheten att öppna en fil för läsning. En komplett beskrivning av alla valmöjligheter finns i boken i avsnittet om filhantering. Vi ska titta på ett första exempel där vi läser hela filinnehållet i en fil och skriver ut det på skärmen.
+För att PHP ska kunna läsa filen. Det finns olika sätt att öppna en fil, vi kommer först att titta på möjligheten att öppna en fil för läsning. Vi ska titta på ett första exempel där vi läser hela filinnehållet i en fil och skriver ut det på skärmen.
 
 ### **Öppna fil för läsning**
 

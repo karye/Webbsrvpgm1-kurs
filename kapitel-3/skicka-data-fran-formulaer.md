@@ -2,7 +2,7 @@
 description: Hur skickar man data till ett PHP-skript?
 ---
 
-# Från formulär till PHP-skript
+# Obs! formulär till PHP-skript
 
 ## Skicka data från formulär till PHP-skript
 

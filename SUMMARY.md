@@ -10,12 +10,12 @@
 ## Kapitel 2
 
 * [Grunder i PHP](kapitel-2/att-koda-php.md)
-* [Svenskt språkstöd](kapitel-2/tips-and-tricks.md)
+* [Obs! svenskt språkstöd](kapitel-2/tips-and-tricks.md)
 
 ## Kapitel 3
 
 * [if-satser och loopar](kapitel-3/ifsatser-och-loopar.md)
-* [Från formulär till PHP-skript](kapitel-3/skicka-data-fran-formulaer.md)
+* [Obs! formulär till PHP-skript](kapitel-3/skicka-data-fran-formulaer.md)
 
 ## Kapitel 4
 

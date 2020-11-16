@@ -2,7 +2,7 @@
 description: Bra och användbart att veta.
 ---
 
-# Svenskt språkstöd
+# Obs! svenskt språkstöd
 
 ## Datum på svenska
 

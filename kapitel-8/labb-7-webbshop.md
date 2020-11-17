@@ -126,7 +126,7 @@ include_once "./funktioner.inc.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Webbshop - steg 1 - cpu</title>
-    <link rel="stylesheet" href="./shop.css">
+    <link rel="stylesheet" href="shop.css">
 </head>
 <body>
     <div class="kontainer">
@@ -134,14 +134,22 @@ include_once "./funktioner.inc.php";
         <h2>Välj kylare</h2>
         <form action="./steg3.php" method="post">
             <?php
-            /* Lista alla produkter i katalogen */
-            $katalog = "./shop-bilder/kylare";
-
-            /* Hämta katalogens innehåll */
+            // Lista alla produkter i katalogen
+            $katalog = "...";
+    
+            // Hämta katalogens innehåll
             $filer = scandir($katalog);
-            foreach ($filer as $fil) {
-                $info = pathinfo("./$fil");
-                if ($info['extension'] == 'jpg' || $info['extension'] == 'png' || $info['extension'] == 'webp') {
+            
+            // Loopa igenom alla filer
+            ... {
+            
+                // Hämta info om filen
+                $info = pathinfo(...);
+                
+                // Är filen av typ 'jpg' eller 'png' visa bilden i en listan
+                if (...) {
+                
+                    // Skapa en radioknapp med tillhörande miniatyrbild 
                     echo "<label>";
                     echo "<input type=\"radio\" name=\"vara\" value=\"$fil\" required>";
                     echo "<img src=\"$katalog/$fil\">";
@@ -156,25 +164,27 @@ include_once "./funktioner.inc.php";
         </form>
         <h2>Varukorg</h2>
         <?php
-        /* Visa innehållet på varukorgen = varukorg.txt */
-        $varukorg = "./varukorg.txt";
+        // Visa innehållet på varukorgen = varukorg.txt
+        $varukorg = "...";
 
-        /* Ta emot data som skickas */
+        // Ta emot data som skickas
         $vara = filter_input(INPUT_POST, 'vara', FILTER_SANITIZE_STRING);
         if ($vara) {
-            /* Spara ned i varukorg.txt */
+        
+            // Spara ned i varukorg.txt
             $handtag = fopen($varukorg, 'w');
             fwrite($handtag, "$vara\n");
             fclose($handtag);
         }
 
+        // Är filens läsbar
         if (is_readable($varukorg)) {
             
-            /* Läs in textfilen varukorg.txt i en array */
+            // Läs in textfilen varukorg.txt i en array
             $rader = file($varukorg);
             $total = 0;
 
-            /* Skriv ut som tabell */
+            // Skriv ut som tabell
             echo "<table>";
             echo "<thead>";
             echo "<tr><th>Vara</th><th>Pris</th></tr>";
@@ -195,7 +205,7 @@ include_once "./funktioner.inc.php";
             echo "<p>Varukorgen saknas!</p>";
         }
         ?>
-        <a class="knapp" href="./steg1.php">Börja om!</a>
+        <a class="knapp" href="steg1.php">Börja om!</a>
     </div>
 </body>
 </html>

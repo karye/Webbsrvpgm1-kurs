@@ -19,7 +19,7 @@ description: Välj steg-för-steg komponenterna till din dator
 {% tab title="steg1.php" %}
 ```php
 <?php
-include_once "./funktioner.inc.php";
+include_once "funktioner.inc.php";
 ?>
 <!DOCTYPE html>
 <html lang="sv">
@@ -116,9 +116,12 @@ function pris($bilden) {
 
 ### steg2.php
 
+* Från **steg1.php** skickas valet användaren gjort med radioknapparna till **steg2.php**
+* Vald produkt sparas ned i textfilen **varukorg.txt**
+
 ```php
 <?php
-include_once "./funktioner.inc.php";
+include_once "funktioner.inc.php";
 ?>
 <!DOCTYPE html>
 <html lang="sv">
@@ -210,4 +213,8 @@ include_once "./funktioner.inc.php";
 </body>
 </html>
 ```
+
+* Från **steg2.php** kommer man till **steg3.php**
+
+\*\*\*\*
 

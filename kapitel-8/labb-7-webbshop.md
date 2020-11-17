@@ -10,6 +10,11 @@ description: Välj steg-för-steg komponenterna till din dator
 
 ## Första sidan
 
+### Startkoden
+
+* Första sidan läser bilderna i katalogen för cpu:er
+* Bilderna filnamn följer formatet **vara\_pris.jpg/png**
+
 {% tabs %}
 {% tab title="steg1.php" %}
 ```php
@@ -63,17 +68,23 @@ include_once "./funktioner.inc.php";
 </html>
 ```
 {% endtab %}
+{% endtabs %}
 
+### Include-filen med funktioner
+
+* För att göra koden mer läsbar flyttas två funktioner till en separat fil
+
+{% tabs %}
 {% tab title="funktioner.inc.php" %}
-```
+```php
 <?php
 function vara($bilden) {
 
     /* Plocka ut del före punkten */
     $delar1 = explode('.', $bilden);
 
-    /* Dela upp efter - */
-    $delar2 = explode('-', $delar1[0]);
+    /* Dela upp efter _ */
+    $delar2 = explode('_', $delar1[0]);
 
     /* Plocka ut sista delen = priset */
     array_pop($delar2);
@@ -88,8 +99,8 @@ function pris($bilden) {
     /* Plocka ut del före punkten */
     $delar1 = explode('.', $bilden);
 
-    /* Dela upp efter - */
-    $delar2 = explode('-', $delar1[0]);
+    /* Dela upp efter _ */
+    $delar2 = explode('_', $delar1[0]);
 
     /* Plocka ut sista delen = priset */
     $pris = array_pop($delar2);

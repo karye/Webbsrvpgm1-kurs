@@ -47,18 +47,18 @@
 * [Ladda upp filer](kapitel-8/ladda-upp-filer.md)
 * [Labb 8 - bygg-din-pc](kapitel-8/labb-7-webbshop.md)
 
-## Koda webbappar i PHP
+## Kapitel 9
 
-* [Sessioner](koda-webbappar-i-php/sessioner.md)
-* [Lösenord & kryptering\(?\)](koda-webbappar-i-php/loesenord-and-kryptering.md)
+* [Grunder i SQL](kapitel-9/laboration-1.md)
+* [Ställa frågor](kapitel-9/laboration-2.md)
+* [Relationer mellan tabeller](kapitel-9/laboration-3.md)
+* [Inbyggda funktioner](kapitel-9/laboration-4.md)
+* [Fritextsökning](kapitel-9/laboration-5.md)
 
-## Databas med mysql
+## Kapitel 10
 
-* [Grunder i SQL](databas-med-mysql/laboration-1.md)
-* [Ställa frågor](databas-med-mysql/laboration-2.md)
-* [Relationer mellan tabeller](databas-med-mysql/laboration-3.md)
-* [Inbyggda funktioner](databas-med-mysql/laboration-4.md)
-* [Fritextsökning](databas-med-mysql/laboration-5.md)
+* [Sessioner](kapitel-10/sessioner.md)
+* [Lösenord & kryptering\(?\)](kapitel-10/loesenord-and-kryptering.md)
 
 ## Övrigt
 

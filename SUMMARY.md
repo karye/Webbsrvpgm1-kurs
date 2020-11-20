@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Introduktion](README.md)
+* [Utvecklingsmiljö](README.md)
 * [PHP snippets](php-snippets.md)
 
 ## Kapitel 1

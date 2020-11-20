@@ -2,7 +2,7 @@
 description: 'Installera alla verktyg, konfigurera alla inställningar, skapar alla mappar'
 ---
 
-# Introduktion
+# Utvecklingsmiljö
 
 ## Installera webbeditorn VS Code & tillägg
 

@@ -9,7 +9,7 @@ description: >-
 ## Skapa en tabell \(CREATE TABLE\) 
 
 ```sql
-mysql> CREATE TABLE test (id INT, namn CHAR (50)); 
+MariaDB> CREATE TABLE test (id INT, namn CHAR (50)); 
 Query OK, 0 rows affected (0.05 sec) 
 ```
 
@@ -18,21 +18,32 @@ Ovanstående skapar tabellen test med två fält, id och namn. Namn är ett fäl
 ## Mata in data \(INSERT INTO\)
 
 ```sql
-mysql> INSERT INTO test (namn) VALUES ('Kalle Anka'); 
+MariaDB> INSERT INTO test (namn) VALUES ('Kalle Anka'); 
 Query OK, 1 row affected (0.14 sec) 
 ```
 
-Ovanstående matar in ”Kalle Anka”, som namn i tabellen test. Vill jag mata in värden i flera fält åtskiljer jag dem med komma \(,\), likadant gör jag då med värdena. Till exempel
+Ovanstående matar in ”Kalle Anka”, som namn i tabellen test. Vill jag mata in värden i flera fält åtskiljer jag dem med komma \(,\), likadant gör jag då med värdena. Till exempel:
 
 ```sql
-mysql> INSERT INTO test (id, namn) VALUES (10, 'Kajsa Anka'); 
+MariaDB> INSERT INTO test (id, namn) VALUES (10, 'Kajsa Anka'); 
 Query OK, 1 row affected (0.07 sec) 
+```
+
+Vill jag mata in flera poster \(rader\) åt gången, gör man såhär:
+
+```sql
+MariaDB> INSERT INTO test (namn) VALUES          
+    -> ("Kalle"),
+    -> ("Alexander"),
+    -> ("Joakim");
+Query OK, 3 rows affected (0.02 sec)
+Records: 3  Duplicates: 0  Warnings: 0
 ```
 
 ## Ställa frågor \(SELECT ... FROM\) 
 
 ```sql
-mysql> SELECT  FROM test; 
+MariaDB> SELECT  FROM test; 
 +------+------------+ 
 | id   | namn       | 
 +------+------------+ 
@@ -49,7 +60,7 @@ _Ovanstående väljer allt \(_\) från tabellen test.
 VARNING!! Detta kommando förändrar data, det finns inget ”undo”, var försiktig! 
 
 ```sql
-mysql> UPDATE test SET id=9 WHERE id=10; 
+MariaDB> UPDATE test SET id=9 WHERE id=10; 
 Query OK, 1 row affected (0.07 sec) 
 Rows matched: 1 Changed: 1 Warnings: 0 
 ```
@@ -61,7 +72,7 @@ Ovanstående uppdaterar fältet id till 9 för alla poster där id är 10. Obser
 VARNING!! Detta kommando tar bort data, det finns inget ”undo”, var försiktig! 
 
 ```sql
-mysql> DELETE FROM test WHERE id=9; 
+MariaDB> DELETE FROM test WHERE id=9; 
 Query OK, 1 row affected (0.06 sec)
 ```
 

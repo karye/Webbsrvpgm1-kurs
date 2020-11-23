@@ -12,15 +12,16 @@ Om du gjorde den förra laborationen rätt så skall du ha en tabell med följan
 
 ```sql
 MariaDB> EXPLAIN bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) |      | PRI |         |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-| pris      | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| id        | int(11)     | NO   | PRI | NULL    | auto_increment |
+| reg       | varchar(10) |      |     |         |                |
+| marke     | varchar(50) | YES  |     | NULL    |                |
+| modell    | varchar(50) | YES  |     | NULL    |                |
+| arsmodell | int(11)     | YES  |     | NULL    |                |
+| pris      | int(11)     | YES  |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
 5 rows in set (0.05 sec)
 ```
 
@@ -28,18 +29,19 @@ Denna tabell skall vi nu bygga vidare på. MySQL har en egenskap som är väldig
 
 Fältet _**agare**_ Nu vill vi att man skall kunna lägga till en ägare på varje bil. En bil skall ha bara en enda ägare men en person skall kunna äga flera bilar. För att följa de normaliseringsregler vi lärt oss så vet vi att vi måste skapa en tabell till med ägarna till bilarna. Det gör vi av i huvudsak för att förhindra dubbellagring eller redundans som det kallas. Man kan enkelt se att det behövs eftersom ägaren inte beror helt på bilens nyckel. Vi börjar med att uppdatera biltabellen. Lägg till fältet _**agare**_, se förra labben om du inte minns hur man gör. Fältet skall ha typen **int**. **int** är en förkortning för integer som betyder ”heltal”. När du är klar skall resultatet bli så här:
 
-```text
+```sql
 MariaDB> EXPLAIN bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) |      | PRI |         |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-| pris      | int(11)  | YES  |     | NULL    |       |
-| agare     | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| id        | int(11)     | NO   | PRI | NULL    | auto_increment |
+| reg       | varchar(10) |      |     |         |                |
+| marke     | varchar(50) | YES  |     | NULL    |                |
+| modell    | varchar(50) | YES  |     | NULL    |                |
+| arsmodell | int(11)     | YES  |     | NULL    |                |
+| pris      | int(11)     | YES  |     | NULL    |                |
+| agare     | int(11)     | YES  |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
 6 rows in set (0.00 sec)
 ```
 

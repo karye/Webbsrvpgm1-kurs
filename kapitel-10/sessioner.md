@@ -12,7 +12,7 @@ Ett problem som ofta uppkommer när man programmerar i PHP är att variabler int
 
 Det finns olika metoder att spara variabelvärden mellan sidor. Ett sätt är att skicka med gömda formulärfält - men detta blir snabbt ohanterligt då variablerna är många. Ett annat sätt är att skicka med information i själva adressen. Då stöter man dock på säkerhetsproblem. Dessutom finns en gräns i att en webbadress inte får vara längre än c:a 250 tecken.
 
-För att göra det hela enklare har PHP stöd för sessioner. Detta innebär att man på ett enkelt sätt kan ha tillgång till samma variabelflora på hela webbplatsen, vilket är mycket använd bart för att t.ex. kontrollera att en användare är inloggad, eller för att genomföra ett köp i en webb-butik.
+För att göra det hela enklare har PHP stöd för sessioner. Detta innebär att man på ett enkelt sätt kan ha tillgång till samma variabelflora på hela webbplatsen, vilket är mycket använd bart för att t.ex. kontrollera att en användare är inloggad, eller för att genomföra ett köp i en webbbutik.
 
 ### **Varje session har ett unikt id**
 

@@ -49,7 +49,7 @@ Så här kan det se ut:
 
 ```bash
 root@3084f5616900:/# mysql -u admin -p
-Enter password: 
+Enter password: pass
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 2
 Server version: 10.1.44-MariaDB-0ubuntu0.18.04.1 Ubuntu 18.04

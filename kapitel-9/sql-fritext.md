@@ -74,7 +74,7 @@ Ser inte era tabeller ut exakt så så gör det inget. Men de bör vara ungefär
 
 ## Jokertecken
 
-Ibland när man ställer frågor till en databas så vet man inte exakt vad man söker efter. Man kanske bara en del av ett namn eller så söker man något som man inte riktigt vet hur det stavas. Då använder man sig av jokertecken. Ett jokertecken, eller wildcard som det kallas på engelska är ett tecken som man använder för att representera inget, ett eller flera andra tecken. De jokertecken som vi använder i SQL är **% \(procent\)** och **\_ \(understreck\)**.   
+Ibland när man ställer frågor till en databas så vet man inte exakt vad man söker efter. Man kanske bara en del av ett namn eller så söker man något som man inte riktigt vet hur det stavas. Då använder man sig av jokertecken. Ett jokertecken, eller wildcard som det kallas på engelska är ett tecken som man använder för att representera inget, ett eller flera andra tecken. De jokertecken som vi använder i SQL är **% \(procent\)** och **\_ \(understreck\)**.  
 Några exempel:
 
 | A% | Matchar alla strängar som börjar på A oavsett längd |
@@ -102,12 +102,12 @@ MariaDB [labb]> SELECT * FROM personer WHERE fnamn LIKE "K%";
 
 ### Escape-tecken
 
-Antag att man vill söka efter något som innehåller just **%** eller, tex ”kalle\_anka”. Då blir det genast problem. Skriver man ”kalle\_anka” så kommer ju också ”kalle+anka” att stämma och alla andra strängar som består av ”kalle” och ”anka” med ett tecken mellan. Samma problem uppstår om man vill söka efter en sträng som innehåller " eller ” eftersom dessa tecken används för att avgränsa själva strängen. Till vår hjälp då finns escape-tecknen. Escape-tecken används då man vill att specialtecken skall förekomma i en sträng. Man säger på svengelska att dessa tecken skall ”escapas”. Escape-tecknet i SQL är  \(bakåtstreck eller backslash\). Tecket efter escape-tecknet är det som escapas. Till exempel så matchar \ just ett \_ \(understreck\).
+Antag att man vill söka efter något som innehåller just **%** eller, tex ”kalle\_anka”. Då blir det genast problem. Skriver man ”kalle\_anka” så kommer ju också ”kalle+anka” att stämma och alla andra strängar som består av ”kalle” och ”anka” med ett tecken mellan. Samma problem uppstår om man vill söka efter en sträng som innehåller " eller ” eftersom dessa tecken används för att avgränsa själva strängen. Till vår hjälp då finns escape-tecknen. Escape-tecken används då man vill att specialtecken skall förekomma i en sträng. Man säger på svengelska att dessa tecken skall ”escapas”. Escape-tecknet i SQL är \(bakåtstreck eller backslash\). Tecket efter escape-tecknet är det som escapas. Till exempel så matchar  just ett \_ \(understreck\).
 
 | \\_ | Matchar \_ |
 | :--- | :--- |
 | \% | Matchar % |
-| \\ | Matchar \ |
+| \ | Matchar \ |
 | \” | Matchar ” |
 | \" | Matchar " |
 
@@ -115,19 +115,19 @@ Antag att man vill söka efter något som innehåller just **%** eller, tex ”k
 
 Naturligtvis provkör du dem innan du skriver ner dem här.
 
-### Uppgift 1 
+### Uppgift 1
 
 Skriv en fråga som listar alla knattar.
 
-### Uppgift 2 
+### Uppgift 2
 
 Polisen är i farten, skriv en fråga som listar namnen på alla dem som har en bil vars registreringsnummer börjar på A. Skriv en fråga som listar dessa.
 
-### Uppgift 3 
+### Uppgift 3
 
 Polisen har nu fått in lite mer vittnesuppgifter de vill ha tag i namnen på alla personer som har en bil med ett registreringsnummer vars bokstavsdel börjar på A och sifferdel med 1. Skriv en fråga som listar dessa.
 
-### Uppgift 4 
+### Uppgift 4
 
 Skriv en fråga som talar om hur många bilar som har ett registreringsnummer som börjar på A. Det skall se ut så här:
 
@@ -140,15 +140,16 @@ Skriv en fråga som talar om hur många bilar som har ett registreringsnummer so
 1 row in set (0.13 sec)
 ```
 
-### Uppgift 5 
+### Uppgift 5
 
 Polisen igen, den här gången har de i en utredning fått tag på en del av ett papper. Det är sönderrivet men lite går att tyda. Det är ett brev som är adresserat till en person som heter något som börjar på ”Kn” och slutar på ”e” med ett efternamn som börjar på ”A”. Skriv en fråga som listar de som det kan vara.
 
-### Uppgift 6 
+### Uppgift 6
 
 Skriv en fråga som visar förnamnet på alla de som har ett \_ understreck i efternamnet.
 
-### Uppgift 7 
+### Uppgift 7
 
 Skriv en fråga som listar alla bilar med ett ”a” någonstans i namnet. Bokstaven a måste finnas på någon annan plats än första och sista bokstaven. Det gör inget om första eller sista bokstaven är ett ”a” men det måste då även finnas ett ”a” på någon annan plats i namnet.  
 Lite krystat, jag vet, men det är mycket användbart i andra sammanhang.
+

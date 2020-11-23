@@ -6,7 +6,7 @@ description: Ställa frågor mot databasen.
 
 I denna laboration skall vi jobba vidare på bildatabasen som vi började på förra gången. Vi skall ändra fält och lära oss att välja poster med **SELECT**. I denna laboration skriver jag inte ut resultatet på de flesta frågorna utan du kör dem själv i din miljö.
 
-## Från förra laborationen ... 
+## Från förra laborationen ...
 
 Om du gjorde den förra laborationen rätt så skall du ha en tabell med följande fält.
 
@@ -84,7 +84,7 @@ MariaDB [labb]> SELECT * FROM bilar;
 MariaDB [labb]>
 ```
 
-## Ställa frågor med SELECT 
+## Ställa frågor med SELECT
 
 Nu har vi en tabell med bilar som verkar fungera. Nu kan det vara läge att testa att välja saker ut den med **SELECT**. Alltså, välj någonting från någon tabell eller några tabeller. Lite exempel:
 
@@ -97,12 +97,12 @@ MariaDB [labb]> SELECT * FROM bilar;
 Väljer allt \(\* betyder allt\), från bilar. Allt refererar till fält. Det vill säga välj alla fält från bilar.
 
 ```sql
-MariaDB [labb]> SELECT marke, modell, arsmodell FROM bilar; 
+MariaDB [labb]> SELECT marke, modell, arsmodell FROM bilar;
 ```
 
 Väljer fälten _**marke**_, modell och _**arsmodell**_ från bilar. **SELECT** väljer normalt alla poster i de fält som anges.
 
-Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **SELECT** med **WHERE** så kan det se ut så här: 
+Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **SELECT** med **WHERE** så kan det se ut så här:
 
 ### SELECT &lt;vad&gt; FROM &lt;var&gt; WHERE &lt;villkor&gt;;
 
@@ -209,7 +209,6 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 | Volkswagen |     40000 |     75000 |    115000 |
 | Volvo      |     35000 |    140000 |    175000 |
 +------------+-----------+-----------+-----------+
-
 ```
 
 ### Uppgift 4
@@ -228,3 +227,4 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 |      1987 |        1 |  35000.0000 |
 +-----------+----------+-------------+
 ```
+

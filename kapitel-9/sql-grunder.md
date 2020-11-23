@@ -11,10 +11,10 @@ I denna laboration skall du se till att du kommer åt databasmotorn och att det 
 **Kommandoprompt** som ser ut ungefär så här:
 
 ```bash
-> 
+>
 ```
 
-Det är vid denna prompt som du ger kommandon till servern. Du kan prova kommandot **ls** som betyder lista filer, varje kommando körs när du trycker  \(Du skriver det som är fet-stil nedan, resten skriver systemet\).
+Det är vid denna prompt som du ger kommandon till servern. Du kan prova kommandot **ls** som betyder lista filer, varje kommando körs när du trycker \(Du skriver det som är fet-stil nedan, resten skriver systemet\).
 
 ```bash
 > ls
@@ -40,7 +40,7 @@ För att logga ut från servern ger du kommandot **exit** , men det behöver du 
 > exit
 ```
 
-Det vi har jobbat med nu är inloggningen till servern. På servern skall vi nu köra en  databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början. Nu är det dags att starta databasklienten.
+Det vi har jobbat med nu är inloggningen till servern. På servern skall vi nu köra en databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början. Nu är det dags att starta databasklienten.
 
 ## Starta databasklienten
 
@@ -58,7 +58,7 @@ Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-MariaDB [(none)]> 
+MariaDB [(none)]>
 ```
 
 Som du ser så står du nu vid en ny kommandoprompt. Vid denna skriver du **kommandon till databasen**. Jämför med prompten innan som var för att ge kommandon till systemet. Även vid denna prompt har du samma historikfunktion som du hade vid systemprompten, men här bläddrar du mellan kommandona till databasen. Vi testar lite kommandon så att vi ser att det fungerar. Vi måste först välja en databas att arbeta med. Vi väljer databasen _**labb**_ med kommandot **USE labb** :
@@ -69,14 +69,14 @@ Reading table information for completion of table and column names
 You can turn off this feature to get a quicker startup with -A
 
 Database changed
-MariaDB [labb]> 
+MariaDB [labb]>
 ```
 
 {% hint style="warning" %}
 **Alla kommandon till databasen avslutas med semikolon ”;”** \(det behöver de inte göra vid systemprompten\).
 {% endhint %}
 
-Nu kan vi titta efter vad som finns i databasen _**labb**_. Kommandot **SHOW TABLES** visar alla tabeller i databasen: 
+Nu kan vi titta efter vad som finns i databasen _**labb**_. Kommandot **SHOW TABLES** visar alla tabeller i databasen:
 
 ```sql
 MariaDB [labb]> SHOW TABLES;
@@ -210,7 +210,7 @@ Stoppa nu in några fler namn i tabellen _**test**_.
 
 ## Ställa frågor till databasen, välja ur en tabell
 
-Att ställa frågor till en databas innebär att man gör vissa operationer på poster. Det vi gjorde ovan som skapade tallen och posterna kallas också för frågor även om de kanske inte direkt ses som frågor. Den enklaste frågan är att välja poster ur en tabell. När man väljer ut data ur en eller flera tabeller kallas det ibland att man gör en urvalsfråga. Det gör man med kommandot **SELECT FROM**  som i sin enklaste form ser ut enligt nedan.
+Att ställa frågor till en databas innebär att man gör vissa operationer på poster. Det vi gjorde ovan som skapade tallen och posterna kallas också för frågor även om de kanske inte direkt ses som frågor. Den enklaste frågan är att välja poster ur en tabell. När man väljer ut data ur en eller flera tabeller kallas det ibland att man gör en urvalsfråga. Det gör man med kommandot **SELECT FROM** som i sin enklaste form ser ut enligt nedan.
 
 ```sql
 MariaDB [labb]> SELECT * FROM test;
@@ -239,7 +239,7 @@ Query OK, 1 row affected (0.80 sec)
 MariaDB [labb]>
 ```
 
-Märk att _**fnatte**_ ****är inom apostrofer i exemplet ovan. Alla textsträngar måste vara inom apostrofer eller citationstecken för att tolkas rätt. Apostroferna hittar du på tangenten ovanför den högra shift-tangenten på tangentbordet.
+Märk att _**fnatte**_ _\*\*_är inom apostrofer i exemplet ovan. Alla textsträngar måste vara inom apostrofer eller citationstecken för att tolkas rätt. Apostroferna hittar du på tangenten ovanför den högra shift-tangenten på tangentbordet.
 
 I exemplet ovan raderades raden där fältet namn innehåller _**fnatte**_ . En **WHERE** -sats kan man använda tillsammans med de flesta andra satser. Till exempel **SELECT**. Som du ser så raderas posten utan minsta förvarning ovan. Ofta kan det vara bra att testa med ett oförstörande kommando som till exempel **SELECT** först.
 
@@ -317,10 +317,7 @@ MariaDB [labb]> EXPLAIN bilar;
 ### Uppgift 2
 
 Du skall nu fylla tabellen med data.  
-Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig för att skapa tabellen. Se till att den är rätt innan du börjar mata in bilarna. När du matar in bilarna, se till att du matar in en hel post i taget. Alltså alla data om en bil i en fråga. Det finns exempel även på detta i lathunden. Resultatet skall bli exakt som detta:
-
-Du skall nu fylla tabellen med data.  
-Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig för att skapa tabellen. Se till att den är rätt innan du börjar mata in bilarna. När du matar in bilarna, se till att du matar in en hel post i taget. Alltså alla data om en bil i en fråga. Det finns exempel även på detta i lathunden. Resultatet skall bli exakt som detta:
+Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig för att skapa tabellen. Se till att den är rätt innan du börjar mata in bilarna. När du matar in bilarna, se till att du matar in en hel post i taget. Alltså alla data om en bil i en fråga. Det finns exempel även på detta i [lathunden](lathund.md). Resultatet skall bli exakt som detta:
 
 ```sql
 MariaDB [labb]> SELECT * FROM bilar;
@@ -342,3 +339,4 @@ MariaDB [labb]> SELECT * FROM bilar;
 ```
 
 När du är klar och fått en tabell som ser ut som ovan kopierar du den och klistrar in i en texteditor och lämnar in. Du är nu klar med den första laborationen.
+

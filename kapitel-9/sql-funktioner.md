@@ -198,24 +198,24 @@ MariaDB [labb]> SELECT YEAR("2003-12-21");
 1 row in set (0.01 sec)
 ```
 
-Jag kommer inte att ta mer om detta nu utan laborera som vanligt vidare med dessa. Vill du lära dig mer om MySQL och datumfunktioner så rekommenderar jag följande webbadresser:   
-MySQL-manualen: [http://www.mysql.com/doc/en/Date\_and\_time\_functions.html](http://www.mysql.com/doc/en/Date_and_time_functions.html) 
+Jag kommer inte att ta mer om detta nu utan laborera som vanligt vidare med dessa. Vill du lära dig mer om MySQL och datumfunktioner så rekommenderar jag följande webbadresser:  
+MySQL-manualen: [http://www.mysql.com/doc/en/Date\_and\_time\_functions.html](http://www.mysql.com/doc/en/Date_and_time_functions.html)
 
 En artikel om datum- och tidsfunktioner i MySQL i två delar: [http://www.databasejournal.com/features/mysql/article.php/2172731](http://www.databasejournal.com/features/mysql/article.php/2172731) [http://www.databasejournal.com/features/mysql/article.php/2190421](http://www.databasejournal.com/features/mysql/article.php/2190421)
 
-## Uppgifter 
+## Uppgifter
 
 Följande frågor skall du svara på. Visa eller lämna in dem till laborationshandledaren. Naturligtvis provkör du dem innan du skriver ner dem här.
 
-### Uppgift 1 
+### Uppgift 1
 
 Skriv en fråga som skriver ut hur många dagar det är till julafton.
 
-### Uppgift 2 
+### Uppgift 2
 
 Skriv en fråga som talar om hur många dagar du är.
 
-### Uppgift 3 
+### Uppgift 3
 
 Skriv en fråga som skriver ut följande:
 
@@ -234,11 +234,11 @@ Skriv en fråga som skriver ut följande:
 7 rows in set (0.00 sec)
 ```
 
-### Uppgift 4 
+### Uppgift 4
 
 Skriv en fråga som skriver ut alla som fyller år i oktober.
 
-### Uppgift 5\* 
+### Uppgift 5\*
 
 Skriv en fråga som skriver ut följande tabell:
 
@@ -260,7 +260,7 @@ Skriv en fråga som skriver ut följande tabell:
 10 rows in set (0.00 sec)
 ```
 
-### Uppgift 6\*\* 
+### Uppgift 6\*\*
 
 Skriv en fråga som skriver ut följande. Tänk på att rubriker och sortering.
 
@@ -282,5 +282,6 @@ Skriv en fråga som skriver ut följande. Tänk på att rubriker och sortering.
 10 rows in set (0.07 sec)
 ```
 
-\\* Lite svårare uppgift  
-\\*\* Lite Svårare uppgift
+\ _Lite svårare uppgift  
+\_\* Lite Svårare uppgift
+

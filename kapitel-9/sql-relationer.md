@@ -163,18 +163,19 @@ Vi har en **RIGHT OUTER JOIN** vilket betyder att allt i tabeller till höger \(
 
 Följande frågor skall du svara på. Visa eller lämna in dessa till laborationshandledaren. Naturligtvis provkör du frågorna i din databas innan du skriver dem på detta blad. Det är dags att betala bilskatt. Skapa en fråga som listar alla personer som har en bil och registreringsnumret på deras bil.
 
-### Uppgift 1 
+### Uppgift 1
 
 Skapa en fråga som visar alla bilar och deras ägare om de har någon.
 
-### Uppgift 2 
+### Uppgift 2
 
 Skapa en fråga som visar alla personer och deras bil om de har någon.
 
-### Uppgift 3 
+### Uppgift 3
 
 Skapa en fråga som visar förnamn och efternamn på alla som har en Saab.
 
-### Uppgift 4 
+### Uppgift 4
 
 Skapa en fråga som listar namnen på alla personer som har en eller flera bilar, samt hur många bilar de har.
+

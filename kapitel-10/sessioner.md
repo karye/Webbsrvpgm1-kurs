@@ -65,11 +65,14 @@ echo $_SESSION['namn']; // Skriver inte ut någonting.
 
 ### **Uppgift 1**
 
-Skapa en enkel räknare som visar hur många gånger man varit inne på sidan. Spara sidan med namnet **raknare.php** och gör sedan en **submit**-knapp som går till samma sida \(**raknare.php**\). Kontrollera att räknaren räknar upp 1 steg för varje gång man varit inne på sidan.
+Skapa en enkel räknare som visar hur många gånger man varit inne på sidan.   
+Spara sidan med namnet **raknare.php** och gör sedan en **submit**-knapp som går till samma sida \(**raknare.php**\).   
+Kontrollera att räknaren räknar upp 1 steg för varje gång man varit inne på sidan.
 
 ### **Uppgift 2**
 
-Utveckla programmet i övning 1 med en kryssruta där man kan bocka för att räknaren ska nollställas. Om kryssrutan är ikryssad när formuläret skickas iväg ska räknaren börja om från 0.
+Utveckla skriptet i uppgift 1 med en kryssruta där man kan bocka för att räknaren ska nollställas.   
+Om kryssrutan är ikryssad när formuläret skickas iväg ska räknaren börja om från 0.
 
 ### **Uppgift 3**
 

@@ -91,17 +91,17 @@ Nu har vi en tabell med bilar som verkar fungera. Nu kan det vara läge att test
 
 ```sql
 MariaDB> SELECT * FROM bilar;
-Väljer allt (* betyder allt), från bilar. Allt refererar till fält. Det vill säga välj alla fält från bilar.
-MariaDB> SELECT marke, modell, arsmodell FROM bilar;
 ```
 
-Allt refererar till fält. Det vill säga välj alla fält från bilar. 
+Väljer allt \(\* betyder allt\), från bilar. Allt refererar till fält. Det vill säga välj alla fält från bilar.
 
 ```sql
 MariaDB> SELECT marke, modell, arsmodell FROM bilar; 
 ```
 
-Väljer fälten _**marke**_, modell och _**arsmodell**_ från bilar. **SELECT** väljer normalt alla poster i de fält som anges. Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **SELECT** med **WHERE** så kan det se ut så här: 
+Väljer fälten _**marke**_, modell och _**arsmodell**_ från bilar. **SELECT** väljer normalt alla poster i de fält som anges.
+
+Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **SELECT** med **WHERE** så kan det se ut så här: 
 
 #### SELECT &lt;vad&gt; FROM &lt;var&gt;;
 

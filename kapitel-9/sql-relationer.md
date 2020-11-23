@@ -108,7 +108,8 @@ Nu har vi lite frågor som vi kan ställa frågor till. Vi skall nu öva oss på
 Repetera **SELECT** från förra laborationen om du känner dig osäker på hur det fungerar. I den förra laborationen använde vi **SELECT** för att välja saker från en tabell. Nu skall vi utveckla detta vidare och välja från flera olika tabeller. Vi börjar med en liten fråga som listar alla bilar och deras ägare. Nu skall vi i **SELECT** välja inte bara från en tabell utan från flera \(två i detta fall\). Eftersom de fält vi väljer kan ha samma namn olika tabeller måste vi ange både vila fält vi skall välja och i vilka tabeller dessa kan hittas. Vill vi välja _**fnamn**_ från person så anges detta som _**person.fnamn**_. Vill vi välja alla fält från person så kan vi skriva person.\*. Som vanligt åtskiljer vi det vi listar med kommatecken. Även tabellerna måste anges och åtskiljs med kommatecken. Vi börjar med att välja bilmärken och modeller och så förnamn och efternamn ur persontabellen. Vi skriver så här:
 
 ```sql
-MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM personer, bilar;
+MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn
+FROM personer, bilar;
 ```
 
 Men det där blev ju inte så bra! Varför inte det? Jo vi har ingenstans angivit hur tabellerna skall relatera till varandra. Det kan vi göra med hjälp av kommandot **INNER JOIN**. Tag dig tid att fundera på nedanstående frågor då dessa till en början kan verka krångliga.
@@ -120,7 +121,8 @@ Men det där blev ju inte så bra! Varför inte det? Jo vi har ingenstans angivi
 För att åstadkomma det som vi ville göra ovan kan man skriva så här:
 
 ```sql
-MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM bilar INNER JOIN personer ON bilar.agare=personer.id;
+MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn 
+FROM bilar INNER JOIN personer ON bilar.agare=personer.id;
 +--------------+-----------+--------+-------+
 | marke        | modell    | fnamn  | enamn |
 +--------------+-----------+--------+-------+
@@ -144,7 +146,8 @@ Eftersom vi inte anger någon sorteringsordning \(**ORDER BY**\) så kan vi inte
 Vi tar ett exempel till. Vi vill välja ut samma sak som ovan men utgå från personerna.
 
 ```sql
-MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM personer INNER JOIN bilar ON bilar.agare=personer.id;
+MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn
+FROM personer INNER JOIN bilar ON bilar.agare=personer.id;
 ```
 
 Och som vi ser så går det precis lika bra!

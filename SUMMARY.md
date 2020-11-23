@@ -49,11 +49,11 @@
 
 ## Kapitel 9
 
-* [Grunder i SQL](kapitel-9/laboration-1.md)
-* [Ställa frågor](kapitel-9/laboration-2.md)
-* [Relationer mellan tabeller](kapitel-9/laboration-3.md)
-* [Inbyggda funktioner](kapitel-9/laboration-4.md)
-* [Fritextsökning](kapitel-9/laboration-5.md)
+* [Grunder i SQL](kapitel-9/sql-grunder.md)
+* [Ställa frågor](kapitel-9/sql-fragor.md)
+* [Relationer mellan tabeller](kapitel-9/sql-relationer.md)
+* [Inbyggda funktioner](kapitel-9/sql-funktioner.md)
+* [Fritextsökning](kapitel-9/sql-fritext.md)
 
 ## Kapitel 10
 

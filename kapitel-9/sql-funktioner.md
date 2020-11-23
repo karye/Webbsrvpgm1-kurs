@@ -161,9 +161,9 @@ MySQL är bra på att känna igen datum och klockslag i olika former så kommer 
 Ibland vill man räkna hur långt det är mellan två datum. Då är det smidigt att räkna om datumen till dagar. Till detta finns funktionen **TO\_DAYS\(\)**. Vill man veta hur många dagar det är kvar till midsommarafton så kan man göra det med nedanstående sats som också innehåller lite matematik. Jag kommer inte att behandla detta mer i detalj än så här just nu. Laborera och prova dig fram.
 
 ```sql
-MariaDB> SELECT TO_DAYS('2004-06-26') – TO_DAYS(CURDATE());
+MariaDB> SELECT TO_DAYS("2004-06-26") – TO_DAYS(CURDATE());
 +--------------------------------------------+
-| TO_DAYS('2004-06-26') - TO_DAYS(CURDATE()) |
+| TO_DAYS("2004-06-26") - TO_DAYS(CURDATE()) |
 +--------------------------------------------+
 |                                        107 |
 +--------------------------------------------+
@@ -175,23 +175,23 @@ MariaDB> SELECT TO_DAYS('2004-06-26') – TO_DAYS(CURDATE());
 Ofta vill man bryta upp ett datum i sina beståndsdelar. Det är MySQL väldigt bra på. Vill man till exempel veta hur många år en bil är så är man nog bara intresserad av vilket år det är nu och inte hela datumet. Vill man veta om det är den 15:e i vilken månad som helst måste man kunna välja bara dagen och vill man veta om det är månaden juni så är det smidigt med bara månaden. Några exempel:
 
 ```sql
-MariaDB> SELECT DAYOFMONTH('2003-12-21');
+MariaDB> SELECT DAYOFMONTH("2003-12-21");
 +--------------------------+
-| DAYOFMONTH('2003-12-21') |
+| DAYOFMONTH("2003-12-21") |
 +--------------------------+
 |                       21 |
 +--------------------------+
 1 row in set (0.00 sec)
-MariaDB> SELECT MONTH('2003-12-21');
+MariaDB> SELECT MONTH("2003-12-21");
 +---------------------+
-| MONTH('2003-12-21') |
+| MONTH("2003-12-21") |
 +---------------------+
 |                  12 |
 +---------------------+
 1 row in set (0.00 sec)
-MariaDB> SELECT YEAR('2003-12-21');
+MariaDB> SELECT YEAR("2003-12-21");
 +--------------------+
-| YEAR('2003-12-21') |
+| YEAR("2003-12-21") |
 +--------------------+
 |               2003 |
 +--------------------+

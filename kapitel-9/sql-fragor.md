@@ -59,7 +59,7 @@ MariaDB> ALTER TABLE bilar ADD pris INT;
 Kontrollera att det blev som du tror. Uppdatera poster med **UPDATE**. Nu har tabellen utökats med fältet _**pris**_ Det fältet är nu tomt för alla bilar, vi måste fylla det med något. Vi måste alltså ändra posterna så att priset kommer med. Ändrar poster gör man med kommandot **UPDATE**, vi går igenom det lite kort här, det kommer igen i laborationer längre fram. Varning! **UPDATE** förändrar data och det finns inget _**undo**_.
 
 ```sql
-MariaDB> UPDATE bilar SET pris=130000 WHERE reg='ABC123';
+MariaDB> UPDATE bilar SET pris=130000 WHERE reg="ABC123";
 ```
 
 Även här ser vi att vi väljer ut vilka fält som skall ändras med **WHERE**, hade vi inte angett vilka rader som skall ändras skulle alla rader ha ändrats. Det vill säga alla bilar hade fått priset 130000, vilket förmodligen inte är vad vi vill. Uppdatera nu tabellen så att den ser ut så här.
@@ -109,7 +109,7 @@ Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **S
 Alltså, välj någonting från någon tabell eller några tabeller där ett villkor är uppfyllt. Vi tar ett exempel:
 
 ```sql
-MariaDB> SELECT * FROM bilar WHERE marke='volvo';
+MariaDB> SELECT * FROM bilar WHERE marke="volvo";
 ```
 
 Enkelt vad? Man kan även göra mer avancerade saker. Säg att vi vill välja ut alla bilar som är från 2000 eller nyare:
@@ -127,7 +127,7 @@ MariaDB> SELECT * FROM bilar WHERE arsmodell<2000;
 Uttrycket efter **WHERE** skall vara ett logiskt uttryck som antingen är sant eller falskt. Det går att använda operatorerna **AND** och **OR** till exempel för att ange flera villkor. Till exempel kan vi skriva så här för att välja ut alla bilar av märket volvo och modellen 850. Skulle det finnas en BMW 850 med i listan skulle den inte komma med eftersom både märket och modellen spelar roll.
 
 ```sql
-MariaDB> SELECT * FROM bilar WHERE marke='volvo' AND modell='850';
+MariaDB> SELECT * FROM bilar WHERE marke="volvo" AND modell="850";
 ```
 
 Lägg gärna till fler bilar och testa olika frågor.

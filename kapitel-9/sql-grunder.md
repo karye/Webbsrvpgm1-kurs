@@ -190,14 +190,14 @@ MariaDB>
 Nu när vi har vår lilla tabell, vill vi stoppa in lite värden i den. De gör vi med kommandot **INSERT INTO**. Med **INSER INTO** stoppar man in en post i taget i sin tabell. Om posten har flera fält \(den tabell vi gjort nu har ju bara ett fält\) så se till att fylla alla fält, eller så många som möjligt, med data redan när posten skapas.
 
 ```sql
-MariaDB> INSERT INTO test (namn) VALUES ('kalle');
+MariaDB> INSERT INTO test (namn) VALUES ("kalle");
 Query OK, 1 row affected (0.00 sec)
 ```
 
 Om man har flera fält i sin tabell och man vill skapa poster är det enklast att fylla alla fält på en gång. Till exempel:
 
 ```sql
-MariaDB> INSERT INTO test2 (namn, enamn) VALUES ('Kalle', 'Anka');
+MariaDB> INSERT INTO test2 (namn, enamn) VALUES ("Kalle", "Anka");
 Query OK, 1 row affected (0.01 sec)
 ```
 
@@ -229,7 +229,7 @@ Tecknet **\*** betyder ungefär **allt**, man kan läsa ut kommandot ovan som **
 Man kan radera poster från en tabell med kommandot **DELETE FROM ...**, observera att detta är ett destruktivt kommando som raderar saker. Det finns inget **undo**. Gör man en **DELETE FROM tabell** så kommer allt i tabellen att tas bort. Vi måste begränsa vad som skall tas bort med hjälp av **WHERE**. Se nedanstående exempel:
 
 ```sql
-MariaDB> DELETE FROM test WHERE namn='fnatte';
+MariaDB> DELETE FROM test WHERE namn="fnatte";
 Query OK, 1 row affected (0.80 sec)
 MariaDB>
 ```
@@ -239,7 +239,7 @@ Märk att _**fnatte**_ ****är inom apostrofer i exemplet ovan. Alla textsträng
 I exemplet ovan raderades raden där fältet namn innehåller _**fnatte**_ . En **WHERE** -sats kan man använda tillsammans med de flesta andra satser. Till exempel **SELECT**. Som du ser så raderas posten utan minsta förvarning ovan. Ofta kan det vara bra att testa med ett oförstörande kommando som till exempel **SELECT** först.
 
 ```sql
-MariaDB> SELECT * FROM test WHERE namn='tjatte';
+MariaDB> SELECT * FROM test WHERE namn="tjatte";
 +--------+
 |  namn  |
 +--------+
@@ -248,17 +248,17 @@ MariaDB> SELECT * FROM test WHERE namn='tjatte';
 1 row in set (0.00 sec)
 ```
 
-Som vi ser så verkar en post matcha **WHERE namn='tjatte'** så är det den vi vill radera är det bara att sätta igång:
+Som vi ser så verkar en post matcha **WHERE namn="tjatte"** så är det den vi vill radera är det bara att sätta igång:
 
 ```sql
-MariaDB> DELETE FROM test WHERE namn='tjatte';
+MariaDB> DELETE FROM test WHERE namn="tjatte";
 Query OK, 1 row affected (0.03 sec)
 ```
 
 Nu skall _**tjatte**_ vara borta, vi kollar med **SELECT** igen:
 
 ```sql
-MariaDB> SELECT * FROM test WHERE namn='tjatte';
+MariaDB> SELECT * FROM test WHERE namn="tjatte";
 Empty set (0.00 sec)
 ```
 

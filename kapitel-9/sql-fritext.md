@@ -88,7 +88,7 @@ Några exempel:
 För att använda jokertecken använder man LIKE istället för ”=”. Till exempel kan man gör som i exemplet nedan för att ta fram alla förnamn som börjar på K.
 
 ```sql
-MariaDB> SELECT * FROM personer WHERE fnamn LIKE 'K%';
+MariaDB> SELECT * FROM personer WHERE fnamn LIKE "K%";
 +----+--------+-------+--------------+
 | id | fnamn  | enamn | fodelsedatum |
 +----+--------+-------+--------------+
@@ -102,14 +102,14 @@ MariaDB> SELECT * FROM personer WHERE fnamn LIKE 'K%';
 
 ### Escape-tecken
 
-Antag att man vill söka efter något som innehåller just **%** eller, tex ”kalle\_anka”. Då blir det genast problem. Skriver man ”kalle\_anka” så kommer ju också ”kalle+anka” att stämma och alla andra strängar som består av ”kalle” och ”anka” med ett tecken mellan. Samma problem uppstår om man vill söka efter en sträng som innehåller ' eller ” eftersom dessa tecken används för att avgränsa själva strängen. Till vår hjälp då finns escape-tecknen. Escape-tecken används då man vill att specialtecken skall förekomma i en sträng. Man säger på svengelska att dessa tecken skall ”escapas”. Escape-tecknet i SQL är  \(bakåtstreck eller backslash\). Tecket efter escape-tecknet är det som escapas. Till exempel så matchar \ just ett \_ \(understreck\).
+Antag att man vill söka efter något som innehåller just **%** eller, tex ”kalle\_anka”. Då blir det genast problem. Skriver man ”kalle\_anka” så kommer ju också ”kalle+anka” att stämma och alla andra strängar som består av ”kalle” och ”anka” med ett tecken mellan. Samma problem uppstår om man vill söka efter en sträng som innehåller " eller ” eftersom dessa tecken används för att avgränsa själva strängen. Till vår hjälp då finns escape-tecknen. Escape-tecken används då man vill att specialtecken skall förekomma i en sträng. Man säger på svengelska att dessa tecken skall ”escapas”. Escape-tecknet i SQL är  \(bakåtstreck eller backslash\). Tecket efter escape-tecknet är det som escapas. Till exempel så matchar \ just ett \_ \(understreck\).
 
 | \\_ | Matchar \_ |
 | :--- | :--- |
 | \% | Matchar % |
 | \\ | Matchar \ |
 | \” | Matchar ” |
-| \' | Matchar ' |
+| \" | Matchar " |
 
 ## Uppgifter
 

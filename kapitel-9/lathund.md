@@ -18,14 +18,14 @@ Ovanstående skapar tabellen test med två fält, id och namn. Namn är ett fäl
 ## Mata in data \(INSERT INTO\)
 
 ```sql
-MariaDB> INSERT INTO test (namn) VALUES ('Kalle Anka'); 
+MariaDB> INSERT INTO test (namn) VALUES ("Kalle Anka"); 
 Query OK, 1 row affected (0.14 sec) 
 ```
 
 Ovanstående matar in ”Kalle Anka”, som namn i tabellen test. Vill jag mata in värden i flera fält åtskiljer jag dem med komma \(,\), likadant gör jag då med värdena. Till exempel:
 
 ```sql
-MariaDB> INSERT INTO test (id, namn) VALUES (10, 'Kajsa Anka'); 
+MariaDB> INSERT INTO test (id, namn) VALUES (10, "Kajsa Anka"); 
 Query OK, 1 row affected (0.07 sec) 
 ```
 

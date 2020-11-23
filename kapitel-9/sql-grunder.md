@@ -94,7 +94,7 @@ Empty set (0.00 sec)
 MariaDB [labb]>
 ```
 
-Nu när jag tryckte Enter-tangenten efter **SHOW TABLES** visades en ny prompt. Denna prompt visar att jag är på en ny rad men fortfarande på samma kommando. Jag tryckte Enter-tangenten två gånger, sedan skrev jag ett semikolon för att avsluta kommandot. Som du såg så gick det bra, det går att dela upp kommandon på flera rader om man vill bara man avslutar dem med semikolon.
+Nu när jag tryckte **Enter**-tangenten efter **SHOW TABLES** visades en ny prompt. Denna prompt visar att jag är på en ny rad men fortfarande på samma kommando. Jag tryckte **Enter**-tangenten två gånger, sedan skrev jag ett semikolon för att avsluta kommandot. Som du såg så gick det bra, det går att dela upp kommandon på flera rader om man vill bara man avslutar dem med semikolon.
 
 För att lämna databasklienten så ger du kommandot **\q**. De kommandon som börjar med bakstreck ”\” är specialkommandon till databasklienten och dessa skall inte avslutas med semikolon.
 
@@ -129,7 +129,7 @@ Men nu fortsätter vi med tabellen _**test**_. Vi kollar att tabellen verkligen 
 ```sql
 MariaDB [labb]> SHOW TABLES;
 +-----------------+
-| Tables_in_rejas |
+| Tables_in_labb  |
 +-----------------+
 | test            |
 | test2           |

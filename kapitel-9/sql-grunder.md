@@ -111,7 +111,7 @@ Starta nu databasklienten igen och upprepa det vi gjort nu **minst en gång**. D
 Skapar en tabell gör man med kommandot **CREATE TABLE** vi börjar med att skapa en liten testtabell med ett fält som vi kallar för namn och som innehåller text \(max 10 tecken\). Syntaxen för kommandot **CREATE TABLE** ser i sin enklaste form ut så här:
 
 ```sql
-MariaDB [labb]> CREATE TABLE test ( namn char(10) );
+MariaDB [labb]> CREATE TABLE test (namn varchar(10));
 Query OK, 0 rows affected (0.01 sec)
 ```
 
@@ -120,7 +120,7 @@ Vi skapar en tabell som heter _**test**_ och som innehåller ett fält av typen 
 Vill man skapa en tabell med fler fält än ett så kan man naturligtvis göra det. Då anger man fälten inom parentesen efter tabellnamnet åtskilda med kommatecken. Till exempel:
 
 ```sql
-MariaDB [labb]> CREATE TABLE test2 ( namn char(20), enamn char(20) );
+MariaDB [labb]> CREATE TABLE test2 (fnamn varchar(20), enamn varchar(20));
 Query OK, 0 rows affected (0.18 sec)
 ```
 
@@ -141,11 +141,11 @@ Jodå, den verkar ju ha skapats. Vi kan titta närmare på fälten med kommandot
 
 ```sql
 MariaDB [labb]> SHOW FIELDS FROM test;
-+-------+----------+------+-----+---------+-------+
-| Field | Type     | Null | Key | Default | Extra |
-+-------+----------+------+-----+---------+-------+
-| namn  | char(10) | YES  |     | NULL    |       |
-+-------+----------+------+-----+---------+-------+
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| namn  | varchar(10) | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
 1 row in set (0.04 sec)
 MariaDB [labb]>
 ```
@@ -204,7 +204,7 @@ Query OK, 1 row affected (0.00 sec)
 Om man har flera fält i sin tabell och man vill skapa poster är det enklast att fylla alla fält på en gång. Till exempel:
 
 ```sql
-MariaDB [labb]> INSERT INTO test2 (namn, enamn) VALUES ("Kalle", "Anka");
+MariaDB [labb]> INSERT INTO test2 (fnamn, enamn) VALUES ("Kalle", "Anka");
 Query OK, 1 row affected (0.01 sec)
 ```
 

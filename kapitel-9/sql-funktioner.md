@@ -284,8 +284,3 @@ Skriv en fråga som skriver ut följande. Tänk på att rubriker och sortering.
 
 \\* Lite svårare uppgift  
 \\*\* Lite Svårare uppgift
-
-{% hint style="info" %}
-Copyright © 2004, 2005 Rejås Datakonsult. Var och en äger rätt att kopiera, sprida och/eller förändra detta dokument under villkoren i licensen "GNU Free Documentation License", version 1.2 eller senare publicerad av Free Software Foundation, utan oföränderliga avsnitt, utan framsidestexter och utan baksidestexter. En kopia av denna licens finns på [http://rejas.se/gnu/.](http://rejas.se/gnu/.)
-{% endhint %}
-

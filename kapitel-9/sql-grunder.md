@@ -61,7 +61,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 MariaDB [(none)]> 
 ```
 
-Som du ser så står du nu vid en ny kommandoprompt. Vid denna skriver du **kommandon till databasen**. Jämför med prompten innan som var för att ge kommandon till systemet. Även vid denna prompt har du samma historikfunktion som du hade vid systemprompten, men här bläddrar du mellan kommandona till databasen. Vi testar lite kommandon så att vi ser att det fungerar. Vi måste först välja en databas att arbeta med. Vi väljer databasen "labb" med kommandot **USE labb** :
+Som du ser så står du nu vid en ny kommandoprompt. Vid denna skriver du **kommandon till databasen**. Jämför med prompten innan som var för att ge kommandon till systemet. Även vid denna prompt har du samma historikfunktion som du hade vid systemprompten, men här bläddrar du mellan kommandona till databasen. Vi testar lite kommandon så att vi ser att det fungerar. Vi måste först välja en databas att arbeta med. Vi väljer databasen _**labb**_ med kommandot **USE labb** :
 
 ```sql
 MariaDB [(none)]> USE labb;
@@ -76,7 +76,7 @@ MariaDB [labb]>
 **Alla kommandon till databasen avslutas med semikolon ”;”** \(det behöver de inte göra vid systemprompten\).
 {% endhint %}
 
-Nu kan vi titta efter vad som finns i databasen "labb". Kommandot **SHOW TABLES** visar alla tabeller i databasen: 
+Nu kan vi titta efter vad som finns i databasen _**labb**_. Kommandot **SHOW TABLES** visar alla tabeller i databasen: 
 
 ```sql
 MariaDB [labb]> SHOW TABLES;
@@ -108,7 +108,7 @@ Starta nu databasklienten igen och upprepa det vi gjort nu **minst en gång**. D
 
 ## Skapa en tabell
 
-Skapar en tabell gör man med kommandot **CREATE TABLE** vi börjar med att skapa en liten testtabell med ett fält som vi kallar för namn och som innehåller text \(max 10 tecken\). Syntaxen för kommandot CR**EATE TABLE** ser i sin enklaste form ut så här:
+Skapar en tabell gör man med kommandot **CREATE TABLE** vi börjar med att skapa en liten testtabell med ett fält som vi kallar för namn och som innehåller text \(max 10 tecken\). Syntaxen för kommandot **CREATE TABLE** ser i sin enklaste form ut så här:
 
 ```sql
 MariaDB [labb]> CREATE TABLE test ( namn char(10) );
@@ -342,8 +342,3 @@ MariaDB [labb]> SELECT * FROM bilar;
 ```
 
 När du är klar och fått en tabell som ser ut som ovan kopierar du den och klistrar in i en texteditor och lämnar in. Du är nu klar med den första laborationen.
-
-{% hint style="info" %}
-Copyright © 2004, 2005 Rejås Datakonsult. Var och en äger rätt att kopiera, sprida och/eller förändra detta dokument under villkoren i licensen "GNU Free Documentation License", version 1.2 eller senare publicerad av Free Software Foundation, utan oföränderliga avsnitt, utan framsidestexter och utan baksidestexter. En kopia av denna licens finns på [http://rejas.se/gnu/.](http://rejas.se/gnu/.)
-{% endhint %}
-

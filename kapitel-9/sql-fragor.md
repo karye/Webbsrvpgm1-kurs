@@ -109,7 +109,7 @@ Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **S
 Alltså, välj någonting från någon tabell eller några tabeller där ett villkor är uppfyllt. Vi tar ett exempel:
 
 ```sql
-MariaDB [labb]> SELECT * FROM bilar WHERE marke="volvo";
+MariaDB [labb]> SELECT * FROM bilar WHERE marke="Volvo";
 ```
 
 Enkelt vad? Man kan även göra mer avancerade saker. Säg att vi vill välja ut alla bilar som är från 2000 eller nyare:
@@ -127,7 +127,7 @@ MariaDB [labb]> SELECT * FROM bilar WHERE arsmodell<2000;
 Uttrycket efter **WHERE** skall vara ett logiskt uttryck som antingen är sant eller falskt. Det går att använda operatorerna **AND** och **OR** till exempel för att ange flera villkor. Till exempel kan vi skriva så här för att välja ut alla bilar av märket volvo och modellen 850. Skulle det finnas en BMW 850 med i listan skulle den inte komma med eftersom både märket och modellen spelar roll.
 
 ```sql
-MariaDB [labb]> SELECT * FROM bilar WHERE marke="volvo" AND modell="850";
+MariaDB [labb]> SELECT * FROM bilar WHERE marke="Volvo" AND modell="850";
 ```
 
 Lägg gärna till fler bilar och testa olika frågor.
@@ -165,7 +165,7 @@ MariaDB [labb]> SELECT COUNT(*) FROM bilar WHERE arsmodell>2000;
 Stjärnan i **COUNT\(\*\)** betyder att alla poster skall tas med. Skriver man istället **COUNT\(pris\)** så räknas alla poster där fältet pris har ett värde. Ibland vill man göra operationer, till exempel **COUNT\(\)**, på olika grupper av poster. Då kan man använda **GROUP BY**. **GROUP BY** är lite speciellt. Det används bara i samband med andra funktioner som till exempel **COUNT\(\)**. I stället för att returnera posterna var för sig så returnernas de i grupper för att till exempel kunna räknas. Antag att du vill veta hur många bilar det finns av varje årsmodell. Kör och fundera över följande sats:
 
 ```sql
-mysMariaDBql> SELECT arsmodell,COUNT(*) FROM bilar GROUP BY arsmodell;
+mysMariaDBql> SELECT arsmodell, COUNT(*) FROM bilar GROUP BY arsmodell;
 ```
 
 **SUM\(\)** är en funktion som används för att summera fält. Vill man till exempel se hur mycket alla bilarna är värda tillsammans kan man gör så här:
@@ -177,7 +177,7 @@ MariaDB [labb]> SELECT sum(pris) FROM bilar;
 Man kan också får reda på hur mycket det sammanlagda värdet på bilarna av varje märke.
 
 ```sql
-MariaDB [labb]> SELECT marke,SUM(pris) FROM bilar GROUP BY marke;
+MariaDB [labb]> SELECT marke, SUM(pris) FROM bilar GROUP BY marke;
 ```
 
 Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel **MIN\(\)**, **MAX\(\)** och **AVG\(\)**. Min och max returnerar det högsta respektive lägsta värdet på ett fält. **AVG** är en förkortning för engelskans ”average” som betyder ”medelvärde”. På så sätt kan vi få reda på vilken bil som är dyrast respektive billigast och vi kan ta reda på medelpriset. Vi kan också kombinera dessa på alla tänkbara sätt.
@@ -228,8 +228,3 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 |      1987 |        1 |  35000.0000 |
 +-----------+----------+-------------+
 ```
-
-{% hint style="info" %}
-Copyright © 2004, 2005 Rejås Datakonsult. Var och en äger rätt att kopiera, sprida och/eller förändra detta dokument under villkoren i licensen "GNU Free Documentation License", version 1.2 eller senare publicerad av Free Software Foundation, utan oföränderliga avsnitt, utan framsidestexter och utan baksidestexter. En kopia av denna licens finns på [http://rejas.se/gnu/](http://rejas.se/gnu/).
-{% endhint %}
-

@@ -303,19 +303,6 @@ MariaDB [labb]> EXPLAIN bilar;
 4 rows in set (0.03 sec)
 ```
 
-```sql
-MariaDB [labb]> EXPLAIN bilar;
-+-----------+-------------+------+-----+---------+-------+
-| Field     | Type        | Null | Key | Default | Extra |
-+-----------+-------------+------+-----+---------+-------+
-| reg       | varchar(10) | YES  |     | NULL    |       |
-| marke     | varchar(50) | YES  |     | NULL    |       |
-| modell    | varchar(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)     | YES  |     | NULL    |       |
-+-----------+-------------+------+-----+---------+-------+
-4 rows in set (0.03 sec)
-```
-
 ### Uppgift 2
 
 Du skall nu fylla tabellen med data.  

@@ -72,11 +72,11 @@ Database changed
 MariaDB [labb]> 
 ```
 
-Kommandot **SHOW TABLES** visar alla tabeller i databasen. 
-
 {% hint style="warning" %}
 **Alla kommandon till databasen avslutas med semikolon ”;”** \(det behöver de inte göra vid systemprompten\).
 {% endhint %}
+
+Nu kan vi titta efter vad som finns i databasen "labb". Kommandot **SHOW TABLES** visar alla tabeller i databasen: 
 
 ```sql
 MariaDB [labb]> SHOW TABLES;

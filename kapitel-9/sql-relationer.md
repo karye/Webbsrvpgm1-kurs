@@ -11,7 +11,7 @@ I denna laboration skall vi jobba vidare på bildatabasen som vi började på f�
 Om du gjorde den förra laborationen rätt så skall du ha en tabell med följande fält.
 
 ```sql
-MariaDB> EXPLAIN bilar;
+MariaDB [labb]> EXPLAIN bilar;
 +-----------+-------------+------+-----+---------+----------------+
 | Field     | Type        | Null | Key | Default | Extra          |
 +-----------+-------------+------+-----+---------+----------------+
@@ -30,7 +30,7 @@ Denna tabell skall vi nu bygga vidare på. MySQL har en egenskap som är väldig
 Fältet _**agare**_ Nu vill vi att man skall kunna lägga till en ägare på varje bil. En bil skall ha bara en enda ägare men en person skall kunna äga flera bilar. För att följa de normaliseringsregler vi lärt oss så vet vi att vi måste skapa en tabell till med ägarna till bilarna. Det gör vi av i huvudsak för att förhindra dubbellagring eller redundans som det kallas. Man kan enkelt se att det behövs eftersom ägaren inte beror helt på bilens nyckel. Vi börjar med att uppdatera biltabellen. Lägg till fältet _**agare**_, se förra labben om du inte minns hur man gör. Fältet skall ha typen **int**. **int** är en förkortning för integer som betyder ”heltal”. När du är klar skall resultatet bli så här:
 
 ```sql
-MariaDB> EXPLAIN bilar;
+MariaDB [labb]> EXPLAIN bilar;
 +-----------+-------------+------+-----+---------+----------------+
 | Field     | Type        | Null | Key | Default | Extra          |
 +-----------+-------------+------+-----+---------+----------------+
@@ -50,7 +50,7 @@ MariaDB> EXPLAIN bilar;
 Nu skall dessa bilar få ägare. Det gör vi genom att mata in heltal i fältet _**agare**_ för bilarna. Titta på din tidigare labb och lathunden om du inte minns hur man gör. Kom ihåg att **UPDATE** är farligt, glöm inte **WHERE**. När du är klar skall biltabellen se ut så här:
 
 ```sql
-MariaDB> SELECT * FROM bilar;
+MariaDB [labb]> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
 +--------+------------+-----------+-----------+--------+-------+
@@ -75,7 +75,7 @@ Från början har alla poster värdet **NULL** i fältet ägare \(man kan ange e
 Vi skall nu skapa en tabell med personer. Tabellen skall naturligtvis hålla poster med information om de olika personerna. Varje person skall identifieras av ett id-nummer. Om vi vore en förening kanske detta skulle kallas medlemsnummer, vore vi ett företag kanske det skulle kallas anställningsnummer. Vi använder ett löpnummer istället för personernas personnummer eftersom det är bra för personerna att hålla sitt personnummer för sig själv. Den information vi skall spara om varje person är, förutom id-numret, förnamn och efternamn. Vi kallar dessa fält för _**fnamn**_ och _**enamn**_. Fältet med id-numret kallar vi för id. Eftersom detta fält skall unikt identifiera en person så gör vi detta till primärnyckel i tabellen. Vi sätter det också till att räkna upp sig självt \(**auto\_increment**\) så slipper vi tänka på det. Skapa nu tabellen. Den skall se ut så här när den är klar \(titta i föregående labb om du inte vet hur du skall göra\):
 
 ```sql
-MariaDB> DESCRIBE personer;
+MariaDB [labb]> DESCRIBE personer;
 +-------+-------------+------+-----+---------+----------------+
 | Field | Type        | Null | Key | Default | Extra          |
 +-------+-------------+------+-----+---------+----------------+
@@ -84,7 +84,7 @@ MariaDB> DESCRIBE personer;
 | enamn | varchar(50) | YES  |     | NULL    |                |
 +-------+-------------+------+-----+---------+----------------+
 3 rows in set (0.00 sec)
-MariaDB> SELECT * FROM personer;
+MariaDB [labb]> SELECT * FROM personer;
 +----+-----------+-------+
 | id | fnamn     | enamn |
 +----+-----------+-------+
@@ -106,7 +106,7 @@ Nu har vi lite frågor som vi kan ställa frågor till. Vi skall nu öva oss på
 Repetera **SELECT** från förra laborationen om du känner dig osäker på hur det fungerar. I den förra laborationen använde vi **SELECT** för att välja saker från en tabell. Nu skall vi utveckla detta vidare och välja från flera olika tabeller. Vi börjar med en liten fråga som listar alla bilar och deras ägare. Nu skall vi i **SELECT** välja inte bara från en tabell utan från flera \(två i detta fall\). Eftersom de fält vi väljer kan ha samma namn olika tabeller måste vi ange både vila fält vi skall välja och i vilka tabeller dessa kan hittas. Vill vi välja _**fnamn**_ från person så anges detta som _**person.fnamn**_. Vill vi välja alla fält från person så kan vi skriva person.\*. Som vanligt åtskiljer vi det vi listar med kommatecken. Även tabellerna måste anges och åtskiljs med kommatecken. Vi börjar med att välja bilmärken och modeller och så förnamn och efternamn ur persontabellen. Vi skriver så här:
 
 ```sql
-MariaDB> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM personer, bilar;
+MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM personer, bilar;
 ```
 
 Men det där blev ju inte så bra! Varför inte det? Jo vi har ingenstans angivit hur tabellerna skall relatera till varandra. Det kan vi göra med hjälp av kommandot **INNER JOIN**. Tag dig tid att fundera på nedanstående frågor då dessa till en början kan verka krångliga.
@@ -118,7 +118,7 @@ Men det där blev ju inte så bra! Varför inte det? Jo vi har ingenstans angivi
 För att åstadkomma det som vi ville göra ovan kan man skriva så här:
 
 ```sql
-MariaDB> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM bilar INNER JOIN personer ON bilar.agare=personer.id;
+MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM bilar INNER JOIN personer ON bilar.agare=personer.id;
 +--------------+-----------+--------+-------+
 | marke        | modell    | fnamn  | enamn |
 +--------------+-----------+--------+-------+
@@ -142,7 +142,7 @@ Eftersom vi inte anger någon sorteringsordning \(**ORDER BY**\) så kan vi inte
 Vi tar ett exempel till. Vi vill välja ut samma sak som ovan men utgå från personerna.
 
 ```sql
-MariaDB> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM personer INNER JOIN bilar ON bilar.agare=personer.id;
+MariaDB [labb]> SELECT bilar.marke, bilar.modell, personer.fnamn, personer.enamn FROM personer INNER JOIN bilar ON bilar.agare=personer.id;
 ```
 
 Och som vi ser så går det precis lika bra!

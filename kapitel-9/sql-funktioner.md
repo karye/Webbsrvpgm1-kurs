@@ -11,7 +11,7 @@ Det är i huvudsak två saker som brukar vara svårt när man jobbar med databas
 Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här:
 
 ```sql
-MariaDB> DESCRIBE bilar;
+MariaDB [labb]> DESCRIBE bilar;
 +-----------+-------------+------+-----+---------+----------------+
 | Field     | Type        | Null | Key | Default | Extra          |
 +-----------+-------------+------+-----+---------+----------------+
@@ -24,7 +24,7 @@ MariaDB> DESCRIBE bilar;
 | agare     | int(11)     | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
 7 rows in set (0.00 sec)
-MariaDB> DESCRIBE personer;
+MariaDB [labb]> DESCRIBE personer;
 +-------+-------------+------+-----+---------+----------------+
 | Field | Type        | Null | Key | Default | Extra          |
 +-------+-------------+------+-----+---------+----------------+
@@ -38,7 +38,7 @@ MariaDB> DESCRIBE personer;
 Dessa har ungefär följande innehåll:
 
 ```sql
-MariaDB> SELECT * FROM bilar;
+MariaDB [labb]> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
 +--------+------------+-----------+-----------+--------+-------+
@@ -55,7 +55,7 @@ MariaDB> SELECT * FROM bilar;
 | XXX333 | Nissan     | Primera   |      2003 | 100000 |  NULL |
 +--------+------------+-----------+-----------+--------+-------+
 11 rows in set (0.03 sec)
-MariaDB> SELECT * FROM personer;
+MariaDB [labb]> SELECT * FROM personer;
 +----+-----------+-------+
 | id | fnamn     | enamn |
 +----+-----------+-------+
@@ -77,7 +77,7 @@ Ser inte era tabeller ut exakt så så gör det inget. Men de bör vara ungefär
 När man väljer olika fält från en tabell så blir rubriken det som man väljer. Så vill man kanske inte ha det. Man vill kanske inte att det skall stå _**fnamn**_ och _**enamn**_ som det gör ovan utan ”Förnamn” och ”Efternamn” i stället. Det kan man åstadkomma genom att ställa sin fråga på följande sätt.
 
 ```sql
-MariaDB> SELECT fnamn AS Förnamn, enamn AS Efternamn FROM personer;
+MariaDB [labb]> SELECT fnamn AS Förnamn, enamn AS Efternamn FROM personer;
 ```
 
 ## Funktioner
@@ -89,7 +89,7 @@ Man kan i MySQL skriva enklare funktioner direkt i sina frågor. Vi har tidigare
 Den fungerar så här:
 
 ```sql
-MariaDB> SELECT CONCAT(marke, " ", modell) FROM bilar;
+MariaDB [labb]> SELECT CONCAT(marke, " ", modell) FROM bilar;
 ```
 
 I exemplet så att det som kommer inom parenteserna kan vara godtyckliga strängar, inom citationstecken \(”\), och fältnamn. I vårt exempel så slår vi ihop _**marke**_ och _**modell**_ Med ett mellanslag emellan. Varje fält eller textsträng åtskiljs med ett kommatecken \(,\). Prova nu lite olika strängar.
@@ -99,7 +99,7 @@ I exemplet så att det som kommer inom parenteserna kan vara godtyckliga sträng
 För att kunna laborera med dessa utökar i persontabellen så att den ser ut som nedan. Titta bland dina tidigare laborationer om du inte minns hur man gör.
 
 ```sql
-MariaDB> DESCRIBE personer;
+MariaDB [labb]> DESCRIBE personer;
 +--------------+----------+------+-----+---------+----------------+
 | Field        | Type     | Null | Key | Default | Extra          |
 +--------------+----------+------+-----+---------+----------------+
@@ -114,7 +114,7 @@ MariaDB> DESCRIBE personer;
 Fyll \(populera\) sedan detta nya fält i tabellen så att den ser ut så här:
 
 ```sql
-MariaDB> SELECT * FROM personer;
+MariaDB [labb]> SELECT * FROM personer;
 +----+-----------+-------+--------------+
 | id | fnamn     | enamn | fodelsedatum |
 +----+-----------+-------+--------------+
@@ -136,14 +136,14 @@ Som ni kanske har listat ut skall vi räkna ut hur gamla dessa figurer är. Men 
 Funktionen **CURDATE\(\)** ger som svar vilken dag det är idag. Man behöver inte alls välja några fält från tabeller utan man kan bara göra så här om man vill:
 
 ```sql
-MariaDB> SELECT CURDATE();
+MariaDB [labb]> SELECT CURDATE();
 +------------+
 | CURDATE()  |
 +------------+
 | 2004-03-11 |
 +------------+
 1 row in set (0.00 sec)
-MariaDB> SELECT CURTIME();
+MariaDB [labb]> SELECT CURTIME();
 +-----------+
 | CURTIME() |
 +-----------+
@@ -161,7 +161,7 @@ MySQL är bra på att känna igen datum och klockslag i olika former så kommer 
 Ibland vill man räkna hur långt det är mellan två datum. Då är det smidigt att räkna om datumen till dagar. Till detta finns funktionen **TO\_DAYS\(\)**. Vill man veta hur många dagar det är kvar till midsommarafton så kan man göra det med nedanstående sats som också innehåller lite matematik. Jag kommer inte att behandla detta mer i detalj än så här just nu. Laborera och prova dig fram.
 
 ```sql
-MariaDB> SELECT TO_DAYS("2004-06-26") – TO_DAYS(CURDATE());
+MariaDB [labb]> SELECT TO_DAYS("2004-06-26") – TO_DAYS(CURDATE());
 +--------------------------------------------+
 | TO_DAYS("2004-06-26") - TO_DAYS(CURDATE()) |
 +--------------------------------------------+
@@ -175,21 +175,21 @@ MariaDB> SELECT TO_DAYS("2004-06-26") – TO_DAYS(CURDATE());
 Ofta vill man bryta upp ett datum i sina beståndsdelar. Det är MySQL väldigt bra på. Vill man till exempel veta hur många år en bil är så är man nog bara intresserad av vilket år det är nu och inte hela datumet. Vill man veta om det är den 15:e i vilken månad som helst måste man kunna välja bara dagen och vill man veta om det är månaden juni så är det smidigt med bara månaden. Några exempel:
 
 ```sql
-MariaDB> SELECT DAYOFMONTH("2003-12-21");
+MariaDB [labb]> SELECT DAYOFMONTH("2003-12-21");
 +--------------------------+
 | DAYOFMONTH("2003-12-21") |
 +--------------------------+
 |                       21 |
 +--------------------------+
 1 row in set (0.00 sec)
-MariaDB> SELECT MONTH("2003-12-21");
+MariaDB [labb]> SELECT MONTH("2003-12-21");
 +---------------------+
 | MONTH("2003-12-21") |
 +---------------------+
 |                  12 |
 +---------------------+
 1 row in set (0.00 sec)
-MariaDB> SELECT YEAR("2003-12-21");
+MariaDB [labb]> SELECT YEAR("2003-12-21");
 +--------------------+
 | YEAR("2003-12-21") |
 +--------------------+

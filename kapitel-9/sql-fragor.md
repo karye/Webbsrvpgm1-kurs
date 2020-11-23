@@ -11,7 +11,7 @@ I denna laboration skall vi jobba vidare på bildatabasen som vi började på f�
 Om du gjorde den förra laborationen rätt så skall du ha en tabell med följande fält.
 
 ```sql
-MariaDB> EXPLAIN bilar;
+MariaDB [labb]> EXPLAIN bilar;
 +-----------+-------------+------+-----+---------+-------+
 | Field     | Type        | Null | Key | Default | Extra |
 +-----------+-------------+------+-----+---------+-------+
@@ -29,11 +29,11 @@ Denna tabell skall vi nu bygga vidare på, MySQL har en egenskap som är väldig
 Vi behöver ett sätt att identifiera på ett unikt sätt. Vi lägger till ett fält **id** som skall vara ett unikt löpnummer. Vi kan infoga fältet med kommandot **ALTER TABLE**:
 
 ```sql
-MariaDB> ALTER TABLE bilar ADD id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+MariaDB [labb]> ALTER TABLE bilar ADD id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
 Query OK, 0 rows affected (0.26 sec)
 Records: 0  Duplicates: 0  Warnings: 0
 
-MariaDB> EXPLAIN bilar;
+MariaDB [labb]> EXPLAIN bilar;
 +-----------+-------------+------+-----+---------+----------------+
 | Field     | Type        | Null | Key | Default | Extra          |
 +-----------+-------------+------+-----+---------+----------------+
@@ -53,19 +53,19 @@ Vi har nu sagt att fältet _**id**_ skall vara **primärnyckel**. Eftersom **pri
 Vi skall också lägga till ett fält till vår biltabell, nämligen pris. Vi kan säga att vi skall göra en liten tjänst åt en bilmäklare. Han vill ha en lista över bilar och vill då naturligtvis veta vad säljarna vill ha för sina bilar. Än en gång får vi använda **ALTER TABLE** men nu skall vi lägga till ett fält. Fältet skall heta _**pris**_ och vara av typen **INT**, heltal.
 
 ```sql
-MariaDB> ALTER TABLE bilar ADD pris INT;
+MariaDB [labb]> ALTER TABLE bilar ADD pris INT;
 ```
 
 Kontrollera att det blev som du tror. Uppdatera poster med **UPDATE**. Nu har tabellen utökats med fältet _**pris**_ Det fältet är nu tomt för alla bilar, vi måste fylla det med något. Vi måste alltså ändra posterna så att priset kommer med. Ändrar poster gör man med kommandot **UPDATE**, vi går igenom det lite kort här, det kommer igen i laborationer längre fram. Varning! **UPDATE** förändrar data och det finns inget _**undo**_.
 
 ```sql
-MariaDB> UPDATE bilar SET pris=130000 WHERE reg="ABC123";
+MariaDB [labb]> UPDATE bilar SET pris=130000 WHERE reg="ABC123";
 ```
 
 Även här ser vi att vi väljer ut vilka fält som skall ändras med **WHERE**, hade vi inte angett vilka rader som skall ändras skulle alla rader ha ändrats. Det vill säga alla bilar hade fått priset 130000, vilket förmodligen inte är vad vi vill. Uppdatera nu tabellen så att den ser ut så här.
 
 ```sql
-MariaDB> SELECT * FROM bilar;
+MariaDB [labb]> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+
 | reg    | marke      | modell    | arsmodell | pris   |
 +--------+------------+-----------+-----------+--------+
@@ -81,7 +81,7 @@ MariaDB> SELECT * FROM bilar;
 | DEF456 | Toyota     | Carina II |      1998 |  30000 |
 +--------+------------+-----------+-----------+--------+
 10 rows in set (0.01 sec)
-MariaDB>
+MariaDB [labb]>
 ```
 
 ## Ställa frågor med SELECT 
@@ -91,13 +91,13 @@ Nu har vi en tabell med bilar som verkar fungera. Nu kan det vara läge att test
 ### SELECT &lt;vad&gt; FROM &lt;var&gt;;
 
 ```sql
-MariaDB> SELECT * FROM bilar;
+MariaDB [labb]> SELECT * FROM bilar;
 ```
 
 Väljer allt \(\* betyder allt\), från bilar. Allt refererar till fält. Det vill säga välj alla fält från bilar.
 
 ```sql
-MariaDB> SELECT marke, modell, arsmodell FROM bilar; 
+MariaDB [labb]> SELECT marke, modell, arsmodell FROM bilar; 
 ```
 
 Väljer fälten _**marke**_, modell och _**arsmodell**_ från bilar. **SELECT** väljer normalt alla poster i de fält som anges.
@@ -109,25 +109,25 @@ Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **S
 Alltså, välj någonting från någon tabell eller några tabeller där ett villkor är uppfyllt. Vi tar ett exempel:
 
 ```sql
-MariaDB> SELECT * FROM bilar WHERE marke="volvo";
+MariaDB [labb]> SELECT * FROM bilar WHERE marke="volvo";
 ```
 
 Enkelt vad? Man kan även göra mer avancerade saker. Säg att vi vill välja ut alla bilar som är från 2000 eller nyare:
 
 ```sql
-MariaDB> SELECT * FROM bilar WHERE arsmodell>=2000;
+MariaDB [labb]> SELECT * FROM bilar WHERE arsmodell>=2000;
 ```
 
 På samma sätt för alla bilar som är nyare än 2000.
 
 ```sql
-MariaDB> SELECT * FROM bilar WHERE arsmodell<2000;
+MariaDB [labb]> SELECT * FROM bilar WHERE arsmodell<2000;
 ```
 
 Uttrycket efter **WHERE** skall vara ett logiskt uttryck som antingen är sant eller falskt. Det går att använda operatorerna **AND** och **OR** till exempel för att ange flera villkor. Till exempel kan vi skriva så här för att välja ut alla bilar av märket volvo och modellen 850. Skulle det finnas en BMW 850 med i listan skulle den inte komma med eftersom både märket och modellen spelar roll.
 
 ```sql
-MariaDB> SELECT * FROM bilar WHERE marke="volvo" AND modell="850";
+MariaDB [labb]> SELECT * FROM bilar WHERE marke="volvo" AND modell="850";
 ```
 
 Lägg gärna till fler bilar och testa olika frågor.
@@ -137,19 +137,19 @@ Lägg gärna till fler bilar och testa olika frågor.
 Ofta vill man sortera eller gruppera sina resultat. Sorterar gör man med **ORDER BY**. För att tex sortera efter årsmodell kan vi skriva.
 
 ```sql
-MariaDB> SELECT * FROM bilar ORDER BY arsmodell;
+MariaDB [labb]> SELECT * FROM bilar ORDER BY arsmodell;
 ```
 
 Nu kommer vi att sortera efter årsmodell. Men vi kanske vill ha de nyaste bilarna först och inte de äldsta som det blir nu. Det är enkelt ordnat. Man kan lägga till **DESC** efter det fält som man skall sortera på för att sortera i omvänd ordning. **DESC** är en förkortning för engelskans descending som betyder ”minskande”. Vi testar:
 
 ```sql
-MariaDB> SELECT * FROM bilar ORDER BY arsmodell DESC;
+MariaDB [labb]> SELECT * FROM bilar ORDER BY arsmodell DESC;
 ```
 
 Om vi nu har 30000 bilar varav 1000 är av årsmodell 2002 så kan det vara svårt att hitta bland dem i alla fall. Vi skulle vila sortera först på årsmodell och sedan på bilmärke för att göra det lättare. Det går naturligtvis. Man kan lägga till hur många fält som helst att sortera efter. Man skiljer dem åt med komma \(,\). Tänk på att eventuella **DESC** hör till ett sorteringsfält. För att sortera efter årsmodell i omvänd ordning och efter bilmärke i andra hand och modell i tredje hand skriver vi så här:
 
 ```sql
-MariaDB> SELECT * FROM bilar ORDER BY arsmodell DESC, marke, modell;
+MariaDB [labb]> SELECT * FROM bilar ORDER BY arsmodell DESC, marke, modell;
 ```
 
 Om vi inte skriver något om sorteringsordning kan vi inte säga något om i vilken ordning resultaten presenteras.
@@ -159,7 +159,7 @@ Om vi inte skriver något om sorteringsordning kan vi inte säga något om i vil
 Det kanske inte är intressant med en lista på alla bilar nyare än 2000. Har man 30000 bilar i sin tabell kanske man snarare är intresserad av hur många bilar som är nyare än 2000. För att få reda på det kan man använda funktionen **COUNT\(\)** som räknar antalet poster som valts ut. Se nedanstående exempel:
 
 ```sql
-MariaDB> SELECT COUNT(*) FROM bilar WHERE arsmodell>2000;
+MariaDB [labb]> SELECT COUNT(*) FROM bilar WHERE arsmodell>2000;
 ```
 
 Stjärnan i **COUNT\(\*\)** betyder att alla poster skall tas med. Skriver man istället **COUNT\(pris\)** så räknas alla poster där fältet pris har ett värde. Ibland vill man göra operationer, till exempel **COUNT\(\)**, på olika grupper av poster. Då kan man använda **GROUP BY**. **GROUP BY** är lite speciellt. Det används bara i samband med andra funktioner som till exempel **COUNT\(\)**. I stället för att returnera posterna var för sig så returnernas de i grupper för att till exempel kunna räknas. Antag att du vill veta hur många bilar det finns av varje årsmodell. Kör och fundera över följande sats:
@@ -171,13 +171,13 @@ mysMariaDBql> SELECT arsmodell,COUNT(*) FROM bilar GROUP BY arsmodell;
 **SUM\(\)** är en funktion som används för att summera fält. Vill man till exempel se hur mycket alla bilarna är värda tillsammans kan man gör så här:
 
 ```sql
-MariaDB> SELECT sum(pris) FROM bilar;
+MariaDB [labb]> SELECT sum(pris) FROM bilar;
 ```
 
 Man kan också får reda på hur mycket det sammanlagda värdet på bilarna av varje märke.
 
 ```sql
-MariaDB> SELECT marke,SUM(pris) FROM bilar GROUP BY marke;
+MariaDB [labb]> SELECT marke,SUM(pris) FROM bilar GROUP BY marke;
 ```
 
 Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel **MIN\(\)**, **MAX\(\)** och **AVG\(\)**. Min och max returnerar det högsta respektive lägsta värdet på ett fält. **AVG** är en förkortning för engelskans ”average” som betyder ”medelvärde”. På så sätt kan vi få reda på vilken bil som är dyrast respektive billigast och vi kan ta reda på medelpriset. Vi kan också kombinera dessa på alla tänkbara sätt.

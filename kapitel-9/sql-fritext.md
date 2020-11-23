@@ -11,7 +11,7 @@ I denna labb skall vi jobba vidare på att söka efter olika saker. Vi skall anv
 Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här:
 
 ```sql
-MariaDB> DESCRIBE bilar;
+MariaDB [labb]> DESCRIBE bilar;
 +-----------+-------------+------+-----+---------+----------------+
 | Field     | Type        | Null | Key | Default | Extra          |
 +-----------+-------------+------+-----+---------+----------------+
@@ -24,7 +24,7 @@ MariaDB> DESCRIBE bilar;
 | agare     | int(11)     | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
 7 rows in set (0.00 sec)
-MariaDB> DESCRIBE personer;
+MariaDB [labb]> DESCRIBE personer;
 +-------+-------------+------+-----+---------+----------------+
 | Field | Type        | Null | Key | Default | Extra          |
 +-------+-------------+------+-----+---------+----------------+
@@ -38,7 +38,7 @@ MariaDB> DESCRIBE personer;
 Dessa har ungefär följande innehåll:
 
 ```sql
-MariaDB> SELECT * FROM bilar;
+MariaDB [labb]> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
 +--------+------------+-----------+-----------+--------+-------+
@@ -55,7 +55,7 @@ MariaDB> SELECT * FROM bilar;
 | XXX333 | Nissan     | Primera   |      2003 | 100000 |  NULL |
 +--------+------------+-----------+-----------+--------+-------+
 11 rows in set (0.00 sec)
-MariaDB> SELECT * FROM personer;
+MariaDB [labb]> SELECT * FROM personer;
 +----+-----------+-------+--------------+
 | id | fnamn     | enamn | fodelsedatum |
 +----+-----------+-------+--------------+
@@ -88,7 +88,7 @@ Några exempel:
 För att använda jokertecken använder man LIKE istället för ”=”. Till exempel kan man gör som i exemplet nedan för att ta fram alla förnamn som börjar på K.
 
 ```sql
-MariaDB> SELECT * FROM personer WHERE fnamn LIKE "K%";
+MariaDB [labb]> SELECT * FROM personer WHERE fnamn LIKE "K%";
 +----+--------+-------+--------------+
 | id | fnamn  | enamn | fodelsedatum |
 +----+--------+-------+--------------+

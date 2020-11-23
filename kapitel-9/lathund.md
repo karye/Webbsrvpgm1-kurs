@@ -65,5 +65,10 @@ mysql> DELETE FROM test WHERE id=9;
 Query OK, 1 row affected (0.06 sec)
 ```
 
-Ovanstående tar bort ALLA poster med id=9
+Ovanstående tar bort ALLA poster med id=9.
+
+## Tips och trix! 
+
+* Du kan bläddra mellan tidigare kommandon du skrivit med tangenterna pil upp och pil ned.
+* Dokumentera dina kommandon genom att kopiera dem och klistra in dem i ett textredigeringsprogram, de kan vara bra att ha senare.
 

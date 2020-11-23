@@ -276,7 +276,9 @@ MariaDB>
 
 Så, nu är tabellen _**test**_ ett minne blott.
 
-### Skapa tabellen bilar
+## Uppgifter
+
+### Uppgift 1
 
 Nu skall du skapa tabellen bilar. Den skall innehålla fyra fält. Ett med **reg**, **marke, modell** och **arsmodell** \(observera att vi undviker svenska tecken\). Se exempel i lathunden för hur du skapar en tabell med flera fält.
 

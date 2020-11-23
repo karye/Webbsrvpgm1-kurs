@@ -12,40 +12,41 @@ Om du gjorde den förra laborationen rätt så skall du ha en tabell med följan
 
 ```sql
 MariaDB> EXPLAIN bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) | YES  |     | NULL    |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| reg       | varchar(10) | YES  |     | NULL    |       |
+| marke     | varchar(50) | YES  |     | NULL    |       |
+| modell    | varchar(50) | YES  |     | NULL    |       |
+| arsmodell | int(11)     | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
 ```
 
 Denna tabell skall vi nu bygga vidare på, MySQL har en egenskap som är väldigt bra, nämligen att man kan uppdatera ett schema trots att det finns data i tabellen. Naturligtvis kan man inte ändra det så att det data som finns i tabellen inte passar in.
 
-### Fältet ”reg”
+### En primärnyckel
 
-I fältet reg skall vi spara registreringsnumret för bilar. Vad kan man säga om registreringsnumret? Jo, varje bil måste ha ett, och det skall vara unikt, det vill säga ingen bil får ha samma registreringsnumer som någon annan. Registreringsnumret används ju för att identifiera en bil så det borde passa bra att ha det som primärnyckel. Vi kan uppdatera fältet med kommandot **ALTER TABLE**:
+Vi behöver ett sätt att identifiera på ett unikt sätt. Vi lägger till ett fält **id** som skall vara ett unikt löpnummer. Vi kan infoga fältet med kommandot **ALTER TABLE**:
 
 ```sql
-MariaDB> ALTER TABLE bilar MODIFY reg char(10) PRIMARY KEY;
-Query OK, 10 rows affected (0.29 sec)
-Records: 10  Duplicates: 0  Warnings: 0
+MariaDB> ALTER TABLE bilar ADD id INT NOT NULL AUTO_INCREMENT PRIMARY KEY;
+Query OK, 0 rows affected (0.26 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
 MariaDB> EXPLAIN bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) |      | PRI |         |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
-4 rows in set (0.01 sec)
-MariaDB>
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| reg       | varchar(10) | YES  |     | NULL    |                |
+| marke     | varchar(50) | YES  |     | NULL    |                |
+| modell    | varchar(50) | YES  |     | NULL    |                |
+| arsmodell | int(11)     | YES  |     | NULL    |                |
+| id        | int(11)     | NO   | PRI | NULL    | auto_increment |
++-----------+-------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
 ```
 
-Vi har nu sagt att fältet _**reg**_ skall vara primärnyckel. Eftersom primärnyckel automatiskt innebär att fältet inte får innehålla dubbletter så är det ju det vi vill. Vi hade naturligtvis kunnat skapa fältet på detta sätt redan från början.
+Vi har nu sagt att fältet _**id**_ skall vara **primärnyckel**. Eftersom **primärnyckel** automatiskt innebär att fältet inte får innehålla dubbletter så är det ju det vi vill. Vi hade naturligtvis kunnat skapa fältet på detta sätt redan från början. Vi har även gjort så att räknas upp automatiskt med **AUTO\_INCREMENT**;
 
 ### Fältet pris
 
@@ -87,7 +88,7 @@ MariaDB>
 
 Nu har vi en tabell med bilar som verkar fungera. Nu kan det vara läge att testa att välja saker ut den med **SELECT**. Alltså, välj någonting från någon tabell eller några tabeller. Lite exempel:
 
-#### SELECT &lt;vad&gt; FROM &lt;var&gt;;
+### SELECT &lt;vad&gt; FROM &lt;var&gt;;
 
 ```sql
 MariaDB> SELECT * FROM bilar;
@@ -103,7 +104,7 @@ Väljer fälten _**marke**_, modell och _**arsmodell**_ från bilar. **SELECT** 
 
 Vill man begränsa det för man göra det med **WHERE**. Om man sätter ihop **SELECT** med **WHERE** så kan det se ut så här: 
 
-#### SELECT &lt;vad&gt; FROM &lt;var&gt;;
+### SELECT &lt;vad&gt; FROM &lt;var&gt; WHERE &lt;villkor&gt;;
 
 Alltså, välj någonting från någon tabell eller några tabeller där ett villkor är uppfyllt. Vi tar ett exempel:
 
@@ -131,7 +132,7 @@ MariaDB> SELECT * FROM bilar WHERE marke='volvo' AND modell='850';
 
 Lägg gärna till fler bilar och testa olika frågor.
 
-#### Sortera med ORDER BY
+### Sortera med ORDER BY
 
 Ofta vill man sortera eller gruppera sina resultat. Sorterar gör man med **ORDER BY**. För att tex sortera efter årsmodell kan vi skriva.
 
@@ -185,15 +186,15 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 
 ### Uppgift 1
 
-* Skapa en fråga som väljer ut alla bilar av märket ”volvo” som är från 2001 och senare.
+* Skapa en fråga som väljer ut alla bilar av märket ”**volvo**” som är från **2001 och senare**.
 
 ### Uppgift 2
 
-* Skapa en fråga som visar hur många bilar det finns av varje märke.
+* Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
 
 ### Uppgift 3
 
-* Skapa en fråga som, per bilmodell, skriver ut det lägsta och högsta priset samt det totala värdet av alla bilar av aktuell modell. Tabellen skall se ut så här:
+* Skapa en fråga som, per bilmodell, skriver ut det **lägsta** och **högsta** priset samt det **totala** värdet av alla bilar av aktuell modell. Tabellen skall se ut så här:
 
 ```sql
 +------------+-----------+-----------+-----------+
@@ -213,7 +214,7 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 
 ### Uppgift 4
 
-* Skapa en tabell som per årsmodell skriver ut hur många bilar det finns och deras medelpris. Svaret skall se ut så här:
+* Skapa en tabell som per årsmodell skriver ut **hur många** bilar det finns och deras **medelpris**. Svaret skall se ut så här:
 
 ```sql
 +-----------+----------+-------------+

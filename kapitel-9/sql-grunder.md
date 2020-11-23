@@ -280,7 +280,7 @@ Så, nu är tabellen _**test**_ ett minne blott.
 
 ### Uppgift 1
 
-Nu skall du skapa tabellen bilar. Den skall innehålla fyra fält. Ett med **reg**, **marke, modell** och **arsmodell** \(observera att vi undviker svenska tecken\). Se exempel i lathunden för hur du skapar en tabell med flera fält.   
+Nu skall du skapa tabellen bilar. Den skall innehålla fyra fält. Ett med **reg**, **marke, modell** och **arsmodell** \(observera att vi undviker svenska tecken\). Se exempel i lathunden för hur du skapar en tabell med flera fält.  
 Den skall se ut enligt skärmdumpen nedan:
 
 ```sql
@@ -296,7 +296,23 @@ MariaDB> EXPLAIN bilar;
 4 rows in set (0.03 sec)
 ```
 
+```sql
+MariaDB> EXPLAIN bilar;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| reg       | varchar(10) | YES  |     | NULL    |       |
+| marke     | varchar(50) | YES  |     | NULL    |       |
+| modell    | varchar(50) | YES  |     | NULL    |       |
+| arsmodell | int(11)     | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+4 rows in set (0.03 sec)
+```
+
 ### Uppgift 2
+
+Du skall nu fylla tabellen med data.  
+Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig för att skapa tabellen. Se till att den är rätt innan du börjar mata in bilarna. När du matar in bilarna, se till att du matar in en hel post i taget. Alltså alla data om en bil i en fråga. Det finns exempel även på detta i lathunden. Resultatet skall bli exakt som detta:
 
 Du skall nu fylla tabellen med data.  
 Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig för att skapa tabellen. Se till att den är rätt innan du börjar mata in bilarna. När du matar in bilarna, se till att du matar in en hel post i taget. Alltså alla data om en bil i en fråga. Det finns exempel även på detta i lathunden. Resultatet skall bli exakt som detta:

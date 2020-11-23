@@ -45,7 +45,7 @@ Det vi har jobbat med nu är inloggningen till servern. På servern skall vi nu 
 ## Starta databasklienten
 
 För att komma åt databasen måste man använda ett program som kallas för en databasklient. Det finns flera olika sådana och vi kommer längre fram i kursen att ansluta till databasen med PHP men tills vidare skall vi använda den klient som följer med MySQL. Denna databasklient heter **mysql** och kan startas med en mängd olika argument.  
-Så här kan det se ut:
+Så här kan det se ut från terminalen:
 
 ```bash
 root@3084f5616900:/# mysql -u admin -p

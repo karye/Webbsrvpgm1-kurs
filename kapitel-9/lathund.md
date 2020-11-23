@@ -56,3 +56,14 @@ Rows matched: 1 Changed: 1 Warnings: 0
 
 Ovanstående uppdaterar fältet id till 9 för alla poster där id är 10. Observera att ALLA poster med id=10 kommer att få id 9, vilket kanske inte är vad man vill alla gånger. Se till att det finns ett fält som är unikt för alla poster.
 
+## Radera poster \(DELETE FROM\) 
+
+VARNING!! Detta kommando tar bort data, det finns inget ”undo”, var försiktig! 
+
+```sql
+mysql> DELETE FROM test WHERE id=9; 
+Query OK, 1 row affected (0.06 sec)
+```
+
+Ovanstående tar bort ALLA poster med id=9
+

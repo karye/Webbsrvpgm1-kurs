@@ -6,42 +6,6 @@ description: Databashantering med MySQL.
 
 I denna laboration skall du se till att du kommer åt databasmotorn och att det fungerar. Du kommer också att skapa en tabell i din databas och mata in några poster i den.
 
-## Logga in på servern
-
-**Kommandoprompt** som ser ut ungefär så här:
-
-```bash
->
-```
-
-Det är vid denna prompt som du ger kommandon till servern. Du kan prova kommandot **ls** som betyder lista filer, varje kommando körs när du trycker \(Du skriver det som är fet-stil nedan, resten skriver systemet\).
-
-```bash
-> ls
-bin public_html tmp
->
-```
-
-Vill du se aktuell tid ger du kommandot **date**:
-
-```bash
-> date
-Wed Feb 11 19:03:53 CET 2004
->
-```
-
-För att skriva ett kommando du nyss skrivit kan du använda historikfunktionen, den fungerar så att du kan bläddra mellan tidigare skrivna kommandon med hjälp av upp- och ner-piltangenterna. Prova att trycka pil upp och tryck när kommandot **ls** visas igen.
-
-Att använda denna historikfunktion är väldigt smidigt. Det finns en historikfunktion både i ”skalet” på servern och i MySQL-klienten. Funktionen fungerar även mellan de gånger du loggar in och ut på servern så om du inte minns vad du gjorde sist så är det bra att använda historikfunktionen.
-
-För att logga ut från servern ger du kommandot **exit** , men det behöver du inte göra ännu ...
-
-```text
-> exit
-```
-
-Det vi har jobbat med nu är inloggningen till servern. På servern skall vi nu köra en databasklient för att tala med databasen. Alla SQL-kommandon som vi kommer att gå igenom skall köras i databasklienten. Blanda inte ihop kommandoprompten på servern och de som du ser när du startat databasklienten. Det är inte svårt men många blandar i hop dem i början. Nu är det dags att starta databasklienten.
-
 ## Starta databasklienten
 
 För att komma åt databasen måste man använda ett program som kallas för en databasklient. Det finns flera olika sådana och vi kommer längre fram i kursen att ansluta till databasen med PHP men tills vidare skall vi använda den klient som följer med MySQL. Denna databasklient heter **mysql** och kan startas med en mängd olika argument.  

@@ -152,6 +152,8 @@ MariaDB [labb]>
 
 ## Datatyper
 
+Det finns många sorters datatyper. Vi ser lista nedan, med det vanligaste använda i fetstil:
+
 ### Numeriska
 
 | Datatyp | Bytes | Beskrivning |

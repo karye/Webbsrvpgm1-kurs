@@ -42,7 +42,7 @@ MariaDB> EXPLAIN bilar;
 | pris      | int(11)     | YES  |     | NULL    |                |
 | agare     | int(11)     | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
-6 rows in set (0.00 sec)
+7 rows in set (0.00 sec)
 ```
 
 ### Skapa ägare till bilarna

@@ -12,27 +12,27 @@ Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här
 
 ```sql
 MariaDB> DESCRIBE bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) |      | PRI |         |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-| pris      | int(11)  | YES  |     | NULL    |       |
-| agare     | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
-6 rows in set (0.07 sec)
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| id        | int(11)     | NO   | PRI | NULL    | auto_increment |
+| reg       | varchar(10) |      |     |         |                |
+| marke     | varchar(50) | YES  |     | NULL    |                |
+| modell    | varchar(50) | YES  |     | NULL    |                |
+| arsmodell | int(11)     | YES  |     | NULL    |                |
+| pris      | int(11)     | YES  |     | NULL    |                |
+| agare     | int(11)     | YES  |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
+7 rows in set (0.00 sec)
 MariaDB> DESCRIBE personer;
-+--------------+----------+------+-----+---------+----------------+
-| Field        | Type     | Null | Key | Default | Extra          |
-+--------------+----------+------+-----+---------+----------------+
-| id           | int(11)  |      | PRI | NULL    | auto_increment |
-| fnamn        | char(50) | YES  |     | NULL    |                |
-| enamn        | char(50) | YES  |     | NULL    |                |
-| fodelsedatum | date     | YES  |     | NULL    |                |
-+--------------+----------+------+-----+---------+----------------+
-4 rows in set (0.00 sec)
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| fnamn | varchar(50) | YES  |     | NULL    |                |
+| enamn | varchar(50) | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
 ```
 
 Dessa har ungefär följande innehåll:
@@ -88,7 +88,7 @@ Några exempel:
 För att använda jokertecken använder man LIKE istället för ”=”. Till exempel kan man gör som i exemplet nedan för att ta fram alla förnamn som börjar på K.
 
 ```sql
-MariaDB> select * from personer where fnamn LIKE 'K%';
+MariaDB> SELECT * FROM personer WHERE fnamn LIKE 'K%';
 +----+--------+-------+--------------+
 | id | fnamn  | enamn | fodelsedatum |
 +----+--------+-------+--------------+

@@ -12,25 +12,26 @@ Från förra laborationen skall ni ha två tabeller som ser ut ungefär så här
 
 ```sql
 MariaDB> DESCRIBE bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) |      | PRI |         |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-| pris      | int(11)  | YES  |     | NULL    |       |
-| agare     | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
-6 rows in set (0.01 sec)
++-----------+-------------+------+-----+---------+----------------+
+| Field     | Type        | Null | Key | Default | Extra          |
++-----------+-------------+------+-----+---------+----------------+
+| id        | int(11)     | NO   | PRI | NULL    | auto_increment |
+| reg       | varchar(10) |      |     |         |                |
+| marke     | varchar(50) | YES  |     | NULL    |                |
+| modell    | varchar(50) | YES  |     | NULL    |                |
+| arsmodell | int(11)     | YES  |     | NULL    |                |
+| pris      | int(11)     | YES  |     | NULL    |                |
+| agare     | int(11)     | YES  |     | NULL    |                |
++-----------+-------------+------+-----+---------+----------------+
+7 rows in set (0.00 sec)
 MariaDB> DESCRIBE personer;
-+-------+----------+------+-----+---------+----------------+
-| Field | Type     | Null | Key | Default | Extra          |
-+-------+----------+------+-----+---------+----------------+
-| id    | int(11)  |      | PRI | NULL    | auto_increment |
-| fnamn | char(50) | YES  |     | NULL    |                |
-| enamn | char(50) | YES  |     | NULL    |                |
-+-------+----------+------+-----+---------+----------------+
++-------+-------------+------+-----+---------+----------------+
+| Field | Type        | Null | Key | Default | Extra          |
++-------+-------------+------+-----+---------+----------------+
+| id    | int(11)     | NO   | PRI | NULL    | auto_increment |
+| fnamn | varchar(50) | YES  |     | NULL    |                |
+| enamn | varchar(50) | YES  |     | NULL    |                |
++-------+-------------+------+-----+---------+----------------+
 3 rows in set (0.00 sec)
 ```
 

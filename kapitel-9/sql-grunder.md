@@ -286,14 +286,14 @@ Var noga med att det blir exakt som nedan. Använda de kommandon du lärt dig f�
 
 ```sql
 MariaDB> EXPLAIN bilar;
-+-----------+----------+------+-----+---------+-------+
-| Field     | Type     | Null | Key | Default | Extra |
-+-----------+----------+------+-----+---------+-------+
-| reg       | char(10) | YES  |     | NULL    |       |
-| marke     | char(50) | YES  |     | NULL    |       |
-| modell    | char(50) | YES  |     | NULL    |       |
-| arsmodell | int(11)  | YES  |     | NULL    |       |
-+-----------+----------+------+-----+---------+-------+
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| reg       | varchar(10) | YES  |     | NULL    |       |
+| marke     | varchar(50) | YES  |     | NULL    |       |
+| modell    | varchar(50) | YES  |     | NULL    |       |
+| arsmodell | int(11)     | YES  |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
 4 rows in set (0.03 sec)
 MariaDB> SELECT * FROM bilar;
 +--------+------------+-----------+-----------+

@@ -145,6 +145,46 @@ MariaDB> SHOW FIELDS FROM test;
 MariaDB>
 ```
 
+## Datatyper
+
+### Numeriska
+
+| Datatyp | Bytes | Beskrivning |
+| :--- | :--- | :--- |
+| TINYINT | 1 | Ett heltal som spänner mellan -128 till 127 eller 0 till 255. |
+| SMALLINT | 2 | Ett heltal som spänner mellan -2^15 till 2^15-1 eller 0 till 2^16. |
+| MEDIUMINT | 3 | Ett heltal som spänner mellan -2^23 till 2^23-1 eller 0 till 2^24. |
+| INT | 4 | Ett heltal som spänner mellan -2^31 till 2^31-1 eller 0 till 2^32. |
+| BIGINT | 8 | Ett heltal som spänner mellan -2^63 till 2^63-1 eller 0 till 2^64. |
+| FLOAT | 4 | Ett flyttal som lagras i ett format beroende på CPU. |
+| DOUBLE | 8 | Ett flyttal som lagras i ett format beroende på CPU. |
+| DECIMAL | L | Ett flyttal som lagras som en sträng med längden L. |
+
+### Text
+
+| Datatyp | Maxlängd | Beskrivning |
+| :--- | :--- | :--- |
+| CHAR | MAX &lt; 256 | Innehåller text eller bytes. Fix längd med maxlängd som bestämms då kolumnen skapas. Maxlängden måste dock bestämmas till ett tal &lt; 256. |
+| VARCHAR | MAX &lt; 256 | Innehåller text eller bytes. Variabel längd \(L\) med en maxlängd som bestämms då kolumnen skapas. Maxlängden måste dock bestämmas till ett tal &lt; 256. 1 byte används för att lagra längden på texten. |
+| TINYTEXT | 255 | Innehåller text. Variabel längd \(L\) med en maxlängd 255. 1 byte används för att lagra längden på texten. |
+| TEXT | 65,535 | Innehåller text. Variabel längd \(L\) med en maxlängd 2^16. 2 byte används för att lagra längden på texten. |
+| MEDIUMTEXT | 16,777,215 | Innehåller text. Variabel längd \(L\) med en maxlängd 2^24. 3 byte används för att lagra längden på texten. |
+| LONGTEXT | 4,294,967,295 | Innehåller text. Variabel längd \(L\) med en maxlängd 2^32. 4 byte används för att lagra längden på texten. |
+| TINYBLOB | 255 | Innehåller bytes. Variabel längd \(L\) med en maxlängd 255. 1 byte används för att bestämma hur många bytes som lagras. |
+| BLOB | 65,535 | Innehåller bytes. Variabel längd \(L\) med en maxlängd 2^16. 2 byte används för att bestämma hur många bytes som lagras. |
+| MEDIUMBLOB | 16,777,215 | Innehåller bytes. Variabel längd \(L\) med en maxlängd 2^24. 3 byte används för att bestämma hur många bytes som lagras. |
+| LONGBLOB | 4,294,967,295 | Innehåller bytes. Variabel längd \(L\) med en maxlängd 2^32. 4 byte används för att bestämma hur många bytes som lagras. |
+
+### Datum
+
+| Datatyp | Min/Max | Beskrivning |
+| :--- | :--- | :--- |
+| YEAR | 1901 till 2155 | Lagrar ett år. |
+| DATE | 1000-01-01 till 9999-12-31 | Lagrar ett datum. |
+| TIME | -838:59:59 till 838:59:59 | Lagrar en tidpunkt. |
+| DATETIME | 1000-01-01 00:00:00 till 9999-12-31 23:59:59 | Lagrar en tidpunkt med datum och tid. |
+| TIMESTAMP | 1970-01-01 00:00:00 till mitten av 2037 | Lagrar en tidpunkt med datum och tid. Datumet uppdateras automatiskt vid varje INSERT eller UPDATE |
+
 ## Mata in data i tabellen
 
 Nu när vi har vår lilla tabell, vill vi stoppa in lite värden i den. De gör vi med kommandot **INSERT INTO**. Med **INSER INTO** stoppar man in en post i taget i sin tabell. Om posten har flera fält \(den tabell vi gjort nu har ju bara ett fält\) så se till att fylla alla fält, eller så många som möjligt, med data redan när posten skapas.

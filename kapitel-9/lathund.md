@@ -9,7 +9,7 @@ description: >-
 ## Skapa en tabell \(CREATE TABLE\) 
 
 ```sql
-MariaDB> CREATE TABLE test (id INT, namn CHAR (50)); 
+MariaDB> CREATE TABLE test (id INT, namn VARCHAR(50)); 
 Query OK, 0 rows affected (0.05 sec) 
 ```
 
@@ -43,7 +43,7 @@ Records: 3  Duplicates: 0  Warnings: 0
 ## Ställa frågor \(SELECT ... FROM\) 
 
 ```sql
-MariaDB> SELECT  FROM test; 
+MariaDB> SELECT * FROM test; 
 +------+------------+ 
 | id   | namn       | 
 +------+------------+ 

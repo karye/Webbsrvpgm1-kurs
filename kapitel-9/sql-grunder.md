@@ -164,8 +164,8 @@ MariaDB>
 
 | Datatyp | Maxlängd | Beskrivning |
 | :--- | :--- | :--- |
-| CHAR | MAX &lt; 256 | Innehåller text eller bytes. Fix längd med maxlängd som bestämms då kolumnen skapas. Maxlängden måste dock bestämmas till ett tal &lt; 256. |
-| **VARCHAR** | **MAX &lt; 256** | **Innehåller text eller bytes. Variabel längd \(L\) med en maxlängd som bestämms då kolumnen skapas. Maxlängden måste dock bestämmas till ett tal &lt; 256. 1 byte används för att lagra längden på texten.** |
+| CHAR | MAX &lt; 256 | Innehåller text eller bytes. Fix längd med maxlängd som bestäms då kolumnen skapas. Maxlängden måste dock bestämmas till ett tal &lt; 256. |
+| **VARCHAR** | **MAX &lt; 256** | **Innehåller text eller bytes. Variabel längd \(L\) med en maxlängd som bestäms då kolumnen skapas. Maxlängden måste dock bestämmas till ett tal &lt; 256. 1 byte används för att lagra längden på texten.** |
 | TINYTEXT | 255 | Innehåller text. Variabel längd \(L\) med en maxlängd 255. 1 byte används för att lagra längden på texten. |
 | **TEXT** | **65,535** | **Innehåller text. Variabel längd \(L\) med en maxlängd 2^16. 2 byte används för att lagra längden på texten.** |
 | MEDIUMTEXT | 16,777,215 | Innehåller text. Variabel längd \(L\) med en maxlängd 2^24. 3 byte används för att lagra längden på texten. |

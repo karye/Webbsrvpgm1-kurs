@@ -21,7 +21,6 @@ MariaDB [labb]> DESCRIBE bilar;
 | modell    | varchar(50) | YES  |     | NULL    |                |
 | arsmodell | int(11)     | YES  |     | NULL    |                |
 | pris      | int(11)     | YES  |     | NULL    |                |
-| agare     | int(11)     | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
 7 rows in set (0.00 sec)
 MariaDB [labb]> DESCRIBE personer;
@@ -39,21 +38,20 @@ Dessa har ungefär följande innehåll:
 
 ```sql
 MariaDB [labb]> SELECT * FROM bilar;
-+--------+------------+-----------+-----------+--------+-------+
-| reg    | marke      | modell    | arsmodell | pris   | agare |
-+--------+------------+-----------+-----------+--------+-------+
-| ABC123 | Saab       | 9-5       |      2003 | 130000 |     1 |
-| DEF123 | Volvo      | S80       |      2002 | 140000 |     2 |
-| GHI123 | Mazda      | 626       |      2001 |  80000 |     3 |
-| JKL123 | Audi       | A8        |      2001 | 150000 |     5 |
-| MNO123 | BMW        | 323       |      2001 |  60000 |     5 |
-| PQR123 | Ford       | Mondeo    |      2001 |  90000 |     4 |
-| STU123 | Volvo      | 740       |      1987 |  35000 |     5 |
-| VYX123 | Volkswagen | Golf      |      1983 |  40000 |     5 |
-| ABC456 | Volkswagen | Polo      |      2003 |  75000 |     1 |
-| DEF456 | Toyota     | Carina II |      1998 |  30000 |     2 |
-| XXX333 | Nissan     | Primera   |      2003 | 100000 |  NULL |
-+--------+------------+-----------+-----------+--------+-------+
++--------+------------+-----------+-----------+--------+
+| reg    | marke      | modell    | arsmodell | pris   |
++--------+------------+-----------+-----------+--------+
+| ABC123 | Saab       | 9-5       |      2003 | 130000 |
+| DEF123 | Volvo      | S80       |      2002 | 140000 |
+| GHI123 | Mazda      | 626       |      2001 |  80000 |
+| JKL123 | Audi       | A8        |      2001 | 150000 |
+| MNO123 | BMW        | 323       |      1998 |  60000 |
+| PQR123 | Ford       | Mondeo    |      2001 |  90000 |
+| STU123 | Volvo      | 740       |      1987 |  35000 |
+| VYX123 | Volkswagen | Golf      |      1988 |  40000 |
+| ABC456 | Volkswagen | Polo      |      2003 |  75000 |
+| DEF456 | Toyota     | Carina II |      1998 |  30000 |
++--------+------------+-----------+-----------+--------+
 11 rows in set (0.00 sec)
 MariaDB [labb]> SELECT * FROM personer;
 +----+-----------+-------+--------------+

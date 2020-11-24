@@ -204,7 +204,7 @@ Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
 
 Skapa en fråga som visar **hur många** bilar det finns av märke **Volvo**.
 
-### Uppgift 5
+### Uppgift 6
 
 Skapa en fråga som, per bilmodell, skriver ut det **lägsta** och **högsta** priset samt det **totala** värdet av alla bilar av aktuell modell. Tabellen skall se ut så här:
 
@@ -223,7 +223,7 @@ Skapa en fråga som, per bilmodell, skriver ut det **lägsta** och **högsta** p
 +------------+-----------+-----------+-----------+
 ```
 
-### Uppgift 6
+### Uppgift 7
 
 Skapa en fråga som per årsmodell skriver ut **hur många** bilar det finns och deras **medelpris**. Svaret skall se ut så här:
 

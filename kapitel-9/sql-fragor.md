@@ -186,13 +186,17 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 
 ### Uppgift 1
 
-Skapa en fråga som väljer ut alla bilar av märket ”**volvo**” som är från **2001 och senare**.
+Skapa en fråga som väljer ut alla bilar som är från **2001 och senare**.
 
 ### Uppgift 2
 
-Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
+Skapa en fråga som väljer ut alla bilar av märket **Volvo** som är från **2001 och tidigare**.
 
 ### Uppgift 3
+
+Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
+
+### Uppgift 4
 
 Skapa en fråga som, per bilmodell, skriver ut det **lägsta** och **högsta** priset samt det **totala** värdet av alla bilar av aktuell modell. Tabellen skall se ut så här:
 
@@ -211,9 +215,9 @@ Skapa en fråga som, per bilmodell, skriver ut det **lägsta** och **högsta** p
 +------------+-----------+-----------+-----------+
 ```
 
-### Uppgift 4
+### Uppgift 5
 
-Skapa en tabell som per årsmodell skriver ut **hur många** bilar det finns och deras **medelpris**. Svaret skall se ut så här:
+Skapa en fråga som per årsmodell skriver ut **hur många** bilar det finns och deras **medelpris**. Svaret skall se ut så här:
 
 ```sql
 +-----------+----------+-------------+

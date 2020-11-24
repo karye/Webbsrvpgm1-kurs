@@ -100,14 +100,14 @@ För att kunna laborera med dessa utökar i persontabellen så att den ser ut so
 
 ```sql
 MariaDB [labb]> DESCRIBE personer;
-+--------------+----------+------+-----+---------+----------------+
-| Field        | Type     | Null | Key | Default | Extra          |
-+--------------+----------+------+-----+---------+----------------+
-| id           | int(11)  |      | PRI | NULL    | auto_increment |
-| fnamn        | char(50) | YES  |     | NULL    |                |
-| enamn        | char(50) | YES  |     | NULL    |                |
-| fodelsedatum | date     | YES  |     | NULL    |                |
-+--------------+----------+------+-----+---------+----------------+
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id           | int(11)     |      | PRI | NULL    | auto_increment |
+| fnamn        | varchar(50) | YES  |     | NULL    |                |
+| enamn        | varchar(50) | YES  |     | NULL    |                |
+| fodelsedatum | date        | YES  |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
 4 rows in set (0.00 sec)
 ```
 

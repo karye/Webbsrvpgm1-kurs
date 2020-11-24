@@ -202,6 +202,10 @@ Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
 
 ### Uppgift 5
 
+Skapa en fråga som visar **hur många** bilar det finns av märke **Volvo**.
+
+### Uppgift 5
+
 Skapa en fråga som, per bilmodell, skriver ut det **lägsta** och **högsta** priset samt det **totala** värdet av alla bilar av aktuell modell. Tabellen skall se ut så här:
 
 ```sql

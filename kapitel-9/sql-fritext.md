@@ -111,8 +111,6 @@ Antag att man vill söka efter något som innehåller just **%** eller, tex ”k
 
 ## Uppgifter
 
-Naturligtvis provkör du dem innan du skriver ner dem här.
-
 ### Uppgift 1
 
 Skriv en fråga som listar alla knattar.

@@ -198,11 +198,11 @@ Skapa en fråga som väljer ut alla bilar från **1980-talet**.
 
 ### Uppgift 4
 
-Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
+Skapa en fråga som visar **hur många** bilar det finns av märke **Volvo**.
 
 ### Uppgift 5
 
-Skapa en fråga som visar **hur många** bilar det finns av märke **Volvo**.
+Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
 
 ### Uppgift 6
 

@@ -190,7 +190,7 @@ Skapa en fråga som väljer ut alla bilar som är från **2001 och senare**.
 
 ### Uppgift 2
 
-Skapa en fråga som väljer ut alla bilar av märket **Volvo** som är från **2001 och tidigare**.
+Skapa en fråga som väljer ut alla bilar av märket **Volvo** som är från **2000 och tidigare**.
 
 ### Uppgift 3
 

@@ -4,7 +4,7 @@ description: Använda inbyggda MySQL-funktioner.
 
 # Inbyggda funktioner
 
-Det är i huvudsak två saker som brukar vara svårt när man jobbar med databaser, att skapa rätt struktur \(schema\) i sin databas och att sedan ställa rätt frågor till den. I denna labb jobbar vi vidare med **SELECT**. Du skall ha gjort Laboration 1, 2 och 3 innan du gör denna.
+Det är i huvudsak två saker som brukar vara svårt när man jobbar med databaser, att skapa rätt struktur \(schema\) i sin databas och att sedan ställa rätt frågor till den. I denna labb jobbar vi vidare med **SELECT**.
 
 ## Från förra laborationen
 

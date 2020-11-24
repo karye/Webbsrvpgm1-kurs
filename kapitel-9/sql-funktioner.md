@@ -21,7 +21,6 @@ MariaDB [labb]> DESCRIBE bilar;
 | modell    | varchar(50) | YES  |     | NULL    |                |
 | arsmodell | int(11)     | YES  |     | NULL    |                |
 | pris      | int(11)     | YES  |     | NULL    |                |
-| agare     | int(11)     | YES  |     | NULL    |                |
 +-----------+-------------+------+-----+---------+----------------+
 7 rows in set (0.00 sec)
 MariaDB [labb]> DESCRIBE personer;

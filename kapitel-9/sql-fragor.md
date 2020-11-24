@@ -48,6 +48,25 @@ MariaDB [labb]> EXPLAIN bilar;
 
 Vi har nu sagt att fältet _**id**_ skall vara **primärnyckel**. Eftersom **primärnyckel** automatiskt innebär att fältet inte får innehålla dubbletter så är det ju det vi vill. Vi hade naturligtvis kunnat skapa fältet på detta sätt redan från början. Vi har även gjort så att räknas upp automatiskt med **AUTO\_INCREMENT**;
 
+```sql
+MariaDB [karye]> SELECT * FROM bilar;
++--------+------------+-----------+-----------+----+
+| reg    | marke      | modell    | arsmodell | id |
++--------+------------+-----------+-----------+----+
+| ABC123 | Saab       | 9-5       |      2003 |  1 |
+| GHI123 | Mazda      | 626       |      2001 |  2 |
+| JKL123 | Audi       | A8        |      2001 |  3 |
+| MNO123 | BMW        | 323       |      1998 |  4 |
+| PQR123 | Ford       | Mondeo    |      2001 |  5 |
+| STU123 | Volvo      | 740       |      1987 |  6 |
+| VYX123 | Volkswagen | Golf      |      1988 |  7 |
+| ABC456 | Volkswagen | Polo      |      2003 |  8 |
+| DEF456 | Toyota     | Carina II |      1998 |  9 |
+| DEF123 | Volvo      | S80       |      2002 | 10 |
++--------+------------+-----------+-----------+----+
+10 rows in set (0.00 sec)
+```
+
 ### Fältet pris
 
 Vi skall också lägga till ett fält till vår biltabell, nämligen pris. Vi kan säga att vi skall göra en liten tjänst åt en bilmäklare. Han vill ha en lista över bilar och vill då naturligtvis veta vad säljarna vill ha för sina bilar. Än en gång får vi använda **ALTER TABLE** men nu skall vi lägga till ett fält. Fältet skall heta _**pris**_ och vara av typen **INT**, heltal.

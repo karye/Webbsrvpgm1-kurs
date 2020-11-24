@@ -39,6 +39,7 @@ Dessa har ungefär följande innehåll:
 
 ```sql
 MariaDB [labb]> SELECT * FROM bilar;
+
 +--------+------------+-----------+-----------+--------+-------+
 | reg    | marke      | modell    | arsmodell | pris   | agare |
 +--------+------------+-----------+-----------+--------+-------+

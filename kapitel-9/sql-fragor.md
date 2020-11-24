@@ -207,21 +207,74 @@ Det finns andra funktioner som fungerar på ungefär samma sätt. Till exempel *
 
 Skapa en fråga som väljer ut alla bilar som är från **2001 och senare**.
 
+```sql
++--------+------------+--------+-----------+----+--------+
+| reg    | marke      | modell | arsmodell | id | pris   |
++--------+------------+--------+-----------+----+--------+
+| ABC123 | Saab       | 9-5    |      2003 |  1 | 130000 |
+| GHI123 | Mazda      | 626    |      2001 |  2 |  80000 |
+| JKL123 | Audi       | A8     |      2001 |  3 | 150000 |
+| PQR123 | Ford       | Mondeo |      2001 |  5 |  90000 |
+| ABC456 | Volkswagen | Polo   |      2003 |  8 |  75000 |
+| DEF123 | Volvo      | S80    |      2002 | 10 | 140000 |
++--------+------------+--------+-----------+----+--------+
+```
+
 ### Uppgift 2
 
 Skapa en fråga som väljer ut alla bilar av märket **Volvo** som är från **2000 och tidigare**.
+
+```sql
++--------+-------+--------+-----------+----+-------+
+| reg    | marke | modell | arsmodell | id | pris  |
++--------+-------+--------+-----------+----+-------+
+| STU123 | Volvo | 740    |      1987 |  6 | 35000 |
++--------+-------+--------+-----------+----+-------+
+```
 
 ### Uppgift 3
 
 Skapa en fråga som väljer ut alla bilar från **1980-talet**.
 
+```sql
++--------+------------+--------+-----------+----+-------+
+| reg    | marke      | modell | arsmodell | id | pris  |
++--------+------------+--------+-----------+----+-------+
+| STU123 | Volvo      | 740    |      1987 |  6 | 35000 |
+| VYX123 | Volkswagen | Golf   |      1988 |  7 | 40000 |
++--------+------------+--------+-----------+----+-------+
+```
+
 ### Uppgift 4
 
 Skapa en fråga som visar **hur många** bilar det finns av märke **Volvo**.
 
+```sql
++-------+----------+
+| marke | COUNT(*) |
++-------+----------+
+| Volvo |        2 |
++-------+----------+
+```
+
 ### Uppgift 5
 
 Skapa en fråga som visar **hur många** bilar det finns av **varje** märke.
+
+```sql
++------------+----------+
+| marke      | COUNT(*) |
++------------+----------+
+| Audi       |        1 |
+| BMW        |        1 |
+| Ford       |        1 |
+| Mazda      |        1 |
+| Saab       |        1 |
+| Toyota     |        1 |
+| Volkswagen |        2 |
+| Volvo      |        2 |
++------------+----------+
+```
 
 ### Uppgift 6
 

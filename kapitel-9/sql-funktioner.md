@@ -272,7 +272,7 @@ Skriv en fråga som skriver ut följande tabell:
 10 rows in set (0.00 sec)
 ```
 
-### Uppgift 6\*\*
+### Uppgift 6\*
 
 Skriv en fråga som skriver ut följande. Tänk på att rubriker och sortering.
 
@@ -294,6 +294,5 @@ Skriv en fråga som skriver ut följande. Tänk på att rubriker och sortering.
 10 rows in set (0.07 sec)
 ```
 
-\ _Lite svårare uppgift  
-\_\* Lite Svårare uppgift
+\* _Lite svårare uppgift_
 

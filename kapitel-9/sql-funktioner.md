@@ -206,7 +206,11 @@ MySQL-manualen: [http://www.mysql.com/doc/en/Date\_and\_time\_functions.html](ht
 Skriv en fråga som skriver ut hur många dagar det är till julafton.
 
 ```sql
-
++------------+
+| dagar_kvar |
++------------+
+|         29 |
++------------+
 ```
 
 ### Uppgift 2
@@ -214,7 +218,11 @@ Skriv en fråga som skriver ut hur många dagar det är till julafton.
 Skriv en fråga som talar om hur många dagar du är.
 
 ```sql
-
++---------------+
+| alder_i_dagar |
++---------------+
+|          8582 |
++---------------+
 ```
 
 ### Uppgift 3

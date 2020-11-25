@@ -203,15 +203,21 @@ En artikel om datum- och tidsfunktioner i MySQL i två delar: [http://www.databa
 
 ## Uppgifter
 
-Följande frågor skall du svara på. Visa eller lämna in dem till laborationshandledaren. Naturligtvis provkör du dem innan du skriver ner dem här.
-
 ### Uppgift 1
 
 Skriv en fråga som skriver ut hur många dagar det är till julafton.
 
+```sql
+
+```
+
 ### Uppgift 2
 
 Skriv en fråga som talar om hur många dagar du är.
+
+```sql
+
+```
 
 ### Uppgift 3
 
@@ -235,6 +241,16 @@ Skriv en fråga som skriver ut följande:
 ### Uppgift 4
 
 Skriv en fråga som skriver ut alla som fyller år i oktober.
+
+```sql
++----+--------+-------+--------------+
+| id | fnamn  | enamn | fodelsedatum |
++----+--------+-------+--------------+
+|  3 | Knatte | Anka  | 1937-10-17   |
+|  4 | Tjatte | Anka  | 1937-10-17   |
+|  5 | Fnatte | Anka  | 1937-10-17   |
++----+--------+-------+--------------+
+```
 
 ### Uppgift 5\*
 

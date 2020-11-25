@@ -114,7 +114,7 @@ FROM personer, bilar;
 
 Men det där blev ju inte så bra! Varför inte det? Jo vi har ingenstans angivit hur tabellerna skall relatera till varandra. Det kan vi göra med hjälp av kommandot **INNER JOIN**. Tag dig tid att fundera på nedanstående frågor då dessa till en början kan verka krångliga.
 
-### INNER JOIN
+### INNER JOIN \(SK JOIN\)
 
 **INNER JOIN** fungerar så att du väljer fält från flera tabeller. Men du anger att du skall välja från bara en tabell och sedan koppla ihop dessa med en relation. Detta kan du göra med **INNER JOIN**.
 

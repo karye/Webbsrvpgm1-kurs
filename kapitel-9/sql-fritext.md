@@ -24,13 +24,14 @@ MariaDB [labb]> DESCRIBE bilar;
 +-----------+-------------+------+-----+---------+----------------+
 7 rows in set (0.00 sec)
 MariaDB [labb]> DESCRIBE personer;
-+-------+-------------+------+-----+---------+----------------+
-| Field | Type        | Null | Key | Default | Extra          |
-+-------+-------------+------+-----+---------+----------------+
-| id    | int(11)     | NO   | PRI | NULL    | auto_increment |
-| fnamn | varchar(50) | YES  |     | NULL    |                |
-| enamn | varchar(50) | YES  |     | NULL    |                |
-+-------+-------------+------+-----+---------+----------------+
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| id           | int(11)     |      | PRI | NULL    | auto_increment |
+| fnamn        | varchar(50) | YES  |     | NULL    |                |
+| enamn        | varchar(50) | YES  |     | NULL    |                |
+| fodelsedatum | date        | YES  |     | NULL    |                |
++--------------+-------------+------+-----+---------+----------------+
 3 rows in set (0.00 sec)
 ```
 

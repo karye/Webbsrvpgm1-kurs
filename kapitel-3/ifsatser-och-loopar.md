@@ -194,7 +194,7 @@ På det nationella provet i Svenska 1 så fanns följande **poänggränser**.
 | E | 15 |
 
 Skapa ett skript som frågar användaren hur många poäng hen fick på provet.   
-Skriptet ska svara vilket blev **betyget**.
+Skriptet ska svara med **betyget**.
 
 ### Uppgift 9
 

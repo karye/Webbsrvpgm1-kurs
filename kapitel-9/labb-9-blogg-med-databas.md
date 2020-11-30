@@ -66,7 +66,7 @@ if ($conn->connect_error) {
 ## En mallsida
 
 * Här inkluderas anslutningsfilen **conn.php**
-* \*\*\*\*
+* [Bootstrap ](https://getbootstrap.com/docs/4.5/getting-started/introduction/)används för att styla sidorna
 
 ```php
 <?php
@@ -94,8 +94,8 @@ include_once "./resurser/conn.php";
 ### Formuläret
 
 * Skapa ett formulär för att mata in blogginläggets text:
-  * Rubrik
-  * Text
+  * En inmatningsruta för inläggets rubrik: rubrik
+  * En textarea för inläggets text: inlägg
 * Se [ett säkrare formulär](https://app.gitbook.com/@karye/s/webbserverpgm-1/~/drafts/-MNOHmuBB97EXQCkbQ9P/kapitel-3/skicka-data-fran-formulaer#en-saekrare-loesning)
 
 ### Registrera i tabellen

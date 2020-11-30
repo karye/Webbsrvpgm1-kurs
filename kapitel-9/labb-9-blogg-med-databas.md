@@ -16,9 +16,9 @@ description: Hur man skapar en blogg som har sina inlägg i en tabell
 
 ```sql
 CREATE TABLE IF NOT EXISTS blogg (
-  id int(8) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  title varchar(255) NOT NULL,
-  post text NOT NULL
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  rubrik VARCHAR(255) NOT NULL,
+  inlagg TEXT NOT NULL
 );
 ```
 
@@ -112,7 +112,7 @@ include_once "./resurser/conn.php";
         <?php
         // Ta emot text från formuläret och spara ned i en textfil.
         $rubrik = filter_input(INPUT_POST, 'rubrik', FILTER_SANITIZE_STRING);
-        $inlagg = filter_input(INPUT_POST, 'inlagg', FILTER_SANITIZE_STRING);
+        $inlagg= filter_input(INPUT_POST, 'inlagg', FILTER_SANITIZE_STRING);
 
         // Finns det data?
         if ($rubrik && $inlagg) {
@@ -173,7 +173,7 @@ if (!$result) {
 
 // Presentera resultatet
 while ($rad = $result->fetch_assoc()) {
-    echo "<p>$rad[rubrik] $rad[text]</p>";
+    echo "<p>$rad[rubrik] $rad[inlagg]</p>";
 }
 ?>
 ```

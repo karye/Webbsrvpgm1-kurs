@@ -1,3 +1,7 @@
+---
+description: Hur man skapar en blogg som har sina inlägg i en tabell
+---
+
 # Labb 9 - blogg med databas
 
 ## CRUD

@@ -18,7 +18,8 @@ description: Hur man skapar en blogg som har sina inlägg i en tabell
 CREATE TABLE IF NOT EXISTS blogg (
   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   rubrik VARCHAR(255) NOT NULL,
-  inlagg TEXT NOT NULL
+  inlagg TEXT NOT NULL,
+  datum TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 ```
 

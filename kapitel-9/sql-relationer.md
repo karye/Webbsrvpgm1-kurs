@@ -6,6 +6,8 @@ description: Relationer mellan tabeller.
 
 I denna laboration skall vi jobba vidare på bildatabasen som vi började på förra gången. Denna gång skall vi skapa ytterligare en tabell och skapa relationer mellan dem. I denna laboration skriver jag inte ut resultatet på de flesta frågorna utan du kör dem själv i din miljö.
 
+![](../.gitbook/assets/image%20%2874%29.png)
+
 ## Från förra laborationen ...
 
 Om du gjorde den förra laborationen rätt så skall du ha en tabell med följande fält.

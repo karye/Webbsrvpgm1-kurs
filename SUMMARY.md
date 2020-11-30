@@ -51,8 +51,8 @@
 
 * [Grunder i SQL](kapitel-9/sql-grunder.md)
 * [Ställa frågor](kapitel-9/sql-fragor.md)
-* [Inbyggda funktioner](kapitel-9/sql-funktioner.md)
 * [Relationer mellan tabeller](kapitel-9/sql-relationer.md)
+* [Inbyggda funktioner](kapitel-9/sql-funktioner.md)
 * [Fritextsökning](kapitel-9/sql-fritext.md)
 * [Lathund](kapitel-9/lathund.md)
 

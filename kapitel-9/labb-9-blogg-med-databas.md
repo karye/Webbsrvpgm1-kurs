@@ -168,7 +168,12 @@ $result = $conn->query($sql);
 if (!$result) {
     die("Något blev fel med SQL-satsen.");
 } else {
-    // echo "<p>Lista på bilar kunde hämtas.</p>";
+    echo "<p>Lista på bilar kunde hämtas.</p>";
+}
+
+// Presentera resultatet
+while ($rad = $result->fetch_assoc()) {
+    echo "<p>$rad[rubrik] $rad[text]</p>";
 }
 ?>
 ```

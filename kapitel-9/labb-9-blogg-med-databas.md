@@ -189,4 +189,5 @@ while ($rad = $result->fetch_assoc()) {
 
 ### Steg 8 - uppdatera ett inlägg
 
-* 
+* Lägg till en knapp i **hitta.php** för att kunna radera visade inlägg
+

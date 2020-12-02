@@ -183,6 +183,8 @@ while ($rad = $result->fetch_assoc()) {
 
 ### Steg 6 - söka efter ett inlägg 
 
+![](../.gitbook/assets/image%20%2879%29.png)
+
 * Hämta inläggen motsvarar R:et i **CRUD**
 * Skapa en sida **hitta.php**
   * Den här sidan är en kombination av **skriva.php**

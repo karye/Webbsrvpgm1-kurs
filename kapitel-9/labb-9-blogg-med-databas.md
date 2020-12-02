@@ -105,9 +105,10 @@ include_once "./resurser/conn.php";
 
 ## Skapa skriptsidorna
 
-### Steg 4 - spara information
+### Steg 4 - spara inlägget i databasen
 
 * Spara information motsvarar C:et i **CRUD**
+* Skapa en sida **skriva.php** utifrån mallen
 * Skapa ett formulär för att mata in blogginläggets text:
   * En inmatningsruta för inläggets rubrik: rubrik
   * En textarea för inläggets text: inlägg
@@ -143,12 +144,10 @@ if ($rubrik && $inlagg) {
 {% endtab %}
 {% endtabs %}
 
-## Hämta data från tabellen
+### Steg 5 - hämta inläggen från databasen
 
-### lista.php
-
-* Skapa en ny sida **lista.php**
-* Infoga också menyn
+* Hämta inläggen motsvarar R:et i **CRUD**
+* Skapa en sida **lista.php** utifrån mallen
 * Hämta alla inlägg från tabellen, se koden nedan
 * Presentera inläggen på ett snyggt sätt
 
@@ -172,5 +171,13 @@ while ($rad = $result->fetch_assoc()) {
 ?>
 ```
 
+### Steg 6 - söka efter ett inlägg 
 
+* Hämta inläggen motsvarar R:et i **CRUD**
+* Skapa en sida **hitta.php**
+  * Den här sidan är en kombination av **skriva.php**
+  * .. och **lista.php**
+* Skapa ett formulär för att mata in en sökterm
+* Hämta alla inlägg från tabellen med utgångspunkt på söktermen
+* Presentera inläggen som matchar söktermen på ett snyggt sätt
 

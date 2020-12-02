@@ -181,3 +181,12 @@ while ($rad = $result->fetch_assoc()) {
 * Hämta alla inlägg från tabellen med utgångspunkt på söktermen
 * Presentera inläggen som matchar söktermen på ett snyggt sätt
 
+## Förbättringar
+
+### Steg 7 - radera ett inlägg
+
+* Lägg till en knapp i **hitta.php** för att kunna radera visade inlägg
+
+### Steg 8 - uppdatera ett inlägg
+
+* 

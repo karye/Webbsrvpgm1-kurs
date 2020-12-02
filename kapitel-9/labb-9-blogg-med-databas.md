@@ -4,13 +4,23 @@ description: Hur man skapar en blogg som har sina inlägg i en tabell
 
 # Labb 9 - blogg med databas
 
-## CRUD
+## Funktioner i en webbapplikation
+
+### CRUD
+
+* I en webbapplikation pratar om sk CRUD.
+* Det betyder hur man hanterar informationen som lagras i webbappen
+* Man skall kunna göra följande operationer:
+  * Spara information, tex användare, inlägg osv
+  * Läsa/söka efter det som lagrats i databasen
+  * Kunna redigera det som lagrats
+  * Kunna ta bort från databasen det man inte vill behålla
 
 ![](../.gitbook/assets/image%20%2875%29.png)
 
 
 
-**Skapa först tabellen i databasen**
+### **Steg 1 - skapa först tabellen i databasen**
 
 * Skapa en ny tabell **blogg** i phpmyadmin:
 
@@ -23,23 +33,9 @@ CREATE TABLE IF NOT EXISTS blogg (
 );
 ```
 
-## **Skapa en mapp för resurser**
-
-### Skydda från internet
+### **Steg 2 - skapa en mapp för resurser**
 
 * Skapa en mapp som heter **resurser**
-* Och lägg in följande fil **.htaccess**:
-
-{% tabs %}
-{% tab title=".htaccess" %}
-```text
-Deny from All
-```
-{% endtab %}
-{% endtabs %}
-
-### Skapa anslutningen
-
 * Skapa anslutningsfilen **conn.php**:
 
 {% tabs %}
@@ -64,7 +60,17 @@ if ($conn->connect_error) {
 {% endtab %}
 {% endtabs %}
 
-## En mallsida
+* Och för att skydda mot intrång lägg in följande fil **.htaccess**:
+
+{% tabs %}
+{% tab title=".htaccess" %}
+```text
+Deny from All
+```
+{% endtab %}
+{% endtabs %}
+
+### Steg 3 - skapa en mallsida
 
 * Här inkluderas anslutningsfilen **conn.php**
 * [Bootstrap ](https://getbootstrap.com/docs/4.5/getting-started/introduction/)används för att styla sidorna
@@ -84,71 +90,58 @@ include_once "./resurser/conn.php";
 </head>
 <body>
     <div class="kontainer">
+        <nav>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link" href="./lasa.php">Läsa</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./skriva.php">Skriva</a></li>
+                <li class="nav-item"><a class="nav-link" href="./lista.php">Admin</a></li>
+            </ul>
+        </nav>
     
     </div>
 </body>
 </html>
 ```
 
-## Mata in i tabellen
+## Skapa skriptsidorna
 
-### Formuläret
+### Steg 4 - spara information
 
+* Spara information motsvarar C:et i **CRUD**
 * Skapa ett formulär för att mata in blogginläggets text:
   * En inmatningsruta för inläggets rubrik: rubrik
   * En textarea för inläggets text: inlägg
 * Se [ett säkrare formulär](https://app.gitbook.com/@karye/s/webbserverpgm-1/~/drafts/-MNOHmuBB97EXQCkbQ9P/kapitel-3/skicka-data-fran-formulaer#en-saekrare-loesning)
 
-### Registrera i tabellen
-
 {% tabs %}
 {% tab title="skriva.php" %}
 ```php
-<div class="kontainer">
-    <h1>Bloggen</h1>
-    <main>
-        <form action="#" method="post">
+<form action="#" method="post">
 ...
-        </form>
-        <?php
-        // Ta emot text från formuläret och spara ned i en textfil.
-        $rubrik = filter_input(INPUT_POST, 'rubrik', FILTER_SANITIZE_STRING);
-        $inlagg= filter_input(INPUT_POST, 'inlagg', FILTER_SANITIZE_STRING);
+</form>
+<?php
+// Ta emot text från formuläret och spara ned i en textfil.
+$rubrik = filter_input(INPUT_POST, 'rubrik', FILTER_SANITIZE_STRING);
+$inlagg= filter_input(INPUT_POST, 'inlagg', FILTER_SANITIZE_STRING);
 
-        // Finns det data?
-        if ($rubrik && $inlagg) {
+// Finns det data?
+if ($rubrik && $inlagg) {
 
-            // 2. Registrera inlägget i tabellen
-            $sql = "INSERT INTO blog (rubrik, inlagg) VALUES ('$rubrik', '$inlagg')";
-            $result = $conn->query($sql);
+    // 2. Registrera inlägget i tabellen
+    $sql = "INSERT INTO blog (rubrik, inlagg) VALUES ('$rubrik', '$inlagg')";
+    $result = $conn->query($sql);
 
-            // Gick det bra?
-            if (!$result) {
-                die("Något blev fel med SQL-satsen.");
-            } else {
-                echo "<p class=\"alert alert-success\">Inläggets har registrerats.</p>";
-            }
-        }
-        ?>
-    </main>
-</div>
+    // Gick det bra?
+    if (!$result) {
+        die("Något blev fel med SQL-satsen.");
+    } else {
+        echo "<p class=\"alert alert-success\">Inläggets har registrerats.</p>";
+    }
+}
+?>
 ```
 {% endtab %}
 {% endtabs %}
-
-### Meny
-
-* Med en meny kan man navigera mellan sidorna
-
-```php
-<nav>
-    <ul class="nav nav-tabs">
-        <li class="nav-item"><a class="nav-link" href="./lasa.php">Läsa</a></li>
-        <li class="nav-item"><a class="nav-link active" href="./skriva.php">Skriva</a></li>
-        <li class="nav-item"><a class="nav-link" href="./lista.php">Admin</a></li>
-    </ul>
-</nav>
-```
 
 ## Hämta data från tabellen
 

@@ -54,7 +54,7 @@
 * [Relationer mellan tabeller](kapitel-9/sql-relationer.md)
 * [Inbyggda funktioner](kapitel-9/sql-funktioner.md)
 * [Fritextsökning](kapitel-9/sql-fritext.md)
-* [Lathund](kapitel-9/lathund.md)
+* [Lathund SQL](kapitel-9/lathund.md)
 * [Labb 9 - blogg med databas](kapitel-9/labb-9-blogg-med-databas.md)
 
 ## Kapitel 10

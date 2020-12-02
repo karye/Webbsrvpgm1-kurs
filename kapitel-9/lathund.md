@@ -4,7 +4,7 @@ description: >-
   deras enklaste form.
 ---
 
-# Lathund
+# Lathund SQL
 
 ## Skapa en tabell \(CREATE TABLE\)
 

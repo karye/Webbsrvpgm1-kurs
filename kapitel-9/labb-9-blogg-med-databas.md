@@ -10,6 +10,8 @@ description: Hur man skapar en blogg som har sina inlägg i en tabell
 
 ## Funktioner i en webbapplikation
 
+![](../.gitbook/assets/blogg-db.png)
+
 ### CRUD
 
 * I en webbapplikation pratar om sk CRUD.

@@ -4,6 +4,10 @@ description: Hur man skapar en blogg som har sina inlägg i en tabell
 
 # Labb 9 - blogg med databas
 
+## Resultatet
+
+![](../.gitbook/assets/image%20%2876%29.png)
+
 ## Funktioner i en webbapplikation
 
 ### CRUD
@@ -107,6 +111,8 @@ include_once "./resurser/conn.php";
 
 ### Steg 4 - spara inlägget i databasen
 
+![](../.gitbook/assets/image%20%2877%29.png)
+
 * Spara information motsvarar C:et i **CRUD**
 * Skapa en sida **skriva.php** utifrån mallen
 * Skapa ett formulär för att mata in blogginläggets text:
@@ -146,6 +152,8 @@ if ($rubrik && $inlagg) {
 
 ### Steg 5 - hämta inläggen från databasen
 
+![](../.gitbook/assets/image%20%2876%29.png)
+
 * Hämta inläggen motsvarar R:et i **CRUD**
 * Skapa en sida **lista.php** utifrån mallen
 * Hämta alla inlägg från tabellen, se koden nedan
@@ -183,11 +191,19 @@ while ($rad = $result->fetch_assoc()) {
 
 ## Förbättringar
 
-### Steg 7 - radera ett inlägg
+### Steg 7 - skapa en kortfattad lista på inläggen
+
+![](../.gitbook/assets/image%20%2878%29.png)
+
+* Skriv ut alla inlägg i en tabell
+* Rubriken kortas ned
+* Inläggets text kortas ned
+
+### **Steg 8 - radera ett inlägg**
 
 * Lägg till en knapp i **hitta.php** för att kunna radera visade inlägg
 
-### Steg 8 - uppdatera ett inlägg
+### Steg 9 - uppdatera ett inlägg
 
 * Lägg till en knapp i **hitta.php** för att kunna radera visade inlägg
 * Klickar man på knappen kommer man till formulär som är förifyllt

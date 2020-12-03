@@ -330,7 +330,7 @@ while ($rad = $result->fetch_assoc()) {
 ### **Steg 8 - radera ett inlägg**
 
 * Här tas GET-parametern emot och läs av
-* Sedan raderas inlägget
+* Sedan raderas inlägget motsvarar D:et i **CRUD**
 
 ```php
 <?php
@@ -382,6 +382,7 @@ if ($id && $radera) {
 
 * Här tas GET-parametern emot och läs av
 * Sedan fylls ett formuläret med inlägget
+* Användaren kan sen ändra på rubrik och inläggstext, detta motsvarar U:et i **CRUD**
 
 ```php
 <?php

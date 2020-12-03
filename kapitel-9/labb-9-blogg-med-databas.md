@@ -202,13 +202,127 @@ while ($rad = $result->fetch_assoc()) {
 * Skriv ut alla inlägg i en tabell
 * Rubriken kortas ned
 * Inläggets text kortas ned
+* Infoga knappar med GET-parameter för id
+* När man klickar på knappen för radera kommer man till **radera.php**
+* När man klickar på knappen för redigera kommer man till **redigera.php**
+
+```php
+while ($rad = $result->fetch_assoc()) {
+    // Korta ned texten
+    $snippet = mb_substr($rad['inlagg'], 0, 30) . "...";
+    
+    // Skriv ut en tabellrad
+    echo "<tr>
+    <td>$rad[datum]</td>
+    <td>$rad[rubrik]</td>
+    <td>$snippet</td>
+    <td><a class=\"alert alert-warning\" href=\"redigera.php?id=$rad[id]\"><i class=\"fa fa-pencil\" aria-hidden=\"true\"></i></a></td>
+    <td><a class=\"alert alert-danger\" href=\"radera.php?id=$rad[id]\"><i class=\"fa fa-trash\" aria-hidden=\"true\"></i></a></td>
+    </tr>";
+}
+```
 
 ### **Steg 8 - radera ett inlägg**
 
-* Lägg till en knapp i **hitta.php** för att kunna radera visade inlägg
+* Här tas GET-parametern emot och läs av
+* Sedan raderas inlägget
+
+```php
+<?php
+// Ta emot text från formuläret och spara ned i en textfil.
+$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_STRING);
+$radera = filter_input(INPUT_POST, 'radera', FILTER_SANITIZE_STRING);
+
+if ($id && !$radera) {
+    
+    // 2. Ställ en SQL-fråga
+    $sql = "SELECT * FROM blog WHERE id = '$id'";
+    $result = $conn->query($sql);
+    
+    // Gick det bra?
+    if (!$result) {
+        die("Något blev fel med SQL-satsen." . $conn->connect_error);
+    } else {
+        $rad = $result->fetch_assoc();
+        echo "<form action=\"#\" method=\"POST\">";
+        echo "<div class=\"inlagg\">";
+        echo "<h4>Inlägg $id</h4>";
+        echo "<h5>$rad[rubrik]</h5>";
+        echo "<h6>$rad[datum]</h6>";
+        echo "<p>$rad[inlagg]</p>";
+        echo "</div>";
+        echo "<button class=\"btn btn-danger\" name=\"radera\" value=\"1\">Radera inlägget</button>";
+        echo "</form>";
+    }
+}
+
+// När man klickat på knappen
+if ($id && $radera) {
+
+    // 2. Ställ en SQL-fråga
+    $sql = "DELETE FROM blog WHERE id = '$id'";
+    $result = $conn->query($sql);
+
+    // Gick det bra?
+    if (!$result) {
+        die("Något blev fel med SQL-satsen.");
+    } else {
+        echo "<p class=\"alert alert-danger\">Inlägg $id har raderats!</p>";
+    }
+}
+?>
+```
 
 ### Steg 9 - uppdatera ett inlägg
 
-* Lägg till en knapp i **hitta.php** för att kunna radera visade inlägg
-* Klickar man på knappen kommer man till formulär som är förifyllt
+* Här tas GET-parametern emot och läs av
+* Sedan fylls ett formuläret med inlägget
+
+```php
+<?php
+if (isset($_GET["id"])) {
+    
+    // 2. Ställ en SQL-fråga
+    $sql = "SELECT * FROM blog WHERE id='$_GET[id]'";
+    $result = $conn->query($sql);
+
+    // Gick det bra?
+    if (!$result) {
+        die("Något blev fel med SQL-satsen.");
+    } else {
+        // echo "<p>Lista på bilar kunde hämtas.</p>";
+    }
+
+    // 3. Ta emot svaret och bearbeta det
+    $rad = $result->fetch_assoc();
+?>
+    <form action="#" method="post">
+        <label>Rubrik <input type="text" name="rubrik" value="<?php echo $rad['rubrik'] ?>" required></label>
+        <label>Inlägg <textarea name="inlagg" required><?php echo $rad['inlagg'] ?></textarea></label>
+        <button class="btn btn-primary">Uppdatera inlägg</button>
+    </form>
+<?php
+}
+// Ta emot text från formuläret och spara ned i en textfil.
+$rubrik = filter_input(INPUT_POST, 'rubrik', FILTER_SANITIZE_STRING);
+$inlagg = filter_input(INPUT_POST, 'inlagg', FILTER_SANITIZE_STRING);
+
+if ($rubrik && $inlagg) {
+
+    // 2. Registrera inlägget i tabellen
+    $sql = "UPDATE blog SET rubrik='$rubrik', inlagg='$inlagg' WHERE id=$_GET[id]";
+    $result = $conn->query($sql);
+
+    // Gick det bra?
+    if (!$result) {
+        die("Något blev fel med SQL-satsen.");
+    } else {
+        echo "<p class=\"alert alert-success\">Inläggets har uppdaterats.</p>";
+    }
+
+    // 3. Stäng ned anslutningen
+    $conn->close();
+}
+?>
+```
 

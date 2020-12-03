@@ -386,10 +386,11 @@ if ($id && $radera) {
 
 ```php
 <?php
-if (isset($_GET["id"])) {
+$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_STRING);
+if ($id) {
     
     // 2. Ställ en SQL-fråga
-    $sql = "SELECT * FROM blog WHERE id='$_GET[id]'";
+    $sql = "SELECT * FROM blog WHERE id='$id'";
     $result = $conn->query($sql);
 
     // Gick det bra?
@@ -416,7 +417,7 @@ $inlagg = filter_input(INPUT_POST, 'inlagg', FILTER_SANITIZE_STRING);
 if ($rubrik && $inlagg) {
 
     // 2. Registrera inlägget i tabellen
-    $sql = "UPDATE blog SET rubrik='$rubrik', inlagg='$inlagg' WHERE id=$_GET[id]";
+    $sql = "UPDATE blog SET rubrik='$rubrik', inlagg='$inlagg' WHERE id=$id";
     $result = $conn->query($sql);
 
     // Gick det bra?

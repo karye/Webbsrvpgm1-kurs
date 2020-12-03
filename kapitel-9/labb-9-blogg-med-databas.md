@@ -14,7 +14,7 @@ description: Hur man skapar en blogg som har sina inlägg i en tabell
 
 ### CRUD
 
-* I en webbapplikation pratar om sk CRUD.
+* I en webbapplikation pratar om sk CRUD
 * Det betyder hur man hanterar informationen som lagras i webbappen
 * Man skall kunna göra följande operationer:
   * Spara information, tex användare, inlägg osv

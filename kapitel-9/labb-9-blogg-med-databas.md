@@ -49,12 +49,12 @@ CREATE TABLE IF NOT EXISTS blogg (
 ```php
 <?php
 $host = "localhost";
-$databas = "...";
+$db= "...";
 $användare = "...";
 $lösenord = "...";
 
 // 1. Logga in på mysql-servern och välj databas
-$conn = new mysqli($host, $användare, $lösenord, $databas);
+$conn = new mysqli($host, $användare, $lösenord, $db);
 
 // Gick det ansluta?
 if ($conn->connect_error) {

@@ -244,6 +244,9 @@ form img {
 ```php
 // Skapa ett hash från lösenordet
 $hash = password_hash($losen, PASSWORD_DEFAULT);
+
+// Skapa sql-frågan vi skall köra
+$sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$enamn', '$anamn', '$hash')";
 ```
 
 ## Inloggning
@@ -267,8 +270,9 @@ $hash = password_hash($losen, PASSWORD_DEFAULT);
             die('Det blev fel med SQL-satsen.');
         } else {
             $rad = $result->fetch_assoc();
+            
+            // Kontrollera att lösenordet motsvarar hash i databasen
             if (password_verify($losen, $rad['hash'])) {
-                $_SESSION['anamn'] = $anamn;
                 echo "<p class=\"alert alert-success\">Du är inloggad!</p>";
             } else {
                 echo "<p class=\"alert alert-dismissible alert-warning\">Felaktigt lösenord</p>";

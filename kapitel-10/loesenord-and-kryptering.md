@@ -325,6 +325,64 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
 
 ## Skapa en session
 
+### Starta sessioner
+
+```php
+<?php
+/**
+* PHP version 7
+* @category   En enkel CRUD webbapp
+* @author     ...
+* @license    PHP CC
+*/
+
+include_once "./resurser/konfig-db.php";
+session_start();
+?>
+```
+
+### Skapa en sessionsvariabel
+
+* Skapa en variabel **$\_SESSION\['anamn'\]**
+
+```php
+// Kontrollera att lösenordet motsvarar hash i databasen
+if (password_verify($losen, $rad['hash'])) {
+    $_SESSION['anamn'] = $anamn;
+    echo "<p class=\"alert alert-success\">Du är nu inloggad!</p>";
+} else {
+    echo "<p class=\"alert alert-dismissible alert-warning\">Felaktigt lösenord</p>";
+}
+```
+
+## Använda sessionen
+
+```php
+<?php
+/**
+* PHP version 7
+* @category   En enkel CRUD webbapp
+* @author     ...
+* @license    PHP CC
+*/
+
+include_once "./resurser/konfig-db.php";
+session_start();
+?>
+...
+<main>
+    <?php
+    if (!isset($_SESSION['anamn'])) {
+        echo "<p class=\"alert alert-dismissible alert-warning\">Du är inte inloggad!</p>";
+    }
+    ?>
+</main>
+...
+    </div>
+</body>
+</html>
+```
+
 ## Resurser
 
 * [https://alexwebdevelop.com/php-password-hashing](https://alexwebdevelop.com/php-password-hashing/)

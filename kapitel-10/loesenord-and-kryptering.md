@@ -10,6 +10,8 @@ description: För en fungerande måste man hantera lösenord och sedan starta en
 
 ## Registrera användare
 
+* Skapa sidan registrera.php
+
 {% tabs %}
 {% tab title="PHP" %}
 ```php
@@ -202,6 +204,8 @@ form img {
 
 ## Lista alla användare
 
+* Skapa sidan lista.php
+
 ```php
 <main>
     <?php
@@ -254,6 +258,8 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
 ```
 
 ## Inloggning
+
+* Skapa sidan login.php
 
 ```php
 <main>

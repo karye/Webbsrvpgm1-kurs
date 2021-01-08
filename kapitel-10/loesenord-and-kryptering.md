@@ -273,7 +273,7 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
             
             // Kontrollera att lösenordet motsvarar hash i databasen
             if (password_verify($losen, $rad['hash'])) {
-                echo "<p class=\"alert alert-success\">Du är inloggad!</p>";
+                echo "<p class=\"alert alert-success\">Du är nu inloggad!</p>";
             } else {
                 echo "<p class=\"alert alert-dismissible alert-warning\">Felaktigt lösenord</p>";
             }

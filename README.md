@@ -46,13 +46,13 @@ description: 'Installera alla verktyg, konfigurera alla inställningar, skapar a
 * Om du använder powershell: 
 
 ```bash
-docker run -d --restart unless-stopped -p 8080:80 -p 10000:10000 -v "c:\github:/var/www" --name lamp karye/lampw 
+docker run -d --restart unless-stopped -p 8080:80 -p 10000:10000 -v "c:\github:/var/www" -v mysql-data:/var/lib/mysql --name lamp karye/lampw 
 ```
 
 * Om du använder bash: 
 
 ```bash
-docker run -d --restart unless-stopped -p 8080:80 -p 10000:10000 -v /host_mnt/c/github:/var/www --name lamp karye/lampw
+docker run -d --restart unless-stopped -p 8080:80 -p 10000:10000 -v /host_mnt/c/github:/var/www -v mysql-data:/var/lib/mysql --name lamp karye/lampw
 ```
 
 * Instruktioner till hur du använder LAMPW finns på [https://hub.docker.com/r/karye/lampw](https://hub.docker.com/r/karye/lampw)

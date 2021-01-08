@@ -8,7 +8,7 @@ description: För en fungerande måste man hantera lösenord och sedan starta en
 
 ![](../.gitbook/assets/register-tabell.png)
 
-## Registrera användare
+## Skapa registrera.php
 
 * Skapa sidan registrera.php
 

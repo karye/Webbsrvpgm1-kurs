@@ -310,13 +310,13 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
     <nav>
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="logga-in-db.php">Logga in</a>
+                <a class="nav-link" href="login.php">Logga in</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="registrera-db.php">Registrera</a>
+                <a class="nav-link active" href="registrera.php">Registrera</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="lista-db.php">Lista</a>
+                <a class="nav-link" href="lista.php">Lista</a>
             </li>
         </ul>
     </nav>

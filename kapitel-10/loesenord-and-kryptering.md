@@ -302,6 +302,27 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
 </main>
 ```
 
+## Skapa en meny
+
+```php
+<header>
+    <h1>Inloggning</h1>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="logga-in-db.php">Logga in</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="registrera-db.php">Registrera</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lista-db.php">Lista</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+```
+
 ## Skapa en session
 
 ## Resurser

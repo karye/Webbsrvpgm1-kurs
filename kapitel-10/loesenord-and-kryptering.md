@@ -1,4 +1,4 @@
-# Lösenord & kryptering\(?\)
+# Lösenord & kryptering
 
 ## Skapa tabell
 

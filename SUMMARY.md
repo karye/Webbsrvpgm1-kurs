@@ -59,8 +59,7 @@
 
 ## Kapitel 10
 
-* [Sessioner](kapitel-10/sessioner.md)
-* [Lösenord & kryptering\(?\)](kapitel-10/loesenord-and-kryptering.md)
+* [Lösenord & kryptering](kapitel-10/loesenord-and-kryptering.md)
 
 ## Övrigt
 

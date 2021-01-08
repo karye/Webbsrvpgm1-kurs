@@ -6,6 +6,8 @@
 
 ## Registrera användare
 
+{% tabs %}
+{% tab title="PHP" %}
 ```php
 <!DOCTYPE html>
 <html lang="sv">
@@ -33,7 +35,7 @@
             if ($fnamn && $enamn && $anamn && $losen) {
 
                 // Skapa sql-frågan vi skall köra
-                $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$enamn','$anamn', '$hash')";
+                $sql = "INSERT INTO register (fnamn, enamn, anamn) VALUES ('$fnamn', '$enamn', '$anamn')";
                 $result = $conn->query($sql);
 
                 // Gick det bra? Kunde SQL-satsen köras?
@@ -59,6 +61,140 @@
 </body>
 </html>
 ```
+{% endtab %}
+
+{% tab title="style.css" %}
+```css
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro|Damion|Roboto+Slab&display=swap');
+
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("./bilder/georg-bommeli-ybtUqjybcjE-unsplash.jpg") top center no-repeat;
+}
+.kontainer {
+    width: 700px;
+    padding: 2em;
+    margin: 1em auto;
+    min-height: 89vh;
+    background: #c7c7c7c7;
+    border-radius: 5px;
+    font-family: 'Roboto Slab', serif;
+    border: 1px solid #a0a0a0;
+    box-shadow: 1px 1px 4px #686868;
+}
+nav {
+    padding: 1em 0;
+}
+main {
+    padding: 1em;
+    font-size: 0.9em;
+    color: #7b7b7b;
+}
+
+form {
+    background: #ffffffa3;
+    border: 1px solid #a0a0a0;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+form label {
+    color: #555555;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px 0;
+    padding: 0;
+}
+form input, form textarea {
+    padding: 0.5em;
+    margin-top: -0.4em;
+    font-style: italic;
+    border-radius: 0.3em;
+    border: 2px solid #55a5d2;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+form textarea {
+    height: 10em;
+}
+form button {
+    margin: 1em 0;
+    padding: 0.7em;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: bold;
+    color: #FFF;
+    background-color: #55a5d2;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1em;
+    font-weight: bold;
+}
+h1, h2, h3, p {
+    margin: 0.8em 0;
+}
+h1 {
+    color: #ffffff;
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 1px 1px 1px #5c5c5c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #b89e44;
+    background: #ffffffa3;
+    padding: 2em;
+    border-radius: 5px;
+}
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+th {
+    background: #FFF;
+    padding: 1em 0.5em;
+}
+tr:nth-child(even) {
+    background: #f1f1f1;
+}
+/* tr:nth-child(odd) {
+    background: #FFF;
+} */
+table .fa {
+    color: #55a5d2;
+}
+table img {
+    width: 50px;
+}
+form img {
+    width: 30px;
+}
+
+.inlagg {
+    background: #ffffffa3;
+    border: 1px solid #b89e44;
+    padding: 2em;
+    margin-bottom: 2em;
+    border-radius: 5px;
+}
+```
+{% endtab %}
+{% endtabs %}
 
 ## Lista alla användare
 

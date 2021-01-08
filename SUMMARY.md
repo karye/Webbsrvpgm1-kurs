@@ -59,7 +59,7 @@
 
 ## Kapitel 10
 
-* [Lösenord & kryptering](kapitel-10/loesenord-and-kryptering.md)
+* [Inloggning och sessioner](kapitel-10/loesenord-and-kryptering.md)
 
 ## Övrigt
 

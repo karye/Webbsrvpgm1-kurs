@@ -1,4 +1,8 @@
-# Lösenord & kryptering
+---
+description: För en fungerande måste man hantera lösenord och sedan starta en session.
+---
+
+# Inloggning och sessioner
 
 ## Skapa tabell
 

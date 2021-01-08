@@ -32,9 +32,6 @@
             // Kontrollera att POST-variablerna finns, dvs första gången.
             if ($fnamn && $enamn && $anamn && $losen) {
 
-                // Skapa ett hash från lösenordet
-                $hash = password_hash($losen, PASSWORD_DEFAULT);
-
                 // Skapa sql-frågan vi skall köra
                 $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$enamn','$anamn', '$hash')";
                 $result = $conn->query($sql);
@@ -61,6 +58,56 @@
     </div>
 </body>
 </html>
+```
+
+## Lista alla användare
+
+```php
+<main>
+    <?php
+    // Skapa SQL-frågan
+    $sql = "SELECT * FROM register";
+    $result = $conn->query($sql);
+
+    // Gick det bra? Kunde SQL-satsen köras?
+    if (!$result) {
+        die("Något blev fel med SQL-satsen.");
+    } else {
+        // echo "<p>Användardata kunde hämtas!</p>";
+    }
+
+    echo "<table class=\"table table-striped\">";
+    echo "<tr>
+        <th>Förnamn</th>
+        <th>Efternamn</th>
+        <th>Användarnamn</th>
+        </tr>";
+
+    // Skriv resultatet rad för rad
+    while ($rad = $result->fetch_assoc()) {
+        echo "<tr>";
+        
+        // Skriv ut förnamnet inom en cell
+        echo "<td>{$rad['fnamn']}</td>";
+        // Skriv ut efternamnet inom en cell
+        echo "<td>{$rad['enamn']}</td>";
+        // Skriv ut användarnamnet inom en cell
+        echo "<td>{$rad['anamn']}</td>";
+        
+        echo "</tr>";
+    }
+    echo "</table>";
+
+    $conn->close();
+    ?>
+</main>
+```
+
+## Lösenord-hash
+
+```php
+// Skapa ett hash från lösenordet
+$hash = password_hash($losen, PASSWORD_DEFAULT);
 ```
 
 ## Inloggning
@@ -102,56 +149,6 @@
         <input type="password" name="losen" required></label>
         <button class="btn btn-primary">Logga in</button>
     </form>
-</main>
-```
-
-## Lista alla användare
-
-```php
-<main>
-    <?php
-    // Skapa SQL-frågan
-    $sql = "SELECT * FROM register";
-    $result = $conn->query($sql);
-
-    // Gick det bra? Kunde SQL-satsen köras?
-    if (!$result) {
-        die("Något blev fel med SQL-satsen.");
-    } else {
-        // echo "<p>Användardata kunde hämtas!</p>";
-    }
-
-    echo "<table class=\"table table-striped\">";
-    echo "<tr>
-        <th>Förnamn</th>
-        <th>Efternamn</th>
-        <th>Användarnamn</th>
-        </tr>";
-
-    // Skriv resultatet rad för rad
-    while ($rad = $result->fetch_assoc()) {
-        echo "<tr>";
-
-        // Skriv ut förnamnet inom en cell
-        echo "<td>{$rad['fnamn']}</td>";
-        // Skriv ut efternamnet inom en cell
-        echo "<td>{$rad['enamn']}</td>";
-        // Skriv ut epost inom en cell
-        echo "<td>{$rad['anamn']}</td>";
-
-        // Skapa knapp för att radera raden
-        echo "<td><a class=\"btn btn-outline-danger\" href=\"radera-verifiera-db.php?id={$rad['id']}\">Radera</a>
-        </td>";
-
-        // Skapa knapp för att redigera raden
-        echo "<td><a class=\"btn btn-outline-warning\" href=\"redigera-db.php?id={$rad['id']}\">Redigera</a></td>";
-
-        echo "</tr>";
-    }
-    echo "</table>";
-
-    $conn->close();
-    ?>
 </main>
 ```
 

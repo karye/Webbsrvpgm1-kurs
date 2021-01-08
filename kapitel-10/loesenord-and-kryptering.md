@@ -296,6 +296,8 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
 </main>
 ```
 
+## Skapa en session
+
 ## Resurser
 
 * [https://alexwebdevelop.com/php-password-hashing](https://alexwebdevelop.com/php-password-hashing/)

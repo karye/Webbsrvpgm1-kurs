@@ -466,9 +466,9 @@ session_start();
 
 ## Förbättringar
 
-* Slå samman knapparna "Logga in" och "Logga ut", så att man växlar mellan dem i menyn
-* När man är inloggad visa användarnamnet på något på sidan
-* Dölj registrera när man är inloggad
+* Slå samman knapparna **Logga in** och **Logga ut**, dvs: - Visa **Logga in** om man inte är inloggad - Visa **Logga ut** om man är inloggad
+* När man är inloggad visa användarnamnet någonstans på sidan
+* Dölj sidan **Registrera** när man är inloggad
 
 ## Resurser
 

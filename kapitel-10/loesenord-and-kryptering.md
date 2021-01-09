@@ -464,6 +464,11 @@ session_start();
 </html>
 ```
 
+## Förbättringar
+
+* Slå samman knapparna "Logga in" och "Logga ut", så att man växlar mellan dem i menyn
+* När man är inloggad visa användarnamnet på något på sidan
+
 ## Resurser
 
 * [https://alexwebdevelop.com/php-password-hashing](https://alexwebdevelop.com/php-password-hashing/)

@@ -304,7 +304,7 @@ $sql = "INSERT INTO register (fnamn, enamn, anamn, hash) VALUES ('$fnamn', '$ena
 </main>
 ```
 
-## Skapa en meny
+## Infoga en meny
 
 ```php
 <header>
@@ -406,6 +406,62 @@ if (!isset($_SESSION['anamn'])) {
     exit;
 }
 ?>
+```
+
+## Utloggning
+
+### Utöka menyn
+
+* Menyn utöka med en ny knapp "Logga ut"
+
+```php
+<nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="login.php">Logga in</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="logut.php">Logga ut</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="registrera.php">Registrera</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="lista.php">Lista</a>
+        </li>
+    </ul>
+</nav>
+```
+
+### Avsluta sessionen
+
+```php
+<?php
+/**
+* PHP version 7
+* @category   En enkel CRUD webbapp
+* @author     ...
+* @license    PHP CC
+*/
+
+include_once "./resurser/konfig-db.php";
+session_start();
+?>
+...
+<body>
+    <div class="kontainer">
+        ...
+        <main>
+            <?php
+            // Avsluta sessionen
+            if (isset($_SESSION['anamn'])) {
+                session_destroy();
+            }
+            ?>
+        </main>
+    </div>
+</body>
+</html>
 ```
 
 ## Resurser

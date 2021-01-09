@@ -247,7 +247,9 @@ form img {
 </main>
 ```
 
-## Lösenord-hash
+## Lösenord hash
+
+* I databasen lagras inte lösenordet utan ett hash skapat från lösenordet
 
 ```php
 // Skapa ett hash från lösenordet
@@ -357,6 +359,8 @@ if (password_verify($losen, $rad['hash'])) {
 
 ## Använda sessionen
 
+### Enkel varning
+
 ```php
 <?php
 /**
@@ -381,6 +385,27 @@ session_start();
     </div>
 </body>
 </html>
+```
+
+### Omdirigering
+
+```php
+<?php
+/**
+* PHP version 7
+* @category   En enkel CRUD webbapp
+* @author     ...
+* @license    PHP CC
+*/
+
+include_once "./resurser/konfig-db.php";
+session_start();
+
+if (!isset($_SESSION['anamn'])) {
+    header('Location: login.php');
+    exit;
+}
+?>
 ```
 
 ## Resurser

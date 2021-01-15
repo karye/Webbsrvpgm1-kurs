@@ -60,6 +60,7 @@
 ## Kapitel 10
 
 * [Inloggning och sessioner](kapitel-10/loesenord-and-kryptering.md)
+* [Login modal](kapitel-10/login-modal.md)
 
 ## Övrigt
 

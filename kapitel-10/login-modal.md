@@ -288,11 +288,16 @@ eLogin.addEventListener("click", function () {
 
 ### Test
 
-* Nu kan man testa modal-rutan när man klickar på en knapp med \#login
+* Nu skall modal-rutan öppna när man klickar på en knapp med \#login
 
 ## Ajax-anrop till servern
 
+* Med ajax kan man kommunicera direkt med ett skript på webbservern istället för att skicka data från ett formulär
+
 ### Anropet i från Javascript
+
+* Js-skriptet läser av formuläret och skickar till PHP-skriptet på webbservern
+* Js-skriptet presenterar inloggningsvaret för användaren
 
 ```javascript
 // Hantera inloggning
@@ -334,6 +339,8 @@ eForm.addEventListener("submit", function (e) {
 ```
 
 ### Backend check-user.php
+
+* Skriptet som kollar om användaren finns i databasen
 
 ```php
 <?php

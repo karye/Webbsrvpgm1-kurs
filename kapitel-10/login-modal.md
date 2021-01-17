@@ -338,10 +338,11 @@ eForm.addEventListener("submit", function (e) {
 })
 ```
 
-### Backend check-user.php
+### Backend-skriptet
 
 * Skriptet som kollar om användaren finns i databasen
 
+{% code title="check-user.php" %}
 ```php
 <?php
 include_once "../resurser/konfig-db.php";
@@ -391,8 +392,11 @@ if ($anamn && $lösen) {
     $conn->close();
 }
 ```
+{% endcode %}
 
 ### Rensa formuläret 
+
+* Avslutningsvis kan man rensa formuläret
 
 ```javascript
 // Rensa formuläret när modal-fönstret stängs

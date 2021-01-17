@@ -2,7 +2,7 @@
 description: Inloggning med modal och ajax-anrop
 ---
 
-# Login modal
+# Inlogging med ajax
 
 ## Resultat
 

@@ -8,7 +8,7 @@ description: Inloggning med modal och ajax-anrop
 
 ![En modal-ruta kompatibel med Bootstrap](../.gitbook/assets/image%20%2880%29.png)
 
-## Native JavaScript for Bootstrap V4 Github
+## Native JavaScript for Bootstrap V5
 
 * [https://thednp.github.io/bootstrap.native/v5.html](https://thednp.github.io/bootstrap.native/v5.html)
 * [https://thednp.github.io/bootstrap.native/v5.html\#componentModal](https://thednp.github.io/bootstrap.native/v5.html#componentModal)

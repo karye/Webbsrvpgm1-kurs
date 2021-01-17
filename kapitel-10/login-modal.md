@@ -222,7 +222,7 @@ table img {
 
 ### Modal
 
-* Länka in Bootstrap CSS 
+* Länka in [Bootstrap CSS](https://getbootstrap.com/docs/5.0/getting-started/introduction/) 
 * Ladda ned och länka in [Native JavaScript for Bootstrap V4 Github](https://thednp.github.io/bootstrap.native/v5.html)
 
 ```markup

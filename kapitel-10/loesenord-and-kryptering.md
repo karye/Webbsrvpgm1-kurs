@@ -247,7 +247,7 @@ form img {
 </main>
 ```
 
-## Lösenord hash
+## Använda hash istället för lösenord
 
 * I databasen lagras inte lösenordet utan ett hash skapat från lösenordet
 

@@ -2,7 +2,7 @@
 description: Inloggning med modal och ajax-anrop
 ---
 
-# Inlogging med ajax
+# Inlogging med Javascript fetch\(\)
 
 ## Resultat
 
@@ -291,11 +291,11 @@ eLogin.addEventListener("click", function () {
 
 * Nu skall modal-rutan öppna när man klickar på en knapp med \#login
 
-## Ajax-anrop till servern
+## fetch-anrop till servern
 
-* Med ajax kan man kommunicera direkt med ett skript på webbservern istället för att skicka data från ett formulär
+* Med fetch kan man kommunicera direkt med ett skript på webbservern istället för att skicka data från ett formulär
 
-### Anropet i från Javascript
+### Anropet från Javascript
 
 * Js-skriptet läser av formuläret och skickar till PHP-skriptet på webbservern
 * Js-skriptet presenterar inloggningsvaret för användaren

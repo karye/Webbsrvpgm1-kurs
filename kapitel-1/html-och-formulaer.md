@@ -114,9 +114,9 @@ Så är det dags att binda ihop allting och skapa ett komplett formulär. Vi bö
 ```markup
 <!DOCTYPE html>
 <html>
-        <meta charset="utf-8">
-        <title></title>
-        <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="phpskript.php" method="post">
@@ -139,8 +139,9 @@ För att ta emot formulärinnehållet behöver vi också ett PHP-skript i "andra
 ```php
 <!DOCTYPE html>
 <html>
-<head>
+    <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <?php

@@ -15,6 +15,7 @@
 ## Projekt
 
 * [En dynamisk webbplats](projekt/en-dynamisk-webbplats.md)
+* [Tutorials](projekt/tutorials.md)
 
 ## Kapitel 3
 

@@ -18,4 +18,5 @@ description: Bygg egen webbplats med dynamisk innehåll
   * ladda upp bilder
   * inloggning med sessioner
 * [https://codeshack.io/21-useful-php-snippets/](https://codeshack.io/21-useful-php-snippets/)
+* [https://css-tricks.com/snippets/php/](https://css-tricks.com/snippets/php/)
 

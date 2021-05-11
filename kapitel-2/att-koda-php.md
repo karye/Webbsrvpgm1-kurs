@@ -11,13 +11,13 @@ Varje PHP-snutt börjar med **&lt;?php** och avslutas med **?&gt;**. På detta s
 ```php
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagens datum</title>
-    </head>
-    <body>
-        
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Dagens datum</title>
+</head>
+<body>
+    
+</body>
 </html>
 ```
 
@@ -26,15 +26,15 @@ Detta är ett helt vanligt HTML-dokument. Om vi tittar på det i en webbläsare 
 ```php
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagens datum</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Dagens datum</title>
+</head>
+<body>
     <?php
     echo date("Y-m-d H:i");
     ?>
-    </body>
+</body>
 </html>
 ```
 
@@ -43,15 +43,15 @@ Då får vi alltså automatiskt uträknat dagens datum för oss. Man kan även b
 ```php
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagens datum</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Dagens datum</title>
+</head>
+<body>
     <?php
     echo "<p>Hej världen!</p>";
     ?>
-    </body>
+</body>
 </html>
 ```
 
@@ -68,17 +68,17 @@ Nu kommer texten som skrivs ut på skärmen att vara en rubrik. Vi skulle kunna 
 ```php
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagens datum</title>
-    </head>
-    <body>
-        <h1>
-        <?php
-        echo "<p>Hej världen!</p>";
-        ?>
-        </h1>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Dagens datum</title>
+</head>
+<body>
+    <h1>
+    <?php
+    echo "<p>Hej världen!</p>";
+    ?>
+    </h1>
+</body>
 </html>
 ```
 
@@ -247,15 +247,15 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
 ```php
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagens datum</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Dagens datum</title>
+</head>
+<body>
     <?php 
     echo "<p>Hej världen! </p>";   // Skriver ut raden Hello World på skärmen
     ?>
-    </body>
+</body>
 </html>
 ```
 
@@ -264,17 +264,17 @@ Genom att lägga in kommentarer i sitt skript kan man skriva vad ett speciellt a
 ```php
 <!DOCTYPE html>
 <html lang="sv">
-    <head>
-        <meta charset="utf-8">
-        <title>Dagens datum</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>Dagens datum</title>
+</head>
+<body>
     <?php 
     /*  Flera rader kommentarer..
         En rad till.. */
     echo "<p>Hej världen! </p>";
     ?>
-    </body>
+</body>
 </html>
 ```
 

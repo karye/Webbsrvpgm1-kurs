@@ -12,6 +12,10 @@
 * [Grunder i PHP](kapitel-2/att-koda-php.md)
 * [Obs! Svenskt språkstöd](kapitel-2/tips-and-tricks.md)
 
+## Projekt
+
+* [En dynamisk webbplats](projekt/en-dynamisk-webbplats.md)
+
 ## Kapitel 3
 
 * [if-satser och loopar](kapitel-3/ifsatser-och-loopar.md)

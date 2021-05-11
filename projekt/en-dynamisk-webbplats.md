@@ -10,6 +10,10 @@ description: Bygg en webbplats med dynamisk innehåll
 * Enkel PHP som: 
   * datum, tid
   * besökarens ip
+  * inkludera filer
+    * include "sidhuvud.php"
+    * include "meny.php"
+  * låsa katalog med .htaccess
   * besöksdagbok
   * bildgalleri från en katalog
   * ladda upp bilder

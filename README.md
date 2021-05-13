@@ -27,7 +27,7 @@ description: 'Installera alla verktyg, konfigurera alla inställningar, skapar a
 ## Skapa en utvecklingsmiljö
 
 1. Skapa ett konto på github
-2. Skapa en repository EE18-ar3
+2. Skapa en repository webbsrvpgm1
 3. Skapa en mapp c:/github
 4. Klona EE18-ar3 i VS Code inuti c:/github
 

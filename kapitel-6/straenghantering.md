@@ -2,7 +2,7 @@
 description: Att bearbeta strängar är mycket användbart.
 ---
 
-# Stränghantering
+# Arbeta med text
 
 ## Stränghantering
 

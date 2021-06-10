@@ -4,6 +4,10 @@ description: 'Hämta dagens horoskop från https://astro.elle.se'
 
 # Labb 5 - webscraping
 
+## Resultat
+
+![](../.gitbook/assets/image%20%2881%29.png)
+
 ## Studera webbsidan
 
 ### HTML-koden

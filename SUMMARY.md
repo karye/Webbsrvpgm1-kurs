@@ -7,7 +7,7 @@
 
 * [HTML och formulär](kapitel-1/html-och-formulaer.md)
 
-## Grunder <a id="kapitel-2"></a>
+## Intro till PHP <a id="kapitel-2"></a>
 
 * [Grunder i PHP](kapitel-2/att-koda-php.md)
 * [Obs! Svenskt språkstöd](kapitel-2/tips-and-tricks.md)
